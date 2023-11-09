@@ -2,6 +2,8 @@
 **Ingegneria del Software**
 Università degli studi di Padova
 
+![logo gruppo](./Documentazione/Logo/logo%20rotondo.png)
+
 ## Componenti del gruppo
 | Nominativo        | Matricola    | Contatto |
 |------------       |-----------    |----------|
