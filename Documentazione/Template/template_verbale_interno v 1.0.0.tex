@@ -1,0 +1,113 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+%\fancyhead[L]{\includegraphics[width=4em]{logo rotondo.png}}
+%\fancyhead[C]{Verbale riunione di progetto - gg/mm/aaaa}
+%\fancyhead[R]{\includegraphics[width=4em]{CS_tr.png}}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{CyberSorcerers - Verbale di riunione interna}
+\fancyhead[C]{}
+\fancyhead[R]{gg/mm/aaaa}
+
+\title{\Huge{\textbf{Verbale di riunione}}\vspace{-1em}}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{CS_tr.png}
+  \label{fig:immagine}
+\end{figure}
+
+\begin{center}
+\Large{gg mese aaaa - hh.mm\\
+Luogo\\
+Verbale redatto da: Nome Cognome\\}
+\end{center}
+\vspace{2em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Partecipanti alla riunione}\\
+        \rowcolor{LightBlue}
+        \custombold{Partecipante 1}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Partecipante 2}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Partecipante 3}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Partecipante 4}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Partecipante 5}: assente \\
+        \rowcolor{LighterBlue}
+        \custombold{Partecipante 5}: assente \\
+    \end{tabular}
+\end{center}}
+\newpage
+\section{Obiettivo della riunione}
+Obiettivo
+\section{Agenda}
+\subsection{Elemento discusso 1}
+Descrizione elemento 1...
+\subsection{Elemento discusso 2}
+Descrizione elemento 2...
+\subsection{Elemento discusso 3}
+Descrizione elemento 3...
+\section{Decisioni}
+\subsection{Decisione 1}
+descrizione decisione 1
+\subsection{Decisione 2}
+descrizione decisione 2
+\subsection{Decisione 3}
+descrizione decisione 3
+\section{Azioni}
+\begin{center}
+\begin{tabular}{P{20em} P{10em} P{10em}} 
+    \custombold{Task} & \custombold{Responsabile} & \custombold{Termine massimo}\\
+  \hline
+  Task1& Nome1 Cognome1 & gg/mm/aa \\ 
+  \hline
+  Task1& Nome1 Cognome1 & gg/mm/aa \\ 
+  \hline
+  Task1& Nome1 Cognome1 & gg/mm/aa \\ 
+  \hline
+\end{tabular}
+\end{center}
+\section{Attività future}
+\subsection{Attività futura 1}
+Breve descrizione 
+\section{Eventuali note}
+Note
+\end{document}
