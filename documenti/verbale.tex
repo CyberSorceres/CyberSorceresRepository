@@ -26,13 +26,16 @@
 \definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
 \definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
 
+%Version number
+\providecommand{\versionnumber}{1.0.0}
+
 %Header
 \usepackage{fancyhdr, xcolor}
 \pagestyle{fancy}
 \let\oldheadrule\headrule% Copy \headrule into \oldheadrule
 \renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
 \renewcommand{\headrulewidth}{0.2em}
-\fancyhead[L]{Titolo documento}
+\fancyhead[L]{Titolo documento -- \versionnumber}
 \fancyhead[C]{}
 \fancyhead[R]{gg/mm/aaaa}
 
@@ -43,7 +46,7 @@
 \vspace{-3em}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=6cm, height=6cm]{logo rotondo.png}
+  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
   \label{fig:immagine}
 \end{figure}
 
@@ -69,7 +72,8 @@
     \end{tabular}
 \end{center}}
 \newpage
-\section{}
+\section{CHANGES}
+I LOVE CHANGING DOCUMENTS!!!
 \subsection{}
 \subsection{}
 \section{}
