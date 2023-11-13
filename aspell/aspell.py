@@ -16,9 +16,9 @@ for file in sys.argv[1:]:
             [line_n, misspell] = line.split(':')
             annotations.append({
                 "file": file,
-                "line": line_n,
+                "line": int(line_n),
                 "title": "Misspell " + misspell,
-                "body": "The word `" + misspell + "` was misspelled.",
+                "message": "The word `" + misspell + "` was misspelled.",
                 "annotation_level": "warning",
             })
 
