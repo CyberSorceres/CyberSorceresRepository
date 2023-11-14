@@ -1,0 +1,303 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{datetime}
+\newdateformat{italiandate}{\THEDAY/\twodigit{\THEMONTH}/\twodigit{\THEYEAR}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+
+\providecommand{\versionnumber}{1.0.0}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{Valutazione dei capitolati}
+\fancyhead[C]{}
+\fancyhead[R]{10/11/2023}
+
+\title{\Huge{\textbf{Valutazione dei capitolati}}\vspace{-1em}}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\vspace{6em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Membri del team:}\\
+        \rowcolor{LighterBlue}
+        \custombold{Sabrina Caniato}\\
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}\\
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}\\
+        \rowcolor{LightBlue}
+        \custombold{Giovanni Moretti}\\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}\\
+
+    \end{tabular}
+\end{center}}
+\newpage
+\section{Valutazione del capitolato scelto}
+\subsection{Capitolato C7- ChatGPT vs BedRock developer Analysis}
+Proposto da: Zero12\\
+\\
+Obiettivo: creare un middleware in grado di generare e associare user stories a requisiti di buisness dati in input tramite l’uso di ChatGPT e AWS BedRock, i quali devono essere intercambiabili modularmente, confrontando i risultati ottenuti.
+\subsection{Tecnologie}
+Le tecnologie suggerite dall’azienda e che cercheremo di implementare sono le seguenti:
+\begin{itemize}
+    \item Amazon Web Services fargate: servizio serverless per gestire i container.
+    \item MongoDB: database per gestione progetti.
+\end{itemize}
+\subsection{Linguaggi di programmazione}
+\begin{itemize}
+    \item NodeJS: per lo sviluppo di API Restful JSON a supporto dell’applicazione.
+    \item Python: per lo sviluppo di plugin per Xcode.
+    \item TypeScript: per lo sviluppo di plugin per VisualStudio.Code.
+\end{itemize}
+\subsection{Aspetti positivi}
+\begin{itemize}
+    \item Interesse rispetto alle tecnologie e agli obiettivi da raggiungere da parte della maggioranza dei componenti del gruppo.
+    \item Disponibilità da parte dell’azienda nell’erogazione di corsi formativi riguardanti le tecnologie usate.
+    \item Possibilità di ottenere esperienza utile in futuro.
+\end{itemize}
+\subsection{Aspetti negativi}
+\begin{itemize}
+    \item Argomenti nuovi e complicati.
+\end{itemize}
+\subsection{Conclusioni}
+Anche se useremo linguaggi che non tutti conosciamo e richiede abbastanza conoscenze tecniche, offrono una formazione ed un aiuto e supervisione del lavoro. In più, visti i molti aspetti positivi individuati, il capitolato viene scelto dal gruppo come prima opzione.
+\section{Valutazione del capitolato C1}
+\subsection{Capitolato C1- Knowledge managment AI}
+Proposto da: Azzurrodigitale\\ \\
+Obiettivo:Azzurrodigitale si propone di sviluppare un interfaccia che permetta ai dipendenti delle fabbriche di "dialogare" con le postazioni al fine di ottenere informazioni facilmente senza bisogno di utilizzare manuali al fine di aumentare sicurezza e efficienza.
+\subsection{Tecnologie}
+Le tecnologie suggerite dall’azienda e che cercheremo di implementare sono le seguenti:
+\begin{itemize}
+    \item Open AI: motore di comprensione del testo e generazione delle risposte.
+    \item Langchain:progetto open source in grado di integrare modelli di AI come blackbox e quindi senza conoscerne la struttura interna.
+    \item Angular:framework open source per lo sviluppo di applicazioni web con licenza MIT.
+    \item Node.js è un runtime system open source multipiattaforma orientato agli eventi per l'esecuzione di codice JavaScript.
+\end{itemize}
+\subsection{Linguaggi di programmazione}
+\begin{itemize}
+    \item Javascript: scelta più naturale per interfacciarsi con Node.js e Angular.
+\end{itemize}
+\subsection{Aspetti positivi}
+\begin{itemize}
+    \item Sviluppare una chat che tramite parole chiave converta indicazioni presenti in un file testuale in risposte per l'utente.
+\end{itemize}
+\subsection{Aspetti negativi}
+\begin{itemize}
+    \item Alcune persone nel gruppo non trovavano stimolante sviluppare una chatbot
+    \item Necessita di amplie conoscenze nell'ambito dell'inteligenza artificiale, che non abbiamo.
+    \item Mancanza di formazione. 
+
+\end{itemize}
+\subsection{Conclusioni}
+La mancanza di formazione da parte dell'azienda ci lascia con alcune questioni aperte e alcuni interrogativi relativi a come si possa affrontare un progetto che richiede vaste conoscenze in un ambito così specifico.
+
+\section{Valutazione del capitolato C2}
+\subsection{Capitolato C2- Sistemi di raccomandazione}
+Proposto da: Ergon\\ \\
+Obiettivo: realizzare un sistema di raccomandazione che guidi le attività dell'azienda suggerendo a quali clienti rivolgere le singole attività di marketing e commerciali cercando i migliori clienti target a cui indirizzarle.
+\subsection{Tecnologie}
+Le tecnologie suggerite dall’azienda e che cercheremo di implementare sono le seguenti:
+\begin{itemize}
+    \item Un qualsiasi Database.
+    \item Framework .NET.
+\end{itemize}
+\subsection{Linguaggi di programmazione}
+\begin{itemize}
+    \item C\#.
+    \item Librerie di Python.
+\end{itemize}
+\subsection{Aspetti positivi}
+\begin{itemize}
+    \item L'argomento è conosciuto ed usato nella vita di tutti i giorni.
+\end{itemize}
+\subsection{Aspetti negativi}
+\begin{itemize}
+    \item  Dato che il gruppo non possiede conoscenze approfondite riguardanti l'economia non ritiene di riucire a fare un'adeguata raccolta dati.
+    \item Esistono già software che svolgono queste funzioni, sarebbe un progetto "scolastico".
+ 
+\end{itemize}
+\subsection{Conclusioni}
+Il capitolato é quindi stato scartato per l'argomento che oltre a non essere di nostro interesse ci risulta poco innovativo.
+\section{Valutazione del capitolato C3}
+\subsection{Capitolato C3- Easy meal}
+Proposto da: Imola informatica\\ \\
+Obiettivo: Creare un'applicazione che permette di prenotare i tavoli in un ristorante e ordinare anticipatamente ciò che si desidera mangiare in modo chiaro e personalizzato in base ai propri bisogni grazie alla chat integrata con lo staff. L'app permette in oltre di dividere il conto in caso di tavolate di più persone e permette la condivisione di recensioni.
+\subsection{Tecnologie}
+Le tecnologie suggerite dall’azienda e che cercheremo di implementare sono le seguenti:
+l'azienda ha lasciato a discrezione degli studenti i linguaggi di programmazione e le tecnologie da usare.
+\subsection{Aspetti positivi}
+\begin{itemize}
+    \item Obiettivi del progetto chiari.
+    \item Non ha bisogno di strumenti di sviluppo costosi o inaccessibili.
+\end{itemize}
+\subsection{Aspetti negativi}
+\begin{itemize}
+    \item Elevato numero di requisiti.
+\end{itemize}
+\subsection{Conclusioni}
+Considerata la chiara esposizione degli obiettivi, il capitolato viene scelto dal gruppo come seconda opzione.
+
+\section{Valutazione del capitolato C4}
+
+\subsection{Capitolato C4- A ChatGPT plugin with Nuvolaris}
+Proposto da: Nuvolaris\\ \\
+Obiettivo: sviluppare un plugin di ChatGPT per la creazione di applicazioni.
+\subsection{Tecnologie}
+Le tecnologie suggerite dall’azienda e che cercheremo di implementare sono le seguenti:
+\begin{itemize}
+    \item OpenAI: motore di comprensione del testo e generazione delle risposte.
+    \item Nuvolaris: una piattaforma di cloud computing per gestire le basi di dati.
+\end{itemize}
+\subsection{Linguaggi di programmazione}
+I linguaggi di programmazione sono lasciati alla scelta del gruppo.
+\subsection{Aspetti positivi}
+\begin{itemize}
+    \item Utilizzo di piattaforme utili ed importanti.
+\end{itemize}
+\subsection{Aspetti negativi}
+\begin{itemize}
+    \item Obiettivi di capitolato confusi.
+    \item Elevata difficoltà percepita.
+\end{itemize}
+\subsection{Conclusioni}
+La spiegazione dell'azienda risultava confusionaria e poco chiara, a priori non avendo quindi chiare linee guida su come procedere. Ci sembrava controproducente per il nostro lavoro scegliere questo capitolato.
+\section{Valutazione del capitolato C5}
+\subsection{Capitolato C5- WMS3:warehouse management 3D}
+Proposto da: San Marco informatica\\ \\
+Obiettivo: Lo scopo di un WMS è quello di identificare la dislocazione dei materiali nei vari magazzini, di controllare la loro movimentazione, di gestire i processi dal ricevimento alla spedizione o utilizzo nei reparti produttivi, garantendo il rispetto delle tempistiche di evasione delle picking list ed ottimizzando gli spazi fisici di magazzino.
+\subsection{Tecnologie}
+Le tecnologie suggerite dall’azienda e che cercheremo di implementare sono le seguenti:
+\begin{itemize}
+    \item Three.js, una libreria usata per creare grafiche 3D usando WebGL in un browser web.
+\end{itemize}
+\subsection{Linguaggi di programmazione}
+\begin{itemize}
+    \item Javascript per interfacciarsi con la libreria Three.js.
+\end{itemize}
+\subsection{Aspetti positivi}
+\begin{itemize}
+    \item Ha suscitato interesse in diverse persone del gruppo, data la peculiarità dello sviluppo di un'applicazione tridimensionale.
+\end{itemize}
+\subsection{Aspetti negativi}
+\begin{itemize}
+    \item Il progetto è di tipo ``usa e getta", a solo scopo esplorativo.
+    \item La modellazione tridimensionale è particolarmente complessa.
+    \item Il capitolato ha riscontrato molto interesse in altri gruppi.
+\end{itemize}
+\subsection{Conclusioni}
+Data la complessità della modellazione 3D, e considerando che nessuno del gruppo ha esperienza in questo campo, si decide di scartare il capitolato.
+\section{Valutazione del capitolato C6}
+\subsection{Capitolato C6- SyncCity:Smart city monitoring platform}
+Proposto da: Synclab\\ \\
+Obiettivo: Creazione di una piattaforma pubblica che si occupa della gestione e analisi, attraverso l'uso di intelligenza artificiale, di grandi moli di dati provenienti da sensori distribuiti in città in modo tale da informare i cittadini di fattori come il traffico o l'inquinamneto dell'aria  al fine di migliorare la qualitaà della vita in città.
+\subsection{Tecnologie}
+Le tecnologie suggerite dall’azienda e che cercheremo di implementare sono le seguenti:
+\begin{itemize}
+    \item Apache Kafka: broker in grado di gestire stream di informazioni da più fonti.
+    \item ClickHouse: database OLAP facilmente interfacciabile a Kafka, si occupa della persistenza di grandi moli di dati.
+     \item Grafana: piattaforma di data visulization.
+\end{itemize}
+\subsection{Linguaggi di programmazione}
+\begin{itemize}
+    \item Python: fornisce faker per la generazione di ipotetici dati provenienti dai sensori.
+\end{itemize}
+\subsection{Aspetti positivi}
+\begin{itemize}
+    \item Forte interesse da parte di tutti i componenti del gruppo.
+    \item Offrono attività formative.
+    \item Argomento molto interessante che prende più ambiti.
+\end{itemize}
+\subsection{Aspetti negativi}
+\begin{itemize}
+    \item Forte interesse da parte di altri gruppi.
+    \item Difficile la gestione della grande quantità dei dati proveniente dai sensori.
+\end{itemize}
+\subsection{Conclusioni}
+Il capitolato risulta interessante per il gruppo. Considerato il forte interesse mostrato per il progetto da altri gruppi, viene posto come terza scelta.
+\section{Valutazione del capitolato C8}
+\subsection{Capitolato C8- JMAP: il nuovo protocollo per la posta elettronica}
+Proposto da: Zextras\\ \\
+Obiettivo: Valutare la performance e completezza del nuovo protocollo JMAP, e la sua eventuale integrazione con software già esistenti come Carbonio creato da Zextras.
+\subsection{Tecnologie}
+Le tecnologie suggerite dall’azienda e che cercheremo di implementare sono le seguenti:
+\begin{itemize}
+    \item JMAP: un protocollo per le email, proposto come successore di IMAP.
+\end{itemize}
+\subsection{Linguaggi di programmazione}
+La scelta del linguaggio di programmazione è lasciata al gruppo, con preferenza per Java.
+\subsection{Aspetti positivi}
+\begin{itemize}
+    \item Chiara esposizione degli obiettivi da raggiungere.
+\end{itemize}
+\subsection{Aspetti negativi}
+\begin{itemize}
+    \item Alcune parti del protocollo sono ancora in via di sviluppo.
+    \item Basso interesse da parte del gruppo.
+\end{itemize}
+\subsection{Conclusioni}
+Considerato il basso interesse da parte del gruppo, il capitolato viene scartato.
+\section{Valutazione del capitolato C9}
+\subsection{Capitolato C9- ChatSQL: creare frasi SQL da linguaggio naturale}
+Proposto da: Zucchetti\\ \\
+Obiettivo: Creazione di un'applicazione che utilizzi ChatGPT per generare frasi SQL da un linguaggio naturale, dopo aver aver dato informazioni sulla struttura del database.
+\subsection{Tecnologie}
+Le tecnologie suggerite dall’azienda e che cercheremo di implementare sono le seguenti:
+\begin{itemize}
+    \item OpenAI: motore di comprensione del testo e generazione delle risposte.
+\end{itemize}
+\subsection{Linguaggi di programmazione}
+I linguaggi di programmazione sono lasciati alla scelta del gruppo.
+\subsection{Aspetti positivi}
+\begin{itemize}
+    \item Requisiti obbligatori relativamente semplici da soddisfare.
+\end{itemize}
+\subsection{Aspetti negativi}
+\begin{itemize}
+    \item Definizione degli obiettivi vaga.
+    \item Difficoltà nel fare in modo che un LLM dia una query SQL corretta.
+    \item Difficoltà nell'includere tutto il contesto del database in un solo prompt.
+\end{itemize}
+\subsection{Conclusioni}
+Nonostante la semplicità nel soddisfare i requisiti obbligatori, la difficoltà nel fare in modo che l'applicazione funzioni sempre in modo corretto risulta particolarmente complessa, per questo si è deciso di scartarlo.
+\end{document}

@@ -1,0 +1,96 @@
+\documentclass[12pt]{letter}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{charter}
+\usepackage{hyperref}
+\usepackage[italian]{babel}
+
+\signature{\textit{CyberSorceres}}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+
+\providecommand{\versionnumber}{2.0.0}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{Lettera di candidatura}
+%\fancyhead[C]{}
+\fancyhead[R]{09/11/2023}
+
+\begin{document}
+
+\begin{letter}
+{
+	Prof. Vardanega Tullio \\
+ 	Prof. Cardin Riccardo
+}
+\begin{center}
+  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
+  \label{fig:immagine}
+\end{center}
+
+\opening{Carissimi,}
+
+Con la presente si comunica che il gruppo
+\textit{CyberSorceres} intende comunicarVi il proprio 
+impegno nel realizzare il seguente prodotto da Voi
+commissionato, denominato:
+
+\textbf{C7 - ChatGPT vs BedRock developer Analysis}
+
+proposto dall'azienda \textit{Zero12}.
+La documentazione relativa alla valutazione dei capitolati e verbali interni ed esterni sono presenti al link: 	\\ \\
+\href{https://github.com/CyberSorceres/CyberSorceresRepository}{https://github.com/CyberSorceres/CyberSorceresRepository} \\ \\
+nel quale è possibile trovare
+\begin{itemize}
+    \item \textit{Valutazione capitolati};
+	\item \textit{Motivazioni scelta};
+	\item \textit{Scadenza ultima di consegna prevista};
+	\item \textit{Preventivo costi};
+	\item \textit{Totale ore produttive assegnate a persona};
+	\item \textit{Elenco di ogni verbale}.
+\end{itemize}
+
+Come descritto nel documento \textit{Piano di Progetto v 2.0.0},
+il gruppo ha preso l'impegno di consegnare il prodotto richiesto entro il 7 Aprile 2024, preventivando costi per un importo totale di 12090 €.
+
+Di seguito il gruppo che lo rappresenta:
+
+\begin{itemize}
+    \item \textit{Sabrina Caniato};
+	\item \textit{Giulia Dentone};
+	\item \textit{Nicola Lazzarin};
+	\item \textit{Giovanni Moretti};
+	\item \textit{Andrea Rezzi};
+	\item \textit{Samuele Vignotto}.
+\end{itemize}
+
+Rimaniamo a Vostra completa disposizione per qualsiasi chiarimento.
+\closing{Cordialmente,}
+\end{letter}
+
+\end{document}
