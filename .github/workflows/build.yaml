@@ -1,4 +1,4 @@
-name: Build and release container image
+name: Build and release pdf files
 
 on:
   push:
@@ -16,14 +16,12 @@ jobs:
       - name: Compile latex
         uses: xu-cheng/latex-action@v3
         with:
-          pre_compile: |
-            shopt -s extglob
           root_file: |
             documenti/*.tex
-            document/*/!(*esterno*).tex
+            documenti/*/*.tex
       - name: Append version to files
         run: |
-          for file in documenti/*.tex
+          for file in $(find documenti -iname '*.tex' | grep -v 'esterno')
           do
           VERSION_NUMBER="$(grep '\\providecommand{\\versionnumber}' $file | sed 's/.*{\([^{]*\)}$/\1/')"
           BASE_NAME="$(basename "$file")"
