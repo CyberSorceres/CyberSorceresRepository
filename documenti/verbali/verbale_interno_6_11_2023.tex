@@ -1,0 +1,129 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage[hidelinks]{hyperref}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+\providecommand{\versionnumber}{1.0.2}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+\let\oldheadrule\headrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{CyberSorcerers - Verbale di riunione interna}
+\fancyhead[C]{}
+\fancyhead[R]{06/11/2023}
+
+\title{\Huge{\textbf{Verbale di riunione}}\vspace{-1em}}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\begin{center}
+\Large{6 Novembre 2023 - 15:00\\
+Google Meet\\
+Verbale redatto da: Giulia Dentone\\}
+\end{center}
+\vspace{2em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Partecipanti alla riunione}\\
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Giovanni Moretti}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Sabrina Caniato}: assente\\
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}: presente \\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}: presente \\
+    \end{tabular}
+\end{center}}
+\newpage
+\section{Obiettivo della riunione}
+Riorganizzazione per la presentazione della nuova candidaduta per il capitolato C7.
+
+\section{Decisioni}
+\label{sec:decisioni}
+\subsection{Versionamento}
+Ogni file, documentazione e software, deve contenere nel nome il suo versionamento. Il versionamento sarà a tre cifre, del tipo "0.0.0". Cambiamenti significativi e strutturali comporteranno un incremento della prima cifra, cambiamenti meno significativi della seconda cifra, e così via per la terza cifra.
+\subsection{File .teX}
+Gli unici file .teX saranno i template della documentazione per facilitarne l'immediatezza di utilizzo, metre la documentazione sarà sotto forma di Pdf.
+\subsection{Repository}
+La repository deve essere ordinata, nel nome di ogni file deve essere presente versionamento secondo le regole citate al punto "Versionamento".
+
+\section{Azioni}
+\begin{center}
+\begin{tabular}{P{20em} P{10em} P{10em}} 
+    \custombold{Task} & \custombold{Responsabile} & \custombold{Termine massimo}\\
+  \hline
+  Sistemare la repository e creare la milestone della Candidatura& Samuele Vignotto & 08/11/2023 \\ 
+  \hline
+ Caricare i template della documentazione nella repository& Giovanni Moretti & 08/11/2023 \\ 
+  \hline
+  Stesura del verbale interno della riunione del 6/11/2023& Giulia Dentone & 08/11/2023\\ 
+  \hline
+  Integrare il documento di Way of Working con le nuove decisioni& Giovanni Moretti & 08/11/2023 \\ 
+  \hline
+  Versionamento degli scorsi verbali e caricarli, compreso il verbale esterno del 31-10-2023 firmato dall'azienda& Sabrina Caniato & 08/11/2023 \\
+  \hline
+  Giustificare la suddivisione del monte ore del Piano di Progetto& Sabrina Caniato& 08/11/2023 \\ 
+  \hline
+  Integrare una spiegazione delle tecnologie nel Piano di Progetto& Nicola Lazzarin& 08/11/2023 \\ 
+  \hline
+  Verificare il documento di Way of Working& Giulia Dentone& 08/11/2023 \\ 
+  \hline
+  Verificare il documento di Piano di Progetto& Giovanni Moretti& 08/11/2023 \\ 
+  \hline
+  Verificare il versionamento della documentazione& Nicola Lazzarin& 08/11/2023 \\ 
+  \hline
+  Verificare l'ordine e la coerenza della repository aggiornata& Andrea Rezzi& 08/11/2023 \\ 
+  \hline
+  Verificare il verbale interno del 6-11-2023 & Samuele Vignotto& 08/11/2023 \\ 
+  \hline
+  
+  
+\end{tabular}
+\end{center}
+\section{Attività future}
+\subsection{Riunione interna:}
+La prossima riunione si terrà su Google meet il giorno 09-11-2023 alle ore 15:30.
+\section{Eventuali note}
+L'obiettivo della riunione futura sarà la riverifica della repository da parte dell'intero gruppo (e quindi l'esito delle nostre azioni derivanti dalla riunione odierna), effettuare la ricandidatura al capitolato e organizzarci per il prossimo Diario di Bordo che si terrà il 13-11-2023.
+\end{document}
