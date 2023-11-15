@@ -1,0 +1,120 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage[italian]{babel}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+
+\providecommand{\versionnumber}{2.0.0}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{Prevetivo costi e assunzione impegni}
+\fancyhead[C]{}
+\fancyhead[R]{}
+
+
+\title{\Huge{\textbf{Prevetivo costi e assunzione impegni}}\vspace{-1em}}
+
+\author{CyberSorcerers Team}
+\date{}
+\begin{document}
+\maketitle
+
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\vspace{6em}
+\large{
+
+\begin{center}
+    \begin{tabular}{l c c}
+        \rowcolor{Blue} 
+        Informazioni sul documento & &\\ [1 ex]
+        \rowcolor{LighterBlue}
+        Redattori: & Sabrina Caniato & \\ [1 ex]
+        \rowcolor{LightBlue}
+        Verificatore: &  Nicola Lazzarin & \\ [1 ex]
+        \rowcolor{LighterBlue}
+        Destinatari: & Prf. Tullio Vardanega & Prf. Riccardo Cardin\\ [1 ex]
+
+
+    \end{tabular}
+\end{center}}
+\newpage
+
+\section{Dichiarazione impegni}
+
+\subsection{Totale ore produttive assegnate}
+La tabella seguente illustra la suddivisione delle ore per ciascun membro del gruppo:\\ \\
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\rowcolor{LightBlue}
+Ruolo & Costo orario & Ore per ruolo & Ore per membro & Costo totale \\
+\hline
+\hline
+\rowcolor{LighterBlue}
+Responsabile & 30 & 72 & 12 & 2160 \\
+Amministratore & 20 & 72 & 12 & 1440 \\
+\rowcolor{LighterBlue}
+
+Analista & 25 & 108 & 18 & 2700 \\
+Progettista & 25 & 102 & 17 & 2550 \\
+\rowcolor{LighterBlue}
+
+Programmatore & 15 & 126 & 21 & 1890 \\
+Verificatore & 15 & 90 & 15 & 1350 \\
+\hline
+\hline
+\rowcolor{LightBlue}
+Totale &  & 570 & 95 & 12090 \\
+\hline
+\end{tabular} 
+\\ \\ \\ Le ore assegnate per ciascun ruolo sono state distribuite in modo equo tra i membri del gruppo. \\
+\begin{itemize}
+  \item Il Responsabile risulta essere una figura fondamentale e di riferimento che servirà per tutto periodo del progetto. Ciò aiuta a garantire che ognuno svolga il proprio lavore nei tempi previsti.
+  \item L'Analista e il Progettista ci serviranno per gran parte del progetto dato che l'analisi dei requisiti e il design sono punti chiavi per ottenere migliori risultati al momento dell'implementazione del codice.
+  \item Il Programmatore sarà i ruolo principale avendo come obiettivo del lavoro implementare un software
+  \item Il Verificatore dovrà vagliare tutte le ultime versioni dei documenti o delle parti di codice, indicando se soddisfano i requisiti richiesti.
+\end{itemize}
+
+
+\subsection{Preventivo dei costi finali}
+Il costo finale del progetto ammonta a 12090 €, in base alla tabella mostrata sopra.
+
+\subsection{Scadenza ultima di consegna prevista}
+Il gruppo si impegna a consegnare il prodotto finito relativo al capitolato "ChatGPT vs BedRock developer Analysis" proposto dall'azienda Zero12 entro il \custombold{ 7 Aprile 2024}.\\
+Per stimare questa data abbiamo considerato le 20 settimane consigliate per gruppi a disponibilità alta, lasciandoci un piccolo margine derivante da piccole problematiche o criticità che si potranno presentare. 
+
+
+\end{document}
