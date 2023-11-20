@@ -1,0 +1,131 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+
+\providecommand{\versionnumber}{1.0.0}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+%\fancyhead[L]{\includegraphics[width=4em]{logo rotondo.png}}
+%\fancyhead[C]{Verbale riunione di progetto - gg/mm/aaaa}
+%\fancyhead[R]{\includegraphics[width=4em]{CS_tr.png}}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{CyberSorcerers - Verbale di riunione interna}
+\fancyhead[C]{}
+\fancyhead[R]{09/11/2023}
+
+\title{\Huge{\textbf{Verbale di riunione}}\vspace{-1em}}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{../logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\begin{center}
+\Large{19 Novembre 2023 - 15.30\\
+Discord\\
+Verbale redatto da: Andrea Rezzi\\}
+\end{center}
+\vspace{2em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Partecipanti alla riunione}\\
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Giovanni Moretti}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Sabrina Caniato}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}: presente \\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}: presente \\
+    \end{tabular}
+\end{center}}
+\newpage
+\section{Obiettivo della riunione}
+Valutare lo stato attuale dopo l'assegnamento del capitolato.
+\section {Assegnazione Ruoli}
+I seguenti ruoli sono stati assegnati:
+\begin{center}
+  \begin{tabular}{c|cxo}
+    \rowcolor{Blue}
+    \textbf{Nome} & \textbf{Ruolo} \\
+    \rowcolor{LightBlue}
+    Nicola Lazzarin & Responsabile \\
+    \rowcolor{LighterBlue}
+    Andrea Rezzi & Amministratore \\
+    \rowcolor{LightBlue}
+    Giovanni Moretti & Analista \\
+    \rowcolor{LighterBlue}
+    Samuele Vignotto & Analista \\
+    \rowcolor{LightBlue}
+    Giulia Dentone & Verificatrice \\
+    \rowcolor{LighterBlue}
+    Sabrina Caniato & Verificatrice \\
+  \end{tabular}
+\end{center}
+\section{Agenda}
+\subsection{Discussione assegnamento capitolati}
+È stato discusso sull'assegnamento dei capitolati e di come potessimo migliorare la repository
+
+\section{Decisioni}
+\subsection{Riorganizzazione della repository}
+Il gruppo ha approvato la riorganizzazione della repository, con build di file pdf automatica e spell checker, assegnata ad Andrea.
+\subsection{Instauramento canale comunicazione}
+È stato deciso di instaurare un canale di comunicazione con l'azienda, diverso dalla e-mail, assegnato a Nicola.
+\section{Azioni}
+\begin{center}
+\begin{tabular}{P{13em} P{9em} c c} 
+    \custombold{Task} & \custombold{Assegnato a} & \custombold{Verificatore} &
+    \custombold{Termine massimo}\\
+  \hline
+  Ristruttura Repository & Andrae Rezzi & Giulia Dentone & 20/11/2023 \\ 
+  \hline
+  Instauramento nuovo canale di comunicazione & Nicola Lazzarin & Sabrina Caniato & 20/11/2023\\ 
+  \hline
+  Analisi dei requisiti prima dell'incontro con l'azienda & Giovanni Moretti, Samuele Vignotto &  & 20/11/2023  \\ 
+  \hline
+  Creazione e presentazione del diario di bordo & Nicola Lazzarin &  & 20/11/2023 \\ 
+  \hline
+\end{tabular}
+\end{center}
+\section{Attività future}
+\subsection{Riunione Esterna:}
+La prossima riunione esterna si terrà in azienda, a data da determinarsi.
+\end{document}
