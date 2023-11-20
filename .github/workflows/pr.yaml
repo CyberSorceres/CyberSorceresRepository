@@ -1,7 +1,4 @@
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
@@ -10,6 +7,13 @@ permissions:
   checks: write
   contents: read
 jobs:
+  build:
+    - name: Compile latex
+      uses: xu-cheng/latex-action@v3
+      with:
+        root_file: |
+          documenti/*.tex
+          documenti/*/*.tex
   run-aspell:
     name: Run aspell
     runs-on: ubuntu-latest
