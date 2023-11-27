@@ -1,0 +1,34 @@
+:root {
+    --color-black: #000000;
+    --color-dark: #1d3557;
+    --color-medium: #457b9d;
+    --color-light: #cfdee7;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 1em;
+    text-align: center;
+}
+
+section {
+    max-width: 800px;
+    width: 95%;
+    margin: 2em auto;
+    padding: 0 20px;
+    border: 2px solid var(--color-medium);
+    color: var(--color-dark);
+}
+
+footer {
+    background-color: var(--color-dark);
+    color: var(--color-dark);
+}
+
