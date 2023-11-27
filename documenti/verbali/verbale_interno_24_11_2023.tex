@@ -1,0 +1,123 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+%\fancyhead[L]{\includegraphics[width=4em]{logo rotondo.png}}
+%\fancyhead[C]{Verbale riunione di progetto - gg/mm/aaaa}
+%\fancyhead[R]{\includegraphics[width=4em]{CS_tr.png}}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{CyberSorcerers - Verbale di riunione interna}
+\fancyhead[C]{}
+\fancyhead[R]{24/11/2023}
+
+\title{\Huge{\textbf{Verbale della riunione}}\vspace{-1em}}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\begin{center}
+\Large{24 Novembre 2023 - 15.00\\
+In presenza\\
+Verbale redatto da: Sabrina Caniato\\}
+\end{center}
+\vspace{2em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Partecipanti alla riunione}\\
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}: assente\\
+        \rowcolor{LighterBlue}
+        \custombold{Giovanni Moretti}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Sabrina Caniato}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}: assente \\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}: presente \\
+    \end{tabular}
+\end{center}}
+\newpage
+\section{Obiettivo della riunione}
+Aggiornare il membro mancante della precedente riunione, del 21 Novembre 2023, di quanto discusso;\\ Suddividerci i compiti per la stesura dei documenti necessari per il PoC.
+\section{Agenda}
+\subsection{Aggiornamenti}
+ Abbiao aggiornato il nostro compagnio della riunione del 21 Novembre 2023 e provato a fare insieme la parte di design thinking riguardante il plugin.
+\subsection{Jira}
+Pensare se creare un collegamento a GitHub con Jira per avere una Dashboard automatica più chiara.
+\subsection{Proof of Concept}
+Iniziare a pensare cosa scrivere dei documenti del PoC.
+
+\section{Decisioni}
+    \subsection{SCRUM}
+    Iniziare ad adottare la metodologia SCRUM e fare gli stand up meeting di 10 minuti ogni giorno, anche online. 
+     \subsection{Glossario}
+    Iniziare a scrivere il glossario in un file condiviso cosicchè ogniuno può aggiungere delle parole. 
+\section{Questioni Aperte}
+    \subsection{Tecnologie da usare}
+    Nella prossima riunione dobbiamo decidere quali tecnologie usare per questo capitolato. Abbiamo decso di studiarci un po' per conto nostro i vantaggi e gli svantaggi e riportarli nel prossimo incontro.
+
+\section{Azioni}
+\begin{center}
+\begin{tabular}{P{13em} P{9em} c c} 
+    \custombold{Task} & \custombold{Responsabile} & \custombold{Verificatore} &
+    \custombold{Termine massimo}\\
+  \hline
+  Studio tecnologie da usare & Andfrea Rezzi&  & 27/11/2023 \\ 
+  \hline
+  Iniziare a scrivere il Piano di Progetto& Samuele Vignotto  & & \\ 
+  \hline
+  Scrittura pagina HTML & Giovanni Moretti& Andrea Rezzi & 27/11/2023  \\ 
+  \hline
+  Collegamento GitHub e Jira & Sabrina Caniato & Andrea Rezzi &27/11/2023 \\
+  \hline
+  Iniziare a scrivere l'Analisi dei Requisiti& Nicola Lazzarin& &27/11/2023  \\ 
+  \hline
+  Verifica del verbale del 27/11/2023& Giovanni Moretti & &10/11/2023  \\ 
+  \hline
+
+\end{tabular}
+\end{center}
+\section{Attività future}
+\subsection{Riunione Interna}
+La prossima riunione interna si terrà su Google Meet il giorno 27 Novembre 2023 e tratterà il PoC: le tecnologie da usare e l'Analisi dei requisiti della prima parte del progetto.
+
+\end{document}
