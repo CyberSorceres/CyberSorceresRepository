@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage[hidelinks]{hyperref}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+\providecommand{\versionnumber}{1.0.0}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+\let\oldheadrule\headrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{CyberSorcerers - Verbale di riunione interna}
+\fancyhead[C]{}
+\fancyhead[R]{24/10/2023}
+
+\title{\Huge{\textbf{Verbale di riunione}}\vspace{-1em}}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo}
+  \label{fig:immagine}
+\end{figure}
+
+\begin{center}
+\Large{27 Novembre 2023 - 16:00\\
+Google Meet\\
+Verbale redatto da: Giulia Dentone\\}
+\end{center}
+\vspace{2em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Partecipanti alla riunione}\\
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Giovanni Moretti}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Sabrina Caniato}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}: presente \\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}: presente \\
+    \end{tabular}
+\end{center}}
+\newpage
+\section{Obiettivo della riunione}
+Suddivisione dei compiti per la partecipazione al PoC.
+
+\section{Agenda}
+\label{sec:decisioni}
+\subsection{Diario di bordo}
+Abbiamo assegnato discusso sul contenuto e la realizzazione del prossimo Diario di Bordo che si terrà in data 29/11/2023.
+
+\section{Decisioni}
+\subsection{Jira}
+Abbiamo deciso di utilizzare come software di project management Jira.
+
+\subsection{Stand Up Meetings}
+Abbiamo deciso, al fine di migliorare il nostro Way of Working, di tenere degli Stand up meetinng interni della durata di massimo 10 minuti due volte a settimana, per aggiornarci sull'avanzamento dei task assegnati durante le riunioni interne. Le date dei meeting saranno indicativamente il mercoledì e il venerdì alle ore 13:00.
+
+\subsection{Analisi dei requisiti}
+Abbiamo deciso di suddividere la stesura dell'analisi dei requisiti in to do piccoli in modo da rendere il lavoro più agile.
+
+\subsection{Azienda}
+Abbiamo deciso di contattare via mail l'azienda al fine di aprire un canale slack, di avere le credenziali necessarie per iniziare la fase di testing su Chat GPT e Amazon Web Services. Abbiamo inoltre deciso di richiedere una riunione esterna dopo il giorno 8/12/2023, data fissata come limite per preparare il materiale utile al meeting e avere delle domande più attinenti e puntuali da porre all'azienda.
+
+\section{Azioni}
+\begin{center}
+\begin{tabular}{P{20em} P{10em} P{10em}} 
+    \custombold{Task} & \custombold{Responsabile} & \custombold{Termine massimo}\\
+  \hline
+  Stesura del verbale interno del 27/11/2023 & Giulia Dentone & 28/11/2023 \\ 
+  \hline
+  Preparazione del diario di bordo del 29/11/2023 & Samuele Vignotto & 28/11/2023 \\ 
+  \hline
+  Scrivere la mail all'azienda & Nicola Lazzarin & 27/11/2023\\ 
+  \hline
+  Preparazione per il PoC & Giulia Dentone e Andrea Rezzi & 08/12/2023 \\ 
+  \hline
+  Procedere con la stesura dell'Analisi dei requisiti & Nicola Lazzarin e Samuele Vignotto & 08/11/2023 \\
+  \hline
+  Definire la struttura e i potenziali contenuti del Piano di Progetto & Giovanni Moretti & 02/12/2023 \\ 
+  \hline
+  Definire la stuttura e i potenziali contenuti del Piano di Qualifica & Sabrina Caniato & 02/12/2023 \\ 
+  \hline
+  Digitalizzare il workflow ideale formitoci dall'azienda& Giulia Dentone & 29/11/2023 \\ 
+  \hline
+ 
+  
+\end{tabular}
+\end{center}
+\section{Attività future}
+\subsection{Riunione interna:}
+La prossima riunione si terrà su Google meet il giorno 04-12-2023 alle ore 15:30.
+\section{Eventuali note}
+In attesa della risposta dell'azienda per fissare una riunione esterna.
+\end{document}
