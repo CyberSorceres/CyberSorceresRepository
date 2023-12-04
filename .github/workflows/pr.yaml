@@ -1,4 +1,7 @@
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
@@ -7,31 +10,29 @@ permissions:
   checks: write
   contents: read
 jobs:
-  build:
-    - name: Compile latex
-      uses: xu-cheng/latex-action@v3
-      with:
-        root_file: |
-          documenti/*.tex
-          documenti/*/*.tex
-  run-aspell:
-    name: Run aspell
+  pr:
+    name: Lint and build PR
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
+      - name: Compile latex
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: |
+            documenti/*.tex
+            documenti/*/*.tex
       - name: Install aspell
         run: |
           sudo apt install -y aspell aspell-it
       - name: Run aspell
         run: |
-           aspell/aspell.py documenti/*.tex > annotations.json
+          aspell/aspell.py documenti/*.tex > annotations.json
       - name: Annotate PR
         uses: yuzutech/annotations-action@v0.4.0
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           title: 'lint'
           input: './annotations.json'
-
         
