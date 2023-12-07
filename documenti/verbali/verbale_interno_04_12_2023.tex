@@ -1,0 +1,121 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+\providecommand{\versionnumber}{1.0.0}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+%\fancyhead[L]{\includegraphics[width=4em]{CS_tr.png}}
+%\fancyhead[C]{Verbale riunione di progetto - gg/mm/aaaa}
+%\fancyhead[R]{\includegraphics[width=4em]{CS_tr.png}}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{CyberSorcerers - Verbale di riunione interna}
+\fancyhead[C]{}
+\fancyhead[R]{04/12/2023}
+
+\title{\Huge{\textbf{Verbale di riunione}}\vspace{-1em}}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\begin{center}
+\Large{4 dicembre 2023 - 15:30\\
+Google Meet\\
+Verbale redatto da: Giovanni Moretti\\}
+\end{center}
+\vspace{2em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Partecipanti alla riunione}\\
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Giovanni Moretti}: assente\\
+        \rowcolor{LightBlue}
+        \custombold{Sabrina Caniato}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}: assente \\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}: presente \\
+    \end{tabular}
+\end{center}}
+\newpage
+\section{Obiettivo della riunione}
+L'obiettivo della riunione è quello di review delle azioni passate, e pianificazione di quelle future. In particolare con l'assegnazione dei nuovi ruoli.
+\section{Agenda}
+\subsection{Discussione riguardo i ruoli}
+Vengono discussi i ruoli, valutat l'efficacia nel periodo trascorso, e assegnati quelli per il periodo successivo.
+\subsection{Changelog}
+Viene portato all'attenzione che i file necessitano di avere un changelog per poter tener traccia delle modifiche e delle versioni.
+\subsection{Scansione temporale}
+Emerge la necessità di formulare una scansione temporale per il progetto. Il responsabile porterà alla prossima riunione interna una proposta, che se approvata verrà aggiunta al piano di progetto.
+\section{Mancata risposta alla mail}
+I rappresentati dell'azienda non hanno ancora dato risposta alla mail che richiedeva le credenziali di Amazon AWS e di ChatGPT. Verrà sollecitata la risposta.
+\section{Decisioni}
+\subsection{Decisione ruoli}
+\begin{itemize}[label={}, noitemsep]
+    \item Responsabile $\rightarrow$ Giulia Dentone
+    \item Verificatore $\rightarrow$ Giovanni Moretti
+    \item Sviluppatore $\rightarrow$ Andrea Rezzi
+    \item Sviluppatore $\rightarrow$ Nicola Lazzarin
+    \item Analista $\rightarrow$ Sabrina Caniato
+    \item Analista $\rightarrow$ Samuele Vignotto
+\end{itemize}
+\subsection{Changelog}
+Tutti i file soggetti a versionamento devono presentare un changelog, che comprenda per ogni versione il numero della versione, il responsabile delle modifiche, il respoinsabile della verifica, e una breve descrizione.
+\section{Azioni}
+\begin{center}
+\begin{tabular}{P{18em} P{10em} P{9em}} 
+    \custombold{Task} & \custombold{Responsabile} & \custombold{Termine massimo}\\
+\hline
+  Invio mail di sollecito & Giulia Dentone & 05/12/2023 \\ 
+  \hline
+  Continuazione Analisi dei Requisiti & Sabrina Caniato, Samuele Vignotto & 11/12/2023 \\ 
+  \hline
+  Proposta di scansione temporale & Giulia Dentone & 11/12/2023 \\ 
+  \hline
+  Continuazione sviluppo PoC & Andrea Rezzi, Nicola Lazzarin & 11/12/2023 \\ 
+  \hline
+\end{tabular}
+\end{center}
+\section{Attività future}
+\subsection{Prossima riunione interna}
+La prossima riunione interna si terrà il giorno 11/12/2023 alle 15:30 sulla piattaforma Google Meet.
+\end{document}
