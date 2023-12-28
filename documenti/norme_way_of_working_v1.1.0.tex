@@ -1,0 +1,215 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{hyperref}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{Norme di progetto}
+\fancyhead[C]{}
+
+\title{\Huge{\textbf{Norme di progetto}}\vspace{-1em}}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\vspace{6em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Membri del team:}\\
+        \rowcolor{LighterBlue}
+        \custombold{Sabrina Caniato}\\
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}\\
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}\\
+        \rowcolor{LightBlue}
+        \custombold{Giovanni Moretti}\\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}\\
+
+    \end{tabular}
+\end{center}}
+\newpage
+
+\section*{Registro delle modifiche}
+    \begin{tabular}{|c|c|c|}
+        \hline
+    \rowcolor{Blue}
+         Redattore & Modifiche & Numero versione \\
+         \hline
+    \rowcolor{LighterBlue}
+         Giovanni Moretti & Prima versione documento & 1.0.0\\
+         \hline
+    \rowcolor{LightBlue}
+         Samuele Vignotto & Modifica introduzione, & 1.1.0\\
+    \rowcolor{LightBlue}
+         & aggiunta sezione "Fornitura" &\\
+         \hline
+    \end{tabular}
+\newpage
+
+\section{Introduzione}
+
+\subsection{Scopo del documento}
+Lo scopo di questo documento, in continuo aggiornamento, è quello di raggruppare in un unico luogo tutte le decisioni prese dal gruppo, per quanto riguarda il proprio \textit{Qay of Working}.
+
+\subsection{Scopo del capitolato}
+Lo scopo è creare un middleware che riceva in input dei requisiti di business e produca epic e user stories associate ai requisiti di business tramite ChatGPT e AWS BedRock, inoltre è richiesto che venga creato un plug-in per VisualStudio Code.
+Sarà necessario comparare la capacità di ChatGPT e quella di AWS BedRock nell'interpretare del codice sorgente ed associare le user stories generate. Provare dall'interpretazione dei criteri di accettazione delle user stories ed il codice analizzato se il risultano dei test non gestiti.
+
+\subsection{Glossario}
+I termini impiegati in questo testo potrebbero suscitare incertezze circa il loro significato, rendendo quindi necessaria una definizione per evitare ambiguità. Tali termini sono identificati da una lettera "G" maiuscola posta in pedice alla parola, e la loro spiegazione è fornita nel Glossario v1.0.0.
+
+\subsection{Riferimenti}
+
+\subsubsection{Riferimenti normativi}
+\begin{itemize}
+    \item \textbf{Regolamento del progetto didattico:}
+\end{itemize}
+\href{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf}{PD2.pdf}
+\begin{itemize}
+    \item \textbf{Capitolato d'appalto C7 - ChatGPT vs BedRock developer Analysis}
+\end{itemize}
+\href{https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C7.pdf}{C7.pdf}
+
+\subsubsection{Riferimenti formativi}
+\begin{itemize}
+    \item \textbf{Documentazione Amazon BedRock}
+\end{itemize}
+\href{https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html}{Documentazione BedRock}
+\begin{itemize}
+    \item \textbf{Documentazione OpenAI ChatGPT}
+\end{itemize}
+\href{https://platform.openai.com/docs/introduction}{Documentazione ChatGPT}
+\begin{itemize}
+    \item \textbf{Standard ISO/IEC 12207}
+\end{itemize}
+\href{https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf}{ISO/IEC 12207-1995}
+
+\section{Processi primari}
+
+\subsection{Fornitura}
+
+\subsubsection{Scopo}
+In questa sezione sono indicati tutti i parametri, gli strumenti e i documenti impiegati per portare a termine il processo di fornitura.
+
+\subsubsection{Aspettative}
+Le aspettative relative all'implementazione del processo di fornitura comprenadono:
+\begin{itemize}
+    \item Ottenere una struttura documentale chiara;
+    \item Definire i tempi di lavoro;
+    \item Risolvere eventuali dubbi con il proponente;
+    \item Stabilire vincoli con il proponente;
+\end{itemize}
+
+\subsubsection{Descrizione}
+Il processo di fornitura identifica ogni compito, attività e risorsa necessaria per l'implementazione del progetto. Questo processo sarà avviato solo dopo la comprensione delle richieste del proponente, seguito da uno studio di fattibilità delle richieste e concluso con la definizione di un accordo contrattuale. Le fasi del processo di fornitura includono:
+\begin{itemize}
+    \item Avvio;
+    \item Contrattazione;
+    \item Pianificazione;
+    \item Esecuzione;
+    \item controllo;
+    \item Revisione;
+    \item Valutazione;
+    \item Consegna;
+    \item Completamento;
+\end{itemize}
+
+\subsubsection{Proponente}
+Il team di sviluppo ha concordato con il proponente di mantenere un contratto regolare per monitorare l'andamento positivo del progetto. Questo viene realizzato attraverso incontri periodici organizzati e un costante scambio asincrono tramite un canale dedicato sulla piattaforma Slack. Il team di sviluppo mira a mantenere un contatto costante con il proponente per discutere i seguenti argomenti:
+\begin{itemize}
+    \item Vincoli e requisiti obbligatori.
+    \item Feedback riguardante le teconologie utilizzate;
+    \item Valutazione delle soluzioni innovative proposte dal team di sviluppo;
+    \item Chiarimenti su eventuali dubbi;
+    \item Feedback rigurdante la documentazione redatta;
+    \item Stima dei costi;
+\end{itemize}
+
+\subsubsection{Documentazione}
+Di seguito viene indicata la documentazione elaborata in questa fase.
+\subsubsection*{\textbf{Piano di qualifica}}
+Il \textbf{Piano di qualifica} viene redatto dal \textbf{verificatore} e comprende le azioni indispensabili per assicurare l'eccellenza del prodotto e dei processi. Esso è composto dalle seguenti sezioni:\begin{itemize}
+    \item Qualità di processo;
+    \item Qualità di prodotto;
+    \item Specifica dei test;
+    \item Resoconto attività di verifica.
+\end{itemize}
+\subsubsection*{\textbf{Piano di progetto}}
+Di seguito vengono indicate le sezioni del documento \textbf{Piano di progetto}:\begin{itemize}
+    \item Analisi dei rischi;
+    \item Modello di sviluppo;
+    \item Pianificazione;
+    \item Preventivo;
+    \item Consultivo di periodo;
+    \item Attualizzazione dei rischi.
+\end{itemize}
+\subsubsection*{Strumenti}
+Di seguito vengono indicati gli strumenti utilizzati dal team per la realizzazione del processo di fornitura:\begin{itemize}
+    \item \textit{Microsoft Excel}: utilizzato per creare grafici, eseguire calcoli e per realizzare tabelle;
+    \item \textit{Project di Github}: utilizzato per gestire le \textbf{task}.
+    \item \textit{draw.io}: utilizzato per la realizzazione dei diagrammi UML.
+\end{itemize}
+
+
+
+\section{Norme}
+\subsection{Gestione dell'ITS e delle task}
+Per il progetto verrà utilizzato l\textit{issue tracking sistem} di Github. Le task vengono decise e assegnate durante le riunioni interne. Oltre al responsabile della task, al quale viene assegnata tramite l'apposita \textit{feature}, viene segnato nella prima riga della descrizione il verificatore.\\
+Quando la task è completata, viene creata una \textit{pull-request}, che andrà approvata dal verificatore.\\
+Lo stato degli \textit{issues} è tracciato in un \textit{project} di Github.
+\subsection{File di documentazione}
+Tutti i file di documentazione vengono posti nella \textit{repository} in formato PDF. I \textit{template} dei file vengono invece posti nell'apposita cartella in formato tex.
+\subsection{Numero di versione}
+Ogni file ha un numero di versione posto in coda al proprio nome. Il numero di versione è di tipo x.y.z. Il cambiamento di ogni cifra è determinato dai seguenti criteri:
+\begin{itemize}[noitemsep]
+    \item \custombold{Cambiamento di \textbf{x}} $\rightarrow$ indica una modifica sostanziale
+    \item \custombold{Cambiamento di \textbf{y}} $\rightarrow$ indica l'aggiunta di una nuova feature
+    \item \custombold{Cambiamento di \textbf{z}} $\rightarrow$ indica una modifica minore
+\end{itemize}
+\subsection{Politica di decisioni}
+Le decisioni ufficiali devono essere prese quando tutti i membri del gruppo sono presenti in modo tale da mantenere coerenza. In caso di impossibilità di presenza di tutti i membri del gruppo, deve essere comunque raggiunta una quota di maggioranza.
+\subsection{Incontri successivi}
+Ad ogni incontro viene fissata la data del successivo.
+
+\end{document}
