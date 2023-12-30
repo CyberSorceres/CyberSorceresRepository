@@ -1,0 +1,251 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{Piano di qualifica}
+\fancyhead[C]{}
+\fancyhead[R]{}
+
+\title{\Huge{\textbf{Piano di Qualifica}}\vspace{-1em}}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\vspace{6em}
+\large{
+
+\begin{center}
+    \begin{tabular}{l c c}
+        \rowcolor{Blue} 
+        Informazioni sul documento & &\\ [1 ex]
+        \rowcolor{LighterBlue}
+        Redattori: &  & \\ [1 ex]
+        \rowcolor{LightBlue}
+        Verificatore: &   & \\ [1 ex]
+        \rowcolor{LighterBlue}
+        Destinatari: & Prf. Tullio Vardanega & Prf. Riccardo Cardin\\ [1 ex]
+
+
+    \end{tabular}
+\end{center}}
+\newpage
+Registro dei Cambiamenti - Changelog
+
+\begin{center}
+\begin{tabular}{P{4em} P{6em} P{8em} P{8em} P{10em}} 
+  \rowcolor{Blue}
+    \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
+    \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LighterBlue}
+     0.0.1& 02/12/2023 & Sabrina Caniato & Samuele Vignotto& Definizione struttura del documento e scheletro delle sezioni. Scrittura introduzione ed obiettivi delle diverse sezioni.\\ 
+     \rowcolor{LightBlue}
+      0.2.0& 14/12/2023 & Giulia Dentone & Samuele Vignotto& Aggiunta dei riferimenti.\\ 
+     0.2.1& 30/12/2023 & Samuele Vignotto  & Sabrina Caniato & Aggiunta sezione "Qualità di prodotto"\\ 
+\end{tabular}
+\end{center}
+\newpage
+\section{Introduzione e scopo}
+Il Piano di Qualifica è un documento che ci prefissiamo di aggiornare periodicamente dato che definisce l'approccio e le strategie per garantire la qualità di un progetto software. Questo piano è parte integrante del processo di gestione della qualità e fornisce una roadmap dettagliata su come il controllo e l'assicurazione della qualità verranno implementati durante l'intero ciclo di vita del progetto.\\
+In Questo documento cercheremo di definire delle metriche di misurazione dell'efficacia e dell'efficenza del progetto, in base anche agli accorgimenti fornitici dal proponente.\\
+
+Il piano di qualifica conterrà:
+
+\begin{itemize}
+    \item Definizione chiara degli obiettivi e delle metriche di qualità che il progetto propone di raggiungere.
+        
+    \item Specifica dei criteri che determineranno se il prodotto soddisfa gli standard di qualità stabiliti.
+    
+    \item Descrizione dettagliata dei processi di test che saranno implementati e la definizione delle strategie utilizzate per l'esecuzione di essi.
+
+    \item Procedure per gestire eventuali deviazioni rispetto agli standard di qualità pianificati.
+
+\end{itemize}
+
+\subsection{Glossario}
+All'interno del documento saranno presenti termini specifici, indicati con una G come apice. Al fine di garantirne la comprensione abbiamo stilato un documento nominato "Glossario" in cui si potrà trovare una breve spiegazione del termine. 
+
+\subsection{Riferimenti}
+\textbf{Riderimenti normativi}
+\begin{itemize}
+    \item Capitolato C7 - 	ChatGPT vs BedRock developer analysis: https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/Capitolati.html
+\end{itemize}
+\textbf{Riferimenti informativi}
+\begin{itemize}
+    \item Argomento T7 - Qualità del software: https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T7.pdf
+    \item Argomento T8 - Qualità di processo:https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T8.pdf
+    \item Argomento T9 - Verifica e validazione: https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T9.pdf
+    \item - ISOG/IECG 9126:2001 SWE Product Quality;
+    \item ISO/IEC 14598:1999 SW Product Evaluation;
+    \item  ISO/IEC 25000:2005 SQuaRE: Systems and software Quality Requirements and Evaluation:
+        \begin{itemize}
+        \item 25010:2011 Quality model;
+        \item 25020:2019 Quality measurement framework;
+        \item 25030:2007 Quality requirements;
+        \item 25040:2011 Quality evaluation.
+    \end{itemize}
+    \item ISO 9000:2015;
+    \item ISO 9004:2018;
+    \item ISO/IEC 33020:2019.
+\end{itemize}
+
+\section{Qualità di processo}
+\subsection{Scopo ed obiettivi}
+La qualità è determinata univocamente dai processi che compongono un prodotto, misurata attraverso che permettano di valutare tali processi e accertarsi che siano conformi agli obiettivi di qualità previsti. Da mettere in atto è Ciclo PDCA (Plan - Do - Check- Act), che garantisce un miglioramento continuo nell’utilizzo dei processi e delle risorse tramite una prima fase di pianificazione, seguita da una verifica con le metriche previste e infine un'integrazione o correzione del prodotto in base ai risultati precedentemente ottenuti.
+\subsection{Processi primari}
+\subsection{Processi di supporto}
+
+\section{Qualità di prodotto}
+Per assicurare l'elevata qualità del prodotto, è stata adottata come base di riferimento la norma ISO/IEC 12207:1997. In questa sezione vengono presentati i valori ideali e quelli accettabili relativi alle metriche scelte dal team Cyber Sorceres. Per una visione dettagliata delle metriche indicate in seguito, si prega di fare riferimento al documento \textit{Norme di progetto}.
+\subsection{Obiettivi}
+\begin{itemize}
+    \item{Efficienza}
+    \item {Usabilità}
+    \item {Affidabilità}
+    \item {Manutenibilità}
+    \item {Portabilità}    
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{P{8em} P{20em} P{8em}} 
+  \rowcolor{Blue}
+    \custombold{Obiettivo} & \custombold{Descrizione} & \custombold{Metriche}\\
+    \hline
+    \rowcolor{LightBlue}
+    &\custombold{Documentazione}&\\
+    \hline
+    \rowcolor{LighterBlue}
+    \textbf{Leggibilità documenti} & La documentazione deve essere comprensibile agli utenti. & \textbf{MD01}\\
+    \rowcolor{LightBlue}
+    \textbf{Correttezza linguistica} & Non devono essere presenti errori grammaticali nella documentazione. & \textbf{MD02}\\
+    \hline
+    \rowcolor{LighterBlue}
+    &\custombold{Software}&\\
+    \hline
+    \rowcolor{LightBlue}
+    \textbf{Funzionalità} & La capacità del prodotto di fornire tutte le funzioni identificate nell'\textit{Analisi dei requisiti}, perseguendo precisione e idoneità. & \textbf{MS01}, \textbf{MS02}, \textbf{MS03}\\
+    \rowcolor{LighterBlue}
+    \textbf{Usabilità} & La capacità di essere comprensibile al fine di rendere gradevole l'esperienza dell'utente. Le funzionalità devono essere in linea con le aspettative e compatibili con le stesse. & \textbf{MS04}\\
+    \rowcolor{LightBlue}
+    \textbf{Portabilità} & La capacità di operare in vari contesti di esecuzione. Gli obiettivi da raggiungere includono adattabilità e sostituibilità. & \textbf{MS05}, \textbf{MS06}\\
+    \rowcolor{LighterBlue}
+    \textbf{Test} & L'intero codice prodotto sarà soggetto a verifica per assicurare l'implementazione corretta dei requisiti identificati. & \textbf{MS07}, \textbf{MS08}, \textbf{MS09}, \textbf{MS10}\\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{P{5em} P{13em} P{10em} P{10em}} 
+  \rowcolor{Blue}
+    \custombold{Codice} & \custombold{Denominazione metrica} & \custombold{Valore accettabile} & \custombold{Valore ottimale}\\
+    \hline
+    \rowcolor{LighterBlue}
+    \custombold{MD01} & Indice di Gulpease & $\geq 60$ & $\geq 80$\\
+    \rowcolor{LightBlue}
+    \custombold{MD02} & Errori ortografici & 0 & 0 \\
+    \hline
+    \rowcolor{LighterBlue}
+    \custombold{MS01} & Copertura requisiti obbligatori & 100\% & 100\% \\
+    \rowcolor{LightBlue}
+    \custombold{MS02} & Copertura requisiti desiderabili & $\geq 50$\% & $\geq 100$\% \\
+    \rowcolor{LighterBlue}
+    \custombold{MS03} & Copertura requisiti opzionali & $\geq 50$\% & $\geq 100$\% \\
+    \rowcolor{LightBlue}
+    \custombold{MS04} & Facilità utilizzo & 5 click & 4 click \\
+    \rowcolor{LighterBlue}
+    \custombold{MS05} & Versioni browser supportate & $\geq 80$\% & $\geq 100$\% \\
+    \rowcolor{LightBlue}
+    \custombold{MS06} & Versioni VSCode supportate & $\geq 80$\% & $\geq 100$\% \\
+    \rowcolor{LighterBlue}
+    \custombold{MS07} & Solidity Statement Coverage & $\geq 80$\% & $\geq 100$\% \\
+    \rowcolor{LightBlue}
+    \custombold{MS08} & Solidity Branche Coverage & $\geq 80$\% & $\geq 100$\% \\
+    \rowcolor{LighterBlue}
+    \custombold{MS09} & Solidity Function Coverage & $\geq 80$\% & $\geq 100$\% \\
+    \rowcolor{LightBlue}
+    \custombold{MS10} & Solidity Line Coverage & $\geq 80$\% & $\geq 100$\% \\
+\end{tabular}
+\end{center}
+\newpage
+
+
+\section{Test e specifiche}
+\subsection{Test di Unità}
+\subsection{Test di Integrazione}
+\subsection{Test di Sistema}
+\subsection{Test di Accettazione}
+\subsection{Test di Regressione}
+
+\section{Valutazioni per il miglioramento}
+In questo paragrafo cercheremo di analizzare le difficoltà che abbiamo avuto fino alla consegna e valutarne le rispettive soluzioni e miglioramenti adottati dal gruppo.
+\subsection{Valutazione sull'organizzazione}
+\begin{center}
+\begin{tabular}{P{10em} P{13em} P{4em} P{13em}} 
+    \rowcolor{Blue}
+    \custombold{Criticità} & \custombold{descrizione} & \custombold{gravità} &
+    \custombold{ Soluzione}\\
+    \rowcolor{LighterBlue}
+     & &  &  \\ 
+    \rowcolor{LightBlue}
+     & &  &  \\ 
+\end{tabular}
+\end{center}
+\subsection{Valutazione sugli strumenti utilizzati}
+\begin{center}
+\begin{tabular}{P{10em} P{13em} P{4em} P{13em}} 
+      \rowcolor{Blue}
+    \custombold{Criticità} & \custombold{descrizione} & \custombold{gravità} &
+    \custombold{ Soluzione}\\
+    \rowcolor{LighterBlue}
+     & &  &  \\ 
+    \rowcolor{LightBlue}
+     & &  &  \\ 
+\end{tabular}
+\end{center}
+\subsection{Valutazione sui ruoli}
+\begin{center}
+\begin{tabular}{P{10em} P{13em} P{4em} P{13em}} 
+  \rowcolor{Blue}
+    \custombold{Criticità} & \custombold{descrizione} & \custombold{gravità} &
+    \custombold{ Soluzione}\\
+    \rowcolor{LighterBlue}
+     & &  &  \\ 
+    \rowcolor{LightBlue}
+     & &  &  \\ 
+\end{tabular}
+\end{center}
+\end{document}
