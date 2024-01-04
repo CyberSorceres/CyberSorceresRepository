@@ -43,7 +43,7 @@
 \vspace{-3em}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
+  \includegraphics[width=6cm, height=6cm]{logo rotondo.png}
   \label{fig:immagine}
 \end{figure}
 
@@ -76,7 +76,10 @@ Registro dei Cambiamenti - Changelog
      0.0.1& 02/12/2023 & Sabrina Caniato & Samuele Vignotto& Definizione struttura del documento e scheletro delle sezioni. Scrittura introduzione ed obiettivi delle diverse sezioni.\\ 
      \rowcolor{LightBlue}
       0.2.0& 14/12/2023 & Giulia Dentone & Samuele Vignotto& Aggiunta dei riferimenti.\\ 
-     0.2.1& 30/12/2023 & Samuele Vignotto  & Sabrina Caniato & Aggiunta sezione "Qualità di prodotto"\\ 
+      \rowcolor{LighterBlue}
+     0.2.1& 30/12/2023 & Samuele Vignotto  & Sabrina Caniato & Aggiunta contenuto sezione "Qualità di prodotto"\\
+     \rowcolor{LightBlue}
+     0.2.2& 04/01/2024 & Samuele Vignotto & Giulia Dentone & Aggiunta contenuto sezione "Qualità di processo"\\
 \end{tabular}
 \end{center}
 \newpage
@@ -126,10 +129,92 @@ All'interno del documento saranno presenti termini specifici, indicati con una G
 
 \section{Qualità di processo}
 \subsection{Scopo ed obiettivi}
-La qualità è determinata univocamente dai processi che compongono un prodotto, misurata attraverso che permettano di valutare tali processi e accertarsi che siano conformi agli obiettivi di qualità previsti. Da mettere in atto è Ciclo PDCA (Plan - Do - Check- Act), che garantisce un miglioramento continuo nell’utilizzo dei processi e delle risorse tramite una prima fase di pianificazione, seguita da una verifica con le metriche previste e infine un'integrazione o correzione del prodotto in base ai risultati precedentemente ottenuti.
+La qualità è determinata univocamente dai processi che compongono un prodotto, misurata attraverso che permettano di valutare tali processi e accertarsi che siano conformi agli obiettivi di qualità previsti. Da mettere in atto è Ciclo PDCA (Plan - Do - Check- Act), che garantisce un miglioramento continuo nell’utilizzo dei processi e delle risorse tramite una prima fase di pianificazione, seguita da una verifica con le metriche previste e infine un'integrazione o correzione del prodotto in base ai risultati precedentemente ottenuti.\\
+\\
+\begin{tabular}{P{8em} P{20em} P{8em}}
+\rowcolor{Blue}
+ \custombold{Obiettivo} & \custombold{Descrizione} & \custombold{Metriche} \\
+ \hline
+ \rowcolor{LightBlue}
+ & \custombold{Processi primari} &\\
+ \hline
+ \rowcolor{LighterBlue}
+  \custombold{Fornitura} & Procedura che implica la selezione di metodologie e risorse adeguate per soddisfare le esigenze del cliente. & \custombold{MC01}, \custombold{MC02}, \custombold{MC03}, \custombold{MC04}, \custombold{MC05}, \custombold{MC06}, \custombold{MC07}\\
+\rowcolor{LightBlue}
+\custombold{Sviluppo} & Procedura volta a creare un prodotto software che risponda alle necessità del cliente. & \custombold{MC08} \\
+\hline
+\rowcolor{LighterBlue}
+& \custombold{Processi di supporto} &\\
+\hline
+\rowcolor{LightBlue}
+ \custombold{Verifica} & Procedura mirata a verificare che ogni servizio realizzato soddisfi i requisiti specificati. & \custombold{MC09} \\
+\rowcolor{LighterBlue}
+ \custombold{Gestione della} \custombold{qualità} & Procedura volta a garantire la conformità del prodotto e dei servizi offerti agli standard predefiniti. & \custombold{MC10} \\
+\hline
+\rowcolor{LightBlue}
+& \custombold{Processi organizzativi} &\\
+\hline
+\rowcolor{LighterBlue}
+ \custombold{Gestione} \custombold{organizzativa} & Procedura dedicata a delineare le modalità di coordinamento del team. & \custombold{MC11} \\
+\end{tabular}
+\newpage
 \subsection{Processi primari}
+\begin{tabular}{P{5em} P{18em} P{8em} P{8em}}
+\rowcolor{Blue}
+ \custombold{Codice} & \custombold{Nome metrica} & \custombold{Valore} \custombold{accettabile} & \custombold{Valore ottimale}\\
+ \hline
+\rowcolor{LightBlue}
+\multicolumn{4}{c}{\custombold{Fornitura}}\\
+\hline
+\rowcolor{LighterBlue}
+\custombold{MC01} & Earned Value (EV) & $>0$ & $\leq EAC$ \\
+\rowcolor{LightBlue}
+\custombold{MC02} & Actual Cost (AC) & $\geq0$ & $\leq EAC$ \\
+\rowcolor{LighterBlue}
+\custombold{MC03} & Planned Value (PV) & $\geq0$ & $\leq BAC$ \\
+\rowcolor{LightBlue}
+\custombold{MC04} & Cost Variance (CV) & $\geq-10\%$ & $\geq0\%$ \\
+\rowcolor{LighterBlue}
+\custombold{MC05} & Schedule Variance (SV) & $\geq-10\%$ & $\geq0\%$ \\
+\rowcolor{LightBlue}
+\custombold{MC06} & Estimated At Completion (EAC) & $\geq BAC-3\%$; $\leq BAC+3\%$ & $=BAC$ \\
+\rowcolor{LighterBlue}
+\custombold{MC07} & Estimate To Complete (ETC) & $\geq0$ & $\leq EAC$ \\
+\rowcolor{LightBlue}
+\hline
+\multicolumn{4}{c}{\custombold{Sviluppo}}\\
+\hline
+\rowcolor{LighterBlue}
+\custombold{MC08} & Requirements Stability Index (RSI) & $\geq80\%$ & $100\%$\\
+\end{tabular}
 \subsection{Processi di supporto}
-
+\begin{tabular}{P{5em} P{18em} P{8em} P{8em}}
+\rowcolor{Blue}
+ \custombold{Codice} & \custombold{Nome metrica} & \custombold{Valore} \custombold{accettabile} & \custombold{Valore ottimale}\\
+ \hline
+\rowcolor{LightBlue}
+\multicolumn{4}{c}{\custombold{Verifica}}\\
+\hline
+\rowcolor{LighterBlue}
+\custombold{MC09} & Passed Tests & $\geq80\%$ & $100\%$ \\
+\hline
+\rowcolor{LightBlue}
+\multicolumn{4}{c}{\custombold{Gestione della qualità}}\\
+\hline
+\rowcolor{LighterBlue}
+\custombold{MC10} & Metrics Satisfied & $\geq85\%$ & $100\%$ \\
+\end{tabular}
+\subsection{Processi organizzativi}
+\begin{tabular}{P{5em} P{18em} P{8em} P{8em}}
+\rowcolor{Blue}
+ \custombold{Codice} & \custombold{Nome metrica} & \custombold{Valore} \custombold{accettabile} & \custombold{Valore ottimale}\\
+ \hline
+\rowcolor{LightBlue}
+\multicolumn{4}{c}{\custombold{Gestione organizzativa}}\\
+\hline
+\rowcolor{LighterBlue}
+\custombold{MC11} & Risks Found & $\leq5$ & $0$ \\
+\end{tabular}
 \section{Qualità di prodotto}
 Per assicurare l'elevata qualità del prodotto, è stata adottata come base di riferimento la norma ISO/IEC 12207:1997. In questa sezione vengono presentati i valori ideali e quelli accettabili relativi alle metriche scelte dal team Cyber Sorceres. Per una visione dettagliata delle metriche indicate in seguito, si prega di fare riferimento al documento \textit{Norme di progetto}.
 \subsection{Obiettivi}
