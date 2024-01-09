@@ -1,17 +1,17 @@
 \documentclass{article}
+\providecommand{\versionnumber}{1.0.0}
 \usepackage[utf8]{inputenc}
 \usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
 \usepackage{titling}
+\usepackage{hyperref}
+\usepackage[italian]{babel}
 \geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{array}
-\usepackage[italian]{babel}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \renewcommand{\arraystretch}{1.5} % Default value: 1
 \setlength{\droptitle}{-6em}
-
-\providecommand{\versionnumber}{2.0.0}
 
 %font
 \usepackage[defaultfam,tabular,lining]{montserrat}
@@ -35,86 +35,304 @@
 \let\oldheadrule\headrule% Copy \headrule into \oldheadrule
 \renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
 \renewcommand{\headrulewidth}{0.2em}
-\fancyhead[L]{Prevetivo costi e assunzione impegni}
+\fancyhead[L]{Piano di progetto}
 \fancyhead[C]{}
-\fancyhead[R]{}
+\fancyhead[R]{versione \versionnumber}
 
-
-\title{\Huge{\textbf{Prevetivo costi e assunzione impegni}}\vspace{-1em}}
-
+\title{\Huge{\textbf{Piano di progetto}}\vspace{-1em}}
 \author{CyberSorcerers Team}
 \date{}
 \begin{document}
 \maketitle
-
 \vspace{-3em}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
+  \includegraphics[width=6cm, height=6cm]{logo rotondo.png}
   \label{fig:immagine}
 \end{figure}
 
-\vspace{6em}
+\vspace{3em}
 \large{
-
 \begin{center}
-    \begin{tabular}{l c c}
-        \rowcolor{Blue} 
-        Informazioni sul documento & &\\ [1 ex]
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Membri del team:}\\
         \rowcolor{LighterBlue}
-        Redattori: & Sabrina Caniato & \\ [1 ex]
+        \custombold{Sabrina Caniato}\\
         \rowcolor{LightBlue}
-        Verificatore: &  Nicola Lazzarin & \\ [1 ex]
+        \custombold{Giulia Dentone}\\
         \rowcolor{LighterBlue}
-        Destinatari: & Prf. Tullio Vardanega & Prf. Riccardo Cardin\\ [1 ex]
-
-
+        \custombold{Nicola Lazzarin}\\
+        \rowcolor{LightBlue}
+        \custombold{Giovanni Moretti}\\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}\\
     \end{tabular}
 \end{center}}
+\textbf{Registro dei Cambiamenti - Changelog}
+\begin{center}
+\begin{tabular}{P{5em} P{5em} P{8em} P{8em} P{10em}} 
+  \rowcolor{Blue}
+    \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
+    \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LighterBlue}
+     0.0.1& 14/12/2023 & Giulia Dentone & Samuele Vignotto & Definizione dell'obiettivo di prodotto, dei riferimenti e introduzione alla pianificazione.\\ 
+    \rowcolor{LightBlue}
+     & &  &  &\\ 
+\end{tabular}
+\end{center}
+
+\tableofcontents
 \newpage
+\section{Introduzione}
+\subsection{Scopo del documento}
+Lo scopo del documento è quello di normare il processo di sviluppo del progetto, in tempi e modalità. In particolare viene effettuata un'analisi dei rischi, e delle relative azioni e modalità che verranno adottate per mitigarli. il documento viene redatto con un approccio incrementale, al fine di poter implementare modifiche concordate dal gruppo o dal proponente.
 
-\section{Dichiarazione impegni}
+\subsection{Obiettivo del prodotto}
+Prima di poter procedere all'analisi dei rischi, è necessario identificare chiaramente l'obiettivo del prodotto: la creazione di una web app che, tramite l’uso di IA\textsubscript{G}(ChatGPT4 e Bedrock) crei, a partire dalle richieste del cliente, epic user stories\textsubscript{G} e confrontarle con il codice sviluppato. Il fine è quello di informare il cliente dello stato di avanzamento dello sviluppo del prodotto e rendere possibile al Project Manager\textsubscript{G} e al cliente rilasciare dei
+feedback (riguardanti, in base all'utente utilizzatore, l'adeguatezza delle stories\textsubscript{G} o il prodotto finale) al fine di migliorare l’IA\textsubscript{G}. In ultimo è richiesto un confronto tra le IA\textsubscript{G} utilizzate e lo sviluppo di un plugin utile agli sviluppatori e al Project Manager\textsubscript{G}.
 
-\subsection{Totale ore produttive assegnate}
-La tabella seguente illustra la suddivisione delle ore per ciascun membro del gruppo:\\ \\
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\rowcolor{LightBlue}
-Ruolo & Costo orario & Ore per ruolo & Ore per membro & Costo totale \\
-\hline
-\hline
-\rowcolor{LighterBlue}
-Responsabile & 30 & 72 & 12 & 2160 \\
-Amministratore & 20 & 72 & 12 & 1440 \\
-\rowcolor{LighterBlue}
+\subsection{Glossario}
+I termini impiegati in questo testo potrebbero suscitare incertezze circa il loro significato, rendendo quindi necessaria una definizione per evitare ambiguità. Tali termini sono identificati da una lettera "G" maiuscola posta in pedice alla parola, ela loro spiegazione è fornita nel Glossario v1.0.0.
 
-Analista & 25 & 108 & 18 & 2700 \\
-Progettista & 25 & 102 & 17 & 2550 \\
-\rowcolor{LighterBlue}
-
-Programmatore & 15 & 126 & 21 & 1890 \\
-Verificatore & 15 & 90 & 15 & 1350 \\
-\hline
-\hline
-\rowcolor{LightBlue}
-Totale &  & 570 & 95 & 12090 \\
-\hline
-\end{tabular} 
-\\ \\ \\ Le ore assegnate per ciascun ruolo sono state distribuite in modo equo tra i membri del gruppo. \\
+\subsection{Riferimenti}
+\textbf{Riferimenti normativi}
 \begin{itemize}
-  \item Il Responsabile risulta essere una figura fondamentale e di riferimento che servirà per tutto periodo del progetto. Ciò aiuta a garantire che ognuno svolga il proprio lavore nei tempi previsti.
-  \item L'Analista e il Progettista ci serviranno per gran parte del progetto dato che l'analisi dei requisiti e il design sono punti chiavi per ottenere migliori risultati al momento dell'implementazione del codice.
-  \item Il Programmatore sarà i ruolo principale avendo come obiettivo del lavoro implementare un software
-  \item Il Verificatore dovrà vagliare tutte le ultime versioni dei documenti o delle parti di codice, indicando se soddisfano i requisiti richiesti.
+        \item \href{https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C7.pdf}{C7.pdf}
+        \item{Norme di progetto}
+\end{itemize}
+\textbf{Riferimenti informativi}
+\begin{itemize}
+        \item Argomento T2 - Processi di ciclo di vita
+        \item Argomento T4 - Gestione di progetto
 \end{itemize}
 
+\section{Analisi dei rischi}
+Questa sezione si occupa di analizzare le difficoltà riscontrabili dal proponente ed evitare problemi che possono intercorrere tra lo stato di avanzamento e il completamento del progetto. Analizzeremo dunque ciascun rischio, descivendolo e giudicando il suo grado di rischio, pericolosità, precauzione e le misure di mitigazione adottate. Il fine è quello di permettere una loro facile identificazione e un continuo monitoraggio. Abbiamo deciso di suddividerli secondo tre differenti categorie:le difficoltà personali, le difficoltà organizzative interne ed esterne e le difficoltà tecnologiche/software.
 
-\subsection{Preventivo dei costi finali}
-Il costo finale del progetto ammonta a 12090 €, in base alla tabella mostrata sopra.
+\subsection{Rischi organizzativi}
+\subsubsection{Comunicazione interna}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LighterBlue}
+     Descrizione & Mancata reperibilità sincrona dei membri del gruppo, data da eventuali impegni personali\\ 
+    \rowcolor{LightBlue}
+    Occorrenza & Media\\
+    \rowcolor{LighterBlue}
+    Pericolosità & Alta \\
+    \rowcolor{LightBlue}
+    Precauzioni & Ogni membro del gruppo comunica vocalmente i propri impegni straordinari della settimana ad ogni riunione interna \\
+    \rowcolor{LighterBlue}
+    Misure di contenimento & Ogni membro del gruppo compilerà un documento Drive interno  con i suoi impegni fissi o inderogabili \\
+\end{tabular}
+\end{center}
 
-\subsection{Scadenza ultima di consegna prevista}
-Il gruppo si impegna a consegnare il prodotto finito relativo al capitolato "ChatGPT vs BedRock developer Analysis" proposto dall'azienda Zero12 entro il \custombold{ 7 Aprile 2024}.\\
-Per stimare questa data abbiamo considerato le 20 settimane consigliate per gruppi a disponibilità alta, lasciandoci un piccolo margine derivante da piccole problematiche o criticità che si potranno presentare. 
+\subsubsection{Comunicazione esterna}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LighterBlue}
+     Descrizione & Difficoltà nella comunicazione repentina con l'azienda\\ 
+    \rowcolor{LightBlue}
+    Occorrenza & Bassa\\
+    \rowcolor{LighterBlue}
+    Pericolosità & Alta \\
+    \rowcolor{LightBlue}
+    Precauzioni & Richiedere al cliente il modo più semplice e celere di ottenere una sua risposta \\
+    \rowcolor{LighterBlue}
+    Misure di contenimento & Creazione di un canale Slack attivo\\
+\end{tabular}
+\end{center}
+
+\subsubsection{Mancata esperienza professionale}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LighterBlue}
+     Descrizione & Gran parte dei i membri del gruppo non ha esperienze significative in ambito di sviluppo o professionali\\ 
+    \rowcolor{LightBlue}
+    Occorrenza & Alta\\
+    \rowcolor{LighterBlue}
+    Pericolosità & Media \\
+    \rowcolor{LightBlue}
+    Precauzioni & Ogni membro deve essere trasparente nel comunicare le sue competenze \\
+    \rowcolor{LighterBlue}
+    Misure di contenimento & Domandare e chiarire in corso d'opera al docente eventuali perplessità e dubbi ed effettuare sedute di formazione con il cliente (facente parte del settore)Il cliente potrebbe richiedere delle modifiche in corso d'opera dei requisiti 
+ \\
+\end{tabular}
+\end{center}
+
+\subsubsection{Modifiche in corso d'opera}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LighterBlue}
+     Descrizione & Il cliente potrebbe richiedere delle modifiche in corso d'opera dei requisiti\\ 
+    \rowcolor{LightBlue}
+    Occorrenza & Bassa\\
+    \rowcolor{LighterBlue}
+    Pericolosità & Alta \\
+    \rowcolor{LightBlue}
+    Precauzioni & Il gruppo di impegna ad essere trasparente e a comunicare molto con il cliente \\
+    \rowcolor{LighterBlue}
+    Misure di contenimento & Tramite il canale Slack prestabilito il gruppo comunicherà al cliente in tempo reale ad ogni conclusione di un obiettivo prestabilito \\
+\end{tabular}
+\end{center}
+
+\subsection{Rischi tecnologici}
+\subsubsection{Strumenti software}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LighterBlue}
+     Descrizione & Il gruppo non ha esperienza con strumenti software di tracciamento e gestione di un progetto\\ 
+    \rowcolor{LightBlue}
+    Occorrenza & Bassa\\
+    \rowcolor{LighterBlue}
+    Pericolosità & Media \\
+    \rowcolor{LightBlue}
+    Precauzioni & Ogni membro comunica eventuali difficoltà e riceve aiuto da parte di membri più esperti \\
+    \rowcolor{LighterBlue}
+    Misure di contenimento & Scegliere i software più conosciuti, affidabili, intuitivi e meglio documentati \\
+\end{tabular}
+\end{center}
+
+\subsubsection{Esperienza tecnologica dei membri}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LighterBlue}
+     Descrizione & La maggior parte dei i membri del gruppo partecipano per la prima volta allo svolgimento di un progetto complesso \\ 
+    \rowcolor{LightBlue}
+    Occorrenza & Media\\
+    \rowcolor{LighterBlue}
+    Pericolosità & Media \\
+    \rowcolor{LightBlue}
+    Precauzioni & I membri comunicheranno vicendevolmente le proprie lacune\\
+    \rowcolor{LighterBlue}
+    Misure di contenimento & I membri si impegnano a colmare le proprie lacune attraverso lo studio e la pratica \\
+\end{tabular}
+\end{center}
+
+\section{Pianificazione}
+Il team ha deciso di utilizzare il modello agile\textsubscript{G}, in modo tale da avere rilasci continui e un incremento continuo del prodotto e delle sue funzionalità. Grazie al modello agile\textsubscript{G} riscontriamo una serie di vantaggi:
+\begin{itemize}
+    \item La possibilità di veriare i propri obiettivi qualora si individuassero problemi organizzativi o temporali;
+    \item La più semplice individuazione degli errori, in virtù della fase di incrementi realizzata fino a quel momento;
+    \item Facilita la fase di test\textsubscript{G}, grazie all’individuazione temporale operata.
+    \item Consente di avere documentazione che si sviluppa parallelamente al progetto, scritta in maniera collaborativa e adattabile alle esigenze correnti, poichè dilazionata nel tempo.
+\end{itemize}
+
+La pianificazione è conseguente a due principali fasi, ciascuna terminante con una revisione. Le fasi sono le seguenti:
+\begin{itemize}
+    \item RTB (Requirements and Technology Baseline)
+    \item PB (Product Baseline)
+\end{itemize}
+Per rispettare al meglio la pianificazione concordata dunque, tutte le  attività rimangono verificabili tramite l’utilizzo di baseline\textsubscript{G} e comprovato dall’utilizzo di milestone all'interno della Repository\textsubscript{G}.
+\subsection{Modalità}
+
+
+
+
+\subsection{Periodi}
+\subsubsection{RTB}
+\subsubsection{PB}
+
+\section{Preventivo}
+\subsection{Riepilogo economico e delle ore totale}
+\subsection{Riepilogo economico e delle ore parziale - RTB}
+\subsection{Riepilogo economico e delle ore parziale - PB}
+
+\section{Consuntivo}
+\subsection{Periodo RTB}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LighterBlue}
+     Resoconto &  \\ 
+    \rowcolor{LightBlue}
+    Difficoltà & \\
+    \rowcolor{LighterBlue}
+    Mitigazione dei rischi &  \\
+\end{tabular}
+\end{center}
+\subsection{Periodo PB}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LighterBlue}
+     Resoconto &  \\ 
+    \rowcolor{LightBlue}
+    Difficoltà & \\
+    \rowcolor{LighterBlue}
+    Mitigazione dei rischi &  \\
+\end{tabular}
+\end{center}
+
+\section{Mitigazione dei rischi}
+
+\subsection{Rischi organizzativi interni}
+
+\subsubsection{Assegnazione dei ruoli}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LightBlue}
+     Descrizione &  A causa della mancata esperienza del gruppo non siamo stati in grado di stimare correttamente il numero di ore necessario alla progettazione e allo sviluppo\\ 
+    \rowcolor{LighterBlue}
+    Mitigazione dei rischi &  Abbiamo approfondito il ruolo di goni singola figura in modo da assegare i ruoli coerentemente alle necessità\\
+\end{tabular}
+\end{center}
+
+\subsubsection{Impegni accademici}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LightBlue}
+     Descrizione & Abbiamo riscontato difficoltà nell'essere tutti contemporaneamente presenti a causa delle sessioni di esame o tirocinio. Inoltre abbiamo incontrato divese necessità accademiche per quanto riguarda le tempistiche di consegna \\ 
+    \rowcolor{LighterBlue}
+    Mitigazione dei rischi & Abbiamo distruibuito equamente le attività in modo tale che il monte ore e l'impegno fosse coerente con quanto specificato nel Preventivo e nel Consuntivo  \\
+\end{tabular}
+\end{center}
+
+\subsubsection{Scarsa velocità da parte del cliente}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LightBlue}
+     Descrizione & Abbiamo riscontato difficoltà nell'ottenere rapidamente gli stumenti necessari al gruppo soprattutto nella fase di sviluppo \\ 
+    \rowcolor{LighterBlue}
+    Mitigazione dei rischi & Abbiamo sollecitato il proponente durante un meeting esterno e abbiamo rafforzato i canali di comunicazione \\
+\end{tabular}
+\end{center}
+
+\subsection{Rischi organizzativi esterni}
+\subsubsection{Scadenze}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LightBlue}
+     Descrizione & Rispettare le scadenze prefissate dal gruppo è risultato più difficile del previsto poichè, a causa dell'inesperienza, non ci si aspettava un simile carico di lavoro \\ 
+    \rowcolor{LighterBlue}
+    Mitigazione dei rischi &  Abbiamo pianificato dettagliatamente l'avanzamento del progetto, prefissandoci Milestione più "relistiche", aumentandone il numero ma diminuendone la portata. Inoltre tutte le attività svolte sono state monitorate dal responsabile che interveniva celermente qualora necessario\\
+\end{tabular}
+\end{center}
+
+\subsubsection{Aumento dei costi}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LightBlue}
+     Descrizione &  Si potrebbero verificare degli aumenti dei costi di implementazione, a causa di eventuali richieste aggiuntive da parte del proponente o dati dall'inesperienza del gruppo nell'uso delle tecnologie richieste\\ 
+    \rowcolor{LighterBlue}
+    Mitigazione dei rischi &  Abbiamo monitorato costantemente i costi del progetto e abbiamo richiesto degi incontri di formazione al proponente in modo tale da indirizzarci alle librerie a loro più vantaggiose in termini di costi e vantaggi\\
+\end{tabular}
+\end{center}
+
+
+\subsection{Rischi tecnologici}
+
+
+\subsubsection{Tecnologie}\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LighterBlue}
+     Descrizione & Gli strumenti necessari per una buona realizzazione del progetto sono in larga parte mai stati utilizzati precedentemente da parte dei membri del gruppo, tantomeno vi è esperienza nell'integrazione delle le varie tecnologie\\ 
+    \rowcolor{LighterBlue}
+    Mitigazione dei rischi & Il gruppo si è impegnato in uno studio autonomo degli strumenti, approfondito tramite l'utilizzo di questi ultimi anche nei Proof of Concept. Per l'integrazione si è deciso di focalizzarsi sull'integrazione delle tecnologie a partire dalle prime fasi del progetto\\
+\end{tabular}
+\end{center}
+
+
 
 
 \end{document}
