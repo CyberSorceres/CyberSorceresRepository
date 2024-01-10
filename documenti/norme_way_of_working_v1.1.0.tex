@@ -5,12 +5,14 @@
 \geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
 \usepackage{graphicx}
 \usepackage{enumitem}
+\providecommand{\versionnumber}{1.0.0}
 \usepackage{hyperref}
 \usepackage{array}
 \usepackage{hyperref}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \renewcommand{\arraystretch}{1.5} % Default value: 1
 \setlength{\droptitle}{-6em}
+
 
 
 %font
@@ -35,8 +37,9 @@
 \let\oldheadrule\headrule% Copy \headrule into \oldheadrule
 \renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
 \renewcommand{\headrulewidth}{0.2em}
-\fancyhead[L]{Norme di progetto}
-\fancyhead[C]{}
+\fancyhead[L]{Norme del Way of Working}
+\fancyhead[C]{Cybersorceres}
+\fancyhead[R]{versione \versionnumber}
 
 \title{\Huge{\textbf{Norme di progetto}}\vspace{-1em}}
 \author{CyberSorcerers Team}
@@ -144,7 +147,7 @@ I termini impiegati in questo testo potrebbero suscitare incertezze circa il lor
 In questa sezione sono indicati tutti i parametri, gli strumenti e i documenti impiegati per portare a termine il processo di fornitura.
 
 \subsubsection{Aspettative}
-Le aspettative relative all'implementazione del processo di fornitura comprenadono:
+Le aspettative relative all'implementazione del processo di fornitura comprendono:
 \begin{itemize}
     \item Ottenere una struttura documentale chiara;
     \item Definire i tempi di lavoro;
@@ -170,10 +173,10 @@ Il processo di fornitura identifica ogni compito, attività e risorsa necessaria
 Il team di sviluppo ha concordato con il proponente di mantenere un contratto regolare per monitorare l'andamento positivo del progetto. Questo viene realizzato attraverso incontri periodici organizzati e un costante scambio asincrono tramite un canale dedicato sulla piattaforma Slack. Il team di sviluppo mira a mantenere un contatto costante con il proponente per discutere i seguenti argomenti:
 \begin{itemize}
     \item Vincoli e requisiti obbligatori.
-    \item Feedback riguardante le teconologie utilizzate;
+    \item Feedback riguardante le tecnologie utilizzate;
     \item Valutazione delle soluzioni innovative proposte dal team di sviluppo;
     \item Chiarimenti su eventuali dubbi;
-    \item Feedback rigurdante la documentazione redatta;
+    \item Feedback riguardante la documentazione redatta;
     \item Stima dei costi;
 \end{itemize}
 
@@ -188,7 +191,7 @@ Di seguito vengono indicati gli strumenti utilizzati dal team per la realizzazio
 
 \section{Norme}
 \subsection{Gestione dell'ITS e delle task}
-Per il progetto verrà utilizzato l'\textit{issue tracking sistem} di Github. Le task\textsubscript{G} vengono decise e assegnate durante le riunioni interne. Oltre al responsabile della task\textsubscript{G}, al quale viene assegnata tramite l'apposita \textit{feature}, viene segnato nella prima riga della descrizione il verificatore.\\
+Per il progetto verrà utilizzato l'\textit{issue tracking system} di Github. Le task\textsubscript{G} vengono decise e assegnate durante le riunioni interne. Oltre al responsabile della task\textsubscript{G}, al quale viene assegnata tramite l'apposita \textit{feature}, viene segnato nella prima riga della descrizione il verificatore.\\
 Quando la task\textsubscript{G} è completata, viene creata una \textit{pull-request}, che andrà approvata dal verificatore.\\
 Lo stato degli \textit{issues} è tracciato in un \textit{project} di Github.
 
@@ -211,7 +214,7 @@ Ad ogni incontro viene fissata la data del successivo.
 
 \section{Processi organizzativi}
 \subsection{Formazione}
-Il processo di formazione è di fondamentale importanza per garantire che tutti i membri del team acquisiscano le competenze necessarie per svolgere con successo le attività previste dal progetto. La formazione include sessioni di apprendimento relative agli strumenti utilizzati, alle tecnologie adottate e ai processi implementati. L'obiettivo è assicurare una conoscenza approfondita e uniforme all'interno del team. Di seguito, alcune documentazioni utilizzate per la fromazione:
+Il processo di formazione è di fondamentale importanza per garantire che tutti i membri del team acquisiscano le competenze necessarie per svolgere con successo le attività previste dal progetto. La formazione include sessioni di apprendimento relative agli strumenti utilizzati, alle tecnologie adottate e ai processi implementati. L'obiettivo è assicurare una conoscenza approfondita e uniforme all'interno del team. Di seguito, alcune documentazioni utilizzate per la formazione:
 \begin{itemize}
     \item GitHub \href{https://docs.github.com/}{https://docs.github.com/}
     \item Jira \href{https://confluence.atlassian.com/jira}{https://confluence.atlassian.com/jira}
@@ -223,7 +226,7 @@ Il processo di formazione è di fondamentale importanza per garantire che tutti 
 L'utilizzo delle infrastrutture interne,è cruciale per mantenere un ambiente di lavoro organizzato ed efficiente. Il team sfrutta a pieno queste risorse per tracciare lo stato delle attività, gestire le modifiche al codice e facilitare la collaborazione tra i membri. Gli strumenti utilizzati sono i seguenti:
 \begin{itemize}
     \item Github: issue tracking system largamente utilizzato, affidabile e intuitivo
-    \item Telegram: comunicare velocememnte tra membri tramite chat
+    \item Telegram: comunicare velocemente tra membri tramite chat
     \item Google Meet: per videochiamarci e fare riunioni interne ed esterne da remoto, evitando l'ostacolo della distanza tra i membri
     \item Slack: comunicare rapidamente col proponente
     \item Google Calendar: segnare le milestone e gli obiettivi principali, oltre alle riunioni
@@ -266,6 +269,7 @@ La gestione della configurazione è essenziale per tracciare e controllare le mo
     \item All'interno della Repository\textsubscript{G} è presente una cartella "documenti" contenente i documenti versionati del progetto
     \item All'interno della cartella "documenti" è presente una cartella "verbali" con al suo interno i verbali, interni caricati nel formato tex ed esterni in formato pdf
     \item per il Proof of Concept\textsubscript{G} (PoC), è stato creato un repository separato, contenente tutti i file sorgente relativi al PoC\textsubscript{G} che sarà consegnato in occasione della prima revisione RTB.
+
 \end{itemize}
 
 \subsection{Norme di utilizzo per la repository}
@@ -279,7 +283,7 @@ Di seguito descriviamo le norme poste per il mantenimento dell'ordine della Repo
 
 
 \subsection{Documentazione}
-La documentazione è un pilastro fondamentale del processo. Tutti i documenti sono gestiti in modo rigoroso, versionati e archiviati. La struttura documentale, definita nel piano di progetto, è regolarmente aggiornata per riflettere le modifiche apportate durante lo sviluppo del progetto. La documentazione serve come riferimento chiave per tutti i membri del team e per gli stakeholder\textsubscript{G} interessati. I documenti prodotti dal gruppo possono essere divisi in due categorie: formali e infomali.
+La documentazione è un pilastro fondamentale del processo. Tutti i documenti sono gestiti in modo rigoroso, versionati e archiviati. La struttura documentale, definita nel piano di progetto, è regolarmente aggiornata per riflettere le modifiche apportate durante lo sviluppo del progetto. La documentazione serve come riferimento chiave per tutti i membri del team e per gli stakeholder\textsubscript{G} interessati. I documenti prodotti dal gruppo possono essere divisi in due categorie: formali e informali.
 
 \subsubsection{Documenti informali}
 I documenti informali hanno lo scopo di essere di facile utilizzo e manutenzione ma non sono documenti ufficiali. Si parla quindi di documenti che non ancora stati approvati dal responsabile del progetto, bozze, appunti e documenti che non necessitano di versionamento. Come team abbiamo deciso di usufruire di Google Drive, piattaforma che ci permette di comunicare sincronicamente. Il team lo ha utilizzato ad esempio per la creazione di tabelle dove ogni membro avrebbe potuto aggiornare il monte ore svolto per quel ruolo, o comunicare agli altri membri i propri impegni settimanali e facilitare la struttura organizzativa interna. Gli strumenti utilizzati per questo tipo di documenti sono:
@@ -355,7 +359,14 @@ I verbali esterni vengono redatti da un membro del gruppo presente alla riunione
 \subsubsection*{Nome dei documenti}
 Ogni documento viene nominato tramite una convezione decisa dal gruppo. I nomi dei documenti è in carattere interamente minuscolo, ogni parola suddivisa da un underscore e successivamente il versionamento, fatta eccezione dei verbali in cui al posto del versionamento è presente la data dell'incontro in forma "giorno"\_"mese"\_"anno".
 \subsubsection*{Prima pagina}
-La prima pagina dei documenti presenterà sempre il nome del documento, il nome del team e il logo scelto. Successivamente sarà presente una tabella con i nomi dei membri del gruppo e una tabella con informazioni riguardanti il documento (come i suoi destinatari). Sarà poi presente un Changelog\textsubscript{G} con il verionamento del file relativo alla modifica messa in atto, oltre al suo autore, verificatore, una breve spiegazione della modifica e la data in cui questa è stata messa in atto.
+\begin{itemize}
+    \item Presenterà sempre il nome del documento, il nome del team e il logo scelto
+    \item Tabella con i nomi dei membri del gruppo e una tabella con informazioni riguardanti il documento (come i suoi destinatari).
+    \item Sarà poi presente un Changelog\textsubscript{G} con il verionamento del file relativo alla modifica messa in atto, oltre al suo autore, verificatore, una breve spiegazione della modifica e la data in cui questa è stata messa in atto.
+\end{itemize}
+
+\subsection{Header}
+Sarà presente in ogni documento un header contenente il nome del documento, il nome del team e il versionamento.
 \subsubsection*{Versionamento}
 Ogni documento che non sia un verbale viene versionato secondo la norma sopra citata (vedi sezione 3.3). Vengono versionati tutti i documenti fatta eccezione, per loro natura, dei verbali interni ed esterni.
 \subsubsection*{Indici}
@@ -382,7 +393,7 @@ Il Glossario è un documento dove sono presenti tutte le definizioni delle parol
     \item Le parole contenute nel Glossario sono presenti nei documenti e sono, per ogni loro occorrenza, indicate con una "G" al pedice.
     \item Il team ha deciso di escludere dal glossario le parole contenute nei titoli delle sezioni e nelle didascalie delle immagini, poichè già certamente presenti all'interno del testo dei documenti. 
     \item Il Glossario viene aggiornato sulla piattaforma Overleaf da ogni membro ogni qualvolta viene compilata una sezione testuale, in modo tale che l'aggiunta dei termini sia costante e completa. 
-    \item Prima di aggiungere una parola nel Glossario ogni membro più velocemente verificare se la parola è già presente all suo interno tramite la legenda.
+    \item Prima di aggiungere una parola nel Glossario ogni membro più velocemente verificare se la parola è già presente al suo interno tramite la legenda.
 \end{itemize}  
 
 \subsection{Verbali}
