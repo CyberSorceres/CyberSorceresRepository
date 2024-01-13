@@ -9,6 +9,7 @@
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{array}
+\usepackage{eurosym}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \renewcommand{\arraystretch}{1.5} % Default value: 1
 \setlength{\droptitle}{-6em}
@@ -80,6 +81,7 @@
     \rowcolor{LighterBlue}
      0.0.1& 14/12/2023 & Giulia Dentone & Samuele Vignotto & Definizione dell'obiettivo di prodotto, dei riferimenti e introduzione alla pianificazione.\\ 
     \rowcolor{LightBlue}
+    0.0.2& 13/01/2024 & Samuele Vignotto & Giulia Dentone & Modifica e aggiunta contenuto alla sezione del preventivo.\\
      & &  &  &\\ 
 \end{tabular}
 \end{center}
@@ -236,9 +238,404 @@ Per rispettare al meglio la pianificazione concordata dunque, tutte le  attivit�
 \subsubsection{PB}
 
 \section{Preventivo}
+Ogni membro del gruppo può assumere più di un ruolo, sia contemporaneamente che in fasi diverse del progetto, a condizione che non vi sia un conflitto di interessi tra i ruoli assunti. La divisione del lavoro che sarà illustrata di seguito assicurerà una distribuzione equa del carico di lavoro individuale e dei vari ruoli.\\
+\\
+Nelle tabelle saranno impiegate abbreviazioni per indicare i nomi dei ruoli, secondo quanto specificato nella seguente tabella:
+\begin{center}
+    \begin{tabular}{c|c}
+    \rowcolor{Blue}
+    \custombold{Ruolo} & \custombold{Abbreviazione}\\
+    \rowcolor{LighterBlue}
+    \custombold{Responsabile} & Re\\
+    \rowcolor{LightBlue}
+    \custombold{Amministratore} & Am\\
+    \rowcolor{LighterBlue}
+    \custombold{Analista} & An\\
+    \rowcolor{LightBlue}
+    \custombold{Progettista} & Pt\\
+    \rowcolor{LighterBlue}
+    \custombold{Programmatore} & Pr\\
+    \rowcolor{LightBlue}
+    \custombold{Verificatore} & Ve\\
+    \end{tabular}
+\end{center}
+\subsection{Riepilogo economico e delle ore - Periodo Analisi}
+Durante il periodo di Analisi, ciascun membro assumerà i ruoli secondo la seguente distribuzione:\\
+\\
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\rowcolor{Blue}
+\custombold{Nominativo} & \custombold{Re} & \custombold{Am} & \custombold{An} & \custombold{Pt} & \custombold{Pr} & \custombold{Ve} & \custombold{Ore Totali}\\
+\hline
+\rowcolor{LighterBlue}
+Sabrina Caniato & 9 & 0 & 14 & 0 & 0 & 5 & 28\\
+\rowcolor{LightBlue}
+Giulia Dentone & 0 & 12 & 13 & 0 & 0 & 5 & 30\\
+\rowcolor{LighterBlue}
+Nicola Lazzarin & 0 & 12 & 14 & 0 & 0 & 5 & 31\\
+\rowcolor{LightBlue}
+Giovanni Moretti & 12 & 0 & 15 & 0 & 0 & 5 & 32\\
+\rowcolor{LighterBlue}
+Andrea Rezzi & 8 & 0 & 14 & 0 & 0 & 5 & 27\\
+\rowcolor{LightBlue}
+Samuele Vignotto & 0 & 12 & 11 & 0 & 0 & 5 & 28\\
+\rowcolor{LighterBlue}
+\custombold{Ore totali} & 29 & 36 & 81 & 0 & 0 & 30 & 176\\
+\end{tabular}
+\end{center}
+
+\includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Analisi.jpg}
+\begin{center}
+    \custombold{Figura 1}: Grafico divisione ore lavorative periodo di Analisi.\\
+\end{center}
+\newpage
+In questo periodo i costi da affrontare sono:
+\begin{center}
+    \begin{tabular}{c|c|c}
+    \rowcolor{Blue}
+    \custombold{Ruolo} & \custombold{Ore} & \custombold{Costo \euro}\\
+    \rowcolor{LighterBlue}
+    Responsabile & 29 & 870\\
+    \rowcolor{LightBlue}
+    Amministratore & 36 & 720\\
+    \rowcolor{LighterBlue}
+    Analista & 81 & 2025\\
+    \rowcolor{LightBlue}
+    Progettista & 0 & 0\\
+    \rowcolor{LighterBlue}
+    Programmatore & 0 & 0\\
+    \rowcolor{LightBlue}
+    Verificatore & 30 & 450\\
+    \rowcolor{LighterBlue}
+    \custombold{Totale} & \custombold{176} & \custombold{4065}\\
+    \end{tabular}
+\end{center}
+\begin{center}
+    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Analisi.jpg}
+\end{center}
+\begin{center}
+    \custombold{Figura 2}: grafico della divisione percentuale dei costi sostenuti nel periodo di Analisi.
+\end{center}
+\newpage
+
+\subsection{Riepilogo economico e delle ore parziale - Periodo Progettazione Technology Baseline\textsubscript{G}}
+Durante il periodo di Progettazione Technology Baseline\textsubscript{G}, ciascun membro assumerà i ruoli secondo la seguente distribuzione:\\
+\\
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\rowcolor{Blue}
+\custombold{Nominativo} & \custombold{Re} & \custombold{Am} & \custombold{An} & \custombold{Pt} & \custombold{Pr} & \custombold{Ve} & \custombold{Ore Totali}\\
+\hline
+\rowcolor{LighterBlue}
+Sabrina Caniato & 0 & 0 & 4 & 11 & 0 & 2 & 17\\
+\rowcolor{LightBlue}
+Giulia Dentone & 0 & 0 & 3 & 5 & 0 & 2 & 10\\
+\rowcolor{LighterBlue}
+Nicola Lazzarin & 0 & 0 & 4 & 6 & 0 & 2 & 12\\
+\rowcolor{LightBlue}
+Giovanni Moretti & 0 & 3 & 1 & 4 & 0 & 2 & 10\\
+\rowcolor{LighterBlue}
+Andrea Rezzi & 0 & 8 & 4 & 3 & 0 & 2 & 17\\
+\rowcolor{LightBlue}
+Samuele Vignotto & 12 & 0 & 0 & 2 & 0 & 2 & 16\\
+\rowcolor{LighterBlue}
+\custombold{Ore totali} & 12 & 11 & 16 & 31 & 0 & 12 & 82\\
+\end{tabular}
+\end{center}
+
+\includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Progettazione_Technology_Baseline.jpg}
+\begin{center}
+    \custombold{Figura 3}: Grafico divisione ore lavorative periodo di Progettazione Techonology Baseline\textsubscript{G}.\\
+\end{center}
+\newpage
+In questo periodo i costi da affrontare sono:
+\begin{center}
+    \begin{tabular}{c|c|c}
+    \rowcolor{Blue}
+    \custombold{Ruolo} & \custombold{Ore} & \custombold{Costo \euro}\\
+    \rowcolor{LighterBlue}
+    Responsabile & 12 & 360\\
+    \rowcolor{LightBlue}
+    Amministratore & 11 & 220\\
+    \rowcolor{LighterBlue}
+    Analista & 16 & 400\\
+    \rowcolor{LightBlue}
+    Progettista & 31 & 775\\
+    \rowcolor{LighterBlue}
+    Programmatore & 0 & 0\\
+    \rowcolor{LightBlue}
+    Verificatore & 12 & 180\\
+    \rowcolor{LighterBlue}
+    \custombold{Totale} & \custombold{82} & \custombold{1935}\\
+    \end{tabular}
+\end{center}
+\begin{center}
+    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Progettazione_Technology_Baseline.jpg}
+\end{center}
+\begin{center}
+    \custombold{Figura 4}: grafico della divisione percentuale dei costi sostenuti nel periodo di Progettazione Technology Baseline\textsubscript{G}.
+\end{center}
+\newpage
+
+\subsection{Riepilogo economico e delle ore parziale - Periodo Sviluppo Proof of Concept\textsubscript{G}}
+Durante il periodo di Sviluppo Proof of Concept\textsubscript{G}, ciascun membro assumerà i ruoli secondo la seguente distribuzione:\\
+\\
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\rowcolor{Blue}
+\custombold{Nominativo} & \custombold{Re} & \custombold{Am} & \custombold{An} & \custombold{Pt} & \custombold{Pr} & \custombold{Ve} & \custombold{Ore Totali}\\
+\hline
+\rowcolor{LighterBlue}
+Sabrina Caniato & 0 & 0 & 0 & 4 & 6 & 2 & 12\\
+\rowcolor{LightBlue}
+Giulia Dentone & 12 & 0 & 0 & 2 & 5 & 2 & 21\\
+\rowcolor{LighterBlue}
+Nicola Lazzarin & 0 & 0 & 0 & 4 & 9 & 2 & 15\\
+\rowcolor{LightBlue}
+Giovanni Moretti & 0 & 5 & 0 & 3 & 7 & 2 & 17\\
+\rowcolor{LighterBlue}
+Andrea Rezzi & 0 & 0 & 0 & 6 & 8 & 2 & 16\\
+\rowcolor{LightBlue}
+Samuele Vignotto & 0 & 0 & 7 & 4 & 5 & 2 & 18\\
+\rowcolor{LighterBlue}
+\custombold{Ore totali} & 12 & 5 & 7 & 23 & 40 & 12 & 99\\
+\end{tabular}
+\end{center}
+
+\includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Sviluppo_Proof_of_Concept.jpg}
+\begin{center}
+    \custombold{Figura 5}: Grafico divisione ore lavorative periodo di Sviluppo Proof of Concept\textsubscript{G}.\\
+\end{center}
+\newpage
+In questo periodo i costi da affrontare sono:
+\begin{center}
+    \begin{tabular}{c|c|c}
+    \rowcolor{Blue}
+    \custombold{Ruolo} & \custombold{Ore} & \custombold{Costo \euro}\\
+    \rowcolor{LighterBlue}
+    Responsabile & 12 & 360\\
+    \rowcolor{LightBlue}
+    Amministratore & 5 & 100\\
+    \rowcolor{LighterBlue}
+    Analista & 7 & 175\\
+    \rowcolor{LightBlue}
+    Progettista & 23 & 575\\
+    \rowcolor{LighterBlue}
+    Programmatore & 40 & 600\\
+    \rowcolor{LightBlue}
+    Verificatore & 12 & 180\\
+    \rowcolor{LighterBlue}
+    \custombold{Totale} & \custombold{99} & \custombold{1990}\\
+    \end{tabular}
+\end{center}
+\begin{center}
+    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuali_costi_Sviluppo_Proof_of_Concept.jpg}
+\end{center}
+\begin{center}
+    \custombold{Figura 6}: grafico della divisione percentuale dei costi sostenuti nel periodo di Sviluppo Proof of Concept\textsubscript{G}.
+\end{center}
+\newpage
+
+\subsection{Riepilogo economico e delle ore parziale - Periodo Sviluppo Requisiti Obbligatori}
+Durante il periodo di Sviluppo Requisiti Obbligatori, ciascun membro assumerà i ruoli secondo la seguente distribuzione:\\
+\\
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\rowcolor{Blue}
+\custombold{Nominativo} & \custombold{Re} & \custombold{Am} & \custombold{An} & \custombold{Pt} & \custombold{Pr} & \custombold{Ve} & \custombold{Ore Totali}\\
+\hline
+\rowcolor{LighterBlue}
+Sabrina Caniato & 0 & 7 & 0 & 2 & 6 & 2 & 17\\
+\rowcolor{LightBlue}
+Giulia Dentone & 0 & 0 & 0 & 4 & 6 & 2 & 12\\
+\rowcolor{LighterBlue}
+Nicola Lazzarin & 7 & 0 & 0 & 4 & 0 & 2 & 13\\
+\rowcolor{LightBlue}
+Giovanni Moretti & 0 & 0 & 2 & 3 & 6 & 2 & 13\\
+\rowcolor{LighterBlue}
+Andrea Rezzi & 0 & 0 & 0 & 3 & 7 & 2 & 12\\
+\rowcolor{LightBlue}
+Samuele Vignotto & 0 & 0 & 0 & 4 & 6 & 2 & 12\\
+\rowcolor{LighterBlue}
+\custombold{Ore totali} & 7 & 7 & 2 & 20 & 31 & 12 & 79\\
+\end{tabular}
+\end{center}
+
+\includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Sviluppo_Requisiti_Obbligatori.jpg}
+\begin{center}
+    \custombold{Figura 7}: Grafico divisione ore lavorative periodo di Sviluppo Requisiti Obbligatori.\\
+\end{center}
+\newpage
+In questo periodo i costi da affrontare sono:
+\begin{center}
+    \begin{tabular}{c|c|c}
+    \rowcolor{Blue}
+    \custombold{Ruolo} & \custombold{Ore} & \custombold{Costo \euro}\\
+    \rowcolor{LighterBlue}
+    Responsabile & 7 & 210\\
+    \rowcolor{LightBlue}
+    Amministratore & 7 & 140\\
+    \rowcolor{LighterBlue}
+    Analista & 2 & 50\\
+    \rowcolor{LightBlue}
+    Progettista & 20 & 500\\
+    \rowcolor{LighterBlue}
+    Programmatore & 31 & 465\\
+    \rowcolor{LightBlue}
+    Verificatore & 12 & 180\\
+    \rowcolor{LighterBlue}
+    \custombold{Totale} & \custombold{79} & \custombold{1545}\\
+    \end{tabular}
+\end{center}
+\begin{center}
+    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Sviluppo_Requisiti_Obbligatori.jpg}
+\end{center}
+\begin{center}
+    \custombold{Figura 8}: grafico della divisione percentuale dei costi sostenuti nel periodo di Sviluppo Requisiti Obbligatori.
+\end{center}
+\newpage
+
+\subsection{Riepilogo economico e delle ore parziale - Periodo Sviluppo Requisiti Opzionali}
+Durante il periodo di Sviluppo Requisiti Opzionali, ciascun membro assumerà i ruoli secondo la seguente distribuzione:\\
+\\
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\rowcolor{Blue}
+\custombold{Nominativo} & \custombold{Re} & \custombold{Am} & \custombold{An} & \custombold{Pt} & \custombold{Pr} & \custombold{Ve} & \custombold{Ore Totali}\\
+\hline
+\rowcolor{LighterBlue}
+Sabrina Caniato & 0 & 3 & 0 & 0 & 4 & 2 & 9\\
+\rowcolor{LightBlue}
+Giulia Dentone & 0 & 0 & 2 & 0 & 5 & 2 & 9\\
+\rowcolor{LighterBlue}
+Nicola Lazzarin & 5 & 0 & 0 & 0 & 5 & 2 & 12\\
+\rowcolor{LightBlue}
+Giovanni Moretti & 0 & 0 & 0 & 4 & 5 & 2 & 11\\
+\rowcolor{LighterBlue}
+Andrea Rezzi & 0 & 2 & 0 & 3 & 4 & 2 & 11\\
+\rowcolor{LightBlue}
+Samuele Vignotto & 0 & 0 & 0 & 4 & 4 & 2 & 10\\
+\rowcolor{LighterBlue}
+\custombold{Ore totali} & 5 & 5 & 2 & 11 & 27 & 12 & 62\\
+\end{tabular}
+\end{center}
+
+\includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Sviluppo_Requisiti_Opzionali.jpg}
+\begin{center}
+    \custombold{Figura 9}: Grafico divisione ore lavorative periodo di Sviluppo Requisiti Opzionali.\\
+\end{center}
+\newpage
+In questo periodo i costi da affrontare sono:
+\begin{center}
+    \begin{tabular}{c|c|c}
+    \rowcolor{Blue}
+    \custombold{Ruolo} & \custombold{Ore} & \custombold{Costo \euro}\\
+    \rowcolor{LighterBlue}
+    Responsabile & 5 & 150\\
+    \rowcolor{LightBlue}
+    Amministratore & 5 & 100\\
+    \rowcolor{LighterBlue}
+    Analista & 2 & 50\\
+    \rowcolor{LightBlue}
+    Progettista & 11 & 275\\
+    \rowcolor{LighterBlue}
+    Programmatore & 27 & 405\\
+    \rowcolor{LightBlue}
+    Verificatore & 12 & 180\\
+    \rowcolor{LighterBlue}
+    \custombold{Totale} & \custombold{62} & \custombold{1160}\\
+    \end{tabular}
+\end{center}
+\begin{center}
+    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Sviluppo_Requisiti_Opzionali.jpg}
+\end{center}
+\begin{center}
+    \custombold{Figura 10}: grafico della divisione percentuale dei costi sostenuti nel periodo di Sviluppo Requisiti Opzionali.
+\end{center}
+\newpage
+
+\subsection{Riepilogo economico e delle ore parziale - Periodo Validazione E Collaudo}
+Durante il periodo di Validazione e Collaudo, ciascun membro assumerà i ruoli secondo la seguente distribuzione:\\
+\\
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\rowcolor{Blue}
+\custombold{Nominativo} & \custombold{Re} & \custombold{Am} & \custombold{An} & \custombold{Pt} & \custombold{Pr} & \custombold{Ve} & \custombold{Ore Totali}\\
+\hline
+\rowcolor{LighterBlue}
+Sabrina Caniato & 3 & 2 & 0 & 0 & 5 & 2 & 12\\
+\rowcolor{LightBlue}
+Giulia Dentone & 0 & 0 & 0 & 6 & 5 & 2 & 13\\
+\rowcolor{LighterBlue}
+Nicola Lazzarin & 0 & 0 & 0 & 3 & 7 & 2 & 12\\
+\rowcolor{LightBlue}
+Giovanni Moretti & 0 & 4 & 0 & 3 & 3 & 2 & 12\\
+\rowcolor{LighterBlue}
+Andrea Rezzi & 4 & 2 & 0 & 2 & 2 & 2 & 12\\
+\rowcolor{LightBlue}
+Samuele Vignotto & 0 & 0 & 0 & 3 & 6 & 2 & 11\\
+\rowcolor{LighterBlue}
+\custombold{Ore totali} & 7 & 8 & 0 & 17 & 28 & 12 & 72\\
+\end{tabular}
+\end{center}
+
+\includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Validazione_e_Collaudo.jpg}
+\begin{center}
+    \custombold{Figura 11}: Grafico divisione ore lavorative periodo di Validazione e Collaudo.\\
+\end{center}
+\newpage
+In questo periodo i costi da affrontare sono:
+\begin{center}
+    \begin{tabular}{c|c|c}
+    \rowcolor{Blue}
+    \custombold{Ruolo} & \custombold{Ore} & \custombold{Costo \euro}\\
+    \rowcolor{LighterBlue}
+    Responsabile & 7 & 210\\
+    \rowcolor{LightBlue}
+    Amministratore & 8 & 160\\
+    \rowcolor{LighterBlue}
+    Analista & 0 & 0\\
+    \rowcolor{LightBlue}
+    Progettista & 17 & 425\\
+    \rowcolor{LighterBlue}
+    Programmatore & 28 & 420\\
+    \rowcolor{LightBlue}
+    Verificatore & 12 & 180\\
+    \rowcolor{LighterBlue}
+    \custombold{Totale} & \custombold{72} & \custombold{1395}\\
+    \end{tabular}
+\end{center}
+\begin{center}
+    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Validazione_e_Collaudo.jpg}
+\end{center}
+\begin{center}
+    \custombold{Figura 12}: grafico della divisione percentuale dei costi sostenuti nel periodo di Validazione e Collaudo.
+\end{center}
+\newpage
+
 \subsection{Riepilogo economico e delle ore totale}
-\subsection{Riepilogo economico e delle ore parziale - RTB}
-\subsection{Riepilogo economico e delle ore parziale - PB}
+I costi e le ore totali vengono riassunti nella seguente tabella:
+\begin{center}
+    \begin{tabular}{c|c|c|c|c}
+    \rowcolor{Blue}
+    \custombold{Ruolo} & \custombold{Costo orario} & \custombold{Ore per ruolo} & \custombold{Ore per membro} & \custombold{Costo totale}\\
+    \rowcolor{LighterBlue}
+    Responsabile & 30 & 72 & 12 & 2160\\
+    \rowcolor{LightBlue}
+    Amministratore & 20 & 72 & 12 & 1440\\
+    \rowcolor{LighterBlue}
+    Analista & 25 & 108 & 18 & 2700\\
+    \rowcolor{LightBlue}
+    Progettista & 25 & 102 & 17 & 2550\\
+    \rowcolor{LighterBlue}
+    Programmatore & 15 & 126 & 21 & 1890\\
+    \rowcolor{LightBlue}
+    Verificatore & 15 & 90 & 15 & 1350\\
+    \rowcolor{LighterBlue}
+    \custombold{Totale} & - & 570 & 95 & 12090\\
+    \end{tabular}
+\end{center}
+\newpage
 
 \section{Consuntivo}
 \subsection{Periodo RTB}
