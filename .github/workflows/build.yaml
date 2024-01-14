@@ -21,9 +21,10 @@ jobs:
             documenti/*/*.tex
       - name: Append version to files
         run: |
+          export IFS=$(echo -en "\n\b")
           for file in $(find documenti -iname '*.tex' | grep -v 'esterno')
           do
-          VERSION_NUMBER="$(grep '\\providecommand{\\versionnumber}' $file | sed 's/.*{\([^{]*\)}$/\1/')"
+          VERSION_NUMBER="$(grep '\\providecommand{\\versionnumber}' "$file" | sed 's/.*{\([^{]*\)}$/\1/')"
           BASE_NAME="$(basename "$file")"
           NAME="${BASE_NAME%.tex}"
           mv -- "$NAME".pdf "$NAME-v$VERSION_NUMBER".pdf
