@@ -11,9 +11,11 @@
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \renewcommand{\arraystretch}{1.5} % Default value: 1
 \setlength{\droptitle}{-6em}
+\usepackage{capt-of}
+\usepackage{setspace}
 
 %font
-\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[defaultfam,tabular,lining,table]{montserrat}
 \usepackage[T1]{fontenc}
 \renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
 
@@ -146,7 +148,9 @@ I termini impiegati in questo testo potrebbero suscitare incertezze circa il lor
 \subsection{Scopo ed obiettivi}
 La qualità è determinata univocamente dai processi che compongono un prodotto, misurata attraverso che permettano di valutare tali processi e accertarsi che siano conformi agli obiettivi di qualità previsti. Da mettere in atto è Ciclo PDCA (Plan - Do - Check- Act)\textsubscript{G}, che garantisce un miglioramento continuo nell’utilizzo dei processi e delle risorse tramite una prima fase di pianificazione, seguita da una verifica con le metriche previste e infine un'integrazione o correzione del prodotto in base ai risultati precedentemente ottenuti.\\
 \\
-\begin{tabular}{P{8em} P{20em} P{8em}}
+\begin{table}[h]
+\centering
+\begin{tabular}{P{10em} P{23em} P{10em}}
 \rowcolor{Blue}
  \custombold{Obiettivo} & \custombold{Descrizione} & \custombold{Metriche} \\
  \hline
@@ -172,6 +176,10 @@ La qualità è determinata univocamente dai processi che compongono un prodotto,
 \rowcolor{LighterBlue}
  \custombold{Gestione} \custombold{organizzativa} & Procedura dedicata a delineare le modalità di coordinamento del team. & \custombold{MC11} \\
 \end{tabular}
+\caption{Tabella dei processi}
+\label{tab:processi}
+\end{table}
+
 \newpage
 \subsection{Processi primari}
 \begin{tabular}{P{5em} P{18em} P{8em} P{8em}}
@@ -201,7 +209,11 @@ La qualità è determinata univocamente dai processi che compongono un prodotto,
 \hline
 \rowcolor{LighterBlue}
 \custombold{MC08} & Requirements Stability Index (RSI) & $\geq80\%$ & $100\%$\\
+
 \end{tabular}
+\captionof{table}{Tabella dei processi primari}
+\label{tab:processiprimari}
+
 \subsection{Processi di supporto}
 \begin{tabular}{P{5em} P{18em} P{8em} P{8em}}
 \rowcolor{Blue}
@@ -219,6 +231,10 @@ La qualità è determinata univocamente dai processi che compongono un prodotto,
 \rowcolor{LighterBlue}
 \custombold{MC10} & Metrics Satisfied & $\geq85\%$ & $100\%$ \\
 \end{tabular}
+
+\captionof{table}{Tabella dei processi di supporto}
+\label{tab:processisup}
+
 \subsection{Processi organizzativi}
 \begin{tabular}{P{5em} P{18em} P{8em} P{8em}}
 \rowcolor{Blue}
@@ -230,6 +246,9 @@ La qualità è determinata univocamente dai processi che compongono un prodotto,
 \rowcolor{LighterBlue}
 \custombold{MC11} & Risks Found & $\leq5$ & $0$ \\
 \end{tabular}
+\captionof{table}{Tabella dei processi organizzativi}
+\label{tab:processiorg}
+
 \section{Qualità di prodotto}
 Per assicurare l'elevata qualità del prodotto, è stata adottata come base di riferimento la norma ISO/IEC 12207:1997. In questa sezione vengono presentati i valori ideali e quelli accettabili relativi alle metriche scelte dal team Cyber Sorceres. Per una visione dettagliata delle metriche indicate in seguito, si prega di fare riferimento al documento \textit{Norme di progetto}.
 \subsection{Obiettivi}
@@ -266,6 +285,8 @@ Per assicurare l'elevata qualità del prodotto, è stata adottata come base di r
     \rowcolor{LighterBlue}
     \textbf{Test} & L'intero codice prodotto sarà soggetto a verifica per assicurare l'implementazione corretta dei requisiti identificati. & \textbf{MS07}, \textbf{MS08}, \textbf{MS09}, \textbf{MS10}\\
 \end{tabular}
+\captionof{table}{Tabella degli obiettivi della qualità di prodotto}
+\label{tab:qualitaProd}
 \end{center}
 
 \begin{center}
@@ -299,6 +320,8 @@ Per assicurare l'elevata qualità del prodotto, è stata adottata come base di r
     \rowcolor{LightBlue}
     \custombold{MS10} & Solidity Line Coverage & $\geq 80$\% & $\geq 100$\% \\
 \end{tabular}
+\captionof{table}{Metriche per la qualità di prodotto}
+\label{tab:metricheQualProd}
 \end{center}
 \newpage
 
@@ -324,6 +347,8 @@ In questo paragrafo cercheremo di analizzare le difficoltà che abbiamo avuto fi
     \rowcolor{LightBlue}
      Disparità di impegno tra i membri& Alcuni membri, avendo magari più impegni accademici o lavorativi, sono stati meno presenti agli incontri o per la realizzazione del progetto & Media & Assegnare i compiti quanto più in maniera equa e realistica \\ 
 \end{tabular}
+\captionof{table}{Criticità sull'organizzazione}
+\label{tab:org}
 \end{center}
 
 \subsection{Valutazione sugli strumenti utilizzati}
@@ -339,6 +364,8 @@ In questo paragrafo cercheremo di analizzare le difficoltà che abbiamo avuto fi
      \rowcolor{LighterBlue}
      Amazon AWS  & Le librerie di Amazon AWS oltre ad essere moltissime, hanno tutte un prezzo diverso & Alta & Fissare un incontro di formazione da parte del proponente per scegliere in maniera mirata le librerie, in modo tale da essere conformi alle esigenze di costo e non perderci nella fase di analisi, studio dello strumento e scelta delle librerie
 \end{tabular}
+\captionof{table}{Criticità negli strumenti utilizzati}
+\label{tab:strum}
 \end{center}
 
 \subsection{Valutazione sui ruoli}
@@ -357,5 +384,7 @@ In questo paragrafo cercheremo di analizzare le difficoltà che abbiamo avuto fi
     Pianificazione poco realistica da parte del Responsabile & Data l'inesperienza nell'ambito, la pianificazione e le aspettative sul carico di lavoro non sono state conformi alla realtà & Bassa & Ridefinire gli sprint ed effettuarne più frequentemente ma ognuno con un minor carico di lavoro per manenere sempre alta la produttività dei membri
      
 \end{tabular}
+\captionof{table}{Criticità dei ruoli}
+\label{tab:ruoli}
 \end{center}
 \end{document}
