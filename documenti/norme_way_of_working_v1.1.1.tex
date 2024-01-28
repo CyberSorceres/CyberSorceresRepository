@@ -83,15 +83,15 @@
     \end{tabular}
 \end{center}
 
+\newpage
 \custombold{Registro dei Cambiamenti - Changelog}
-
 \begin{center}
 \begin{tabular}{P{5em} P{5em} P{8em} P{8em} P{10em}} 
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
     \rowcolor{LighterBlue}
-    &  &  &  & \\
+    1.1.1& 14/01/2024 & Caniato Sabrina & Dentone Giulia  & Aggiunta della sezione Gestione organizzativa\\
     \rowcolor{LightBlue}
     & &  & & \\ 
      & &  &  &\\ 
@@ -235,7 +235,8 @@ L'utilizzo delle infrastrutture interne,è cruciale per mantenere un ambiente di
 \end{itemize}
 
 \subsection{Gestione organizzativa}
-La gestione organizzativa del progetto coinvolge la pianificazione, la distribuzione delle responsabilità e la gestione degli incontri. Il team adotta un approccio collaborativo, dove ciascun membro ha un ruolo definito e contribuisce al raggiungimento degli obiettivi. Gli incontri periodici sono fondamentali per monitorare l'avanzamento, risolvere eventuali problemi e pianificare le prossime attività.
+La gestione organizzativa del progetto coinvolge la pianificazione, la distribuzione delle responsabilità e la gestione degli incontri. Il team adotta un approccio collaborativo, dove ciascun membro ha un ruolo definito e contribuisce al raggiungimento degli obiettivi. Gli incontri periodici sono fondamentali per monitorare l'avanzamento, risolvere eventuali problemi e pianificare le prossime attività
+
 \subsubsection{Ruoli}
 \subsubsection{Metodo organizzativo}
 Il team, con l'obiettivo di ottimizzare i tempi e massimizzare l'efficienza delle proprie operazioni, ha scelto di adottare una metodologia Agile, implementando le pratiche di miglioramento continuo attraverso il framework Scrum\textsubscript{G}. Questo approccio consente di organizzare il lavoro in brevi intervalli temporali, noti come sprint, della durata di circa due settimane. Nello specifico, il processo si articola in diverse fasi:
@@ -246,8 +247,20 @@ Il team, con l'obiettivo di ottimizzare i tempi e massimizzare l'efficienza dell
 \end{itemize}
 
 \subsubsection{Gestione degli incontri}
+Gli incontri vengono organizzati almeno una volta alla settimana e vengono fatti da remoto grazie a google meet. Ci servono per capire come stiamo procedendo e per evitare la modalità sottomarino, ovvero il rischio che ogniuno si prenda le cose da fare e non avvisi degli avanzamenti delle task. Sempre con questo scopo, ogni due giorni facciamo un daily meeting di cui non rediamo il verbale. Alla fine di ogni incontro settimanale, di cui si è steso il verbale, decidiamo il giorno e l'ora del prossimo meeting. Per farlo abbiamo stabilito due metodi: \\
+Il primo metodo: il responsabile propone un giorno e se tutti sono liberi abbiamo già deciso altrimenti si va avanti a proporre.\\
+Il secondo metodo: utilizziamo un sondaggio fatto al momento, sempre dal responsabile, tramite telegram ed il giorno più votato ci sarà l'incontro. \\
+Appena deciso il giorno il responsabile scrive nel calendario google il girno e l'ora dell'incontro, così facendo ogni membro del gruppo avrà nel calendario un promemoria della riunione.\\
+Se ci si trova internamente al gruppo di non essere in grado a rispondere ai quesiti che sorgono durante una riunione interna, decidiamo di contattare l'azienda tramite slack. Solitamente noi proponiamo un incontro e loro ci dicono i giorni in cui sono disponibili, tramite un sondaggio decidiamo il giorno migliore per tutti. Se sono incontri formativi, solitamente li facciamo in presenza, se sono incontri informativi vengono fatti da remoto, grazie a google meet. 
+
+
 \subsubsection{Gestione della comunicazione interna ed esterna}
+La comunicazione interna avviene tramite telegram. Viene usato principalmente per chiarire dubbi e per tenerci aggiornati sulle cose che sono state fatte.\\
+Per la comunicazione esterna abbiamo un canale slack, di cui fanno parte anche i responsabili dell'azienda proponente. Il canale viene utilizzato solo se abbiamo domande veloci e non complicate, ad esempio per chiedere degli incontri. Se ci sono domande più complesse, che hanno bisogno di più tempo per le risposte, solitamente utilizziamo le mail, come suggerito dall'azienda.\\
+Il responsabile è l'unico che scrive i messaggi per la comunicazione esterna. 
+
 \subsubsection{Gestione delle task}
+Le task vengono gestite tramite GitHub. Il responsabile, alla fine di ogni pianificazione dello Sprint aggiunge nella colonna "to-do" di GitHub le attività che si erano concordate. Da la ogni membro del gruppo quando inizia a svolgere un'attività la sposta nella colonna "in progress", e quando viene terminata crea il commit in cui chiude la task e automaticamente la sposta in "done".  
 
 \section{Processi di supporto}
 
@@ -268,15 +281,14 @@ La gestione della configurazione è essenziale per tracciare e controllare le mo
 \begin{itemize}
     \item All'interno della Repository\textsubscript{G} è presente una cartella "documenti" contenente i documenti versionati del progetto
     \item All'interno della cartella "documenti" è presente una cartella "verbali" con al suo interno i verbali, interni caricati nel formato tex ed esterni in formato pdf
-    \item per il Proof of Concept\textsubscript{G} (PoC), è stato creato un repository separato, contenente tutti i file sorgente relativi al PoC\textsubscript{G} che sarà consegnato in occasione della prima revisione RTB.
-
+    \item per il Proof of Concept\textsubscript{G} (PoC), è stato creato una repository separata, contenente tutti i file sorgente relativi al PoC\textsubscript{G} che sarà consegnato in occasione della prima revisione RTB.
 \end{itemize}
 
 \subsection{Norme di utilizzo per la repository}
 Di seguito descriviamo le norme poste per il mantenimento dell'ordine della Repository\textsubscript{G} per tutta la durata del progetto:
 \begin{itemize}
     \item segnalare problemi (issue\textsubscript{G}) e proporre modifiche (pull request\textsubscript{G}). Il team si impegna a risolvere gli issue\textsubscript{G}in modo tempestivo e valutare attentamente le pull request\textsubscript{G} per attuare i miglioramenti necessari
-    \item flusso di lavoro con Branches\textsubscript{G}: La repository segue un flusso di lavoro basato su branches\textsubscript{G}, con un branch\textsubscript{G} principale stabile e branch di sviluppo separati. Ciò consente di isolare nuove funzionalità o correzioni di bug prima di integrarle nella versione principale.
+    \item flusso di lavoro con Branches\textsubscript{G}: La repository segue un flusso di lavoro basato su branches\textsubscript{G}, con un branch\textsubscript{G} principale stabile e branch di sviluppo separati. Ciò consente di isolare nuove funzionalità o correzioni di bug prima di integrarle nella versione principale
     \item nominare i tutti i file seguendo le convenzioni decise dal gruppo e caricarli al suo interno nel formato deciso
 \end{itemize}
 
@@ -367,6 +379,7 @@ Ogni documento viene nominato tramite una convezione decisa dal gruppo. I nomi d
 
 \subsection{Header}
 Sarà presente in ogni documento un header contenente il nome del documento, il nome del team e il versionamento.
+
 \subsubsection*{Versionamento}
 Ogni documento che non sia un verbale viene versionato secondo la norma sopra citata (vedi sezione 3.3). Vengono versionati tutti i documenti fatta eccezione, per loro natura, dei verbali interni ed esterni.
 \subsubsection*{Indici}
