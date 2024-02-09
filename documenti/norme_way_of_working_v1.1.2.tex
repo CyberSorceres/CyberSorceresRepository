@@ -93,7 +93,7 @@
     \rowcolor{LighterBlue}
     1.1.1& 14/01/2024 & Caniato Sabrina & Dentone Giulia  & Aggiunta della sezione Gestione organizzativa\\
     \rowcolor{LightBlue}
-    & &  & & \\ 
+    1.1.2& 08/02/2024 & Vignotto Samuele & Rezzi Andrea & Aggiornamento della sezione dei processi primari\\ 
      & &  &  &\\ 
 \end{tabular}
 \end{center}
@@ -187,7 +187,170 @@ Di seguito vengono indicati gli strumenti utilizzati dal team per la realizzazio
     \item \textit{draw.io}: utilizzato per la realizzazione dei diagrammi UML.
 \end{itemize}
 
+\subsection{Sviluppo}
 
+\subsection{Scopo}
+L'obiettivo del processo di sviluppo è delineare i compiti e le attività necessarie per lo sviluppo del prodotto software. In questa sezione, vengono dettagliate le attività, le norme e le convenzioni adottate per la composizione di questo processo.
+
+\subsection{Aspettative}
+Le aspettative nell'applicazione del processo di sviluppo includono:
+\begin{itemize}
+    \item Determinare vincoli tecnologici.
+    \item Stabilire gli obiettivi di sviluppo.
+    \item Definire vincoli di design.
+    \item Produrre un prodotto finale che superi i test e soddisfi i requisiti e le richieste del proponente.
+\end{itemize}
+
+\subsection{Descrizione}
+Il processo di sviluppo comprende le attività e i compiti dello sviluppatore, tra cui l'analisi dei requisiti, la progettazione, la codifica, l'integrazione, il test, l'installazione e l'accettazione relativi ai prodotti software.
+
+\subsection{Attività}
+Qui di seguito sono elencate e successivamente approfondite le attività caratterizzanti tale processo:
+\begin{itemize}
+    \item Analisi dei requisiti.
+    \item Progettazione.
+    \item Codifica.
+\end{itemize}
+\subsubsection{Analisi dei requisiti}
+\subsubsection*{Scopo}
+L'obiettivo dell'analisi dei requisiti è individuare, attraverso uno studio approfondito del capitolato, i requisiti diretti e indiretti, impliciti ed espliciti richiesti dal proponente per la realizzazione del prodotto, nonché i vari casi d'uso del prodotto stesso. In questa attività, è fondamentale suddividere il problema iniziale in requisiti il più elementari possibile, al fine di ridurre la complessità del problema originale e facilitare il lavoro durante la fase di sviluppo.
+\subsubsection*{Aspettative}
+L'obiettivo dell'attività di analisi dei requisiti è la creazione di documentazione formale che contenga tutti i requisiti richiesti dal proponente, sia che siano stati definiti all'inizio del processo, sia che siano stati concordati in fase di sviluppo.
+\subsubsection*{Requisiti}
+I requisiti sono raccolti da diverse fonti, tra cui:
+\begin{itemize}
+    \item Lettura investigativa del capitolato.
+    \item Confronto interno tra i membri del gruppo.
+    \item Dialogo con il proponente.
+    \item Analisi dei casi d'uso.
+\end{itemize}
+\subsubsection*{Classificazione dei requisiti}
+Ogni requisito è classificato attraverso l'utilizzo di un codice identificativo. Il gruppo ha definito uno standard per questo codice, che sarà spiegato di seguito.\\
+\custombold{Codice identificativo:}
+\begin{center}
+    \custombold{R[Rilevanza][Tipologia][Codice]}\\
+\end{center}
+dove:\\
+\custombold{Rilevanza:} indica la rilevanza associata ad un requisito e può assumere una tra tre possibili lettere con il seguente significato:\\
+\begin{center}
+\begin{tabular}{c|c}
+\rowcolor{Blue}
+     \custombold{Lettera}&\custombold{Descrizione}\\
+     \rowcolor{LighterBlue}
+     \custombold{O}&Requisito obbligatorio\\
+     \rowcolor{LightBlue}
+     \custombold{D}&Requisito desiderabile ma non obbligatorio\\
+     \rowcolor{LighterBlue}
+     \custombold{P}&Requisito opzionale\\
+\end{tabular}
+\end{center}
+\custombold{Tipologia:} indica una tipologia di requisito e può assumere una delle seguenti lettere con il seguente significato:
+\begin{center}
+    \begin{tabular}{c|c}
+        \rowcolor{Blue}
+         \custombold{Lettera}&\custombold{Descrizione}\\
+         \rowcolor{LighterBlue}
+         \custombold{V}&Vincolo\\
+         \rowcolor{LightBlue}
+         \custombold{P}&Prestazionale\\
+         \rowcolor{LighterBlue}
+         \custombold{Q}&Qualitativo\\
+         \rowcolor{LightBlue}
+         \custombold{F}&Funzionale\\
+    \end{tabular}
+\end{center}
+\custombold{Codice:}L'identificativo è unico e espresso in forma gerarchica padre/figlio. Una volta associato a un requisito, l'identificativo è immutabile. Ogni requisito deve essere accompagnato da una serie di informazioni aggiuntive.
+\begin{itemize}
+    \item \custombold{Descrizione:} Descrizione sintetica ed esplicativa del requisito;
+    \item \custombold{Classificazione:} Per migliorare la leggibilità della tabella, viene enfatizzata nuovamente l'importanza del requisito, anche se già presente nell'identificativo del codice.
+    \item \custombold{Indirizzato a:} Indica gli attori a cui è indirizzato il requisito.
+    \item \custombold{Casi d'uso collegati:} Indica i codici di eventuali casi d'uso collegati al requisito.
+    \item \custombold{Fonte:} Indica l'origine del requisito.
+\end{itemize}
+\subsubsection*{Casi d'uso}
+I casi d'uso rappresentano un comportamento o un modo di utilizzare il prodotto e vengono descritti graficamente attraverso l'uso di diagrammi UML\textsubscript{G}.
+Ciascun caso d'uso è costituito da:
+\begin{itemize}
+    \item Codice identificativo;
+    \item Attore primario;
+    \item Precondizioni;
+    \item Postcondizioni;
+    \item Scenario principale;
+    \item Generalizzazioni;
+    \item Estensioni;
+\end{itemize}
+\subsubsection*{Classificazione dei casi d'uso}
+Ogni caso d'uso è classificato attraverso l'utilizzo di un codice identificativo. Il gruppo ha definito uno standard per questo codice, che sarà spiegato di seguito.\\
+\custombold{Codice Identificativo}\\
+\begin{center}
+    \custombold{UC[Numero caso d'uso](.[Numero caso d'uso figlio])*-[Titolo caso d'uso]}\\
+\end{center}
+dove:\\
+\begin{itemize}
+    \item \custombold{UC:} Acronimo di "Use Case";
+    \item \custombold{Numero caso d'uso:} Numero associato al caso d'uso principale;
+    \item \custombold{Caso d'uso figlio:} Numero associato al sottocaso del caso d'uso principale;
+    \item \custombold{Titolo caso d'uso:} Titolo assegnato al caso d'uso.
+\end{itemize}
+Una volta associato a un caso d'uso, l'identificativo è immutabile.
+\subsubsection*{UML\textsubscript{G}}
+I diagrammi UML\textsubscript{G} vengono realizzati utilizzando la versione 2.0 del linguaggio.
+\subsubsection{Progettazione}
+\subsubsection*{Progettazione}
+\subsubsection*{Scopo}
+L'obiettivo dell'attività di progettazione è integrare le parti ottenute durante l'\textit{analisi dei requisiti}, specificando le funzionalità dei sottosistemi e convergendo verso una soluzione unificata.
+\subsubsection*{Aspettative}
+L'obiettivo dell'attività di progettazione è realizzare l'architettura del sistema. Inizialmente, questa architettura è creata attraverso un Proof of Concept\textsubscript{G}, sviluppato come una demo prototipale del sistema durante la fase di Requirements \& Technology Baseline\textsubscript{G}. Successivamente, questa architettura viene approfondita e descritta nel documento tecnico allegato alla Product Baseline.
+\subsubsection*{Requirements \& Technology Baseline\textsubscript{G}}
+Questa fase stabilisce i requisiti che il fornitore si impegna a soddisfare, in accordo con il proponente, e motiva le tecnologie, i framework\textsubscript{G} e le librerie selezionate per la realizzazione del prodotto. Dimostra l'adeguatezza e la fattibilità coerente con gli obiettivi. I documenti utili a tali fini sono:
+\begin{itemize}
+    \item \textit{Piano di progetto};
+    \item \textit{Piano di qualifica};
+    \item \textit{Norme way of working};
+    \item \textit{Verbali} interni ed esterni;
+\end{itemize}
+Ad eccezione dei \textit{verbali}, i documenti sopracitati devono essere conservati e aggiornati anche nelle fasi successive.
+\subsection*{Product Baseline\textsubscript{G}}
+Questa fase presenta le linee guida architetturali del prodotto. Oltre all'aggiornamento dei documenti menzionati in precedenza, in questa fase saranno necessari:
+\begin{itemize}
+    \item \textit{Manuale utente};
+    \item \textit{Verbali di periodo}.
+\end{itemize}
+Analogamente alla fase precedente, anche i documenti di questa fase devono essere conservati e aggiornati fino alla consegna e accettazione del prodotto finale.
+\subsubsection{Codifica}
+\subsubsection*{Strumenti per la codifica}
+\begin{itemize}
+    \item \custombold{Node.js}: è un runtime system\textsubscript{G} open source\textsubscript{G} multipiattaforma orientato agli eventi per l'esecuzione di codice JavaScript\textsubscript{G};\\
+    \begin{center}
+        \href{https://nodejs.org/it/}{nodejs.org/it/}
+    \end{center}
+    \item \custombold{React}: è una libreria open source\textsubscript{G}, frontend\textsubscript{G}, JavaScript\textsubscript{G} per la creazione di interfacce utente;\\
+    \begin{center}
+        \href{https://it.reactjs.org/}{it.reactjs.org/}
+    \end{center}
+    \item \custombold{MongoDB Atlas}: è il servizio di database cloud completamente gestito offerto da MongoDB, Inc. È progettato per semplificare la gestione, l'implementazione e la scalabilità dei database MongoDB su AWS, Azure e Google Cloud Platform;\\
+    \begin{center}
+        \href{https://www.mongodb.com/atlas/database}{www.mongodb.com/atlas/database}
+    \end{center}
+    \item \custombold{Amazon AWS}:  è una piattaforma di servizi cloud che offre una vasta gamma di servizi informatici affidabili, scalabili ed economici. Questi servizi consentono alle imprese di eseguire applicazioni e gestire risorse IT senza dover investire in infrastrutture hardware costose e complesse;\\
+    \begin{center}
+        \href{https://aws.amazon.com/it/}{aws.amazon.com/it/}
+    \end{center}
+    \begin{itemize}
+        \item \custombold{AWS API Gateway}: è un servizio gestito che semplifica la creazione, la pubblicazione, la manutenzione, il monitoraggio e la sicurezza di API (Application Programming Interface) per le applicazioni su AWS. Consente agli sviluppatori di creare API RESTful o WebSocket che consentono alle applicazioni di comunicare tra loro o con servizi back-end;\\
+        \begin{center}
+            \href{https://aws.amazon.com/it/api-gateway/}{aws.amazon.com/it/api-gateway/}
+        \end{center}
+        \item \custombold{AWS Lambda}: è un servizio di calcolo serverless che consente agli sviluppatori di eseguire codice senza dover gestire l'infrastruttura sottostante. Con Lambda, è possibile eseguire codice in risposta a eventi generati da altri servizi AWS o da applicazioni personalizzate;\\
+        \begin{center}
+            \href{https://aws.amazon.com/it/lambda/}{aws.amazon.com/it/lambda/}
+        \end{center}
+        \item \custombold{AWS Cognito}: è un servizio di gestione dell'identità e dell'accesso (IAM) fornito da Amazon Web Services (AWS). È progettato per semplificare l'aggiunta di funzionalità di autenticazione, autorizzazione e gestione degli utenti alle applicazioni web e mobile.\\
+        \begin{center}
+            \href{https://aws.amazon.com/it/cognito/}{aws.amazon.com/it/cognito/}
+        \end{center}
+    \end{itemize}
+\end{itemize}
 
 \section{Norme}
 \subsection{Gestione dell'ITS e delle task}
