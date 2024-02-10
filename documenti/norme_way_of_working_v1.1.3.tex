@@ -91,10 +91,11 @@
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
     \rowcolor{LighterBlue}
-    1.1.1& 14/01/2024 & Caniato Sabrina & Dentone Giulia  & Aggiunta della sezione Gestione organizzativa\\
+     1.1.3& 09/02/2024 & Vignotto Samuele & Moretti Giovanni & Aggiornamento della sezione "Gestione della qualità" \\ 
     \rowcolor{LightBlue}
-    1.1.2& 08/02/2024 & Vignotto Samuele & Rezzi Andrea & Aggiornamento della sezione dei processi primari\\ 
-     & &  &  &\\ 
+    1.1.2& 08/02/2024 & Vignotto Samuele & Rezzi Andrea & Aggiornamento della sezione dei processi primari\\
+    \rowcolor{LighterBlue}
+    1.1.1& 14/01/2024 & Caniato Sabrina & Dentone Giulia  & Aggiunta della sezione Gestione organizzativa\\
 \end{tabular}
 \end{center}
 \newpage
@@ -431,12 +432,54 @@ Le task vengono gestite tramite GitHub. Il responsabile, alla fine di ogni piani
 La gestione della qualità è un approccio sistemico che coinvolge la definizione di standard di qualità, la misurazione delle performance\textsubscript{G} e l'implementazione di azioni correttive. Le metriche di qualità vengono regolarmente monitorate, e i processi vengono migliorati costantemente per garantire l'aderenza agli standard stabiliti e il raggiungimento degli obiettivi di qualità.
 
 \subsubsection{Verifica}
-Il processo di verifica è una pratica svolta in maniera continua che coinvolge l'analisi approfondita di ogni componente del progetto. La revisione dei documenti, l'analisi statica e dinamica del codice, insieme a test\textsubscript{G} specifici, contribuiscono a garantire la qualità e l'affidabilità del prodotto. Le correzioni sono apportate tempestivamente in risposta ai risultati della verifica\\
-DA CONTINUAREEEEEEEEEEEEE
+\custombold{Scopo}\\
+Il processo di supporto di verifica nel contesto dello sviluppo di un progetto software ha lo scopo di garantire che il software prodotto soddisfi i requisiti specificati e che sia conforme agli standard e alle linee guida stabilite. Questo processo è fondamentale per identificare e correggere eventuali difetti, errori o problemi nel software prima che venga rilasciato agli utenti finali.\\
+\custombold{Aspettative}\\
+Le aspettative del processo di verifica sono principalmente:
+\begin{itemize}
+    \item \custombold{Identificare difetti}: L'obiettivo principale è individuare difetti, errori o problemi nel software. Ci si aspetta che il processo di verifica identifichi in modo efficace i difetti presenti nel software, che possono includere errori di programmazione, discrepanze rispetto ai requisiti o problemi di prestazioni.
+    \item \custombold{Garantire la conformità}: Il processo di verifica mira a garantire che il software sia conforme ai requisiti specificati, agli standard e alle linee guida stabilite per il progetto. Ci si aspetta che il software sia sviluppato in modo da soddisfare tali criteri di conformità.
+    \item \custombold{Migliorare la qualità}: Il processo di verifica contribuisce a migliorare la qualità complessiva del software, identificando e correggendo difetti prima del rilascio. Ci si aspetta che il software verificato sia più affidabile, sicuro e performante.
+    \item \custombold{Rispettare i vincoli di tempo e budget}: Un'altra aspettativa è che il processo di verifica venga condotto in modo efficiente e in linea con i vincoli di tempo e budget del progetto. Ci si aspetta che le attività di verifica siano pianificate e eseguite in modo da non compromettere il programma di sviluppo complessivo o il bilancio del progetto.
+    \item \custombold{Documentazione accurata}: Si richiede che il processo di verifica generi documentazione accurata e completa, risultati dei test e altre informazioni pertinenti. Questa documentazione è essenziale per tracciare il progresso del progetto e fornire una chiara visione dello stato del software.
+\end{itemize}
+\custombold{Descrizione}\\
+Il processo di verifica è una pratica svolta in maniera continua che coinvolge l'analisi approfondita di ogni componente del progetto. La revisione dei documenti, l'analisi statica e dinamica del codice, insieme a test\textsubscript{G} specifici, contribuiscono a garantire la qualità e l'affidabilità del prodotto. Le correzioni sono apportate tempestivamente in risposta ai risultati della verifica.
+\begin{itemize}
+    \item \custombold{Pianificazione della verifica}: In questa fase, si stabiliscono gli obiettivi e le strategie per la verifica del software. Si definiscono le attività di verifica necessarie, i criteri di accettazione e le risorse richieste per condurre con successo il processo di verifica.
+    \item \custombold{Preparazione degli ambienti e degli strumenti di verifica}: Vengono allestiti gli ambienti di test\textsubscript{G} e vengono identificati gli strumenti necessari per eseguire le attività di verifica. Questo potrebbe includere l'installazione di software di test\textsubscript{G}, la configurazione dei sistemi di prova e la preparazione dei dati di test\textsubscript{G}.
+    \item \custombold{Revisione dei requisiti e del design}:  Prima di procedere con lo sviluppo effettivo del software, vengono esaminati e validati i requisiti e il design\textsubscript{G} del sistema. Si verifica che i requisiti siano completi, corretti e comprensibili, e che il design sia in linea con gli obiettivi e le specifiche del progetto.
+    \item \custombold{Analisi statica del codice}: Questa fase coinvolge l'analisi del codice sorgente senza eseguirlo. Obiettivo principale è individuare errori di programmazione, violazioni delle convenzioni di codifica e possibili problemi di design\textsubscript{G}. Questa analisi viene eseguita manualmente e tramite strumenti automatici di analisi del codice.
+    \item \custombold{Test\textsubscript{G} del software}: In questa fase il software viene eseguito e testato\textsubscript{G} per verificare il suo comportamento rispetto ai requisiti specificati. Questo include test\textsubscript{G} funzionali, di integrazione, di sistema e di accettazione, che mirano a identificare difetti e verificare la conformità del software.
+    \item \custombold{Analisii dei risultati dei test\textsubscript{G}}: Una volta completati i test, vengono analizzati i risultati per identificare difetti, errori o problemi nel software. Questi difetti vengono documentati e tracciati per garantire che vengano risolti in modo tempestivo.
+    \item \custombold{Gestione della configurazione}: Durante tutto il processo di verifica, è essenziale gestire la configurazione del software e dei suoi componenti per assicurare la tracciabilità e la riproducibilità degli ambienti di test e dei risultati ottenuti.
+\end{itemize}
+Il processo di verifica è un ciclo continuo e iterativo, che può ripetersi più volte durante lo sviluppo del software per garantire la qualità del prodotto finale. La documentazione accurata di tutte le attività di verifica e dei risultati ottenuti è essenziale per garantire la trasparenza e la tracciabilità del processo.
 
 \subsubsection{Validazione}
-Il processo di validazione è il momento culminante in cui il prodotto sviluppato viene testato e confrontato con i requisiti del proponente. Questa fase include una serie di test, sia funzionali che non funzionali, per garantire che il prodotto soddisfi le aspettative. I risultati vengono documentati nel piano di qualifica, evidenziando il grado di conformità e identificando eventuali aree di miglioramento.\\
-DA CONTINUAREEEEEEEEEEEE
+\custombold{Scopo}\\
+Nel contesto dello sviluppo di un progetto software, il processo di supporto di validazione ha lo scopo di confermare che il software soddisfi le esigenze e le aspettative degli utenti finali e che sia in grado di operare efficacemente nel contesto previsto. Mentre il processo di verifica si concentra sulla conformità del software ai requisiti specificati, il processo di validazione si concentra sulla verifica che il software sia appropriato per l'uso previsto e che fornisca il valore desiderato agli utenti.\\
+\custombold{Aspettative}\\
+Le aspettative del processo di validazione sono principalmente:
+\begin{itemize}
+    \item \custombold{Confermare l'adeguatezza del software per l'uso previsto}: Si prevede che il software validato sia appropriato per soddisfare le esigenze e le aspettative degli utenti finali. Questo significa che il software dovrebbe essere in grado di fornire valore aggiunto agli utenti e di supportare efficacemente i loro processi o attività.
+    \item \custombold{Accertarsi che il software soddisfi i requisiti utente}: Le aspettative includono la conferma che il software sia conforme ai requisiti utente specificati. Gli utenti finali dovrebbero essere soddisfatti delle funzionalità, delle prestazioni e dell'usabilità del software, confermando che risponde alle loro esigenze.
+    \item \custombold{Identificare e risolvere eventuali problemi}: Durante il processo di validazione, ci si aspetta di individuare eventuali difetti, errori o problemi di usabilità nel software. L'obiettivo è risolvere questi problemi in modo tempestivo e efficace per garantire che il software sia pronto per il rilascio.
+    \item \custombold{Confermare la stabilità e l'affidabilità del software}: Le aspettative includono la verifica che il software sia stabile, affidabile e operi correttamente in scenari reali. Questo è importante per garantire che il software possa essere utilizzato in modo sicuro e efficace dagli utenti finali senza rischi di malfunzionamenti o perdite di dati.
+    \item \custombold{Accertare il rispetto dei requisiti non funzionali}: Si prevede che il software validato soddisfi anche i requisiti non funzionali specificati, come le prestazioni, la scalabilità e la sicurezza. Questi aspetti sono cruciali per garantire che il software sia in grado di gestire carichi di lavoro reali e di proteggere i dati sensibili.
+\end{itemize}
+\custombold{Descrizione}\\
+Il processo di validazione è il momento culminante in cui il prodotto sviluppato viene testato e confrontato con i requisiti del proponente. Questa fase include una serie di test, sia funzionali che non funzionali, per garantire che il prodotto soddisfi le aspettative. I risultati vengono documentati nel piano di qualifica, evidenziando il grado di conformità e identificando eventuali aree di miglioramento.
+\begin{itemize}
+    \item \custombold{Definizione degli obiettivi di validazione}: La prima fase consiste nel definire chiaramente gli obiettivi di validazione del software. Questi obiettivi dovrebbero includere la conferma che il software soddisfi i requisiti utente, che sia conforme alle normative e che sia adatto all'uso previsto.
+    \item \custombold{Pianificazione della validazione}: Vengono identificate le risorse necessarie per eseguire il processo di validazione, inclusi tempo, persone e strumenti. Si pianificano anche le attività di validazione, stabilendo i criteri di accettazione e i metodi di valutazione.
+    \item \custombold{Convalida dei requisiti utente}: Questa fase coinvolge la verifica che il software soddisfi i requisiti utente specificati. Gli utenti finali possono essere coinvolti per revisionare i requisiti e confermare che il software risponda alle loro esigenze e aspettative.
+    \item \custombold{Test\textsubscript{G} di accettazione utente (UAT)}: Durante il UAT, gli utenti finali eseguono test specifici per confermare che il software sia conforme alle loro esigenze e che sia utilizzabile in modo efficace nel contesto operativo previsto. I risultati del UAT vengono documentati e utilizzati per valutare il successo della validazione.
+    \item \custombold{Validazione delle funzionalità e dei requisiti non funzionali}: Vengono eseguiti test\textsubscript{G} specifici per confermare che il software fornisca tutte le funzionalità previste e che soddisfi i requisiti non funzionali, come le prestazioni, la sicurezza e l'affidabilità.
+    \item \custombold{Risoluzione dei problemi e revisione}: Durante il processo di validazione, potrebbero emergere difetti o problemi che devono essere risolti. Si risolvono questi problemi e si esegue una revisione finale per assicurarsi che il software sia pronto per il rilascio.
+    \item \custombold{Approvazione della validazione}: Una volta completato con successo il processo di validazione e risolti tutti i problemi identificati, il software viene approvato per il rilascio. L'approvazione viene documentata e archiviata come parte del processo di gestione della qualità del progetto.
+\end{itemize}
+Il processo di validazione è fondamentale per garantire che il software sia adatto all'uso previsto dagli utenti finali e che soddisfi le loro esigenze e aspettative.
 
 \subsection{Gestione della configurazione}
 La gestione della configurazione è essenziale per tracciare e controllare le modifiche apportate ai componenti del progetto. Utilizzando strumenti di controllo di versione\textsubscript{G}, il team assicura la coerenza e la tracciabilità di tutte le versioni\textsubscript{G} del codice sorgente, della documentazione e di altri artefatti. Questo approccio contribuisce a evitare conflitti e garantisce la riproducibilità del progetto in qualsiasi punto temporale. Il nostro gruppo ha deciso di utilizzare per la gestione della configurazione il servizio GitHub, basato sul sistema di controllo di versione distribuito Git. \\ Il link alla Repository pubblica del progetto è il seguente: \\ \href{https://github.com/CyberSorceres/CyberSorceresRepository}{https://github.com/CyberSorceres/CyberSorceresRepository}
