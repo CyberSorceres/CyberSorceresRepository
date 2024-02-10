@@ -78,12 +78,14 @@
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LighterBlue}
+    0.1.2& 09/02/2024 & Vignotto Samuele & Caniato Sabrina & Aggiunta ID requisiti e update requisiti qualitativi\\
     \rowcolor{LightBlue}
      0.1.1& 11/01/2024& Caniato Sabrina & Giulia Dentone & Aggiunta caption alle immagini\\ 
     \rowcolor{LighterBlue}
      0.1.0& 03/01/2024 & Caniato Sabrina &Vignotto Samuele & Sistemato l'analisi dei casi d'uso dopo il colloquio col Prof. R. Cardin. Aggiunta delle specifiche dei sottocasi d'uso.\\
     \rowcolor{LightBlue}
-    0.0.1& 09/12/2023 & Caniato Sabrina  & Vignotto Samuele & Definizione struttura del documento e scheletro delle sezioni. Scrittura introduzione ed obiettivi delle diverse sezioni.\\ 
+    0.0.2& 09/12/2023 & Caniato Sabrina  & Vignotto Samuele & Definizione struttura del documento e scheletro delle sezioni. Scrittura introduzione ed obiettivi delle diverse sezioni.\\ 
     \rowcolor{LighterBlue}
      0.0.1& 03/12/2023 & Vignotto Samuele & Lazzarin Nicola & Prima stesura dei casi d'uso e dell'analisi dei requisiti.\\
     
@@ -980,82 +982,82 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
 \section{Requisiti}
 \subsection{Requisiti funzionali}
 \begin{center}
-    \begin{tabular}{|p{3cm}|p{6cm}|p{3,5cm}|p{3cm}|}
+    \begin{tabular}{|p{2cm}|p{3cm}|p{6cm}|p{3cm}|p{2cm}|}
     \rowcolor{Blue} 
 \hline
-Classificazione & Descrizione & Indirizzato a&Codice  \\ 
+ID & Classificazione & Descrizione & Indirizzato a&Casi d'uso  \\ 
 \rowcolor{LightBlue}
 \hline
-Obbligatorio & Accesso a web app\textsubscript{G} tramite login composto da email e password & Sviluppatore, Cliente, Project Manager\textsubscript{G} & UC1, UC16, UC18 \\ 
+ROF1&Obbligatorio & Accesso a web app\textsubscript{G} tramite login composto da email e password & Sviluppatore, Cliente, Project Manager\textsubscript{G} & UC1, UC16, UC18 \\ 
 \rowcolor{LighterBlue}
 \hline
-Obbligatorio & Scrittura di richieste di buisness\textsubscript{G} tramite box testuale da web app\textsubscript{G} & Cliente & UC3\\ 
+ROF2&Obbligatorio & Scrittura di richieste di buisness\textsubscript{G} tramite box testuale da web app\textsubscript{G} & Cliente & UC3\\ 
 \rowcolor{LightBlue}
 \hline
-Obbligatorio & Invio delle richieste di buisness\textsubscript{G} da web app\textsubscript{G} & Cliente & UC3\\
-\hline
-\rowcolor{LighterBlue}
-
-Obbligatorio & Visualizzazione andamento sviluppo richieste tramite barra di completamento basata sulla percentuale di user stories\textsubscript{G} completate & Cliente, Project Manager\textsubscript{G} & UC8, UC11\\
-\rowcolor{LightBlue}
-\hline
-Obbligatorio & Approvazione o rifiuto del risultato relativo all'implementazione di una user story\textsubscript{G} & Cliente & UC5\\
+ROF3&Obbligatorio & Invio delle richieste di buisness\textsubscript{G} da web app\textsubscript{G} & Cliente & UC3\\
 \hline
 \rowcolor{LighterBlue}
 
-Desiderabile & Ricezione notifiche quando user story\textsubscript{G} completata & Cliente & UC5 UC8\\
-\hline
+ROF4&Obbligatorio & Visualizzazione andamento sviluppo richieste tramite barra di completamento basata sulla percentuale di user stories\textsubscript{G} completate & Cliente, Project Manager\textsubscript{G} & UC8, UC11\\
 \rowcolor{LightBlue}
 \hline
-Obbligatorio & Funzionalità di tag\textsubscript{G} nel plugin\textsubscript{G}  & Sviluppatore & UC14\\
+ROF5&Obbligatorio & Approvazione o rifiuto del risultato relativo all'implementazione di una user story\textsubscript{G} & Cliente & UC5\\
 \hline
 \rowcolor{LighterBlue}
 
-Obbligatorio & Lista di user stories\textsubscript{G} assegnate da Project Manager\textsubscript{G} sia su web app\textsubscript{G} che su plugin\textsubscript{G} & Sviluppatore & UC14 UC15\\
+RDF6&Desiderabile & Ricezione notifiche quando user story\textsubscript{G} completata & Cliente & UC5 UC8\\
 \hline
 \rowcolor{LightBlue}
-
-Desiderabile & Ricezione notifica su web app\textsubscript{G} quando nuova user story\textsubscript{G} è assegnata dal Project Manager\textsubscript{G}& Sviluppatore & UC12\\
+\hline
+ROF7&Obbligatorio & Funzionalità di tag\textsubscript{G} nel plugin\textsubscript{G}  & Sviluppatore & UC14\\
 \hline
 \rowcolor{LighterBlue}
-Obbligatorio & Invio del codice sviluppato a IA\textsubscript{G} per richiesta verifica& Sviluppatore & UC15\\
+
+ROF8&Obbligatorio & Lista di user stories\textsubscript{G} assegnate da Project Manager\textsubscript{G} sia su web app\textsubscript{G} che su plugin\textsubscript{G} & Sviluppatore & UC14 UC15\\
+\hline
+\rowcolor{LightBlue}
+
+RDF9&Desiderabile & Ricezione notifica su web app\textsubscript{G} quando nuova user story\textsubscript{G} è assegnata dal Project Manager\textsubscript{G}& Sviluppatore & UC12\\
+\hline
+\rowcolor{LighterBlue}
+ROF10&Obbligatorio & Invio del codice sviluppato a IA\textsubscript{G} per richiesta verifica& Sviluppatore & UC15\\
 
 \hline
 \rowcolor{LightBlue}
 
-Obbligatorio & Visualizzazione users stories\textsubscript{G} generate da IA\textsubscript{G}  & Project Manager\textsubscript{G} & UC9\\
+ROF11&Obbligatorio & Visualizzazione users stories\textsubscript{G} generate da IA\textsubscript{G}  & Project Manager\textsubscript{G} & UC9\\
 \hline
 
 
 \end{tabular}
 
-    \begin{tabular}{|p{3cm}|p{6cm}|p{3,5cm}|p{3cm}|}
+    \begin{tabular}{|p{2cm}|p{3cm}|p{6cm}|p{3cm}|p{2cm}|}
     \rowcolor{Blue} 
 \hline
-Classificazione & Descrizione & Indirizzato a&Casi d'uso  \\ 
+ID & Classificazione & Descrizione & Indirizzato a&Casi d'uso  \\ 
 \rowcolor{LightBlue}
 \hline
-Obbligatorio & Invio di feedback sulle user stories\textsubscript{G} generate all'IA\textsubscript{G}& Project Manager\textsubscript{G}&UC9\\
+ROF12&Obbligatorio & Invio di feedback sulle user stories\textsubscript{G} generate all'IA\textsubscript{G}& Project Manager\textsubscript{G}&UC9\\
 \hline
 \rowcolor{LighterBlue}
 
-Obbligatorio & Suddivisione delle user stories\textsubscript{G} troppo grandi  & Project Manager\textsubscript{G}& UC9\\
+ROF13&Obbligatorio & Suddivisione delle user stories\textsubscript{G} troppo grandi  & Project Manager\textsubscript{G}& UC9\\
 \hline
 \rowcolor{LightBlue}
 
-Obbligatorio & Assegnazione user stories\textsubscript{G} agli sviluppatori& Project Manager\textsubscript{G}& UC12\\
+ROF14&Obbligatorio & Assegnazione user stories\textsubscript{G} agli sviluppatori& Project Manager\textsubscript{G}& UC12\\
 \hline
 \rowcolor{LighterBlue}
 
-Desiderabile & Ricezione notifiche quando user story\textsubscript{G} viene generata in seguito a richiesta del cliente & Project Manager\textsubscript{G} & UC7\\
+RDF15&Desiderabile & Ricezione notifiche quando user story\textsubscript{G} viene generata in seguito a richiesta del cliente & Project Manager\textsubscript{G} & UC7\\
 \hline
 \rowcolor{LightBlue}
 
-Obbligatorio & Invio richiesta di modifiche realtive a user stories\textsubscript{G} a IA\textsubscript{G} prima di approvazione& Project Manager\textsubscript{G}& UC7\\
+ROF16&Obbligatorio & Invio richiesta di modifiche realtive a user stories\textsubscript{G} a IA\textsubscript{G} prima di approvazione& Project Manager\textsubscript{G}& UC7\\
 \hline
 \rowcolor{LighterBlue}
 
-Obbligatorio & Visualizzazione andamento epic/user stories\textsubscript{G} assegnate& Sviluppatore& UC11\\
+ROF17&Obbligatorio & Visualizzazione andamento epic/user stories\textsubscript{G} assegnate& Sviluppatore& UC11\\
 
 \hline
 
@@ -1065,33 +1067,35 @@ Obbligatorio & Visualizzazione andamento epic/user stories\textsubscript{G} asse
 \end{center}
 
 \subsection{Requisiti di qualità}
-I requisiti di qualità, e attinenti alle richieste del committente e da lui revisionati,  descrivono le caratteristiche principali e come il sistema deve esibirsi, per soddisfare le esigenze dell'utente.
 
 \begin{center}
-    \begin{tabular}{|p{3cm}|p{6cm}|p{3,5cm}|p{3cm}|}
+    \begin{tabular}{|p{3cm}|p{3cm}|p{6cm}|}
     \rowcolor{Blue} 
 \hline
-Codice & Descrizione & Fonti  \\ 
+ID & Classificazione & Descrizione\\ 
 \rowcolor{LightBlue}
 \hline
-& &  \\ 
+ROQ1& Obbligatorio & Il progetto deve essere accessibile pubblicamente su GitHub\textsubscript{G} o su un'altra repository\textsubscript{G} pubblica\\ 
 \rowcolor{LighterBlue}
 \hline
- & & \\ 
+ROQ2& Obbligatorio & Il prodotto deve essere sviluppato conformemente a quanto stabilito nelle \textit{Norme Way of Working}. \\ 
 \rowcolor{LightBlue}
 \hline
- & & \\
-\hline
-\rowcolor{LighterBlue}
-
-& & \\
-\rowcolor{LightBlue}
-\hline
-& & \\
+ROQ3& Obbligatorio & Deve essere effettuato il testing delle unità e dell'integrazione con una copertura minima dell'80\%.\\
 \hline
 \rowcolor{LighterBlue}
 
- & & \\
+ROQ4& Obbligatorio & Deve essere fornita una documentazione completa sulle scelte implementative e progettuali effettuate.\\
+\rowcolor{LightBlue}
+\hline
+\end{tabular}
+\begin{tabular}{|p{3cm}|p{3cm}|p{6cm}|}
+    \rowcolor{Blue} 
+\hline
+ID & Classificazione & Descrizione\\
+\hline
+\rowcolor{LightBlue}
+ROQ5& Obbligatorio & Deve essere fornito un manuale per l'utilizzo del prodotto.\\
 \hline
 \end{tabular}
 \captionof{table}{Tabella dei requisiti di quailità}
