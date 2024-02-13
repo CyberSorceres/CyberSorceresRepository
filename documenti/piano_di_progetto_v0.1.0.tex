@@ -81,13 +81,15 @@
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
     \rowcolor{LighterBlue}
-     0.0.1& 14/12/2023 & Giulia Dentone & Samuele Vignotto & Definizione dell'obiettivo di prodotto, dei riferimenti e introduzione alla pianificazione.\\ 
+     0.1.0& 12/02/2024 & Samuele Vignotto & Giulia Dentone & Aggiunta sezioni e contenuto sezione "Periodi" della sezione "Pianificazione"\\
+    \rowcolor{LightBlue}
+     0.0.4& 14/01/2024 & Samuele Vignotto & Sabrina Caniato & Update sezione Pianificazione con descrizione fasi e periodi.\\
+    \rowcolor{LighterBlue}
+     0.0.3& 13/01/2024 & Samuele Vignotto  & Andrea Rezzi & Update sezione Consuntivo fino alla data odierna.\\ 
     \rowcolor{LightBlue}
     0.0.2& 13/01/2024 & Samuele Vignotto & Giulia Dentone & Modifica e aggiunta contenuto alla sezione del preventivo.\\
     \rowcolor{LighterBlue}
-     0.0.3& 13/01/2024 & Samuele Vignotto  & Andrea Rezzi & Update sezione Consuntivo fino alla data odierna.\\ 
-     \rowcolor{LightBlue}
-     0.0.4& 14/01/2024 & Samuele Vignotto & Sabrina Caniato & Update sezione Pianificazione con descrizione fasi e periodi.
+     0.0.1& 14/12/2023 & Giulia Dentone & Samuele Vignotto & Definizione dell'obiettivo di prodotto, dei riferimenti e introduzione alla pianificazione.\\ 
 \end{tabular}
 \end{center}
 \newpage
@@ -271,13 +273,67 @@ Per rispettare le scadenze si è deciso di organizzare lo sviluppo del progetto 
     \item \custombold{Validazione e Collaudo};
     Nel periodo di Validazione e Collaudo, il team assume l'impegno di completare il progetto mediante l'esecuzione delle attività di validazione e collaudo del prodotto.
 \end{itemize}
-\subsubsection{RTB}
-La fase RTB racchiude al proprio interno i periodi di Analisi, Progettazione Technology Baseline\textsubscript{G} e Sviluppo Proof of Concept\textsubscript{G}.
-\subsubsection{PB}
-La fase PB racchiude al proprio interno il periodo di Sviluppo Requisiti Obbligatori.
-\subsubsection{CA}
-La fase CA racchiude al proprio interno i periodi di Sviluppo Requisiti Opzionali e Validazione e Collaudo.
+La suddivisione dei periodi lungo la linea temporale viene riassunta graficamente tramite la seguente sequenza temporale per favorire una migliore comprensione:\\
+\begin{figure}[h]
+\includegraphics[width=18cm, height=5cm]{documenti/grafici/Sequenza temporale progetto.png}
+\caption{Sequenza temporale del progetto}
+\label{fig:STP}
+\end{figure}
 
+\subsubsection{Analisi}
+\custombold{Periodo:} dal 11/11/2023 al 23/12/2023\\
+Questo periodo inizia con l'assegnazione del capitolato d'appalto e termina all'inizio del periodo di Progettazione Technology Baseline\textsubscript{G}. Inizialmente vengono identificati gli strumenti per il lavoro collaborativo e quelli più adatti per la redazione della documentazione. Successivamente, si procede con un'analisi preliminare per individuare i requisiti necessari allo sviluppo del prodotto.\\
+Durante questo periodo, data l'inesperienza del gruppo nelle tematiche trattate, si decide di dedicare tempo alla formazione. Inoltre, vengono redatti ulteriori documenti relativi alle strategie e alla qualità che il gruppo CyberSorceres si propone di rispettare.
+\begin{itemize}
+    \item \custombold{Formazione:} Tramite ore concordate con il proponente e tramite autoformazione tramite corsi online.
+    \item \custombold{Norme del Way of Working:} Si procede con l'individuazione degli strumenti che saranno utilizzati per la stesura della documentazione e per la collaborazione. Le norme sono emanate dall'Amministratore e il rispetto di queste norme dovrà essere certificato dai verificatori. Viene quindi redatto il documento \textit{Norme Way of Working}.
+    \item \custombold{Piano di progetto:} Il Responsabile, basandosi sulle date concordate per le revisioni di avanzamento e sulle scadenze stabilite dal gruppo, redige il \textit{Piano di Progetto}.
+    \item \custombold{Analisi dei requisiti:} Utilizzando il capitolato d'appalto e attraverso incontri con il proponente, gli Analisti identificano i requisiti del sistema e redigono una prima versione dell'\textit{Analisi dei requisiti}.
+    \item \custombold{Piano di qualifica:} L'Amministratore redige i piani e le procedure di gestione per la qualità, mentre i verificatori illustrano l'esito e la completezza delle verifiche effettuate.
+    \item \custombold{Glossario:} Viene redatto il \textit{Glossario}. Questo documento viene aggiornato in maniera continuativa.
+\end{itemize}
+\subsubsection{Progettazione Technology Baseline}
+\custombold{Periodo:} dal 23/12/2023 al 12/01/2024\\
+Questo periodo inizia dopo l'Analisi e termina all'inizio della Codifica del Proof of Concept\textsubscript{G}. Al termine di questo periodo, è previsto un incontro con il proponente durante il quale verrà presentata la soluzione generale individuata e verranno annotati eventuali correzioni. Verranno inoltre apportati incrementi ai documenti prodotti nei periodi precedenti.\\
+L'analisi del sistema effettuata in questo periodo serve come base tecnologica e progettuale per la codifica finale del Proof of Concept, che sarà realizzata nel periodo successivo.
+\begin{itemize}
+    \item \custombold{Technology Baseline:} In questa attività vengono studiate, analizzate e selezionate le tecnologie, i framework e le librerie da utilizzare nello sviluppo del prodotto.
+    \item \custombold{Aggiornamento documentazione:} In questo periodo vengono apportate delle modifiche incrementali ai documenti precedentemente redatti.
+\end{itemize}
+\subsubsection{Sviluppo Proof of Concept}
+\custombold{Periodo:} dal 12/01/2024 al 16/02/2024\\
+Questo periodo inizia dopo il periodo di Progettazione per la Technology Baseline e termina con la scadenza di consegna dei documenti per la revisione di Requirements and Technology Baseline (RTB\textsubscript{G}). L'attività principale di questo periodo è la realizzazione di un Proof of Concept\textsubscript{G}.
+\begin{itemize}
+    \item \custombold{Proof of Concept:} Il Proof of Concept è una dimostrazione eseguibile che servirà come base di partenza su cui effettuare incrementi nei periodi successivi.
+    \item \custombold{Aggiornamento documentazione:} In questo periodo vengono apportate delle modifiche incrementali ai documenti precedentemente redatti.
+\end{itemize}
+\subsubsection{Sviluppo requisiti obbligatori}
+\custombold{Periodo:} dal 16/02/2024 al 10/03/2024\\
+Questo periodo inizia dopo la revisione di Requirements and Technology Baseline (RTB\textsubscript{G}) e termina con l'inizio dello Sviluppo requisiti opzionali. Quindi, il Proof of Concept\textsubscript{G} precedentemente sviluppato sarà utilizzato come base per incrementare il prodotto. Una delle attività di questo periodo è la definizione della Product Baseline\textsubscript{G}.
+\begin{itemize}
+    \item \custombold{Product Baseline:} Questa attività illustra la baseline architetturale del prodotto attraverso i diagrammi delle classi, dimostrando la coerenza con quanto mostrato durante l'attività di Technology Baseline.
+    \item \custombold{Test:} I Programmatori scrivono i test di unità e integrazione relativi ai componenti sviluppati in questo periodo.
+    \item \custombold{Codifica:} Viene eseguito lo sviluppo del codice del prodotto da parte dei Programmatori relativamente ai componenti descritti dai requisiti obbligatori.
+    \item \custombold{Manuale:} Comincia la redazione del documento \textit{Manuale Utente}. Questo documento fornisce indicazioni sull'utilizzo del sistema da parte degli utenti.
+    \item \custombold{Aggiornamento documentazione:} In questo periodo vengono apportate delle modifiche incrementali ai documenti precedentemente redatti.
+\end{itemize}
+\subsubsection{Sviluppo requisiti opzionali}
+\custombold{Periodo:} dal 10/03/2024 al 17/03/2024\\
+Questo periodo inizia dopo lo Sviluppo requisiti obbligatori e termina con l'inizio dello periodo di Verifica e validazione. In preparazione alla revisione di Product Baseline (PB\textsubscript{G}), si procede con lo sviluppo dei requisiti opzionali.
+\begin{itemize}
+    \item \custombold{Test:} I Programmatori scrivono i test di unità e integrazione relativi ai componenti sviluppati in questo periodo.
+    \item \custombold{Codifica:} Viene eseguito lo sviluppo del codice del prodotto da parte dei Programmatori relativamente ai componenti descritti dai requisiti opzionali.
+    \item \custombold{Aggiornamento documentazione:} In questo periodo vengono apportate delle modifiche incrementali ai documenti precedentemente redatti.
+\end{itemize}
+\subsubsection{Validazione e collaudo}
+\custombold{Periodo:} dal 17/03/2024 al 07/04/2024\\
+Questo periodo inizia dopo lo Sviluppo requisiti opzionali e termina con la scadenza di consegna dei documenti per la revisione di Customer Acceptance (CA\textsubscript{G}). Il sistema verrà collaudato e ci si assicurerà che il prodotto realizzato sia pienamente conforme alle aspettative.
+\begin{itemize}
+    \item \custombold{Test:} Oltre ai test di unità e integrazione, vengono eseguiti test di sistema.
+    \item \custombold{Collaudo:} Il prodotto viene eseguito e testato in tutte le sue funzionalità, verificando che siano stati soddisfatti tutti i requisiti.
+    \item \custombold{Validazione:} Viene verificato che il prodotto sia conforme alle specifiche e soddisfi le richieste del cliente.
+    \item \custombold{Aggiornamento documentazione:} In questo periodo vengono apportate delle modifiche incrementali ai documenti precedentemente redatti.
+\end{itemize}
 \newpage
 \section{Preventivo}
 Ogni membro del gruppo può assumere più di un ruolo, sia contemporaneamente che in fasi diverse del progetto, a condizione che non vi sia un conflitto di interessi tra i ruoli assunti. La divisione del lavoro che sarà illustrata di seguito assicurerà una distribuzione equa del carico di lavoro individuale e dei vari ruoli.\\
@@ -331,7 +387,7 @@ Samuele Vignotto & 0 & 12 & 11 & 0 & 0 & 5 & 28\\
 \end{center}
 
 
-\begin{figure}
+\begin{figure}[h]
     \centering
 \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Analisi.jpg}    
     \caption{Grafico divisione ore lavorative periodo di Analisi}
@@ -364,7 +420,7 @@ In questo periodo i costi da affrontare sono:
     \label{tab:costiAnalisi}
 \end{center}
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Analisi.jpg}
     \caption{grafico della divisione percentuale dei costi sostenuti nel periodo di Analisi}
@@ -401,7 +457,7 @@ Samuele Vignotto & 12 & 0 & 0 & 2 & 0 & 2 & 16\\
 \label{tab:PTB}
 \end{center}
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Progettazione_Technology_Baseline.jpg}
     \caption{Grafico divisione ore lavorative periodo di Progettazione Techonology Baseline}
@@ -433,7 +489,7 @@ In questo periodo i costi da affrontare sono:
 \label{tab:costiPTB}
 \end{center}
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Progettazione_Technology_Baseline.jpg}
  \caption{grafico della divisione percentuale dei costi sostenuti nel periodo di Progettazione Technology Baseline}
@@ -469,7 +525,7 @@ Samuele Vignotto & 0 & 0 & 7 & 4 & 5 & 2 & 18\\
 \label{tab:POC}
 \end{center}
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Sviluppo_Proof_of_Concept.jpg}    \caption{Grafico divisione ore lavorative periodo di Sviluppo Proof of Concept}
     \label{fig:POC}
@@ -500,7 +556,7 @@ In questo periodo i costi da affrontare sono:
         \captionof{table}{Preventivo costi Proof of Concept}
 \label{tab:costiPOC}
 \end{center}
-\begin{figure}
+\begin{figure}[h]
     \centering
 \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuali_costi_Sviluppo_Proof_of_Concept.jpg}    \caption{Grafico della divisione percentuale dei costi sostenuti nel periodo di Sviluppo Proof of Concept}
     \label{fig:enter-label}
@@ -535,7 +591,7 @@ Samuele Vignotto & 0 & 0 & 0 & 4 & 6 & 2 & 12\\
 \label{tab:PSRO}
 \end{center}
 
-\begin{figure}
+\begin{figure}[h]
     \centering
 \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Sviluppo_Requisiti_Obbligatori.jpg}    \caption{Grafico divisione ore lavorative periodo di Sviluppo Requisiti Obbligatori}
     \label{fig:PSRO}
@@ -566,7 +622,7 @@ In questo periodo i costi da affrontare sono:
 \label{tab:costiPSRO}
 \end{center}
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Sviluppo_Requisiti_Obbligatori.jpg}    
     \caption{Grafico della divisione percentuale dei costi sostenuti nel periodo di Sviluppo Requisiti Obbligatori}
@@ -601,7 +657,7 @@ Samuele Vignotto & 0 & 0 & 0 & 4 & 4 & 2 & 10\\
    \captionof{table}{Preventivo ore Periodo Sviluppo Requisiti Opzionali}
 \label{tab:PSROp}
 \end{center}
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Sviluppo_Requisiti_Opzionali.jpg}\caption{ Grafico divisione ore lavorative periodo di Sviluppo Requisiti Opzionali}
     \label{fig:PSROp}
@@ -631,7 +687,7 @@ In questo periodo i costi da affrontare sono:
        \captionof{table}{Preventivo costi Periodo Sviluppo Requisiti Opzionali}
 \label{tab:costiPSROp}
 \end{center}
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Sviluppo_Requisiti_Opzionali.jpg} \caption{Grafico della divisione percentuale dei costi sostenuti nel periodo di Sviluppo Requisiti Opzionali}
     \label{fig:costiPSROp}
@@ -666,7 +722,7 @@ Samuele Vignotto & 0 & 0 & 0 & 3 & 6 & 2 & 11\\
 \label{tab:PVC}
 \end{center}
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Validazione_e_Collaudo.jpg}    \caption{Grafico divisione ore lavorative periodo di Validazione e Collaudo}
     \label{fig:PVC}
@@ -697,7 +753,7 @@ In questo periodo i costi da affrontare sono:
 \label{tab:costiPVC}
 \end{center}
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Validazione_e_Collaudo.jpg}    \caption{Grafico della divisione percentuale dei costi sostenuti nel periodo di Validazione e Collaudo}
     \label{fig:costiPVC}
