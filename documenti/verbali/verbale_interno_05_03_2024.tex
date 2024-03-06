@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+%\fancyhead[L]{\includegraphics[width=4em]{logo rotondo.png}}
+%\fancyhead[C]{Verbale riunione di progetto - gg/mm/aaaa}
+%\fancyhead[R]{\includegraphics[width=4em]{CS_tr.png}}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{CyberSorcerers - Verbale di riunione interna}
+\fancyhead[C]{}
+\fancyhead[R]{05/03/2024}
+
+\title{\Huge{\textbf{Verbale di riunione}}\vspace{-1em}}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\begin{center}
+\Large{05 Marzo 2024 - 14:30\\
+Google Meet\\
+Verbale redatto da: Samuele Vignotto\\}
+\end{center}
+\vspace{2em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Partecipanti alla riunione}\\
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Giovanni Moretti}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Sabrina Caniato}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}: presente \\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}: presente \\
+    \end{tabular}
+\end{center}}
+\newpage
+\section{Obiettivo della riunione}
+Presentazione del lavoro svolto rigurdante il PoC ed assegnazione compiti all'interno del team.
+\section{Agenda}
+\subsection{Argomenti trattati}
+\subsubsection{plug-in}
+È stato mostrato il funzionamento della creazione dei test da perte di Bedrock, inoltre è stato presentato il comando che permette di lanciare i test e controllare se sono passati.
+\subsubsection{web app}
+È stato mostrato come ci siano tre visualizzazioni diverse:\begin{itemize}
+    \item user
+    \item dev
+    \item pm
+\end{itemize}
+\subsection{Decisioni}
+Nella web app del PoC è stato deciso di includere anche un collegamento con Bedrock per dimostrare la fattibilita, mentre nel plug-in è stato deciso di aggiungere un collegamento con MongoDB per dimostrare la fattibilità.\\
+È stato deciso di suddividere i seguenti compiti:\begin{itemize}
+    \item Creazione Lambda function per collegamento plug-in e MongoDB (Andrea Rezzi).
+    \item Integrazione dell'API per collegamento plug-in e MongoDB e pulizia del codice (Giovanni Moretti).
+    \item Verifica documentazione per RTB (Samuele Vignotto).
+    \item Continuazione della stesura della presentazione per RTB (Giulia Dentone).
+    \item Ultimazione frontend PoC per RTB (Nicola Lazzarin e Sabrina Caniato).
+\end{itemize}
+Inoltre è stato deciso che giovedì il team si candiderà per la valutazione RTB.
+\section{Attività future}
+\subsection{Riunione Interna:}
+La prossima riunione interna si terrà su Google Meet il 07/03/2024 alle 11:30.
+\subsection{Riunione esterna}
+È stata fissata una riunione esterna con l'azienda, per il 07/03/2024 alle 12:00, al fine di presentare il PoC per un collaudo walkthrough prima di effettuare la richiesta per l'incontro relativo alla valutazione RTB con il prof. Cardin. 
+
+\end{document}
