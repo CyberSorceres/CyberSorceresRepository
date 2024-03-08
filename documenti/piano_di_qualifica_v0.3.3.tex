@@ -95,6 +95,8 @@
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LightBlue}
+    0.4.0 & 08/03/2024 & Giulia Dentone & Samuele Vignotto & Inizio stesura della sezione testing\\
     \rowcolor{LighterBlue}
     0.3.3 & 22/01/2024 & Sabrina Caniato & Giulia Dentone & Update della qualità di processo\\
     \rowcolor{LightBlue}
@@ -343,11 +345,25 @@ Per assicurare l'elevata qualità del prodotto, è stata adottata come base di r
 
 
 \section{Test e specifiche}
+Nella seguente sezione esporremo le varie metodologie di test, i loro obiettivi e i criteri di successo ottenuti. Per facilitare la fase di validazione e accertamento continuo della correttezza del prodotto il gruppo ha deciso di svolgere una verifica in parallelo allo sviluppo, conformandosi al "modello a V"\textsubscript{G}.  
+\begin{center}
+\includegraphics[width=15cm, height=10cm]{documenti/modello_a_v.png}
+\end{center}
+
 \subsection{Test di Unità}
+Il \textit{test di unità} sono una tipologia di testing del software in cui singole unità o componenti del software vengono testate in isolamento. Le unità possono essere singole funzioni, procedure, metodi o classi. L'obiettivo del test di unità è verificare che ciascuna unità funzioni correttamente secondo le specifiche e che produca i risultati attesi. Abbiamo deciso che questo tipo di testing sarà in larga parte automatizzato, per ottimizzare i costi e le tempistiche dedicate a questo processo.
+
 \subsection{Test di Integrazione}
+I \textit{test di integrazione} sono una fase del processo di testing in cui le diverse unità o del software vengono combinate e testate insieme come gruppo. L'obiettivo principale è verificare che le singole unità, testate precedentemente in modo isolato tramite i test di unità, funzionino correttamente quando integrate e collegate tra loro. Durante i test di integrazione, vengono identificati e risolti eventuali problemi di interfacciamento tra le diverse unità e vengono verificate le interazioni tra di esse. L'obiettivo finale è garantire che l'intero sistema funzioni come previsto e che tutte le interazioni tra le sue parti siano corrette.
+
 \subsection{Test di Sistema}
+I \textit{test di sistema} sono una fase del processo che si concentra sull'analisi e la verifica del sistema nel suo complesso rispetto ai requisiti specificati. L'obiettivo principale è garantire che il sistema soddisfi tutte le funzionalità e i requisiti richiesti dal cliente o specificati nel documento di specifica dei requisiti. Durante i test di sistema, vengono eseguiti scenari di test realistici per simulare l'utilizzo del software in un ambiente di produzione. I risultati dei test di sistema sono utilizzati per valutare se il sistema è pronto per il rilascio o se sono necessari ulteriori miglioramenti e correzioni.
+
 \subsection{Test di Accettazione}
+I \textit{test di accettazione} sono una fase finale in cui il sistema viene valutato dal cliente per determinare se soddisfa i requisiti concordati e se è pronto per il rilascio. Questi test sono orientati a verificare che il sistema sia conforme alle aspettative e alle necessità degli utenti e che sia in grado di svolgere le funzioni previste in modo efficace ed efficiente. L'obiettivo principale è confermare che il software sia pronto per essere messo in produzione e che risponda alle aspettative del cliente. I risultati dei test di accettazione sono fondamentali per prendere decisioni riguardanti il rilascio del prodotto e possono influenzare eventuali modifiche o miglioramenti futuri.
+
 \subsection{Test di Regressione}
+I \textit{test di regressione} mirano a verificare che le modifiche apportate al codice sorgente o al sistema non abbiano introdotto nuovi difetti o rotto funzionalità esistenti. Questi test vengono eseguiti dopo ogni modifica al software, come aggiornamenti, correzioni di bug o nuove implementazioni. L'obiettivo è assicurarsi che le modifiche non abbiano impatti indesiderati sul comportamento del sistema, specialmente su funzionalità precedentemente testate e funzionanti correttamente. L'obiettivo del gruppo è raggiungere la massima automazione possibile dei test di regressione, al fine di ridurre i tempi di esecuzione e garantire una copertura completa dei test.
 
 \section{Valutazioni per il miglioramento}
 In questo paragrafo cercheremo di analizzare le difficoltà che abbiamo avuto fino alla consegna e valutarne le rispettive soluzioni e miglioramenti adottati dal gruppo.
@@ -397,7 +413,7 @@ In questo paragrafo cercheremo di analizzare le difficoltà che abbiamo avuto fi
      \rowcolor{LighterBlue}
      Inesperienza dell'analista & Gli analisti, non avendo mai lavorato a un progetto di tale portata, hanno fatto fatica inizialmente ad individuare tutti i requisiti necessari dalle prime sedute & Media & Sessioni di brainstorming interne e con i proponenti \\
     \rowcolor{LightBlue}
-    Pianificazione poco realistica da parte del Responsabile & Data l'inesperienza nell'ambito, la pianificazione e le aspettative sul carico di lavoro non sono state conformi alla realtà & Bassa & Ridefinire gli sprint ed effettuarne più frequentemente ma ognuno con un minor carico di lavoro per manenere sempre alta la produttività dei membri
+    Pianificazione poco realistica da parte del Responsabile & Data l'inesperienza nell'ambito, la pianificazione e le aspettative sul carico di lavoro non sono state conformi alla realtà & Bassa & Ridefinire gli sprint ed effettuarne più frequentemente ma ognuno con un minor carico di lavoro per mantenere sempre alta la produttività dei membri
      
 \end{tabular}
 \captionof{table}{Criticità dei ruoli}
