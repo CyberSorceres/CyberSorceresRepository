@@ -30,6 +30,9 @@
 \definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
 \definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
 
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}
+
 %Header
 \usepackage{fancyhdr, xcolor}
 \pagestyle{fancy}
@@ -76,11 +79,15 @@
 \begin{center}
     \begin{tabular}{l c c}
         \rowcolor{Blue} 
-        Informazioni sul documento & &\\ [1 ex]
+        \textbf{Informazioni sul documento} & &\\ [1 ex]
+        \rowcolor{LighterBlue}
         Destinatari: & Prf. Tullio Vardanega & Prf. Riccardo Cardin\\ [1 ex]
+        \rowcolor{LightBlue}
+        G al pedice: & Consultare il Glossario & \\ [1 ex]
     \end{tabular}
+\end{center}
     
-\end{center}}
+\newpage
 
 \textbf{Registro dei Cambiamenti - Changelog}
 \begin{center}
@@ -89,15 +96,24 @@
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
     \rowcolor{LighterBlue}
-     0.0.1& 02/12/2023 & Sabrina Caniato & Samuele Vignotto& Definizione struttura del documento e scheletro delle sezioni. Scrittura introduzione ed obiettivi delle diverse sezioni.\\ 
-     \rowcolor{LightBlue}
-      0.2.0& 14/12/2023 & Giulia Dentone & Samuele Vignotto& Aggiunta dei riferimenti.\\ 
-      \rowcolor{LighterBlue}
-     0.2.1& 30/12/2023 & Samuele Vignotto  & Sabrina Caniato & Aggiunta contenuto sezione "Qualità di prodotto"\\
-     \rowcolor{LightBlue}
-     0.2.2& 04/01/2024 & Samuele Vignotto & Giulia Dentone & Aggiunta contenuto sezione "Qualità di processo"\\
+    0.3.3 & 22/01/2024 & Sabrina Caniato & Giulia Dentone & Update della qualità di processo\\
+    \rowcolor{LightBlue}
+    0.3.2 & 09/01/2024 & Giovanni Moretti & Nicola Lazzarin & Update delle valutazioni per il miglioramento\\
+    \rowcolor{LighterBlue}
+    0.3.1 & 02/01/2024 & Andrea Rezzi & Sabrina Caniato & Update delle valutazioni per il miglioramento \\
+    \rowcolor{LightBlue}
+    0.3.0 & 21/12/2023 & Andrea Rezzi & Sabrina Caniato & Aggiunta delle valutazioni per il miglioramento \\
+    \rowcolor{LighterBlue}
+    0.2.1 & 18/12/2023 & Giulia Dentone & Samuele Vignotto & Update della qualità di prodotto \\    
+    \rowcolor{LightBlue}
+    0.2.0 & 18/12/2023 & Samuele Vignotto & Giovanni Moretti & Descrizione della qualità di prodotto \\
+    \rowcolor{LighterBlue}
+    0.1.0 & 17/12/2023 & Sabrina Caniato & Andrea Rezzi & Descrizione della qualità di processo \\
+    \rowcolor{LightBlue}
+    0.0.1 & 14/12/2023 & Giovanni Moretti & Nicola Lazzarin &  Definizione struttura del documento e scheletro delle sezioni. Scrittura introduzione ed obiettivi delle diverse sezioni\\
 \end{tabular}
 \end{center}
+\newpage
 \tableofcontents
 \newpage
 \section{Introduzione e scopo}
