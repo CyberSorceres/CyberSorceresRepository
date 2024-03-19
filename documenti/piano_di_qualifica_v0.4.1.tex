@@ -95,6 +95,8 @@
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LighterBlue}
+    0.4.1 & 19/03/2024 & Samuele Vignotto & Nicola Lazzarin & Aggiunta tabella test di sistema\\
     \rowcolor{LightBlue}
     0.4.0 & 08/03/2024 & Giulia Dentone & Samuele Vignotto & Inizio stesura della sezione testing\\
     \rowcolor{LighterBlue}
@@ -359,11 +361,87 @@ I \textit{test di integrazione} sono una fase del processo di testing in cui le 
 \subsection{Test di Sistema}
 I \textit{test di sistema} sono una fase del processo che si concentra sull'analisi e la verifica del sistema nel suo complesso rispetto ai requisiti specificati. L'obiettivo principale è garantire che il sistema soddisfi tutte le funzionalità e i requisiti richiesti dal cliente o specificati nel documento di specifica dei requisiti. Durante i test di sistema, vengono eseguiti scenari di test realistici per simulare l'utilizzo del software in un ambiente di produzione. I risultati dei test di sistema sono utilizzati per valutare se il sistema è pronto per il rilascio o se sono necessari ulteriori miglioramenti e correzioni.
 
+\begin{center}
+    \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
+    \rowcolor{Blue}
+    \custombold{ID Test} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
+    \hline
+    \rowcolor{LighterBlue}
+    TS1 & Verificare che sia possibile accedere alla web-app\textsubscript{G} tramite email e password & ROF1 & NT\\
+    \hline
+    \rowcolor{LightBlue}
+    TS2 & Verificare che sia possibile scrivere le richieste di business & ROF2 & NT\\
+    \hline
+    \rowcolor{LighterBlue}
+    TS3 & Verificare che sia possibile inviare le richieste di business all'IA\textsubscript{G} & ROF3 & NT\\
+    \hline
+    \rowcolor{LightBlue}
+    TS4 & Verificare che sia possibile visualizzare l'andamento del progetto dalla web-app\textsubscript{G} & ROF4 & NT\\
+    \hline
+    \rowcolor{LighterBlue}
+    TS5 & Verificare che sia possibile per l'attore Cliente inviare un feedback riguardo l'implementazione di una user story\textsubscript{G} generata & ROF5 & NT\\
+    \hline
+    \rowcolor{LightBlue}
+    TS6 & Verificare che si riceva una notifica una volta che una user story\textsubscript{G} è contrassegnata come completata & RDF6 & NT\\
+    \hline
+    \rowcolor{LighterBlue}
+    TS7 & Verificare che sia possibile il tag del codice utilizzando il plug-in\textsubscript{G} & ROF7 & NT\\
+    \hline
+    \rowcolor{LightBlue}
+    TS8 & Verificare che sia possibile per l'attore Sviluppatore il poter vedere la lista di user/epic stories\textsubscript{G} che gli sono state assegnate & ROF8 & NT\\
+    \hline
+    \rowcolor{LighterBlue}
+    TS9 & Verificare che quando viene assegnata una epic/user story\textsubscript{G} l'attore Sviluppatore venga notificato tramite la web-app\textsubscript{G} & RDF9 & NT\\
+    \hline
+    \rowcolor{LightBlue}
+    TS10 & Verificare che sia possibile inviare il codice all'IA\textsubscript{G} per la verifica & ROF10 & NT\\
+    \hline
+    \end{tabular}
+\end{center}
+\begin{center}
+    \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
+    \rowcolor{Blue}
+    \custombold{ID Test} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
+    \hline
+    \rowcolor{LighterBlue}
+    TS11 & Verificare che sia possibile visualizzare le epic/user stories generate & ROF11 & NT\\
+    \hline
+    \rowcolor{LightBlue}
+    TS12 & Verificare che sia possibile per l'attore Project Manager l'invio di feedback riguardante le epic/user stories generate dall'IA\textsubscript{G} & ROF12 & NT\\
+    \hline
+    \rowcolor{LighterBlue}
+    TS13 & Verificare che sia possibile per l'attore Project Manager richiedere la divisione delle user stories\textsubscript{G} valutate come troppo grandi & ROF13 & NT\\
+    \hline
+    \rowcolor{LightBlue}
+    TS14 & Verificare che sia possibile per l'attore Project Manager assegnare le epic/user stories\textsubscript{G} a gli attori Sviluppatore & ROF14 & NT\\
+    \hline
+    \rowcolor{LighterBlue}
+    TS15 & Verificare che venga inviata una notifica all'attore Project Manager quando vengono generate le epic/user stories\textsubscript{G} & RDF15 & NT\\
+    \hline
+    \rowcolor{LightBlue}
+    TS16 & Verificare che sia possibile per l'attore Project Manager richiedere la modifica di epic/user stories all'IA\textsubscript{G} & ROF16 & NT\\
+    \hline
+    \rowcolor{LighterBlue}
+    TS17 & Verificare che sia possibile per l'attore Sviluppatore visualizzare l'andamento delle epic/user stories\textsubscript{G} assegnate & ROF17 & NT\\
+    \hline
+    \rowcolor{LightBlue}
+    TS18 & Verificare che il plug-in\textsubscript{G} supporti i linguaggi Typescript\textsubscript{G} e Javascript\textsubscript{G} & ROF20 & NT\\
+    \hline
+    \rowcolor{LighterBlue}
+    TS19 & Verificare che il plug-in\textsubscript{G} supporti i linguaggi Kotlin\textsubscript{G} e Swift\textsubscript{G} & RDF21 & NT\\
+    \hline
+    \end{tabular}
+    \captionof{table}{Tabella dei test di sistema}
+\label{tab:testSistema}
+\end{center}
+
 \subsection{Test di Accettazione}
 I \textit{test di accettazione} sono una fase finale in cui il sistema viene valutato dal cliente per determinare se soddisfa i requisiti concordati e se è pronto per il rilascio. Questi test sono orientati a verificare che il sistema sia conforme alle aspettative e alle necessità degli utenti e che sia in grado di svolgere le funzioni previste in modo efficace ed efficiente. L'obiettivo principale è confermare che il software sia pronto per essere messo in produzione e che risponda alle aspettative del cliente. I risultati dei test di accettazione sono fondamentali per prendere decisioni riguardanti il rilascio del prodotto e possono influenzare eventuali modifiche o miglioramenti futuri.
 
 \subsection{Test di Regressione}
 I \textit{test di regressione} mirano a verificare che le modifiche apportate al codice sorgente o al sistema non abbiano introdotto nuovi difetti o rotto funzionalità esistenti. Questi test vengono eseguiti dopo ogni modifica al software, come aggiornamenti, correzioni di bug o nuove implementazioni. L'obiettivo è assicurarsi che le modifiche non abbiano impatti indesiderati sul comportamento del sistema, specialmente su funzionalità precedentemente testate e funzionanti correttamente. L'obiettivo del gruppo è raggiungere la massima automazione possibile dei test di regressione, al fine di ridurre i tempi di esecuzione e garantire una copertura completa dei test.
+
+\subsubsection{Resoconto dei test}
 
 \section{Valutazioni per il miglioramento}
 In questo paragrafo cercheremo di analizzare le difficoltà che abbiamo avuto fino alla consegna e valutarne le rispettive soluzioni e miglioramenti adottati dal gruppo.
