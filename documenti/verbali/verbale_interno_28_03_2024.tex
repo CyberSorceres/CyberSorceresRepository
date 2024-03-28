@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+\providecommand{\versionnumber}{1.0.0}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+%\fancyhead[L]{\includegraphics[width=4em]{CS_tr.png}}
+%\fancyhead[C]{Verbale riunione di progetto - gg/mm/aaaa}
+%\fancyhead[R]{\includegraphics[width=4em]{CS_tr.png}}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{CyberSorcerers - Verbale di riunione interna}
+\fancyhead[C]{}
+\fancyhead[R]{04/12/2023}
+
+\title{\Huge{\textbf{Verbale di riunione}}\vspace{-1em}}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\begin{center}
+\Large{28 Marzo 2024 - 10:00\\
+Google Meet\\
+Verbale redatto da: Giulia Dentone\\}
+\end{center}
+\vspace{2em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Partecipanti alla riunione}\\
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Giovanni Moretti}: assente\\
+        \rowcolor{LightBlue}
+        \custombold{Sabrina Caniato}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}: presente \\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}: assente \\
+    \end{tabular}
+\end{center}}
+\newpage
+\section{Obiettivo della riunione}
+L'obiettivo della riunione è quello di discutere l'esito diverso da quello atteso del colloquio RTB ricevuto via mail dal professor Cardin ed individuare le migliorie necessarie al fine di soddisfare le richieste in vista di un futuro colloquio, correggendo i punti messi in evidenza dal professore.
+\section{Agenda}
+\subsection{Task}
+Viene assegnata una tecnologia ad ogni membro del gruppo, che dovrà compilare il power point di presentazione per il colloquio RTB con le sue ricerche e analisi, finalizzate a spiegare le funzionalità e le motivazioni delle nostre scelte. 
+\subsection{Fissare il colloquio RTB}
+Abbiamo deciso di inviare la mail e fissare il colloquio con il professor Cardin preventivamente, sfruttando la pausa data dalle vacanze di Pasqua per completare le azioni necessarie e non appena finite le feste sostenere il colloquio, recuperando questo ritardo verificatosi a seguito della ricezione dell'esito dell'RTB.
+\subsection{Completamento dei grafici}
+Abbiamo assegnato la realizzazione dei grafici mancanti necessari al completamento del documento Piano di Qualifica, al fine di essere pronti per il colloquio con il professor Vardanega, confrontandoci e chiarendo le difficoltà riscontrate precedentemente. 
+\section{Decisioni}
+\subsection{Assegnazione delle tecnologie}
+\begin{itemize}[label={}, noitemsep]
+    \item Amazon AWS $\rightarrow$ Giulia Dentone
+    \item Typescript $\rightarrow$ Giovanni Moretti
+    \item Node.js $\rightarrow$ Andrea Rezzi
+    \item MongoDB $\rightarrow$ Sabrina Caniato
+    \item React $\rightarrow$ Samuele Vignotto
+\end{itemize}
+
+\section{Azioni}
+\begin{center}
+\begin{tabular}{P{18em} P{10em} P{9em}} 
+    \custombold{Task} & \custombold{Responsabile} & \custombold{Termine massimo}\\
+\hline
+  Invio mail per il colloquio RTB & Sabrina Caniato & 28/03/2024 \\ 
+  \hline
+  Completamento della presentazione RTB aggiornata & Tutti tranne Nicola Lazzarin & 02/03/2024 \\ 
+  \hline
+  Completamento dei grafici del Piano di Qualifica & Nicola Lazzarin & 05/03/2024 \\ 
+  \hline
+\end{tabular}
+\end{center}
+\section{Attività future}
+\subsection{Prossima riunione interna}
+La prossima riunione interna si terrà il giorno 02/03/2024 alle 10:00 sulla piattaforma Google Meet, per esporre la propria analisi delle tecnologie, correggere vicendevolmente le nostre presentazioni e provare le tempistiche di esposizione. 
+\end{document}
