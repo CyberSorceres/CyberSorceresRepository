@@ -91,16 +91,18 @@
     
 \newpage
 
-\textbf{Registro dei Cambiamenti - Changelog}
+\textbf{Registro dei Cambiamenti - Changelog\textsubscript{G}}
 \begin{center}
 \begin{tabular}{P{4em} P{6em} P{8em} P{8em} P{10em}} 
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
-    \rowcolor{LighterBlue}
-    0.4.1 & 19/03/2024 & Samuele Vignotto & Nicola Lazzarin & Aggiunta tabella test di sistema\\
     \rowcolor{LightBlue}
-    0.4.0 & 08/03/2024 & Giulia Dentone & Samuele Vignotto & Inizio stesura della sezione testing\\
+    1.0.0 & 09/04/2024 & Samuele Vignotto & Giovanni Moretti & Verifica documento per approvazione al rilascio\\
+    \rowcolor{LighterBlue}
+    0.4.1 & 19/03/2024 & Samuele Vignotto & Nicola Lazzarin & Aggiunta tabella test\textsubscript{G} di sistema\\
+    \rowcolor{LightBlue}
+    0.4.0 & 08/03/2024 & Giulia Dentone & Samuele Vignotto & Inizio stesura della sezione testing\textsubscript{G}\\
     \rowcolor{LighterBlue}
     0.3.3 & 22/01/2024 & Sabrina Caniato & Giulia Dentone & Update della qualità di processo\\
     \rowcolor{LightBlue}
@@ -121,6 +123,7 @@
 \end{center}
 \newpage
 \tableofcontents
+
 \newpage
 \section{Introduzione e scopo}
 Il Piano di Qualifica è un documento che ci prefissiamo di aggiornare periodicamente dato che definisce l'approccio e le strategie per garantire la qualità di un progetto software. Questo piano è parte integrante del processo di gestione della qualità e fornisce una linea guida dettagliata su come il controllo e l'assicurazione della qualità verranno implementati durante l'intero ciclo di vita\textsubscript{G} del progetto.\\
@@ -133,7 +136,7 @@ Il piano di qualifica conterrà:
         
     \item Specifica dei criteri che determineranno se il prodotto soddisfa gli standard di qualità stabiliti.
     
-    \item Descrizione dettagliata dei processi di test che saranno implementati e la definizione delle strategie utilizzate per l'esecuzione di essi.
+    \item Descrizione dettagliata dei processi di test\textsubscript{G} che saranno implementati e la definizione delle strategie utilizzate per l'esecuzione di essi.
 
     \item Procedure per gestire eventuali deviazioni rispetto agli standard di qualità pianificati.
 
@@ -305,7 +308,7 @@ Per assicurare l'elevata qualità del prodotto, è stata adottata come base di r
     \rowcolor{LightBlue}
     \textbf{Portabilità} & La capacità di operare in vari contesti di esecuzione. Gli obiettivi da raggiungere includono adattabilità e sostituibilità. & \textbf{MS05}, \textbf{MS06}\\
     \rowcolor{LighterBlue}
-    \textbf{Test} & L'intero codice prodotto sarà soggetto a verifica per assicurare l'implementazione corretta dei requisiti identificati. & \textbf{MS07}, \textbf{MS08}, \textbf{MS09}, \textbf{MS10}\\
+    \textbf{Test\textsubscript{G}} & L'intero codice prodotto sarà soggetto a verifica per assicurare l'implementazione corretta dei requisiti identificati. & \textbf{MS07}, \textbf{MS08}, \textbf{MS09}, \textbf{MS10}\\
 \end{tabular}
 \captionof{table}{Tabella degli obiettivi della qualità di prodotto}
 \label{tab:qualitaProd}
@@ -332,7 +335,7 @@ Per assicurare l'elevata qualità del prodotto, è stata adottata come base di r
     \rowcolor{LighterBlue}
     \custombold{MS05} & Versioni browser supportate & $\geq 80$\% & $\geq 100$\% \\
     \rowcolor{LightBlue}
-    \custombold{MS06} & Versioni VSCode supportate & $\geq 80$\% & $\geq 100$\% \\
+    \custombold{MS06} & Versioni VSCode\textsubscript{G} supportate & $\geq 80$\% & $\geq 100$\% \\
     \rowcolor{LighterBlue}
     \custombold{MS07} & Solidity Statement Coverage & $\geq 80$\% & $\geq 100$\% \\
     \rowcolor{LightBlue}
@@ -348,17 +351,20 @@ Per assicurare l'elevata qualità del prodotto, è stata adottata come base di r
 \newpage
 
 
-\section{Test e specifiche}
+\section{Test\textsubscript{G} e specifiche}
 Nella seguente sezione esporremo le varie metodologie di test, i loro obiettivi e i criteri di successo ottenuti. Per facilitare la fase di validazione e accertamento continuo della correttezza del prodotto il gruppo ha deciso di svolgere una verifica in parallelo allo sviluppo, conformandosi al "modello a V"\textsubscript{G}.  
-\begin{center}
-\includegraphics[width=15cm, height=10cm]{documenti/modello_a_v.png}
-\end{center}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm, height=10cm]{./documenti/modello_a_v.png}
+    \caption{Figura 0: Modello a V}
+\end{figure}
+
 
 \subsection{Test di Unità}
-Il \textit{test di unità} sono una tipologia di testing del software in cui singole unità o componenti del software vengono testate in isolamento. Le unità possono essere singole funzioni, procedure, metodi o classi. L'obiettivo del test di unità è verificare che ciascuna unità funzioni correttamente secondo le specifiche e che produca i risultati attesi. Abbiamo deciso che questo tipo di testing sarà in larga parte automatizzato, per ottimizzare i costi e le tempistiche dedicate a questo processo.
+Il \textit{test di unità} sono una tipologia di testing\textsubscript{G} del software in cui singole unità o componenti del software vengono testate in isolamento. Le unità possono essere singole funzioni, procedure, metodi o classi. L'obiettivo del test di unità è verificare che ciascuna unità funzioni correttamente secondo le specifiche e che produca i risultati attesi. Abbiamo deciso che questo tipo di testing sarà in larga parte automatizzato, per ottimizzare i costi e le tempistiche dedicate a questo processo.
 
 \subsection{Test di Integrazione}
-I \textit{test di integrazione} sono una fase del processo di testing in cui le diverse unità o del software vengono combinate e testate insieme come gruppo. L'obiettivo principale è verificare che le singole unità, testate precedentemente in modo isolato tramite i test di unità, funzionino correttamente quando integrate e collegate tra loro. Durante i test di integrazione, vengono identificati e risolti eventuali problemi di interfacciamento tra le diverse unità e vengono verificate le interazioni tra di esse. L'obiettivo finale è garantire che l'intero sistema funzioni come previsto e che tutte le interazioni tra le sue parti siano corrette.
+I \textit{test di integrazione} sono una fase del processo di testing\textsubscript{G} in cui le diverse unità o del software vengono combinate e testate insieme come gruppo. L'obiettivo principale è verificare che le singole unità, testate precedentemente in modo isolato tramite i test di unità, funzionino correttamente quando integrate e collegate tra loro. Durante i test di integrazione, vengono identificati e risolti eventuali problemi di interfacciamento tra le diverse unità e vengono verificate le interazioni tra di esse. L'obiettivo finale è garantire che l'intero sistema funzioni come previsto e che tutte le interazioni tra le sue parti siano corrette.
 
 \subsection{Test di Sistema}
 I \textit{test di sistema} sono una fase del processo che si concentra sull'analisi e la verifica del sistema nel suo complesso rispetto ai requisiti specificati. L'obiettivo principale è garantire che il sistema soddisfi tutte le funzionalità e i requisiti richiesti dal cliente o specificati nel documento di specifica dei requisiti. Durante i test di sistema, vengono eseguiti scenari di test realistici per simulare l'utilizzo del software in un ambiente di produzione. I risultati dei test di sistema sono utilizzati per valutare se il sistema è pronto per il rilascio o se sono necessari ulteriori miglioramenti e correzioni.
@@ -366,71 +372,71 @@ I \textit{test di sistema} sono una fase del processo che si concentra sull'anal
 \begin{center}
     \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
     \rowcolor{Blue}
-    \custombold{ID Test} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
+    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
     \hline
     \rowcolor{LighterBlue}
-    TS1 & Verificare che sia possibile accedere alla web-app\textsubscript{G} tramite email e password & ROF1 & NT\\
+    TS1 & Verificare che sia possibile accedere alla web-app\textsubscript{G} tramite email e password & ROF1 & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS2 & Verificare che sia possibile scrivere le richieste di business & ROF2 & NT\\
+    TS2 & Verificare che sia possibile scrivere le richieste di business & ROF2 & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS3 & Verificare che sia possibile inviare le richieste di business all'IA\textsubscript{G} & ROF3 & NT\\
+    TS3 & Verificare che sia possibile inviare le richieste di business all'IA\textsubscript{G} & ROF3 & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS4 & Verificare che sia possibile visualizzare l'andamento del progetto dalla web-app\textsubscript{G} & ROF4 & NT\\
+    TS4 & Verificare che sia possibile visualizzare l'andamento del progetto dalla web-app\textsubscript{G} & ROF4 & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS5 & Verificare che sia possibile per l'attore Cliente inviare un feedback riguardo l'implementazione di una user story\textsubscript{G} generata & ROF5 & NT\\
+    TS5 & Verificare che sia possibile per l'attore\textsubscript{G} Cliente inviare un feedback riguardo l'implementazione di una user story\textsubscript{G} generata & ROF5 & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS6 & Verificare che si riceva una notifica una volta che una user story\textsubscript{G} è contrassegnata come completata & RDF6 & NT\\
+    TS6 & Verificare che si riceva una notifica una volta che una user story\textsubscript{G} è contrassegnata come completata & RDF6 & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS7 & Verificare che sia possibile il tag del codice utilizzando il plug-in\textsubscript{G} & ROF7 & NT\\
+    TS7 & Verificare che sia possibile il tag\textsubscript{G} del codice utilizzando il plug-in\textsubscript{G} & ROF7 & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS8 & Verificare che sia possibile per l'attore Sviluppatore il poter vedere la lista di user/epic stories\textsubscript{G} che gli sono state assegnate & ROF8 & NT\\
+    TS8 & Verificare che sia possibile per l'attore\textsubscript{G} Sviluppatore il poter vedere la lista di user/epic stories\textsubscript{G} che gli sono state assegnate & ROF8 & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS9 & Verificare che quando viene assegnata una epic/user story\textsubscript{G} l'attore Sviluppatore venga notificato tramite la web-app\textsubscript{G} & RDF9 & NT\\
+    TS9 & Verificare che quando viene assegnata una epic/user story\textsubscript{G} l'attore Sviluppatore venga notificato tramite la web-app\textsubscript{G} & RDF9 & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS10 & Verificare che sia possibile inviare il codice all'IA\textsubscript{G} per la verifica & ROF10 & NT\\
+    TS10 & Verificare che sia possibile inviare il codice all'IA\textsubscript{G} per la verifica & ROF10 & NI\\
     \hline
     \end{tabular}
 \end{center}
 \begin{center}
     \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
     \rowcolor{Blue}
-    \custombold{ID Test} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
+    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
     \hline
     \rowcolor{LighterBlue}
-    TS11 & Verificare che sia possibile visualizzare le epic/user stories generate & ROF11 & NT\\
+    TS11 & Verificare che sia possibile visualizzare le epic/user stories\textsubscript{G} generate & ROF11 & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS12 & Verificare che sia possibile per l'attore Project Manager l'invio di feedback riguardante le epic/user stories generate dall'IA\textsubscript{G} & ROF12 & NT\\
+    TS12 & Verificare che sia possibile per l'attore Project Manager\textsubscript{G} l'invio di feedback riguardante le epic/user stories generate dall'IA\textsubscript{G} & ROF12 & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS13 & Verificare che sia possibile per l'attore Project Manager richiedere la divisione delle user stories\textsubscript{G} valutate come troppo grandi & ROF13 & NT\\
+    TS13 & Verificare che sia possibile per l'attore Project Manager richiedere la divisione delle user stories valutate come troppo grandi & ROF13 & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS14 & Verificare che sia possibile per l'attore Project Manager assegnare le epic/user stories\textsubscript{G} a gli attori Sviluppatore & ROF14 & NT\\
+    TS14 & Verificare che sia possibile per l'attore Project Manager assegnare le epic/user stories a gli attori Sviluppatore & ROF14 & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS15 & Verificare che venga inviata una notifica all'attore Project Manager quando vengono generate le epic/user stories\textsubscript{G} & RDF15 & NT\\
+    TS15 & Verificare che venga inviata una notifica all'attore Project Manager quando vengono generate le epic/user stories & RDF15 & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS16 & Verificare che sia possibile per l'attore Project Manager richiedere la modifica di epic/user stories all'IA\textsubscript{G} & ROF16 & NT\\
+    TS16 & Verificare che sia possibile per l'attore Project Manager richiedere la modifica di epic/user stories all'IA & ROF16 & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS17 & Verificare che sia possibile per l'attore Sviluppatore visualizzare l'andamento delle epic/user stories\textsubscript{G} assegnate & ROF17 & NT\\
+    TS17 & Verificare che sia possibile per l'attore Sviluppatore visualizzare l'andamento delle epic/user stories assegnate & ROF17 & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS18 & Verificare che il plug-in\textsubscript{G} supporti i linguaggi Typescript\textsubscript{G} e Javascript\textsubscript{G} & ROF20 & NT\\
+    TS18 & Verificare che il plug-in\textsubscript{G} supporti i linguaggi Typescript\textsubscript{G} e Javascript\textsubscript{G} & ROF20 & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS19 & Verificare che il plug-in\textsubscript{G} supporti i linguaggi Kotlin\textsubscript{G} e Swift\textsubscript{G} & RDF21 & NT\\
+    TS19 & Verificare che il plug-in supporti i linguaggi Kotlin\textsubscript{G} e Swift\textsubscript{G} & RDF21 & NI\\
     \hline
     \end{tabular}
     \captionof{table}{Tabella dei test di sistema}
@@ -443,8 +449,6 @@ I \textit{test di accettazione} sono una fase finale in cui il sistema viene val
 \subsection{Test di Regressione}
 I \textit{test di regressione} mirano a verificare che le modifiche apportate al codice sorgente o al sistema non abbiano introdotto nuovi difetti o rotto funzionalità esistenti. Questi test vengono eseguiti dopo ogni modifica al software, come aggiornamenti, correzioni di bug o nuove implementazioni. L'obiettivo è assicurarsi che le modifiche non abbiano impatti indesiderati sul comportamento del sistema, specialmente su funzionalità precedentemente testate e funzionanti correttamente. L'obiettivo del gruppo è raggiungere la massima automazione possibile dei test di regressione, al fine di ridurre i tempi di esecuzione e garantire una copertura completa dei test.
 
-\subsubsection{Resoconto dei test}
-
 \section{Valutazioni per il miglioramento}
 In questo paragrafo cercheremo di analizzare le difficoltà che abbiamo avuto fino alla consegna e valutarne le rispettive soluzioni e miglioramenti adottati dal gruppo.
 
@@ -455,7 +459,7 @@ In questo paragrafo cercheremo di analizzare le difficoltà che abbiamo avuto fi
     \custombold{Criticità} & \custombold{Descrizione} & \custombold{Gravità} &
     \custombold{Soluzione}\\
     \rowcolor{LighterBlue}
-     Iniziale carenza di comunicazione con il cliente& Durante le prime fasi di sviluppo abbiamo avuto difficoltà ad ottenere le credenziali per utilizzare gli stumenti da loro richiesti & Bassa & Focalizzare il lavoro, durante l'attesa, nella redazione dei documenti e aprire un canale di comunicazione più veloce delle mail  \\ 
+     Iniziale carenza di comunicazione con il cliente& Durante le prime fasi di sviluppo abbiamo avuto difficoltà ad ottenere le credenziali per utilizzare gli strumenti da loro richiesti & Bassa & Focalizzare il lavoro, durante l'attesa, nella redazione dei documenti e aprire un canale di comunicazione più veloce delle mail  \\ 
     \rowcolor{LightBlue}
      Disparità di impegno tra i membri& Alcuni membri, avendo magari più impegni accademici o lavorativi, sono stati meno presenti agli incontri o per la realizzazione del progetto & Media & Assegnare i compiti quanto più in maniera equa e realistica \\ 
 \end{tabular}
@@ -470,11 +474,11 @@ In questo paragrafo cercheremo di analizzare le difficoltà che abbiamo avuto fi
     \custombold{Criticità} & \custombold{Descrizione} & \custombold{Gravità} &
     \custombold{Soluzione}\\
     \rowcolor{LighterBlue}
-     Complessità nell'integrazione del plugin & Non avendo mai sviluppato un plug in è stata difficoltosa la fase di integrazione & Bassa & Focalizzarsi sull'autoapprendimento e aggiungere uno Sviluppatore a discapito di altri ruoli più marginali in quella fase  \\ 
+     Complessità nell'integrazione del plug-in\textsubscript{G} & Non avendo mai sviluppato un plug-in è stata difficoltosa la fase di integrazione & Bassa & Focalizzarsi sull'autoapprendimento e aggiungere uno Sviluppatore a discapito di altri ruoli più marginali in quella fase  \\ 
     \rowcolor{LightBlue}
-     Repository & Difficoltà nel mantenimento dell'ordine, della linea temporale e della versioni dei documenti & Media & Focalizzare una delle fasi di verifica del Verificatore proprio sul controllo della Repository e fare delle sedute di formazione interna per chi avesse difficoltà nell'uso delle funzionalità più utilizzate dello strumento \\ 
+     Repository\textsubscript{G} & Difficoltà nel mantenimento dell'ordine, della linea temporale e della versioni\textsubscript{G} dei documenti & Media & Focalizzare una delle fasi di verifica del Verificatore proprio sul controllo della Repository e fare delle sedute di formazione interna per chi avesse difficoltà nell'uso delle funzionalità più utilizzate dello strumento \\ 
      \rowcolor{LighterBlue}
-     Amazon AWS  & Le librerie di Amazon AWS oltre ad essere moltissime, hanno tutte un prezzo diverso & Alta & Fissare un incontro di formazione da parte del proponente per scegliere in maniera mirata le librerie, in modo tale da essere conformi alle esigenze di costo e non perderci nella fase di analisi, studio dello strumento e scelta delle librerie
+     Amazon AWS\textsubscript{G}  & Le librerie di Amazon AWS oltre ad essere moltissime, hanno tutte un prezzo diverso & Alta & Fissare un incontro di formazione da parte del proponente per scegliere in maniera mirata le librerie, in modo tale da essere conformi alle esigenze di costo e non perderci nella fase di analisi, studio dello strumento e scelta delle librerie
 \end{tabular}
 \captionof{table}{Criticità negli strumenti utilizzati}
 \label{tab:strum}
