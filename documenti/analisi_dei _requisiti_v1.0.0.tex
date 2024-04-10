@@ -94,7 +94,7 @@ Nicola Lazzarin \\
 \end{table}
 
 \newpage
-\custombold{Registro dei Cambiamenti - Changelog}
+\custombold{Registro dei Cambiamenti - Changelog\textsubscript{G}}
 
 \begin{center}
 \begin{tabular}{P{4em} P{6em} P{7em} P{7em} P{11em}} 
@@ -124,7 +124,7 @@ Nicola Lazzarin \\
     \rowcolor{LightBlue}
     0.5.1 & 02/12/2023 & Nicola Lazzarin & Giulia Dentone & Aggiunta caption alle immagini.\\ 
     \rowcolor{LighterBlue}
-    0.5.0 & 01/12/2023 & Caniato Sabrina & Vignotto Samuele & Sistemato l'analisi dei casi d'uso dopo il colloquio col Prof. R. Cardin. Aggiunta delle specifiche dei sottocasi d'uso.\\
+    0.5.0 & 01/12/2023 & Caniato Sabrina & Vignotto Samuele & Sistemato l'analisi dei casi d'uso\textsubscript{G} dopo il colloquio col Prof. R. Cardin. Aggiunta delle specifiche dei sottocasi d'uso.\\
     \rowcolor{LightBlue}
     0.4.3 & 30/11/2023 & Sabrina Caniato & Samuele Vignotto & Inserimento delle immagini relative dall'UC14 all'UC18.\\
     \rowcolor{LighterBlue}
@@ -156,11 +156,11 @@ Nicola Lazzarin \\
 
 \subsection*{Scopo del documento}
 
-Questo documento ha lo scopo di fornire una descrizione approfondita del prodotto, analizzando nel dettaglio i requisiti, ottenuti tramite incontri con l'azienda e analisi del capitolato. Quest'analisi si concretizza con l'individuazione di casi d'uso, punto centrale di questo documento.
+Questo documento ha lo scopo di fornire una descrizione approfondita del prodotto, analizzando nel dettaglio i requisiti, ottenuti tramite incontri con l'azienda e analisi del capitolato. Quest'analisi si concretizza con l'individuazione di casi d'uso\textsubscript{G}, punto centrale di questo documento.
 
 
 \subsection*{Scopo del prodotto}
-L'azienda proponente ha richiesto la creazione di una web app\textsubscript{G} che, tramite l'uso di IA\textsubscript{G} (in questo caso ChatGPT4 e Bedrock) è in grado di creare epic user stories\textsubscript{G} a partire dalle richieste del cliente e confrontarle con il codice sviluppato in modo da informare il cliente dello stato di avanzamento dello sviluppo del prodotto. Inoltre deve essere possibile, sia per il Project Manager\textsubscript{G}, sia per il cliente rilasciare dei feedback (nel primo caso riguardanti l'adeguatezza delle stories, nel secondo caso riguardanti il prodotto finale) al fine di migliorare l'IA\textsubscript{G}. È inoltre richiesta un' analisi comparativa tra le due IA utilizzate e lo sviluppo di un plugin\textsubscript{G} utile agli sviluppatori e al Project Manager\textsubscript{G}.
+L'azienda proponente ha richiesto la creazione di una web app\textsubscript{G} che, tramite l'uso di IA\textsubscript{G} (in questo caso ChatGPT4 e Bedrock) è in grado di creare epic user stories\textsubscript{G} a partire dalle richieste del cliente e confrontarle con il codice sviluppato in modo da informare il cliente dello stato di avanzamento dello sviluppo del prodotto. Inoltre deve essere possibile, sia per il Project Manager\textsubscript{G}, sia per il cliente rilasciare dei feedback (nel primo caso riguardanti l'adeguatezza delle stories, nel secondo caso riguardanti il prodotto finale) al fine di migliorare l'IA\textsubscript{G}. È inoltre richiesta un' analisi comparativa tra le due IA\textsubscript{G} utilizzate e lo sviluppo di un plug-in\textsubscript{G} utile agli sviluppatori e al Project Manager\textsubscript{G}.
 
 \subsection*{Glossario}
 Alcuni termini presenti nel documento potrebbero essere ambigui, pertanto verranno inseriti nel Glossario v.1.0.0. La loro presenza all'interno di esso sarà indicata tramite una G maiuscola a pedice.
@@ -170,14 +170,14 @@ Alcuni termini presenti nel documento potrebbero essere ambigui, pertanto verran
 Lo scopo di questa sezione è raccogliere tutti i casi d'uso\textsubscript{G} individuati, facendo riferimento alle funzionalità individuate durante la sessione di design thinking\textsubscript{G} fatta in collaborazione con l'azienda.
 
 \subsection*{Attori}
-Come si è evidenziato durante la sessione di design thinking\textsubscript{G} con i proponenti la web app\textsubscript{G} avrà necessità di tre diverse interfacce per essere usata adeguatamente da tutte le tipologie di attori\textsubscript{G}: clienti, sviluppatori e Project Manager\textsubscript{G}. L'IA\textsubscript{G}  (ChatGPT o Bedrock) viene considerata attore\textsubscript{G} secondario in quanto utilizzeremo un servizio che ci viene offerto. Inoltre è necessario lo sviluppo di un plugin\textsubscript{G} accessibile solamente a agli sviluppatori e al Project Manager\textsubscript{G}.\\\\
+Come si è evidenziato durante la sessione di design thinking\textsubscript{G} con i proponenti la web app\textsubscript{G} avrà necessità di tre diverse interfacce per essere usata adeguatamente da tutte le tipologie di attori\textsubscript{G}: clienti, sviluppatori e Project Manager\textsubscript{G}. L'IA\textsubscript{G}  (ChatGPT o Bedrock) viene considerata attore\textsubscript{G} secondario in quanto utilizzeremo un servizio che ci viene offerto. Inoltre è necessario lo sviluppo di un plug-in\textsubscript{G} accessibile solamente a agli sviluppatori e al Project Manager\textsubscript{G}.\\\\
 
 Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  abbiamo utilizzato due generalizzazioni: Utente e Utente aziendale: 
 
 \begin{figure}[h]
     \centering
     \includegraphics{./imgUML/Attori.png}
-    \caption{Generalizzazione degli attori Utente ed Utente Aziendale}
+    \caption{Generalizzazione degli attori\textsubscript{G} Utente ed Utente Aziendale}
     \label{fig:attori}
 \end{figure}
 
@@ -186,7 +186,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
 \begin{figure}[h]
     \centering
     \includegraphics[height = 0.70\textheight]{./imgUML/UML.png}
-    \caption{UML dei casi d'uso}
+    \caption{UML dei casi d'uso\textsubscript{G}}
     \label{fig:UML}
 \end{figure}
 \newpage
@@ -302,7 +302,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
      \end{itemize}
      \subsection*{Postconditions} 
         \begin{itemize}
-            \item Invio dei requisiti di business all'intelligenza artificiale.
+            \item Invio dei requisiti di business\textsubscript{G} all'intelligenza artificiale.
         \end{itemize}
         
      \subsection*{Main scenario}
@@ -350,7 +350,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \item Essere riconosciuti dal sistema come Cliente;
         \item Presenza di almeno una user story\textsubscript{G}  o epic story\textsubscript{G};
         \item Epic stories completata;
-        \item Trovarsi nella user story completata nella sezione apposita per l'invio del feedback.
+        \item Trovarsi nella user story\textsubscript{G} completata nella sezione apposita per l'invio del feedback.
     \end{itemize}
     
     \subsection*{Postconditions}
@@ -765,7 +765,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
     \subsection*{Preconditions}
         \begin{itemize}
             \item Essere riconosciuti dal sistema come Sviluppatore;
-            \item Avere un'assegnazione per quella user story dal Project Manager\textsubscript{G}.
+            \item Avere un'assegnazione per quella user story\textsubscript{G} dal Project Manager\textsubscript{G}.
         \end{itemize}
         
     \subsection*{Postconditions} 
@@ -783,7 +783,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
     \subsection*{Preconditions}
         \begin{itemize}
             \item Essere riconosciuti dal sistema come Sviluppatore;
-            \item Avere un'assegnazione per quella user story dal Project Manager\textsubscript{G}.
+            \item Avere un'assegnazione per quella user story\textsubscript{G} dal Project Manager\textsubscript{G}.
         \end{itemize}
         
     \subsection*{Postconditions} 
@@ -1040,7 +1040,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
     \begin{tabular}{|p{2cm}|p{3cm}|p{6cm}|p{3cm}|p{2cm}|}
     \rowcolor{Blue} 
 \hline
-ID & Classificazione & Descrizione & Indirizzato a&Casi d'uso  \\ 
+ID & Classificazione & Descrizione & Indirizzato a&Casi d'uso\textsubscript{G}  \\ 
 \rowcolor{LightBlue}
 \hline
 ROF1&Obbligatorio & Accesso a web app\textsubscript{G} tramite login composto da email e password. & Sviluppatore, Cliente, Project Manager\textsubscript{G} & UC1, UC16, UC18 \\ 
@@ -1064,11 +1064,11 @@ RDF6&Desiderabile & Ricezione notifiche quando user story\textsubscript{G} compl
 \hline
 \rowcolor{LightBlue}
 \hline
-ROF7&Obbligatorio & Funzionalità di tag\textsubscript{G} nel plugin\textsubscript{G}.  & Sviluppatore & UC14\\
+ROF7&Obbligatorio & Funzionalità di tag\textsubscript{G} nel plug-in\textsubscript{G}.  & Sviluppatore & UC14\\
 \hline
 \rowcolor{LighterBlue}
 
-ROF8&Obbligatorio & Lista di user stories\textsubscript{G} assegnate da Project Manager\textsubscript{G} sia su web app\textsubscript{G} che su plugin\textsubscript{G}. & Sviluppatore & UC14 UC15\\
+ROF8&Obbligatorio & Lista di user stories\textsubscript{G} assegnate da Project Manager\textsubscript{G} sia su web app\textsubscript{G} che su plug-in\textsubscript{G}. & Sviluppatore & UC14 UC15\\
 \hline
 \rowcolor{LightBlue}
 
@@ -1089,7 +1089,7 @@ ROF11&Obbligatorio & Visualizzazione users stories\textsubscript{G} generate da 
     \begin{tabular}{|p{2cm}|p{3cm}|p{6cm}|p{3cm}|p{2cm}|}
     \rowcolor{Blue} 
 \hline
-ID & Classificazione & Descrizione & Indirizzato a&Casi d'uso  \\ 
+ID & Classificazione & Descrizione & Indirizzato a&Casi d'uso\textsubscript{G}  \\ 
 \rowcolor{LightBlue}
 \hline
 ROF12&Obbligatorio & Invio di feedback sulle user stories\textsubscript{G} generate all'IA\textsubscript{G}.& Project Manager\textsubscript{G}&UC9\\
@@ -1145,7 +1145,7 @@ ID & Classificazione & Descrizione\\
 ROQ1& Obbligatorio & Il progetto deve essere accessibile pubblicamente su GitHub\textsubscript{G} o su un'altra repository\textsubscript{G} pubblica.\\ 
 \rowcolor{LighterBlue}
 \hline
-ROQ2& Obbligatorio & Il prodotto deve essere sviluppato conformemente a quanto stabilito nelle \textit{Norme Way of Working}. \\ 
+ROQ2& Obbligatorio & Il prodotto deve essere sviluppato conformemente a quanto stabilito nelle \textit{Norme Way of Working\textsubscript{G}}. \\ 
 \rowcolor{LightBlue}
 \hline
 ROQ3& Obbligatorio & Deve essere effettuato il testing\textsubscript{G} delle unità e dell'integrazione con una copertura minima dell'80\%.\\
@@ -1161,7 +1161,7 @@ ROQ5& Obbligatorio & Deve essere fornito un manuale per l'utilizzo del prodotto.
 ROQ6& Obbligatorio & Deve essere fornita una documentazione che compara la capacità di ChatGPT\textsubscript{G} e quella di AWS Bedrock\textsubscript{G} nell'interpretare del codice sorgente ed associare le user stories\textsubscript{G} generate.\\
 \hline
 \rowcolor{LightBlue}
-ROQ7& Obbligatorio & Deve essere fornita una documentazione che prova dall'interpretazione dei criteri di accettazione delle user stories\textsubscript{G} ed il codice analizzato se risultano dei test non gestiti.\\
+ROQ7& Obbligatorio & Deve essere fornita una documentazione che prova dall'interpretazione dei criteri di accettazione delle user stories\textsubscript{G} ed il codice analizzato se risultano dei test\textsubscript{G} non gestiti.\\
 \hline
 \end{tabular}
 \captionof{table}{Tabella dei requisiti di quailità}
@@ -1202,10 +1202,10 @@ ROV5& Obbligatorio & Ogni AWS Lambda-function\textsubscript{G} deve essere svilu
 ROV6& Obbligatorio & Tutte le API\textsubscript{G} devono essere integrate in AWS API-gateway\textsubscript{G}.\\
 \hline
 \rowcolor{LightBlue}
-ROV7& Obbligatorio & L'applicativo deve essere compatibile con il browser Google Chrome\textsubscript{G} dalla versione 121.\\
+ROV7& Obbligatorio & L'applicativo deve essere compatibile con il browser Google Chrome\textsubscript{G} dalla versione\textsubscript{G} 121.\\
 \hline
 \rowcolor{LighterBlue}
-ROV8& Obbligatorio & L'applicativo deve essere compatibile con il browser Firefox\textsubscript{G} dalla versione 122.\\
+ROV8& Obbligatorio & L'applicativo deve essere compatibile con il browser Firefox\textsubscript{G} dalla versione\textsubscript{G} 122.\\
 \hline
 \end{tabular}
 \end{center}
@@ -1218,10 +1218,10 @@ ROV8& Obbligatorio & L'applicativo deve essere compatibile con il browser Firefo
 ID & Classificazione & Descrizione \\
 \hline
 \rowcolor{LighterBlue} 
-ROV9 & Obbligatorio & L'applicativo deve essere compatibile con il browser Microsoft Edge\textsubscript{G} dalla versione 121.\\
+ROV9 & Obbligatorio & L'applicativo deve essere compatibile con il browser Microsoft Edge\textsubscript{G} dalla versione\textsubscript{G} 121.\\
 \hline
 \rowcolor{LightBlue}
-ROV10 & Obbligatorio & Il plug-in\textsubscript{G} deve essere compatibile con VSCode\textsubscript{G} dalla versione 1.84.1 .\\
+ROV10 & Obbligatorio & Il plug-in\textsubscript{G} deve essere compatibile con VSCode\textsubscript{G} dalla versione\textsubscript{G} 1.84.1 .\\
 \hline
 \rowcolor{LighterBlue}
 ROV11 & Obbligatorio & L'accesso deve essere controllato da AWS Cognito\textsubscript{G}, con autenticazione univoca.\\
@@ -1241,7 +1241,7 @@ ROV14 & Obbligatorio & Protezione delle informazioni trasmesse tra browser e ser
 \end{center}
 
 \subsection{Requisiti prestazionali}
-Per un'applicazione eseguita su una web app\textsubscript{G}, i requisiti prestazionali possono essere influenzati dalle prestazioni del dispositivo dell'utente e la larghezza di banda della connessione Internet, Non vi sono particolari requisiti in questo senso, in quanto le tecnologie AWS e Chat GPT rispondono in modo ottimale a diverse esigenze:
+Per un'applicazione eseguita su una web app\textsubscript{G}, i requisiti prestazionali possono essere influenzati dalle prestazioni del dispositivo dell'utente e la larghezza di banda della connessione Internet, Non vi sono particolari requisiti in questo senso, in quanto le tecnologie AWS\textsubscript{G} e Chat GPT\textsubscript{G} rispondono in modo ottimale a diverse esigenze:
 \begin{itemize}
 \item tempo ottimale di risposta;
 \item scalabilità, evitando rallentamenti o anomalie non avendo problemi di gestione del carico 
