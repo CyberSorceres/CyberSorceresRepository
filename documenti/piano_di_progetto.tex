@@ -1,5 +1,5 @@
 \documentclass{article}
-\providecommand{\versionnumber}{1.0.1}
+\providecommand{\versionnumber}{1.0.0}
 \usepackage[utf8]{inputenc}
 \usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
 \usepackage{titling}
@@ -81,6 +81,12 @@
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LightBlue}
+     1.0.0 & 14/04/2024 & Nicola Lazzarin & Samuele Vignotto & Aggiornamento a versione pronta al rilascio\\
+    \rowcolor{LighterBlue}
+     0.5.3 & 10/04/2024 & Sabrina Caniato & Samuele Vignotto & Update Analisi dei rischi tecnologici\\
+    \rowcolor{LightBlue}
+     0.5.2 & 5/04/2024 & Nicola Lazzarin & Giulia Dentone & Correzione grafici\\
     \rowcolor{LighterBlue}
      0.5.1 & 1/03/2024 & Nicola Lazzarin & Samuele Vigonotto & Update dei diagrammi di Gantt\\
     \rowcolor{LightBlue}
@@ -253,6 +259,42 @@ Questa sezione si occupa di analizzare le difficoltà riscontrabili dal proponen
     Misure di contenimento & I membri si impegnano a colmare le proprie lacune attraverso lo studio e la pratica \\
 \end{tabular}
 \captionof{table}{Rischi per l'esperienza tecnologica}
+\label{tab:esptec}
+\end{center}
+
+\subsubsection{Assenza di pattern strutturali nelle tecnologie scelte}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LighterBlue}
+     Descrizione & Nelle tecnologie scelte non sono presenti pattern strutturali obligatori. \\ 
+    \rowcolor{LightBlue}
+    Occorrenza & Media\\
+    \rowcolor{LighterBlue}
+    Pericolosità & Alta \\
+    \rowcolor{LightBlue}
+    Precauzioni & Già dal POC abbiamo iniziato a provare alcuni tipi di pattern architetturali.\\
+    \rowcolor{LighterBlue}
+    Misure di contenimento & Stare più attenti quando faremo la parte di Designe e chiedere più incontri al professor Cardin se abbiamo dubbi. \\
+\end{tabular}
+\captionof{table}{Rischi per l'assenza dei pattern nelle tecnologie}
+\label{tab:esptec}
+\end{center}
+
+\subsubsection{Database NoSQL}
+\begin{center}
+\begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LighterBlue}
+     Descrizione & Il database scelto è completamente estraneo ai membri del gruppo e ci limita a fare le join. \\ 
+    \rowcolor{LightBlue}
+    Occorrenza & Media\\
+    \rowcolor{LighterBlue}
+    Pericolosità & Media \\
+    \rowcolor{LightBlue}
+    Precauzioni & Tabelle ben definite ed utilizzo di librerie che ne aiutano la gestione.\\
+    \rowcolor{LighterBlue}
+    Misure di contenimento & I membri del gruppo si sono impegnati a studiare bene il database prima di usarlo. \\
+\end{tabular}
+\captionof{table}{Rischi per l'utilizzo di database NoSQL}
 \label{tab:esptec}
 \end{center}
 
@@ -454,7 +496,7 @@ Samuele Vignotto & 0 & 12 & 11 & 0 & 0 & 5 & 28\\
 
 \begin{figure}[h]
     \centering
-\includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Analisi.jpg}    
+\includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Analisi.png}    
     \caption{Grafico divisione ore lavorative periodo di Analisi}
     \label{fig:preventivoAnalisi}
 \end{figure}
@@ -504,28 +546,28 @@ Durante il periodo di Progettazione Technology Baseline\textsubscript{G}, ciascu
 \custombold{Nominativo} & \custombold{Re} & \custombold{Am} & \custombold{An} & \custombold{Pt} & \custombold{Pr} & \custombold{Ve} & \custombold{Ore Totali}\\
 \hline
 \rowcolor{LighterBlue}
-Sabrina Caniato & 0 & 0 & 4 & 11 & 0 & 2 & 17\\
+Sabrina Caniato & 0 & 0 & 10 & 5 & 0 & 2 & 17\\
 \rowcolor{LightBlue}
-Giulia Dentone & 0 & 0 & 3 & 5 & 0 & 2 & 10\\
+Giulia Dentone & 0 & 0 & 6 & 2 & 0 & 2 & 10\\
 \rowcolor{LighterBlue}
-Nicola Lazzarin & 0 & 0 & 4 & 6 & 0 & 2 & 12\\
+Nicola Lazzarin & 0 & 0 & 7 & 3 & 0 & 2 & 12\\
 \rowcolor{LightBlue}
-Giovanni Moretti & 0 & 3 & 1 & 4 & 0 & 2 & 10\\
+Giovanni Moretti & 0 & 3 & 4 & 1 & 0 & 2 & 10\\
 \rowcolor{LighterBlue}
 Andrea Rezzi & 0 & 8 & 4 & 3 & 0 & 2 & 17\\
 \rowcolor{LightBlue}
-Samuele Vignotto & 12 & 0 & 0 & 2 & 0 & 2 & 16\\
+Samuele Vignotto & 12 & 0 & 1 & 1 & 0 & 2 & 16\\
 \rowcolor{LighterBlue}
-\custombold{Ore totali} & 12 & 11 & 16 & 31 & 0 & 12 & 82\\
+\custombold{Ore totali} & 12 & 11 & 32 & 15 & 0 & 12 & 82\\
 \end{tabular}
-\captionof{table}{Preventivo ore Progettazione Technology Baseline}
+\captionof{table}{Preventivo ore Progettazione Technology Baseline\textsubscript{G}}
 \label{tab:PTB}
 \end{center}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Progettazione_Technology_Baseline.jpg}
-    \caption{Grafico divisione ore lavorative periodo di Progettazione Techonology Baseline}
+    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Progettazione_Technology_Baseline.png}
+    \caption{Grafico divisione ore lavorative periodo di Progettazione Techonology Baseline\textsubscript{G}}
     \label{fig:PTB}
 \end{figure}
 
@@ -540,9 +582,9 @@ In questo periodo i costi da affrontare sono:
     \rowcolor{LightBlue}
     Amministratore & 11 & 220\\
     \rowcolor{LighterBlue}
-    Analista & 16 & 400\\
+    Analista & 32 & 800\\
     \rowcolor{LightBlue}
-    Progettista & 31 & 775\\
+    Progettista & 15 & 375\\
     \rowcolor{LighterBlue}
     Programmatore & 0 & 0\\
     \rowcolor{LightBlue}
@@ -550,21 +592,21 @@ In questo periodo i costi da affrontare sono:
     \rowcolor{LighterBlue}
     \custombold{Totale} & \custombold{82} & \custombold{1935}\\
     \end{tabular}
-    \captionof{table}{Preventivo costi Progettazione Technology Baseline}
+    \captionof{table}{Preventivo costi Progettazione Technology Baseline\textsubscript{G}}
 \label{tab:costiPTB}
 \end{center}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Progettazione_Technology_Baseline.jpg}
- \caption{grafico della divisione percentuale dei costi sostenuti nel periodo di Progettazione Technology Baseline}
+    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Progettazione_Technology_Baseline.png}
+ \caption{grafico della divisione percentuale dei costi sostenuti nel periodo di Progettazione Technology Baseline\textsubscript{G}}
     \label{fig:costiPTB}
 \end{figure}
    
 \newpage
 
 \subsection{Riepilogo economico e delle ore parziale - Periodo Sviluppo Proof of Concept\textsubscript{G}}
-Durante il periodo di Sviluppo Proof of Concept\textsubscript{G}, ciascun membro assumerà i ruoli secondo la seguente distribuzione:\\
+Durante il periodo di Sviluppo Proof of Concept, ciascun membro assumerà i ruoli secondo la seguente distribuzione:\\
 \\
 \begin{center}
 \begin{tabular}{c|c|c|c|c|c|c|c}
@@ -572,27 +614,27 @@ Durante il periodo di Sviluppo Proof of Concept\textsubscript{G}, ciascun membro
 \custombold{Nominativo} & \custombold{Re} & \custombold{Am} & \custombold{An} & \custombold{Pt} & \custombold{Pr} & \custombold{Ve} & \custombold{Ore Totali}\\
 \hline
 \rowcolor{LighterBlue}
-Sabrina Caniato & 0 & 0 & 0 & 4 & 6 & 2 & 12\\
+Sabrina Caniato & 0 & 0 & 1 & 3 & 6 & 2 & 12\\
 \rowcolor{LightBlue}
-Giulia Dentone & 12 & 0 & 0 & 2 & 5 & 2 & 21\\
+Giulia Dentone & 12 & 0 & 1 & 1 & 5 & 2 & 21\\
 \rowcolor{LighterBlue}
-Nicola Lazzarin & 0 & 0 & 0 & 4 & 9 & 2 & 15\\
+Nicola Lazzarin & 0 & 0 & 1 & 3 & 9 & 2 & 15\\
 \rowcolor{LightBlue}
-Giovanni Moretti & 0 & 5 & 0 & 3 & 7 & 2 & 17\\
+Giovanni Moretti & 0 & 5 & 1 & 2 & 7 & 2 & 17\\
 \rowcolor{LighterBlue}
-Andrea Rezzi & 0 & 0 & 0 & 6 & 8 & 2 & 16\\
+Andrea Rezzi & 0 & 0 & 3 & 3 & 8 & 2 & 16\\
 \rowcolor{LightBlue}
-Samuele Vignotto & 0 & 0 & 7 & 4 & 5 & 2 & 18\\
+Samuele Vignotto & 0 & 0 & 8 & 3 & 5 & 2 & 18\\
 \rowcolor{LighterBlue}
-\custombold{Ore totali} & 12 & 5 & 7 & 23 & 40 & 12 & 99\\
+\custombold{Ore totali} & 12 & 5 & 15 & 15 & 40 & 12 & 99\\
 \end{tabular}
-    \captionof{table}{Preventivo ore Proof of Concept}
+    \captionof{table}{Preventivo ore Proof of Concept\textsubscript{G}}
 \label{tab:POC}
 \end{center}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Sviluppo_Proof_of_Concept.jpg}    \caption{Grafico divisione ore lavorative periodo di Sviluppo Proof of Concept}
+    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Sviluppo_Proof_of_Concept.png}    \caption{Grafico divisione ore lavorative periodo di Sviluppo Proof of Concept\textsubscript{G}}
     \label{fig:POC}
 \end{figure}
 
@@ -608,9 +650,9 @@ In questo periodo i costi da affrontare sono:
     \rowcolor{LightBlue}
     Amministratore & 5 & 100\\
     \rowcolor{LighterBlue}
-    Analista & 7 & 175\\
+    Analista & 15 & 375\\
     \rowcolor{LightBlue}
-    Progettista & 23 & 575\\
+    Progettista & 15 & 375\\
     \rowcolor{LighterBlue}
     Programmatore & 40 & 600\\
     \rowcolor{LightBlue}
@@ -618,12 +660,12 @@ In questo periodo i costi da affrontare sono:
     \rowcolor{LighterBlue}
     \custombold{Totale} & \custombold{99} & \custombold{1990}\\
     \end{tabular}
-        \captionof{table}{Preventivo costi Proof of Concept}
+        \captionof{table}{Preventivo costi Proof of Concept\textsubscript{G}}
 \label{tab:costiPOC}
 \end{center}
 \begin{figure}[h]
     \centering
-\includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuali_costi_Sviluppo_Proof_of_Concept.jpg}    \caption{Grafico della divisione percentuale dei costi sostenuti nel periodo di Sviluppo Proof of Concept}
+\includegraphics[width=17cm, height=10cm]{documenti/grafici/Torta_percentuale_costi_Sviluppo_Proof_of_Concept.png}    \caption{Grafico della divisione percentuale dei costi sostenuti nel periodo di Sviluppo Proof of Concept\textsubscript{G}}
     \label{fig:enter-label}
 \end{figure}
 
@@ -658,7 +700,7 @@ Samuele Vignotto & 0 & 0 & 0 & 4 & 6 & 2 & 12\\
 
 \begin{figure}[h]
     \centering
-\includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Sviluppo_Requisiti_Obbligatori.jpg}    \caption{Grafico divisione ore lavorative periodo di Sviluppo Requisiti Obbligatori}
+\includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Sviluppo_Requisiti_Obbligatori.png}    \caption{Grafico divisione ore lavorative periodo di Sviluppo Requisiti Obbligatori}
     \label{fig:PSRO}
 \end{figure}
 
@@ -724,7 +766,7 @@ Samuele Vignotto & 0 & 0 & 0 & 4 & 4 & 2 & 10\\
 \end{center}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Sviluppo_Requisiti_Opzionali.jpg}\caption{ Grafico divisione ore lavorative periodo di Sviluppo Requisiti Opzionali}
+    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Sviluppo_Requisiti_Opzionali.png}\caption{ Grafico divisione ore lavorative periodo di Sviluppo Requisiti Opzionali}
     \label{fig:PSROp}
 \end{figure}
 
@@ -789,7 +831,7 @@ Samuele Vignotto & 0 & 0 & 0 & 3 & 6 & 2 & 11\\
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Validazione_e_Collaudo.jpg}    \caption{Grafico divisione ore lavorative periodo di Validazione e Collaudo}
+    \includegraphics[width=17cm, height=10cm]{documenti/grafici/Divisione_ore_lavorative_Validazione_e_Collaudo.png}    \caption{Grafico divisione ore lavorative periodo di Validazione e Collaudo}
     \label{fig:PVC}
 \end{figure}
 
@@ -857,7 +899,7 @@ Questa sezione presenta le spese effettivamente sostenute dal team Cyber Sorcere
 \begin{itemize}
     \item \custombold{Positivo}: se la spesa effettiva è inferiore a quanto preventivato;
     \item \custombold{Pareggio}: se la spesa effettiva è uguale a quanto preventivato;
-    \item \custombold{Negativo}: se la spesa effettiva è maggiore a quanto preventivato;
+    \item \custombold{Negativo}: se la spesa effettiva è maggiore a quanto preventivato.
 \end{itemize}
 Il bilancio è indicato tra parentesi accanto ai valori rilevati dal consuntivo di periodo. Se il valore tra parentesi è assente, ciò indica che l'aspettativa del preventivo è stata rispettata.
 
@@ -911,8 +953,8 @@ Samuele Vignotto & 0 & 12(+1) & 11 & 0 & 0 & 5 & 28\\
 \end{center}
 \subsubsection{Ragione degli scostamenti}
 \begin{itemize}
-    \item \custombold{Responsabile}: inesperienza nel ricoprire tale ruolo.
-    \item \custombold{Amministratore}: esperienze pregresse di un membro del gruppo.
+    \item \custombold{Responsabile}: inesperienza nel ricoprire tale ruolo;
+    \item \custombold{Amministratore}: esperienze pregresse di un membro del gruppo;
     \item \custombold{Analista}: il proponente ha fornito al gruppo molto supporto nella stesura dell'\textit{Analisi dei Requisiti}.
 \end{itemize}
 \subsubsection{Considerazioni rispetto al preventivo}
@@ -926,19 +968,19 @@ Il bilancio evidenzia un risultato positivo rispetto al preventivo per questo pe
 \custombold{Nominativo} & \custombold{Re} & \custombold{Am} & \custombold{An} & \custombold{Pt} & \custombold{Pr} & \custombold{Ve} & \custombold{Ore Totali}\\
 \hline
 \rowcolor{LighterBlue}
-Sabrina Caniato & 0 & 0 & 4 & 11 & 0 & 2 & 17\\
+Sabrina Caniato & 0 & 0 & 10 & 5 & 0 & 2 & 17\\
 \rowcolor{LightBlue}
-Giulia Dentone & 0 & 0 & 3 & 5(+3) & 0 & 2 & 10\\
+Giulia Dentone & 0 & 0(+5) & 6 & 2 & 0 & 2 & 10(+5)\\
 \rowcolor{LighterBlue}
-Nicola Lazzarin & 0 & 0 & 4 & 6 & 0 & 2 & 12\\
+Nicola Lazzarin & 0 & 0 & 7 & 3 & 0 & 2 & 12\\
 \rowcolor{LightBlue}
-Giovanni Moretti & 0 & 3 & 1 & 4(+1) & 0 & 2 & 10\\
+Giovanni Moretti & 0 & 3(+5) & 4 & 1(+1) & 0 & 2 & 10(+6)\\
 \rowcolor{LighterBlue}
-Andrea Rezzi & 0 & 8 & 4 & 3(+2) & 0 & 2 & 17\\
+Andrea Rezzi & 0 & 8 & 4 & 3 & 0 & 2 & 17\\
 \rowcolor{LightBlue}
-Samuele Vignotto & 12 & 0 & 0 & 2(+4) & 0 & 2 & 16\\
+Samuele Vignotto & 12 & 0 & 1 & 1(+1) & 0 & 2 & 16(+1)\\
 \rowcolor{LighterBlue}
-\custombold{Ore totali} & 12 & 11 & 16 & 31(+10) & 0 & 12 & 82(+10)\\
+\custombold{Ore totali} & 12 & 11(+10) & 32 & 15(+2) & 0 & 12 & 82(+12)\\
 \end{tabular}
 \captionof{table}{Variazione pianificazione del periodo di progettazione Technology Beseline}
 \label{tab:varPTB}
@@ -951,29 +993,30 @@ Samuele Vignotto & 12 & 0 & 0 & 2(+4) & 0 & 2 & 16\\
     \rowcolor{LighterBlue}
     Responsabile & 12 & 360\\
     \rowcolor{LightBlue}
-    Amministratore & 11 & 220\\
+    Amministratore & 11(+10) & 220(+200)\\
     \rowcolor{LighterBlue}
-    Analista & 16 & 400\\
+    Analista & 32 & 800\\
     \rowcolor{LightBlue}
-    Progettista & 31(+10) & 775(+250)\\
+    Progettista & 15(+2) & 375(+50)\\
     \rowcolor{LighterBlue}
     Programmatore & 0 & 0\\
     \rowcolor{LightBlue}
     Verificatore & 12 & 180\\
     \rowcolor{LighterBlue}
-    \custombold{Totale} & \custombold{82(+10)} & \custombold{1935+250}\\
+    \custombold{Totale} & \custombold{82(+12)} & \custombold{1935(+250)}\\
     \end{tabular}
     \captionof{table}{Variazione costi del periodo di progettazione Technology Beseline}
 \label{tab:varPTB}
 \end{center}
 \subsubsection{Ragione degli scostamenti}
 \begin{itemize}
+    \item \custombold{Amministratore}: difficoltà organizzative interne al gruppo.
     \item \custombold{Progettista}: nessuna esperienza con gli strumenti forniti dal proponente.
 \end{itemize}
 \subsubsection{Considerazioni rispetto al preventivo}
 Il bilancio risulta negativo, ma il gruppo conta di recuperare nelle prossime fasi del progetto poiché ha maggiore esperienza.
 
-\subsection{Periodo di Sviluppo Proof of Concept - a finire}
+\subsection{Periodo di Sviluppo Proof of Concept\textsubscript{G} - a finire}
 \subsubsection{Prospetto orario}
 \begin{center}
 \begin{tabular}{c|c|c|c|c|c|c|c}
@@ -981,21 +1024,21 @@ Il bilancio risulta negativo, ma il gruppo conta di recuperare nelle prossime fa
 \custombold{Nominativo} & \custombold{Re} & \custombold{Am} & \custombold{An} & \custombold{Pt} & \custombold{Pr} & \custombold{Ve} & \custombold{Ore Totali}\\
 \hline
 \rowcolor{LighterBlue}
-Sabrina Caniato & 0 & 0 & 0 & 4 & 6 & 2 & 12\\
+Sabrina Caniato & 0 & 0 & 1 & 3 & 6 & 2 & 12\\
 \rowcolor{LightBlue}
-Giulia Dentone & 12 & 0 & 0 & 2 & 5 & 2 & 21\\
+Giulia Dentone & 12 & 0 & 1 & 1 & 5(-3) & 2 & 21\\
 \rowcolor{LighterBlue}
-Nicola Lazzarin & 0 & 0 & 0 & 4 & 9(-2) & 2 & 15\\
+Nicola Lazzarin & 0 & 0 & 1 & 3 & 9 & 2 & 15\\
 \rowcolor{LightBlue}
-Giovanni Moretti & 0 & 5 & 0 & 3 & 7 & 2 & 17\\
+Giovanni Moretti & 0 & 5 & 1 & 2(-1) & 7 & 2 & 17\\
 \rowcolor{LighterBlue}
-Andrea Rezzi & 0 & 0 & 0 & 6(-2) & 8(-2) & 2 & 16\\
+Andrea Rezzi & 0 & 0 & 3 & 3 & 8 & 2 & 16\\
 \rowcolor{LightBlue}
-Samuele Vignotto & 0 & 0 & 7 & 4 & 5(-1) & 2 & 18\\
+Samuele Vignotto & 0 & 0 & 8 & 3(-1) & 5(-1) & 2 & 18\\
 \rowcolor{LighterBlue}
-\custombold{Ore totali} & 12 & 5 & 7 & 23(-2) & 40(-4) & 12 & 99(-6)\\
+\custombold{Ore totali} & 12 & 5 & 15 & 15(-2) & 40(-4) & 12 & 99(-6)\\
 \end{tabular}
-\captionof{table}{Variazione pianificazione del periodo di sviluppo del proof of concept}
+\captionof{table}{Variazione pianificazione del periodo di sviluppo del proof of concept\textsubscript{G}}
 \label{tab:varPOC}
 \end{center}
 \subsubsection{Prospetto economico}
@@ -1008,17 +1051,17 @@ Samuele Vignotto & 0 & 0 & 7 & 4 & 5(-1) & 2 & 18\\
     \rowcolor{LightBlue}
     Amministratore & 5 & 100\\
     \rowcolor{LighterBlue}
-    Analista & 7 & 175\\
+    Analista & 15 & 375\\
     \rowcolor{LightBlue}
-    Progettista & 23(-2) & 575(-50)\\
+    Progettista & 15(-2) & 375(-50)\\
     \rowcolor{LighterBlue}
     Programmatore & 40(-4) & 600(-60)\\
     \rowcolor{LightBlue}
     Verificatore & 12 & 180\\
     \rowcolor{LighterBlue}
-    \custombold{Totale} & \custombold{99} & \custombold{1990}\\
+    \custombold{Totale} & \custombold{99(-6)} & \custombold{1990(-110)}\\
     \end{tabular}
-    \captionof{table}{Variazione costi del periodo di sviluppo del proof of concept}
+    \captionof{table}{Variazione costi del periodo di sviluppo del proof of concept\textsubscript{G}}
 \label{tab:varcostiPOC}
 \end{center}
 
@@ -1047,9 +1090,9 @@ Samuele Vignotto & 0 & 0 & 7 & 4 & 5(-1) & 2 & 18\\
 \begin{center}
 \begin{tabular}{P{10em} P{20em}} 
     \rowcolor{LightBlue}
-     Descrizione & Abbiamo riscontato difficoltà nell'essere tutti contemporaneamente presenti a causa delle sessioni di esame o tirocinio. Inoltre abbiamo incontrato diverse necessità accademiche per quanto riguarda le tempistiche di consegna \\ 
+     Descrizione & Abbiamo riscontato difficoltà nell'essere tutti contemporaneamente presenti a causa delle sessioni di esame o tirocinio. Inoltre abbiamo incontrato diverse necessità accademiche per quanto riguarda le tempistiche di consegna. \\ 
     \rowcolor{LighterBlue}
-    Mitigazione dei rischi & Abbiamo distribuito equamente le attività in modo tale che il monte ore e l'impegno fosse coerente con quanto specificato nel Preventivo e nel Consuntivo  \\
+    Mitigazione dei rischi & Abbiamo distribuito equamente le attività in modo tale che il monte ore e l'impegno fosse coerente con quanto specificato nel Preventivo e nel Consuntivo.  \\
 \end{tabular}
 \captionof{table}{Mitigazione impegni accademici}
 \label{tab:mitimpegni}
@@ -1059,9 +1102,9 @@ Samuele Vignotto & 0 & 0 & 7 & 4 & 5(-1) & 2 & 18\\
 \begin{center}
 \begin{tabular}{P{10em} P{20em}} 
     \rowcolor{LightBlue}
-     Descrizione & Abbiamo riscontato difficoltà nell'ottenere rapidamente gli stumenti necessari al gruppo soprattutto nella fase di sviluppo \\ 
+     Descrizione & Abbiamo riscontato difficoltà nell'ottenere rapidamente gli stumenti necessari al gruppo soprattutto nella fase di sviluppo. \\ 
     \rowcolor{LighterBlue}
-    Mitigazione dei rischi & Abbiamo sollecitato il proponente durante un meeting esterno e abbiamo rafforzato i canali di comunicazione \\
+    Mitigazione dei rischi & Abbiamo sollecitato il proponente durante un meeting esterno e abbiamo rafforzato i canali di comunicazione. \\
 \end{tabular}
 \captionof{table}{Mitigazione velocità del cliente}
 \label{tab:mitcliente}
@@ -1072,9 +1115,9 @@ Samuele Vignotto & 0 & 0 & 7 & 4 & 5(-1) & 2 & 18\\
 \begin{center}
 \begin{tabular}{P{10em} P{20em}} 
     \rowcolor{LightBlue}
-     Descrizione & Rispettare le scadenze prefissate dal gruppo è risultato più difficile del previsto poichè, a causa dell'inesperienza, non ci si aspettava un simile carico di lavoro \\ 
+     Descrizione & Rispettare le scadenze prefissate dal gruppo è risultato più difficile del previsto poichè, a causa dell'inesperienza, non ci si aspettava un simile carico di lavoro. \\ 
     \rowcolor{LighterBlue}
-    Mitigazione dei rischi &  Abbiamo pianificato dettagliatamente l'avanzamento del progetto, prefissandoci Milestione più "realistiche", aumentandone il numero ma diminuendone la portata. Inoltre tutte le attività svolte sono state monitorate dal responsabile che interveniva celermente qualora necessario\\
+    Mitigazione dei rischi &  Abbiamo pianificato dettagliatamente l'avanzamento del progetto, prefissandoci Milestione più "realistiche", aumentandone il numero ma diminuendone la portata. Inoltre tutte le attività svolte sono state monitorate dal responsabile che interveniva celermente qualora necessario.\\
 \end{tabular}
 \captionof{table}{Mitigazione scadenze}
 \label{tab:mitscadenze}
@@ -1084,9 +1127,9 @@ Samuele Vignotto & 0 & 0 & 7 & 4 & 5(-1) & 2 & 18\\
 \begin{center}
 \begin{tabular}{P{10em} P{20em}} 
     \rowcolor{LightBlue}
-     Descrizione &  Si potrebbero verificare degli aumenti dei costi di implementazione, a causa di eventuali richieste aggiuntive da parte del proponente o dati dall'inesperienza del gruppo nell'uso delle tecnologie richieste\\ 
+     Descrizione &  Si potrebbero verificare degli aumenti dei costi di implementazione, a causa di eventuali richieste aggiuntive da parte del proponente o dati dall'inesperienza del gruppo nell'uso delle tecnologie richieste.\\ 
     \rowcolor{LighterBlue}
-    Mitigazione dei rischi &  Abbiamo monitorato costantemente i costi del progetto e abbiamo richiesto degi incontri di formazione al proponente in modo tale da indirizzarci alle librerie a loro più vantaggiose in termini di costi e vantaggi\\
+    Mitigazione dei rischi &  Abbiamo monitorato costantemente i costi del progetto e abbiamo richiesto degi incontri di formazione al proponente in modo tale da indirizzarci alle librerie a loro più vantaggiose in termini di costi e vantaggi.\\
 \end{tabular}
 \captionof{table}{Mitigazione costi}
 \label{tab:mitcosti}
@@ -1098,10 +1141,10 @@ Samuele Vignotto & 0 & 0 & 7 & 4 & 5(-1) & 2 & 18\\
 
 \subsubsection{Tecnologie}\begin{center}
 \begin{tabular}{P{10em} P{20em}} 
+    \rowcolor{LightBlue}
+     Descrizione & Gli strumenti necessari per una buona realizzazione del progetto sono in larga parte mai stati utilizzati precedentemente da parte dei membri del gruppo, tanto meno vi è esperienza nell'integrazione delle le varie tecnologie.\\ 
     \rowcolor{LighterBlue}
-     Descrizione & Gli strumenti necessari per una buona realizzazione del progetto sono in larga parte mai stati utilizzati precedentemente da parte dei membri del gruppo, tanto meno vi è esperienza nell'integrazione delle le varie tecnologie\\ 
-    \rowcolor{LighterBlue}
-    Mitigazione dei rischi & Il gruppo si è impegnato in uno studio autonomo degli strumenti, approfondito tramite l'utilizzo di questi ultimi anche nei Proof of Concept. Per l'integrazione si è deciso di focalizzarsi sull'integrazione delle tecnologie a partire dalle prime fasi del progetto\\
+    Mitigazione dei rischi & Il gruppo si è impegnato in uno studio autonomo degli strumenti, approfondito tramite l'utilizzo di questi ultimi anche nei Proof of Concept\textsubscript{G}. Per l'integrazione si è deciso di focalizzarsi sull'integrazione delle tecnologie a partire dalle prime fasi del progetto.\\
 \end{tabular}
 \captionof{table}{Mitigazione tecnologie}
 \label{tab:mittecnologie}
