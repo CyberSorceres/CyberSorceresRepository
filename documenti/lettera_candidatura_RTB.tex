@@ -1,0 +1,117 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\providecommand{\versionnumber}{1.0.0}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage[italian]{babel}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{Presentazione RTB}
+\fancyhead[C]{Cybersorceres}
+\fancyhead[R]{versione \versionnumber}
+
+\title{\Huge{\textbf{Presentazione RTB}}\vspace{-1em}}
+\author{CyberSorcerers Team}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\begin{center}
+    \begin{tabular}{l c }
+        \rowcolor{Blue} 
+        \textbf{Informazioni sul documento} & \textbf{Numero di matricola} \\ [1 ex]
+        \rowcolor{LighterBlue}
+        Giulia Dentone & 2001687\\ [1 ex]
+        \rowcolor{LightBlue}
+        Samuele Vignotto & 1161712 \\ [1 ex]
+        \rowcolor{LighterBlue}
+        Sabrina Caniato & 2042351\\ [1 ex]
+        \rowcolor{LightBlue}
+        Giovanni Moretti & 1217655 \\ [1 ex]
+        \rowcolor{LighterBlue}
+        Nicola Lazzarin & 2042376\\ [1 ex]
+        \rowcolor{LightBlue}
+        Andrea Rezzi & 2034329\\ [1 ex]
+    \end{tabular}
+\end{center}
+
+
+\begin{center}
+    \begin{tabular}{l c c}
+        \rowcolor{Blue} 
+        \textbf{Informazioni sul documento} & &\\ [1 ex]
+        \rowcolor{LighterBlue}
+        Destinatari: & Prf. Tullio Vardanega & Prf. Riccardo Cardin \\ [1 ex]
+        \rowcolor{LightBlue}
+        G al pedice: & Consultare il Glossario & \\ [1 ex]
+    \end{tabular}
+\end{center}
+\newpage
+
+\begin{flushright}
+15-04-2024
+\end{flushright}
+Egregi proff. Vardanega e Cardin,
+\newline
+il presente documento candida il team Cybersorcerers alla Requirements and Technology Baseline (RTB) per il capitolato:\newline
+\begin{center}
+    ChatGPT vs BedRock developer Analysis
+\end{center}
+proposto dall’azienda Zero12. \\La documentazione relativa al progetto è presente al link:
+\begin{center}
+    \href{https://cybersorceres.github.io/CyberSorceresRepository/}{https://cybersorceres.github.io/CyberSorceresRepository/}
+\end{center}
+ove è possibile visionare:
+\begin{itemize}
+    \item Verbali Interni ed Esterni (nel branch\textsubscript{G} “Verbali”);
+    \item Norme Way of Working (nel branch\textsubscript{G} “Documentazione interna”);
+    \item Piano di Qualifica, Piano di Progetto, Analisi dei Requisiti e Glossario (nel branch\textsubscript{G} “Documentazione esterna”).
+\end{itemize}
+
+Con la presente lettera desideriamo aggiornare il preventivo presentato in sede di candidatura al progetto in corso. Come preventivato, dopo aver esaminato i dettagli del progetto e dopo esserci cimentati con la realizzazione di un Proof Of Concept\textsubscript{G}, abbiamo modificato il preventivo tenendo conto delle nostre nuove consapevolezze e di eventuali correzioni richieste.
+A tal proposito, siamo lieti di confermare che il costo finale per la realizzazione del progetto è di 12090 €, come precedentemente indicato. Si nota che tale budget rimanga in linea con i costi di massima prestabiliti, individuando solo un ritardo sulle tempistiche dovuto principalmente alla realizzazione del Proof of Concept\textsubscript{G} e all'organizzazione del team insieme ai professori per effettuare le revisioni necessarie. Per queste ragioni la data di consegna del progetto è stata modificata. La nuova data di consegna prevista è il 28/05/2024. Siamo determinati nel perseguire il completamento del progetto rispettando questo calendario, rimanendo conformi agli standard di qualità imposti dal team e che possano soddisfarLa. 
+\newline
+\newline
+Cordiali saluti,
+\newline
+Team Cybersorcerers
+
+\end{document}
+
+
+
