@@ -7,7 +7,7 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{enumitem}
-\providecommand{\versionnumber}{1.1.0}
+\providecommand{\versionnumber}{1.2.0}
 \usepackage{array}
 \usepackage[italian]{babel}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
@@ -105,6 +105,8 @@ Nicola Lazzarin \\
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LightBlue}
+    1.2.0 & 23/04/2024 & Giulia Dentone & Samuele Vignotto & Aggiunta UC1 e correzione fino a UC7.\\
     \rowcolor{LighterBlue}
     1.1.0 & 17/04/2024 & Samuele Vignotto & Giulia Dentone & Correzione scenari principali e inizio correzioni esito RTB.\\
     \rowcolor{LightBlue}
@@ -219,12 +221,108 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
 \end{figure}
 \newpage
 
-\section{UC1-Autenticazione}
+\section{UC1-Registrazione}
     \begin{figure}[h]
       \centering
-      \includegraphics{./imgUML/UC1.png}
+      \includegraphics{documenti/imgUML/UC1-REGISTRAZIONE.png}
       \caption{UC1}
       \label{fig:UC1}
+    \end{figure}  
+
+         \subsection*{Main actor}
+         \begin{itemize}
+             \item Project Manager\textsubscript{G}.
+         \end{itemize}
+     \subsection*{Preconditions} 
+        \begin{itemize}
+            \item Essere registrati nel sistema come Project Manager\textsubscript{G} con i propri permessi.
+        \end{itemize}
+            \subsection*{Postconditions}
+        \begin{itemize}
+            \item Project Manager\textsubscript{G} riconosciuto dal sistema;
+            \item Nuovo utente inserito nel sistema.
+        \end{itemize}
+    \subsection*{Main scenario}
+   \begin{figure}[H]
+      \centering
+      \includegraphics{documenti/imgUML/UC1-SOTTOCASI.png}
+      \caption{UC1.1 e UC1.2}
+      \label{fig:UC1,1 e UC1.2}
+    \end{figure} 
+        \begin{itemize}
+            \item Inserimento manuale della mail dell'utente;
+            \item Inserimento del ruolo dell'utente (Cliente, Sviluppatore, Project Manager\textsubscript{G}).
+        \end{itemize}
+    \subsection*{Alternative scenario}
+        \begin{itemize}
+            \item Visualizzazione del messaggio di errore per un utente già inserito nel sistema [UC2].
+        \end{itemize}
+
+\subsection{UC1.1-Inserimento Mail}
+    
+     \subsection*{Main actor}
+         \begin{itemize}
+             \item Project Manager\textsubscript{G}.
+         \end{itemize}
+     \subsection*{Preconditions} 
+        \begin{itemize}
+            \item Essere registrati nel sistema con i propri permessi;
+        \end{itemize}
+        \subsection*{Postcondition} 
+        \begin{itemize}
+            \item Email dell'utente inserita.
+        \end{itemize}
+        \subsection*{Main scenario}
+        \begin{itemize}
+        \item Compilazione campo mail.
+        \end{itemize}
+
+\subsection{UC1.1-Inserimento Ruolo}
+    
+     \subsection*{Main actor}
+         \begin{itemize}
+             \item Project Manager\textsubscript{G}.
+         \end{itemize}
+     \subsection*{Preconditions} 
+        \begin{itemize}
+            \item Essere registrati nel sistema con i propri permessi;
+        \end{itemize}
+        \subsection*{Postcondition} 
+        \begin{itemize}
+            \item Ruolo dell'utente inserito (Cliente, sviluppatore, Project Manager\textsubscript{G}).
+        \end{itemize}
+        \subsection*{Main scenario}
+        \begin{itemize}
+        \item Compilazione del campo ruolo.
+        \end{itemize}
+
+\section{UC2-Errore di registrazione}
+    \subsection*{Main actor}
+         \begin{itemize}
+             \item Project Manager\textsubscript{G}.
+         \end{itemize}
+         
+     \subsection*{Preconditions} 
+        \begin{itemize}
+            \item Essere registrati nel sistema con i propri permessi.
+        \end{itemize}
+        
+    \subsection*{Postconditions}
+        \begin{itemize}
+            \item Utente già presente nel sistema.
+        \end{itemize}
+        \subsection*{Main scenario}
+        \begin{itemize}
+        \item Inserimento della mail dell'utente da inserire;
+        \item Inserimento del ruolo dell'utente da inserire (Cliente, Sviluppatore, Project Manager).
+        \end{itemize}
+
+\section{UC3-Autenticazione}
+    \begin{figure}[h]
+      \centering
+      \includegraphics{documenti/imgUML/UC3-AUTENTICAZIONE.png}
+      \caption{UC3 e UC4}
+      \label{fig:UC3 AUTENTICAZIONE}
     \end{figure} 
     
      \subsection*{Main actor}
@@ -243,11 +341,10 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
     \subsection*{Main scenario}
         \begin{figure}[h]
             \centering
-            \includegraphics{./imgUML/UC1-zoom.png}
-            \caption{Sottocasi UC1}
-            \label{fig:UC1_sottocasi}
+            \includegraphics{documenti/imgUML/UC3-SOTTOCASI.png}
+            \caption{UC3.1 e UC3.2}
+            \label{fig:UC3 SOTTOCASI}
         \end{figure}
-            
         \begin{itemize}
             \item Compilazione campo mail [UC1.1];
             \item Compilazione campo password [UC1.2].
@@ -255,10 +352,10 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
             
         \subsection*{Alternative scenario}
             \begin{itemize}
-                \item Visualizzazione errore di autenticazione [UC2].
+                \item Visualizzazione errore di autenticazione [UC4].
             \end{itemize}
             
-\subsection{UC1.1-Inserimento Mail}
+\subsection{UC3.1-Inserimento Mail}
     
      \subsection*{Main actor}
          \begin{itemize}
@@ -278,7 +375,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \item Compilazione campo mail.
         \end{itemize}
 
-\subsection{UC1.2-Inserimento Password}
+\subsection{UC3.2-Inserimento Password}
     
      \subsection*{Main actor}
          \begin{itemize}
@@ -299,7 +396,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \item Compilazione campo password.
         \end{itemize}
 
-\section{UC2-Errore di autenticazione}
+\section{UC4-Errore di autenticazione}
     
      \subsection*{Main actor}
          \begin{itemize}
@@ -321,12 +418,12 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \end{itemize}
 
     
-\section{UC3-Compilazione requisiti di business}
+\section{UC5-Compilazione requisiti di business}
     \begin{figure}[H]
       \centering
-      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{./imgUML/UC3_compilazione.png}
-            \caption{UC3}
-      \label{fig:UC3}
+      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC5-COMPILAZIONE-REQUISITO-DI-BUSINESS.png}
+            \caption{UC5}
+      \label{fig:UC5}
     \end{figure}
      \subsection*{Main actor}
      \begin{itemize}
@@ -349,12 +446,12 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
             \item Il cliente compila il requisito di business\textsubscript{G}.
         \end{itemize}
     
-\section{UC4-Invio requisiti di business}
+\section{UC6-Invio requisiti di business}
     \begin{figure}[H]
       \centering
-      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{./imgUML/UC4.png}
-            \caption{UC4}
-      \label{fig:UC4}
+      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC6-INVIO-REQUISITO-DI-BUSINESS.png}
+            \caption{UC6 e UC7}
+      \label{fig:UC6-INVIO-REQUISITO-DI-BUSINESS}
     \end{figure}
      \subsection*{Main actor}
      \begin{itemize}
@@ -383,10 +480,10 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \end{itemize}
      \subsection*{Alternative scenario}
         \begin{itemize}
-            \item Messaggio d'errore durante l'invio [UC4].
+            \item Messaggio d'errore durante l'invio [UC7].
         \end{itemize}
 
-\section{UC4-Errore nell'invio dei requisiti di business}
+\section{UC7-Errore nell'invio dei requisiti di business}
 
      \subsection*{Main actor}
      \begin{itemize}
