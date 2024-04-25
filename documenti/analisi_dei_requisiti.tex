@@ -7,7 +7,7 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{enumitem}
-\providecommand{\versionnumber}{1.2.0}
+\providecommand{\versionnumber}{1.3.0}
 \usepackage{array}
 \usepackage[italian]{babel}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
@@ -105,6 +105,8 @@ Nicola Lazzarin \\
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LighterBlue}
+    1.3.0 & 25/04/2024 & Samuele Vignotto & Giulia Dentone & Correzione UC fino a UC21.\\
     \rowcolor{LightBlue}
     1.2.0 & 23/04/2024 & Giulia Dentone & Samuele Vignotto & Aggiunta UC1 e correzione fino a UC7.\\
     \rowcolor{LighterBlue}
@@ -131,16 +133,17 @@ Nicola Lazzarin \\
     0.5.2 & 03/12/2023 & Samuele Vignotto & Sabrina Caniato & Aggiunta fonti requisiti.\\
     \rowcolor{LightBlue}
     0.5.1 & 02/12/2023 & Nicola Lazzarin & Giulia Dentone & Aggiunta caption alle immagini.\\ 
+    
+    \end{tabular}
+
+
+\begin{tabular}{P{4em} P{6em} P{7em} P{7em} P{11em}} 
     \rowcolor{LighterBlue}
     0.5.0 & 01/12/2023 & Caniato Sabrina & Vignotto Samuele & Sistemato l'analisi dei casi d'uso\textsubscript{G} dopo il colloquio col Prof. R. Cardin. Aggiunta delle specifiche dei sottocasi d'uso.\\
     \rowcolor{LightBlue}
     0.4.3 & 30/11/2023 & Sabrina Caniato & Samuele Vignotto & Inserimento delle immagini relative dall'UC14 all'UC18.\\
     \rowcolor{LighterBlue}
     0.4.2 & 28/11/2023 & Giulia Dentone & Nicola Lazzarin & Inserimento delle immagini relative dall'UC7 all'UC14.\\
-    \end{tabular}
-
-
-\begin{tabular}{P{4em} P{6em} P{7em} P{7em} P{11em}} 
     \rowcolor{LightBlue}
     0.4.1 & 27/11/2023 & Sabrina Caniato & Nicola Lazzarin & Inserimento delle immagini relative dall'UC1 all'UC6.\\
     \rowcolor{LighterBlue}
@@ -206,7 +209,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
 
 \begin{figure}[h]
     \centering
-    \includegraphics{./imgUML/Attori.png}
+    \includegraphics{documenti/imgUML/Attori.png}
     \caption{Generalizzazione degli attori\textsubscript{G} Utente ed Utente Aziendale}
     \label{fig:attori}
 \end{figure}
@@ -215,7 +218,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
 \custombold{UML Casi d'uso}
 \begin{figure}[h]
     \centering
-    \includegraphics[height = 0.70\textheight]{./imgUML/UML.png}
+    \includegraphics[height = 0.70\textheight]{documenti/imgUML/UML.png}
     \caption{UML dei casi d'uso\textsubscript{G}}
     \label{fig:UML}
 \end{figure}
@@ -504,12 +507,12 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \end{itemize}
 
 
-\section{UC5-Feedback cliente sullo sviluppo user stories}
+\section{UC8-Feedback cliente sullo sviluppo user stories}
     \begin{figure}[h]
       \centering
-      \includegraphics{./imgUML/UC5.png}
-        \caption{UC5}
-      \label{fig:UC5}
+      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC8-FEEDBACK-CLIENTE-SVILUPPO-USER-STORIES.drawio.png}
+        \caption{UC8}
+      \label{fig:UC8}
     \end{figure}
     
     \subsection*{Main actor}
@@ -533,32 +536,33 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
     \subsection*{Main scenario}
         \begin{figure}[h]
             \centering
-            \includegraphics{./imgUML/UC5-zoom.png}
-            \caption{Sottocasi UC5}
-            \label{fig:UC5_sottocasi}
+            \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC8-zoom.drawio.png}
+            \caption{Sottocasi UC8}
+            \label{fig:UC8_sottocasi}
         \end{figure}
         \begin{itemize}
-            \item Verifica che la funzionalità rispetti le caratteristiche [UC5.2].
+            \item Verifica che la funzionalità rispetti le caratteristiche [UC8.2].
         \end{itemize}
         
     \subsection*{Alternative scenario}
     \begin{itemize}
-        \item Visualizzazione errore invio feedback[UC6].
+        \item Visualizzazione errore invio feedback[UC9].
     \end{itemize}
 
     \subsection*{Generalize}
     \begin{figure}[h]
             \centering
-            \includegraphics{./imgUML/UC5-zoom1.png}
-            \caption{Generalizzazione del UC5}
-            \label{fig:UC5_generalizzazione}
+            \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC8.1-FEEDBACK-NEGATIVO.drawio.png}
+            \caption{Generalizzazione del UC8}
+            \label{fig:UC8_generalizzazione}
         \end{figure}
-    \subsection{UC5.1 Feedback negativo}
+    \subsection{UC8.1 Feedback negativo}
     \begin{itemize}
-            \item Invio commento sull'errore riscontrato [UC5.1.1].
+            \item Invio commento sull'errore riscontrato [UC8.1.1].
         \end{itemize}
+    \newpage
         
-\section{UC6-Errore nell'invio del feedback}
+\section{UC9-Errore nell'invio del feedback}
 
      \subsection*{Main actor}
      \begin{itemize}
@@ -581,13 +585,13 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \end{itemize}
 
         
-\section{UC7- Validazione finale del feedback}
+\section{UC10- Validazione finale del feedback}
 
 \begin{figure}[h]
       \centering
-      \includegraphics{./imgUML/UC7.png}
-        \caption{UC7}
-      \label{fig:UC7}
+      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC10-VALIDAZIONE-FINALE-FEEDBACK.drawio.png}
+        \caption{UC10}
+      \label{fig:UC10}
     \end{figure}
     
     \subsection*{Main actor}
@@ -611,26 +615,26 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
     \subsection*{Main scenario}
         \begin{figure}[h]
             \centering
-            \includegraphics{./imgUML/UC7-zoom.png}
-            \caption{Sottocasi UC7}
-            \label{fig:UC7_sottocasi}
+            \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC10-zoom.drawio.png}
+            \caption{Sottocasi UC10}
+            \label{fig:UC10_sottocasi}
         \end{figure}
         \begin{itemize}
-            \item Controllo del feedback inviato [UC7.2];
-            \item Istruzione dell'intelligenza artificiale [UC7.3].
+            \item Controllo del feedback inviato [UC10.2];
+            \item Istruzione dell'intelligenza artificiale [UC10.3].
         \end{itemize}
         
     \subsection*{Generalize}
       \begin{figure}[h]
             \centering
-            \includegraphics{./imgUML/UC7-zoom1.png}
-            \caption{Generalizzazione del UC7}
-            \label{fig:UC7_generalizzazione}
+            \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC10.1-VALIDAZIONE-FEEDBACK-NON-APPROVATA.drawio.png}
+            \caption{Generalizzazione del UC10}
+            \label{fig:UC10_generalizzazione}
         \end{figure}
-    \subsection{UC7.1 Validazione del feedback non approvata}
+    \subsection{UC10.1 Validazione del feedback non approvata}
     \begin{itemize}
-        \item Riscrittura del feedback da parte del Project Manager\textsubscript{G}  [UC7.1.1].
-        \subsection*{UC7.1.1 Riscrittura del feedback da parte del Project Manager\textsubscript{G} }
+        \item Riscrittura del feedback da parte del Project Manager\textsubscript{G}  [UC10.1.1].
+        \subsection*{UC10.1.1 Riscrittura del feedback da parte del Project Manager\textsubscript{G} }
      \subsection*{Main actor}
          \begin{itemize}
              \item Project Manager\textsubscript{G}.
@@ -650,7 +654,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \end{itemize}
     \end{itemize}
     
-\subsection{UC7.2-Controllo del feedback inviato}
+\subsection{UC10.2-Controllo del feedback inviato}
     
      \subsection*{Main actor}
          \begin{itemize}
@@ -669,7 +673,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
             \item Il Project Manager\textsubscript{G} riscrive il feedback.
         \end{itemize}
 
-    \subsection{UC7.3-Istruzione dell'intelligenza artificiale}
+    \subsection{UC10.3-Istruzione dell'intelligenza artificiale}
      \subsection*{Main actor}
          \begin{itemize}
              \item Cliente.
@@ -688,12 +692,12 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \end{itemize}
         
 
-\section{UC8-Visualizzazione andamento progetto}
+\section{UC11-Visualizzazione andamento progetto}
     \begin{figure}[h]
       \centering
-      \includegraphics{./imgUML/UC8.png}
-        \caption{UC8}
-      \label{fig:UC8}
+      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC11-VISUALIZZAZIONE-ANDAMENTO-PROGETTO.drawio.png}
+        \caption{UC11}
+      \label{fig:UC11}
     \end{figure}
     
     \subsection*{Main actor}
@@ -722,19 +726,19 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \end{itemize}
         
 
-\section{UC9-Feedback epic/user stories\textsubscript{G} Project Manager\textsubscript{G}}
+\section{UC12-Feedback epic/user stories\textsubscript{G} Project Manager\textsubscript{G}}
     \begin{figure}[h]
       \centering
-      \includegraphics{./imgUML/UC9.png}
-    \caption{UC9}      
-      \label{fig:UC9}
+      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC12-FEEDBACK-EPIC-USER-STORIES-PROJECT-MANAGER.drawio.png}
+    \caption{UC12}      
+      \label{fig:UC12}
     \end{figure}
 %con feedback si intende un effetto di reazione prodotto da un messaggio su chi lo ha emesso
     \subsection*{Main actor}
     \begin{itemize}
         \item Project Manager\textsubscript{G}.
     \end{itemize}
-    \subsection{Second actor}
+    \subsection*{Second actor}
     \begin{itemize}
         \item Intelligenza artificiale.
     \end{itemize}
@@ -755,23 +759,23 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
     \subsection*{Main scenario}
         \begin{figure}[h]
           \centering
-          \includegraphics{./imgUML/UC9-zoom.png}
-          \caption{Sottocasi UC9}
-          \label{fig:UC9_sottocasi}
+          \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC12-zoom.drawio.png}
+          \caption{Sottocasi UC12}
+          \label{fig:UC12_sottocasi}
         \end{figure}
 
         \begin{itemize}
-            \item Project Manager\textsubscript{G} visualizza epic/user stories\textsubscript{G} generate dal sistema [UC9.1];
-            \item Project Manager\textsubscript{G} invia il feedback al sistema [UC9.2].
+            \item Project Manager\textsubscript{G} visualizza epic/user stories\textsubscript{G} generate dal sistema [UC12.1];
+            \item Project Manager\textsubscript{G} invia il feedback al sistema [UC12.2].
         \end{itemize}
         
     \subsection*{Alternative scenario}
         
         \begin{itemize}
-            \item Errore nell'invio del feedback[UC10];
+            \item Errore nell'invio del feedback[UC13];
         \end{itemize}
         
-\section{UC10-Errore nell'invio del feedback}
+\section{UC13-Errore nell'invio del feedback}
 
      \subsection*{Main actor}
      \begin{itemize}
@@ -795,12 +799,12 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \end{itemize}
 
   
-\section{UC11-Visualizzazione personalizzata epic/user stories\textsubscript{G}}
+\section{UC14-Visualizzazione personalizzata epic/user stories\textsubscript{G}}
     \begin{figure}[h]
       \centering
-      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{./imgUML/UC11.png}
-        \caption{UC11}
-      \label{fig:UC11}
+      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC14-VISUALIZZAZIONE-PERSONALIZZATA-EPIC-USER-STORIES.drawio.png}
+        \caption{UC14}
+      \label{fig:UC14}
     \end{figure}
     
     \subsection*{Main actor}
@@ -829,15 +833,15 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         
     \subsection*{Inclusione}
         \begin{itemize}
-            \item Visualizzazione andamento progetto [UC8].
+            \item Visualizzazione andamento progetto [UC11].
         \end{itemize}
 
-\section{UC12-Assegnazione epic/user stories \textsubscript{G}}
+\section{UC15-Assegnazione epic/user stories \textsubscript{G}}
     \begin{figure}[h]
       \centering
-      \includegraphics{./imgUML/UC12.png}
-    \caption{UC12}
-      \label{fig:UC12}
+      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC15-ASSEGNAZIONE-EPIC-USER-STORIES.drawio.png}
+    \caption{UC15}
+      \label{fig:UC15}
     \end{figure}
 
     \subsection*{Main actor}
@@ -860,21 +864,21 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
     \subsection*{Main scenario}
         \begin{figure}[h]
           \centering
-          \includegraphics{./imgUML/UC12-zoom.png}
-          \caption{Sottocasi UC12}
-          \label{fig:UC12_sottocasi}
+          \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC15-zoom.drawio.png}
+          \caption{Sottocasi UC15}
+          \label{fig:UC15_sottocasi}
         \end{figure}
         
         \begin{itemize}
-            \item Project Manager\textsubscript{G} seleziona lo Sviluppatore a cui assegnare la epic/user stories\textsubscript{G} selezionata [UC12.1].
+            \item Project Manager\textsubscript{G} seleziona lo Sviluppatore a cui assegnare la epic/user stories\textsubscript{G} selezionata [UC15.1].
         \end{itemize}
         
     \subsection*{Alternative scenario}
         \begin{itemize}
-            \item Errore nell'assegnazione dell'epic story\textsubscript{G} [UC13].
+            \item Errore nell'assegnazione dell'epic story\textsubscript{G} [UC16].
         \end{itemize}    
         
-    \subsection{UC12.1- Selezione dello sviluppatore}
+    \subsection{UC15.1- Selezione dello sviluppatore}
         \subsection*{Main actor}
     \begin{itemize}
         \item Project Manager\textsubscript{G}.
@@ -897,7 +901,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \item Il Project Manager\textsubscript{G} seleziona a quale o quali sviluppatori assegnare le epic/user stories\textsubscript{G}.
     \end{itemize}
 
-\section{UC13- Assegnazione non avvenuta}
+\section{UC16 Assegnazione non avvenuta}
 
        \subsection*{Main actor}
     \begin{itemize}
@@ -921,46 +925,8 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
     \begin{itemize}
         \item Il Project Manager\textsubscript{G} seleziona a quale o quali sviluppatori assegnare le epic/user stories\textsubscript{G}.
     \end{itemize}
-    
-\section{UC14-Sviluppo del codice}
-    \begin{figure}[h]
-      \centering
-      \includegraphics{./imgUML/UC14.png}
-    \caption{UC14}
-      \label{fig:UC14}
-    \end{figure}
-    
-    \subsection*{Main actor}
-        \begin{itemize}
-            \item Sviluppatore.
-        \end{itemize}
-    
-    \subsection*{Preconditions}
-        \begin{itemize}
-            \item Essere riconosciuti dal sistema come Sviluppatore;
-            \item Avere un'assegnazione per quella user story\textsubscript{G} dal Project Manager\textsubscript{G}.
-        \end{itemize}
-        
-    \subsection*{Postconditions} 
-        \begin{itemize}
-            \item Il codice sviluppato e pronto per il testing\textsubscript{G};
-            \item Il codice è correttamente taggato\textsubscript{G}.
-        \end{itemize}
-    
-    \subsection*{Main scenario}
-        \begin{figure}[h]
-          \centering
-          \includegraphics{./imgUML/UC14-zoom.png}
-          \caption{Sottocasi UC14}
-          \label{fig:UC14_sottocasi}
-        \end{figure}
-        
-        \begin{itemize}
-            \item Sviluppatore inserisce il tag\textsubscript{G} di riferimento alla user story\textsubscript{G} [UC14.1];
-            \item Sviluppatore scrive del codice [UC14.2].
-        \end{itemize}
 
-        \subsection{UC14.1 Inserimento del Tag\textsubscript{G}}
+\section{UC17 Inserimento del Tag\textsubscript{G}}
 \subsection*{Main actor}
         \begin{itemize}
             \item Sviluppatore.
@@ -985,12 +951,12 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
 
         
         
-\section{UC15-Verifica codice da parte dell'IA\textsubscript{G}}
+\section{UC18 Verifica codice da parte dell'IA\textsubscript{G}}
     \begin{figure}[h]
       \centering
-      \includegraphics{./imgUML/UC15.png}
-        \caption{UC15}
-      \label{fig:UC15}
+      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC18-VERIFICA-CODICE-IA.drawio.png}
+        \caption{UC18}
+      \label{fig:UC18}
     \end{figure}
     
     \subsection*{Main actor}
@@ -1020,18 +986,18 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
     \subsection*{Main scenario}
         \begin{figure}[h]
           \centering
-          \includegraphics{./imgUML/UC15-zoom.png}
-          \caption{Sottocasi UC15}
-          \label{fig:UC15_sottocasi}
+          \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC18-zoom.drawio.png}
+          \caption{Sottocasi UC18}
+          \label{fig:UC18_sottocasi}
         \end{figure}
         
         \begin{itemize}
-            \item Sviluppatore invia codice per la verifica [UC15.1];
+            \item Sviluppatore invia codice per la verifica [UC18.1];
 
-            \item Sviluppatore riceve feedback dal sistema riguardante il codice inviato [UC15.2].
+            \item Sviluppatore riceve feedback dal sistema riguardante il codice inviato [UC18.2].
         \end{itemize}
         
-    \subsection{UC15.1- Invio codice per la verifica}
+    \subsection{UC18.1- Invio codice per la verifica}
     \subsection*{Main actor}
         \begin{itemize}
             \item Sviluppatore.
@@ -1057,7 +1023,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
             \item Sviluppatore invia codice taggato al sistema.
         \end{itemize}
         
-    \subsection{UC15.2- Visualizzazione feedback}
+    \subsection{UC18.2- Visualizzazione feedback}
     \subsection*{Main actor}
         \begin{itemize}
             \item Sviluppatore.
@@ -1086,12 +1052,12 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
     
 
         
-\section{UC16-Inserimento di un nuovo cliente}
+\section{UC19 Inserimento di un nuovo cliente}
     \begin{figure}[h]
       \centering
-      \includegraphics{./imgUML/UC16.png}
-    \caption{UC16}
-      \label{fig:UC16}
+      \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC19-INSERIMENTO-NUOVO-CLIENTE.drawio.png}
+    \caption{UC19}
+      \label{fig:UC19}
     \end{figure}
     
     \subsection*{Main actor}
@@ -1114,22 +1080,22 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
     \subsection*{Main scenario}
         \begin{figure}[h]
           \centering
-          \includegraphics{./imgUML/UC16-zoom.png}
-          \caption{Sottocasi UC16}
-          \label{fig:UC16_sottocasi}
+          \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC19-zoom.drawio.png}
+          \caption{Sottocasi UC19}
+          \label{fig:UC19_sottocasi}
         \end{figure}
         
         \begin{itemize}
-            \item Il Project Manager\textsubscript{G} inserisce mail [UC16.1];
-            \item Il Project Manager\textsubscript{G} inserisce ruolo di Cliente [UC16.2].
+            \item Il Project Manager\textsubscript{G} inserisce mail [UC19.1];
+            \item Il Project Manager\textsubscript{G} inserisce ruolo di Cliente [UC19.2].
         \end{itemize}
         
     \subsection*{Alternative scenario}
         \begin{itemize}
-            \item Errore nella registrazione dell'utente [UC17].
+            \item Errore nella registrazione dell'utente [UC20].
         \end{itemize}
 
-    \subsection{UC16.1- Inserimento Mail}
+    \subsection{UC19.1- Inserimento Mail}
     \subsection*{Main actor}
         \begin{itemize}
             \item Project Manager\textsubscript{G}.
@@ -1152,7 +1118,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \end{itemize}
         
 
-    \subsection{UC16.2- Inserimento ruolo}
+    \subsection{UC19.2- Inserimento ruolo}
     \subsection*{Main actor}
         \begin{itemize}
             \item Project Manager\textsubscript{G}.
@@ -1175,7 +1141,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
             \item inserimento ruolo nel campo "ruolo".
         \end{itemize}
 
-\section{UC17- Errore nella registrazione dell'utente}
+\section{UC20- Errore nella registrazione dell'utente}
 \subsection*{Main actor}
         \begin{itemize}
             \item Project Manager\textsubscript{G}.
@@ -1197,12 +1163,12 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
             \item Compilazione dati cliente.
             \item Invio dati cliente.
         \end{itemize}
-\section{UC18- Primo accesso}
+\section{UC21 Primo accesso}
  \begin{figure}[h]
           \centering
-          \includegraphics{./imgUML/UC18.png}
-            \caption{UC18}
-          \label{fig:UC18}
+          \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC21-PRIMO-ACCESSO.drawio.png}
+            \caption{UC21}
+          \label{fig:UC21}
         \end{figure}
 \subsection*{Main actor}
         \begin{itemize}
@@ -1224,18 +1190,18 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
         \subsection*{Main scenario}
         \begin{figure}[h]
           \centering
-          \includegraphics{./imgUML/UC18-zoom.png}
-            \caption{Sottocasi UC18}
-          \label{fig:UC18_sottocasi}
+          \includegraphics[width=.8\textwidth, height=.6\textheight, keepaspectratio]{documenti/imgUML/UC21-zoom.drawio.png}
+            \caption{Sottocasi UC21}
+          \label{fig:UC21_sottocasi}
         \end{figure}
         
         \begin{itemize}
-            \item Inserimento nuova password [UC18.1];
-            \item Conferma nuova password [UC18.2].
+            \item Inserimento nuova password [UC21.1];
+            \item Conferma nuova password [UC21.2].
         \end{itemize}
      
 
-        \subsection{UC18.1 Inserimento nuova password}
+        \subsection{UC21.1 Inserimento nuova password}
             \subsection*{Main actor}
         \begin{itemize}
             \item Utente.
@@ -1257,7 +1223,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
             \item Scrivere nuova password nel campo "nuova password".
         \end{itemize}
 
-    \subsection{UC18.2- Conferma nuova password}
+    \subsection{UC21.2- Conferma nuova password}
     \subsection*{Main actor}
         \begin{itemize}
             \item Utente.
