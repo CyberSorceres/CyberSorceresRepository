@@ -7,7 +7,7 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{enumitem}
-\providecommand{\versionnumber}{1.3.0}
+\providecommand{\versionnumber}{1.3.1}
 \usepackage{array}
 \usepackage[italian]{babel}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
@@ -105,6 +105,7 @@ Nicola Lazzarin \\
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    1.3.1 & 27/04/2024 & Samuele Vignotto & Giulia Dentone & Correzione correlazione casi d'uso tabella requisiti funzionali.\\
     \rowcolor{LighterBlue}
     1.3.0 & 25/04/2024 & Samuele Vignotto & Giulia Dentone & Correzione UC fino a UC21.\\
     \rowcolor{LightBlue}
@@ -1257,39 +1258,39 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
 ID & Classificazione & Descrizione & Indirizzato a&Casi d'uso\textsubscript{G}  \\ 
 \rowcolor{LightBlue}
 \hline
-ROF1&Obbligatorio & Accesso a web app\textsubscript{G} tramite login composto da email e password. & utente registrato ma non ancora riconosciuto dal sistema & UC1, UC16, UC18 \\ 
+ROF1&Obbligatorio & Accesso a web app\textsubscript{G} tramite login composto da email e password. & utente registrato ma non ancora riconosciuto dal sistema & UC3, UC4, UC19, UC21 \\ 
 \rowcolor{LighterBlue}
 \hline
-ROF2&Obbligatorio & Scrittura di richieste di business\textsubscript{G} tramite box testuale da web app\textsubscript{G}. & Cliente & UC3\\ 
+ROF2&Obbligatorio & Scrittura di richieste di business\textsubscript{G} tramite box testuale da web app\textsubscript{G}. & Cliente & UC5\\ 
 \rowcolor{LightBlue}
 \hline
-ROF3&Obbligatorio & Invio delle richieste di business\textsubscript{G} da web app. \textsubscript{G} & Cliente & UC3\\
+ROF3&Obbligatorio & Invio delle richieste di business\textsubscript{G} da web app. \textsubscript{G} & Cliente & UC6\\
 \hline
 \rowcolor{LighterBlue}
 
-ROF4&Obbligatorio & Visualizzazione andamento sviluppo richieste tramite barra di completamento basata sulla percentuale di user stories\textsubscript{G} completate. & Cliente, Project Manager\textsubscript{G} & UC8, UC11\\
+ROF4&Obbligatorio & Visualizzazione andamento sviluppo richieste tramite barra di completamento basata sulla percentuale di user stories\textsubscript{G} completate. & Cliente, Project Manager\textsubscript{G} & UC11, UC14\\
 \rowcolor{LightBlue}
 \hline
-ROF5&Obbligatorio & Approvazione o rifiuto del risultato relativo all'implementazione di una user story\textsubscript{G}. & Cliente & UC5\\
+ROF5&Obbligatorio & Approvazione o rifiuto del risultato relativo all'implementazione di una user story\textsubscript{G}. & Cliente & UC8\\
 \hline
 \rowcolor{LighterBlue}
 
-RDF6&Desiderabile & Ricezione notifiche quando user story\textsubscript{G} completata. & Cliente & UC5 UC8\\
+RDF6&Desiderabile & Ricezione notifiche quando user story\textsubscript{G} completata. & Cliente & UC11\\
 \hline
 \rowcolor{LightBlue}
 \hline
-ROF7&Obbligatorio & Funzionalità di tag\textsubscript{G} nel plug-in\textsubscript{G}.  & Sviluppatore & UC14\\
+ROF7&Obbligatorio & Funzionalità di tag\textsubscript{G} nel plug-in\textsubscript{G}.  & Sviluppatore & UC17\\
 \hline
 \rowcolor{LighterBlue}
 
-ROF8&Obbligatorio & Lista di user stories\textsubscript{G} assegnate da Project Manager\textsubscript{G} sia su web app\textsubscript{G} che su plug-in\textsubscript{G}. & Sviluppatore & UC14 UC15\\
+ROF8&Obbligatorio & Lista di user stories\textsubscript{G} assegnate da Project Manager\textsubscript{G} sia su web app\textsubscript{G} che su plug-in\textsubscript{G}. & Sviluppatore & UC17, UC18\\
 \hline
 \rowcolor{LightBlue}
 
-RDF9&Desiderabile & Ricezione notifica su web app\textsubscript{G} quando nuova user story\textsubscript{G} è assegnata dal Project Manager\textsubscript{G}.& Sviluppatore & UC12\\
+RDF9&Desiderabile & Ricezione notifica su web app\textsubscript{G} quando nuova user story\textsubscript{G} è assegnata dal Project Manager\textsubscript{G}.& Sviluppatore & UC15\\
 \hline
 \rowcolor{LighterBlue}
-ROF10&Obbligatorio & Invio del codice sviluppato a IA\textsubscript{G} per richiesta verifica.& Sviluppatore & UC15\\
+ROF10&Obbligatorio & Invio del codice sviluppato a IA\textsubscript{G} per richiesta verifica.& Sviluppatore & UC18\\
 
 \hline
 \end{tabular}
@@ -1300,51 +1301,51 @@ ROF10&Obbligatorio & Invio del codice sviluppato a IA\textsubscript{G} per richi
 ID & Classificazione & Descrizione & Indirizzato a&Casi d'uso\textsubscript{G}  \\ 
 \rowcolor{LighterBlue}
 
-ROF11&Obbligatorio & Visualizzazione user stories\textsubscript{G} generate da IA\textsubscript{G}.  & Project Manager\textsubscript{G} & UC9\\
+ROF11&Obbligatorio & Visualizzazione user stories\textsubscript{G} generate da IA\textsubscript{G}.  & Project Manager\textsubscript{G} & UC12\\
 \hline
 
 
 
 \rowcolor{LightBlue}
 \hline
-ROF12&Obbligatorio & Invio di feedback sulle user stories\textsubscript{G} generate all'IA\textsubscript{G}.& Project Manager\textsubscript{G}&UC9\\
+ROF12&Obbligatorio & Invio di feedback sulle user stories\textsubscript{G} generate all'IA\textsubscript{G}.& Project Manager\textsubscript{G}&UC12\\
 \hline
 \rowcolor{LighterBlue}
 
-ROF13&Obbligatorio & Suddivisione delle user stories\textsubscript{G} troppo grandi.  & Project Manager\textsubscript{G}& UC9\\
+ROF13&Obbligatorio & Suddivisione delle user stories\textsubscript{G} troppo grandi.  & Project Manager\textsubscript{G}& UC12\\
 \hline
 
 \rowcolor{LightBlue}
 
-ROF14&Obbligatorio & Assegnazione user stories\textsubscript{G} agli sviluppatori.& Project Manager\textsubscript{G}& UC12\\
+ROF14&Obbligatorio & Assegnazione user stories\textsubscript{G} agli sviluppatori.& Project Manager\textsubscript{G}& UC15\\
 \hline
 
 \rowcolor{LighterBlue}
 
-RDF15&Desiderabile & Ricezione notifiche quando user story\textsubscript{G} viene generata in seguito a richiesta del cliente. & Project Manager\textsubscript{G} & UC7\\
+RDF15&Desiderabile & Ricezione notifiche quando user story\textsubscript{G} viene generata in seguito a richiesta del cliente. & Project Manager\textsubscript{G} & UC10\\
 \hline
 
 \rowcolor{LightBlue}
 
-ROF16&Obbligatorio & Invio richiesta di modifiche relative a user stories\textsubscript{G} a IA\textsubscript{G} prima di approvazione. & Project Manager\textsubscript{G}& UC7\\
+ROF16&Obbligatorio & Invio richiesta di modifiche relative a user stories\textsubscript{G} a IA\textsubscript{G} prima di approvazione. & Project Manager\textsubscript{G}& UC10\\
 \hline
 \rowcolor{LighterBlue}
 
-ROF17&Obbligatorio & Visualizzazione andamento epic/user stories\textsubscript{G} assegnate.& Sviluppatore& UC11\\
+ROF17&Obbligatorio & Visualizzazione andamento epic/user stories\textsubscript{G} assegnate.& Sviluppatore& UC14\\
 
 \hline
 
 \rowcolor{LightBlue}
-ROF18&Obbligatorio & Creazione di un plug-in\textsubscript{G} per VSCode\textsubscript{G}.& Project Manager\textsubscript{G}, Sviluppatore& UC14, UC15\\
+ROF18&Obbligatorio & Creazione di un plug-in\textsubscript{G} per VSCode\textsubscript{G}.& Project Manager\textsubscript{G}, Sviluppatore& UC17, UC18\\
 \hline
 \rowcolor{LighterBlue}
-RDF19&Desiderabile & Creazione di un plug-in\textsubscript{G} per XCode\textsubscript{G}.& Project Manager\textsubscript{G}, Sviluppatore& UC14, UC15\\
+RDF19&Desiderabile & Creazione di un plug-in\textsubscript{G} per XCode\textsubscript{G}.& Project Manager\textsubscript{G}, Sviluppatore& UC17, UC18\\
 \hline
 \rowcolor{LightBlue}
-ROF20&Obbligatorio & I linguaggi supportati dal plug-in sono Typescript\textsubscript{G} e Javascript\textsubscript{G}. & Project Manager\textsubscript{G}, Sviluppatore &UC14, UC15\\
+ROF20&Obbligatorio & I linguaggi supportati dal plug-in sono Typescript\textsubscript{G} e Javascript\textsubscript{G}. & Project Manager\textsubscript{G}, Sviluppatore &UC17, UC18\\
 \hline
 \rowcolor{LighterBlue}
-RDF21&Desiderabile & Altri linguaggi che potrebbero essere supportati in futuro sono Kotlin\textsubscript{G} e Swift\textsubscript{G}.& Project Manager\textsubscript{G}, Sviluppatore &UC14, UC15\\
+RDF21&Desiderabile & Altri linguaggi che potrebbero essere supportati in futuro sono Kotlin\textsubscript{G} e Swift\textsubscript{G}.& Project Manager\textsubscript{G}, Sviluppatore &UC17, UC18\\
 \hline
 \rowcolor{LightBlue}
 ROF22 & Obbligatorio & Gestione degli input (prevenzione da Injection\textsubscript{G} Cross Site Scripting\textsubscript{G} e sanificazione dell'input.) & Cliente, Project Manager\textsubscript{G}, Sviluppatore & \\
