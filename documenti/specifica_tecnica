@@ -1,0 +1,177 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{float}  
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\usepackage{hyperref}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\providecommand{\versionnumber}{0.0.1}
+\usepackage{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+\usepackage{capt-of}
+\usepackage{setspace}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{Specifica Tecnica}
+\fancyhead[C]{Cybersorceres}
+\fancyhead[R]{versione \versionnumber}
+
+\title{\Huge{\textbf{Specifica Tecnica}}\vspace{-1em}}
+\author{CyberSorcerers Team}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\vspace{6em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Membri del team:}\\
+        \rowcolor{LighterBlue}
+        \custombold{Sabrina Caniato}\\
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}\\
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}\\
+        \rowcolor{LightBlue}
+        \custombold{Giovanni Moretti}\\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}\\
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{l c c}
+        \rowcolor{Blue} 
+        \textbf{Informazioni sul documento} & &\\ [1 ex]
+        \rowcolor{LighterBlue}
+        Destinatari: & Prf. Tullio Vardanega & Prf. Riccardo Cardin\\ [1 ex]
+        \rowcolor{LightBlue}
+        G al pedice: & Consultare il Glossario & \\ [1 ex]
+    \end{tabular}
+\end{center}
+    
+\newpage
+
+\textbf{Registro dei Cambiamenti - Changelog\textsubscript{G}}
+\begin{center}
+\begin{tabular}{P{4em} P{6em} P{8em} P{8em} P{10em}} 
+    \rowcolor{LightBlue}
+    0.0.1 & 03/05/2024 & Giulia Dentone & Samuele Vignotto &  Definizione struttura del documento e scheletro delle sezioni. Scrittura introduzione ed obiettivi delle diverse sezioni\\
+\end{tabular}
+\end{center}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduzione}
+\subsection{Scopo del documento}
+Questo documento ha lo scopo di delineare e giustificare le decisioni architetturali prese durante le fasi di progettazione e sviluppo del prodotto. Sono presentati i diagrammi dei componenti React e dei pacchetti per illustrare le scelte dei pattern architetturali adottati per realizzare la struttura finale del prodotto. Inoltre, viene fornita una sezione dedicata ai requisiti soddisfatti dal team, offrendo così una panoramica completa dello stato di avanzamento del lavoro.
+\subsection{Scopo del prodotto}
+L'azienda proponente ha richiesto la creazione di una web app\textsubscript{G} che, tramite l'uso di IA\textsubscript{G} (in questo caso ChatGPT4 e Bedrock) è in grado di creare epic user stories\textsubscript{G} a partire dalle richieste del cliente e confrontarle con il codice sviluppato in modo da informare il cliente dello stato di avanzamento dello sviluppo del prodotto. Inoltre deve essere possibile, sia per il Project Manager\textsubscript{G}, sia per il cliente rilasciare dei feedback (nel primo caso riguardanti l'adeguatezza delle stories, nel secondo caso riguardanti il prodotto finale) al fine di migliorare l'IA\textsubscript{G}. È inoltre richiesta un' analisi comparativa tra le due IA\textsubscript{G} utilizzate e lo sviluppo di un plug-in\textsubscript{G} utile agli sviluppatori e al Project Manager\textsubscript{G}.
+
+\subsection{Glossario}
+Alcuni termini presenti nel documento potrebbero essere ambigui, pertanto verranno inseriti nel Glossario v.1.0.0. La loro presenza all'interno di esso sarà indicata tramite una G maiuscola a pedice.
+
+\section{Riferimenti}
+\subsection{Riferimenti normativi}
+\begin{itemize}
+    \item Capitolato \textbf{C7 - ChatGPT vs BedRock developer Analysis}
+    \\ \\
+       \href{https://github.com/CyberSorceres/CyberSorceresRepository}{https://github.com/CyberSorceres/CyberSorceresRepository} 
+    \item Norme del way of working v 1.0.0
+    \item Regolamento del progetto didattico \\ \\ \href{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf} 
+    {https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf}
+\end{itemize}
+\subsection{Riferimenti informativi}
+\begin{itemize}
+    \item Slide del corso di Ingegneria del Software - Analisi dei requisiti \\ \\
+    \href{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf}{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf}
+    \item Slide del corso di Ingegneria del Software - Progettazione e programmazione: Diagrammi delle classi \\ \\
+\href{https://www.math.unipd.it/~rcardin/swea/2023/Diagrammi%20delle%20Classi.pdf}{https://www.math.unipd.it/~rcardin/swea/2023/Diagrammi\%20delle\%20Classi.pdf}
+    \item Slide del corso di Ingegneria del Software - Solid Programming \\ \\
+\href{https://www.math.unipd.it/~rcardin/swea/2021/SOLID\%20Principles\%20of\%20Object-Oriented\%20Design_4x4.pdf}{\texttt{https://www.math.unipd.it/~rcardin/swea/2021/SOLID\%20Principles\%20of\%20Object-Oriented\%20Design\_4x4.pdf}}
+\end{itemize}
+\subsection{Riferimenti tecnici}
+\begin{itemize}
+\item Documentazione di React \\ \href{ https://react.dev/}{ https://react.dev/}
+\item Documentazione di Typescript \\ \href{https://www.typescriptlang.org/docs/}{https://www.typescriptlang.org/docs/}
+\item Documentazione di MongoDB \\ \href{https://www.mongodb.com/docs/}{https://www.mongodb.com/docs/}
+\item Documentazione di Amazon AWS \\ \href{https://docs.aws.amazon.com/it_it/}{https://docs.aws.amazon.com/it_it/}
+\end{itemize}
+
+\section{Tecnologie}
+\subsection{Tecnologie per la codifica}
+\begin{center}
+\begin{tabular}{c|c|c}
+\hline
+\rowcolor{Blue}
+Tecnologia & Descrizione & Versione \\
+\rowcolor{LighterBlue}
+
+\rowcolor{LightBlue}
+\end{tabular}
+\end{center}
+\subsection{Tecnologie per l'analisi del codice}
+\begin{center}
+\begin{tabular}{c|c|c}
+\hline
+\rowcolor{Blue}
+Tecnologia & Descrizione & Versione \\
+\rowcolor{LighterBlue}
+
+\rowcolor{LightBlue}
+\end{tabular}
+\end{center}
+
+
+\section{Architettura}
+\subsection{Architettura front-end}
+\subsubsection{Pattern utilizzati}
+\subsection{Architettura back-end}
+\subsubsection{Pattern utilizzati}
+
+
+\section{Requisiti soddisfatti}
+
+
+
+\end{document}
