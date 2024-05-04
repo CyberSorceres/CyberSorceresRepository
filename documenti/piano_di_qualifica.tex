@@ -7,7 +7,7 @@
 \usepackage{hyperref}
 \geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
 \usepackage{graphicx}
-\providecommand{\versionnumber}{1.0.0}
+\providecommand{\versionnumber}{1.1.0}
 \usepackage{enumitem}
 \usepackage{array}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
@@ -97,6 +97,8 @@
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LighterBlue}
+    1.1.0 & 04/05/2024 & Samuele Vignotto & Giulia Dentone & Aggiunte conclusione grafici\\
     \rowcolor{LightBlue}
     1.0.0 & 09/04/2024 & Samuele Vignotto & Giovanni Moretti & Verifica documento per approvazione al rilascio\\
     \rowcolor{LighterBlue}
@@ -449,6 +451,81 @@ I \textit{test di accettazione} sono una fase finale in cui il sistema viene val
 \subsection{Test di Regressione}
 I \textit{test di regressione} mirano a verificare che le modifiche apportate al codice sorgente o al sistema non abbiano introdotto nuovi difetti o rotto funzionalità esistenti. Questi test vengono eseguiti dopo ogni modifica al software, come aggiornamenti, correzioni di bug o nuove implementazioni. L'obiettivo è assicurarsi che le modifiche non abbiano impatti indesiderati sul comportamento del sistema, specialmente su funzionalità precedentemente testate e funzionanti correttamente. L'obiettivo del gruppo è raggiungere la massima automazione possibile dei test di regressione, al fine di ridurre i tempi di esecuzione e garantire una copertura completa dei test.
 
+
+\section{Resoconto attività di verifica}
+\subsection{Verifica documenti}
+\subsubsection{Indice di Gulpease}
+
+    \begin{figure}[H]
+    \centering
+    \includegraphics{documenti/grafici/indice_di_Gulpease.png}
+     \caption{Figura 1: indice di Gulpease per periodo}
+    \end{figure}
+
+    L'andamento discendente dell'Indice di Gulpease nei documenti analizzati suggerisce una tendenza verso una maggiore complessità e articolazione del linguaggio nel corso del tempo. Questo declino potrebbe riflettere cambiamenti nella struttura dei testi o nell'approccio alla scrittura, sottolineando l'importanza di un'attenta valutazione delle competenze linguistiche e comunicative nel contesto attuale.
+
+
+
+\subsubsection{Errori ortografici}
+   \begin{figure}[H]
+    \centering
+    \includegraphics{documenti/grafici/errori_ortografici.png}
+     \caption{Figura 2: errori ortografici per periodo}
+    \end{figure}
+     Il progressivo e costante ridursi del numero di errori ortografici nei documenti analizzati dimostra un notevole miglioramento della qualità della scrittura nel tempo. Questo risultato evidenzia l'efficacia di misure correttive e di una maggiore attenzione alla precisione nell'uso della lingua.
+\subsection{Verifica processi}
+\subsubsection{Stima al completamento}
+\begin{figure}[H]
+    \centering
+    \includegraphics{documenti/grafici/costo_effettvo_e_stima_al_completamento.png}
+    \caption{Figura 3: Revisione del valore stimato per la realizzazione del progetto}
+    \end{figure}
+    L'analisi del costo effettivo e della stima al completamento del progetto indica un utilizzo attuale di circa 8000€, con un saldo residuo di circa 4000€ per raggiungere il completamento totale. Questo risultato evidenzia una gestione finanziaria attenta e prudente, mantenendo il progetto all'interno dei limiti del budget previsto. Tuttavia, è importante rimanere vigili e continuare a monitorare da vicino le spese rimanenti per garantire che il progetto sia completato in modo efficiente e senza sorprese finanziarie.
+\subsubsection{Valore guadagnato \& valore previsto}
+\begin{figure}[H]
+    \centering
+    \includegraphics{documenti/grafici/valore_guadagnato_e_previsto.png}
+    \caption{Figura 4: Valore delle attività realizzate e costo pianificato per realizzare le rimanenti}
+    \end{figure}
+    L'analisi del valore guadagnato e del valore previsto evidenzia una stretta correlazione tra le previsioni progettuali e i risultati effettivamente ottenuti, come indicato dalla quasi costante equivalenza tra i due valori nel corso del tempo. Sebbene si sia verificato un breve periodo in cui il valore guadagnato è risultato inferiore alle aspettative, è importante notare che il progetto è stato in grado di recuperare e allinearsi nuovamente con le previsioni nel periodo successivo.
+\subsubsection{Costo e stima al completamento}
+    
+    \begin{figure}[H]
+    \centering
+    \includegraphics{documenti/grafici/costo_e_stima.png}
+    \caption{Figura 5: Costo effettivamente sostenuto e valore stimato per la realizzazione delle rimanenti attività}
+\end{figure}
+L'analisi del costo e della stima al completamento al periodo attuale rivela un leggero scostamento tra il budget utilizzato e quello previsto per il progetto. Mentre il budget utilizzato risulta essere leggermente più alto delle previsioni in questo punto temporale, è essenziale considerare attentamente le ragioni dietro questo scostamento e prendere le misure necessarie per mitigare eventuali ulteriori variazioni.
+
+\subsubsection{Variazione programmazione \& variazione costi}
+\begin{figure}[H]
+    \centering
+    \includegraphics{documenti/grafici/variazione_programmazione_e_costi.png}
+    \caption{Figura 6: Variazione programmazione e variazione costo per periodo}
+    \end{figure}
+    L'analisi della variazione tra la programmazione e i costi indica che la Cost Variance è leggermente superiore alla Schedule Variance. Questo suggerisce che, sebbene il progetto sia rimasto in linea con il programma stabilito, i costi effettivi sono stati maggiori rispetto alle previsioni. Questa discrepanza sottolinea l'importanza di una gestione finanziaria più rigorosa e di un controllo più stretto sui costi nel futuro.
+\subsubsection{Stabilità indice dei requisiti}
+\begin{figure}[H]
+    \centering
+    \includegraphics{documenti/grafici/RSI.png}
+    \caption{Figura 7: Variazione del numero di requisiti}
+    \end{figure}
+    L'analisi dell'Indice di Stabilità dei Requisiti (RSI) rivela un trend in aumento nel corso del tempo. Questo aumento progressivo dell'RSI indica una maggiore stabilità dei requisiti del progetto nel tempo. Tale tendenza positiva suggerisce una migliore comprensione e definizione dei requisiti, riducendo la probabilità di cambiamenti o aggiunte significative durante l'implementazione del progetto.
+\subsubsection{Attualizzazione rischi}
+\begin{figure}[H]
+    \centering
+    \includegraphics{documenti/grafici/attualizzazione_dei_rischi.png}
+    \caption{Figura 8: Rischi verificati per periodo}
+    \end{figure}
+    L'analisi dell'attualizzazione dei rischi indica un andamento variabile nel corso del tempo. Si osserva un aumento dei rischi verificatisi durante un periodo iniziale, seguito da una successiva diminuzione nel corso del tempo. Questa dinamica potrebbe riflettere l'efficacia delle azioni di mitigazione adottate per gestire i rischi identificati in fase precedente del progetto.
+\subsubsection{Metriche di qualità soddisfatte}
+\begin{figure}[H]
+    \centering
+    \includegraphics{documenti/grafici/metriche_soddisfatte.png}
+    \caption{Figura 9: Metriche soddisfatte per periodo}
+    \end{figure}
+    L'analisi delle metriche di qualità soddisfatte evidenzia un trend positivo di miglioramento nel corso del tempo. Si osserva un costante aumento delle metriche soddisfatte, indicando un progressivo miglioramento della qualità nel progetto. Questo risultato può essere attribuito a una maggiore consapevolezza e attenzione alla qualità da parte del team, nonché all'implementazione di processi e pratiche mirate al miglioramento continuo.
+
 \section{Valutazioni per il miglioramento}
 In questo paragrafo cercheremo di analizzare le difficoltà che abbiamo avuto fino alla consegna e valutarne le rispettive soluzioni e miglioramenti adottati dal gruppo.
 
@@ -504,67 +581,5 @@ In questo paragrafo cercheremo di analizzare le difficoltà che abbiamo avuto fi
 \label{tab:ruoli}
 
 \end{center}
-\section{Resoconto attività di verifica}
-\subsection{Verifica documenti}
-\subsubsection{Indice di Gulpease}
 
-    \begin{figure}[H]
-    \centering
-    \includegraphics{documenti/grafici/indice_di_Gulpease.png}
-     \caption{Figura 1: indice di Gulpease per periodo}
-    \end{figure}
-
-
-
-\subsubsection{Errori ortografici}
-   \begin{figure}[H]
-    \centering
-    \includegraphics{documenti/grafici/errori_ortografici.png}
-     \caption{Figura 2: errori ortografici per periodo}
-    \end{figure}
-\subsection{Verifica processi}
-\subsubsection{Stima al completamento}
-\begin{figure}[H]
-    \centering
-    \includegraphics{documenti/grafici/costo_effettvo_e_stima_al_completamento.png}
-    \caption{Figura 3: Revisione del valore stimato per la realizzazione del progetto}
-    \end{figure}
-\subsubsection{Valore guadagnato \& valore previsto}
-\begin{figure}[H]
-    \centering
-    \includegraphics{documenti/grafici/valore_guadagnato_e_previsto.png}
-    \caption{Figura 4: Valore delle attività realizzate e costo pianificato per realizzare le rimanenti}
-    \end{figure}
-\subsubsection{Costo e stima al completamento}
-    
-    \begin{figure}[H]
-    \centering
-    \includegraphics{documenti/grafici/costo_e_stima.png}
-    \caption{Figura 5: Costo effettivamente sostenuto e valore stimato per la realizzazione delle rimanenti attività}
-\end{figure}
-
-\subsubsection{Variazione programmazione \& variazione costi}
-\begin{figure}[H]
-    \centering
-    \includegraphics{documenti/grafici/variazione_programmazione_e_costi.png}
-    \caption{Figura 6: Variazione programmazione e variazione costo per periodo}
-    \end{figure}
-\subsubsection{Stabilità indice dei requisiti}
-\begin{figure}[H]
-    \centering
-    \includegraphics{documenti/grafici/RSI.png}
-    \caption{Figura 7: Variazione del numero di requisiti}
-    \end{figure}
-\subsubsection{Attualizzazione rischi}
-\begin{figure}[H]
-    \centering
-    \includegraphics{documenti/grafici/attualizzazione_dei_rischi.png}
-    \caption{Figura 8: Rischi verificati per periodo}
-    \end{figure}
-\subsubsection{Metriche di qualità soddisfatte}
-\begin{figure}[H]
-    \centering
-    \includegraphics{documenti/grafici/metriche_soddisfatte.png}
-    \caption{Figura 9: Metriche soddisfatte per periodo}
-    \end{figure}
 \end{document}
