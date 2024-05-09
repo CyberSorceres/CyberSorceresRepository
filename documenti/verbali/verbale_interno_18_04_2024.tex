@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+\providecommand{\versionnumber}{1.0.0}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+%\fancyhead[L]{\includegraphics[width=4em]{CS_tr.png}}
+%\fancyhead[C]{Verbale riunione di progetto - gg/mm/aaaa}
+%\fancyhead[R]{\includegraphics[width=4em]{CS_tr.png}}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{CyberSorcerers - Verbale di riunione interna}
+\fancyhead[C]{}
+\fancyhead[R]{18/04/2024}
+
+\title{\Huge{\textbf{Verbale di riunione}}\vspace{-1em}}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\begin{center}
+\Large{18 aprile 2024 - 10:00\\
+Google Meet\\
+Verbale redatto da: Sabrina Caniato\\}
+\end{center}
+\vspace{2em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Partecipanti alla riunione}\\
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}: assente\\
+        \rowcolor{LighterBlue}
+        \custombold{Giovanni Moretti}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Sabrina Caniato}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}: assente \\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}: presente \\
+    \end{tabular}
+\end{center}}
+\newpage
+\section{Obiettivo della riunione}
+L'obiettivo della riunione è quello di dividerci le attività da svolgere subito dopo la fide della RTB, di conseguenza iniziare la PB.
+\section{Agenda}
+\subsection{Documenti da redarre}
+Vengono discussi i nuovi documenti da redarre e le tempistiche di quando inizieremo. Vengono visualizzate insieme le annotazioni ed i miglioramenti che il professore ha trovato nei documenti precedentemente consegnati.
+\subsection{Analisi dei requisiti}
+Discussi i cambiamenti avvenuti per il miglioramento.
+\subsection{Pianificazione e Designe}
+Discusso il metodo di approccio al designe delle classi e le tempistiche per il quale andrà finito.
+\section{Decisioni}
+\subsection{Documenti da redarre}
+Abbiamo pensato di iniziare i nuovi documenti subito dopo la parte di designe, in contemporanea alla parte di programmazione del codice. Precedentemente cercheremo di apportare le modifiche richieste dal professor Vardanega per i documenti già esistenti.
+\subsection{Analisi dei requisiti}
+la data limite per la fine delle modifiche dell'analisi dei requisiti sarà giovedì 25 aprile.
+\subsection{Pianificazione e Designe}
+Abbiamo deciso una data limite di domenica 21 aprile per pensare ad un designe da presentare all'azienda. Dovremo pianificare anche una riunione con il professor Cardin.
+
+
+\section{Attività future}
+\subsection{Prossima riunione interna}
+La prossima riunione interna si terrà il giorno 25/04/2024 alle 10:00 sulla piattaforma Google Meet.
+\subsection{Prossima riunione esterna}
+Lunedì 22 aprile avverrà una riunione esterna con l'azienda per discutere dei metodi di designe.
+\subsection{Riunione col prof Cardin}
+Verrà fissata, quando avremo una visuale più concreta del designe, una riunione con il Professor Cardin per discutere di eventuali miglioramenti.
+\end{document}
