@@ -5,7 +5,7 @@
 \geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
 \usepackage{graphicx}
 \usepackage{enumitem}
-\providecommand{\versionnumber}{1.1.0}
+\providecommand{\versionnumber}{2.0.0}
 \usepackage{hyperref}
 \usepackage{array}
 \usepackage{hyperref}
@@ -93,6 +93,8 @@
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LightBlue}
+    2.0.0 & 19/05/2024 & Giulia Dentone & Sabrina Caniato & Verifica e correzione finale del documento. 
     \rowcolor{LighterBlue}
     1.1.0 & 06/05/2024 & Giulia Dentone & Samuele Vignotto & Update della sezione di Gestione Organizzativa. \\
     \rowcolor{LightBlue}
@@ -218,6 +220,17 @@ Le aspettative relative all'implementazione del processo di fornitura comprendon
     \item Stabilire vincoli con il proponente;
 \end{itemize}
 
+\subsubsection{Valutazione dei capitolati}
+Per poter determinare la corretta valutazione dei capitolati proposti, il gruppo guidato dal Responsabile ha organizzato incontri interni. In questa prima fase, i vari membri hanno alternato il ruolo di Analisti, prendendo in esame per ogni capitolato:
+\begin{itemize}
+    \item informazioni generali e dominio applicativo/tecnologico;
+    \item valutazione oggettiva (pro e contro), completa disamina dei punti di forza e fattori critici;
+    \item interessi comuni ai membri del gruppo per quanto riguarda la tipologia di progetto da svolgere;
+    \item relative conclusioni in merito alle scelte operate.
+\end{itemize}
+Tale analisi può trovare riscontro nel relativo documento Valutazione dei capitolati a cui si è giunti
+per la scelta definitiva.
+
 \subsubsection{Descrizione}
 Il processo di fornitura identifica ogni compito, attività e risorsa necessaria per l'implementazione del progetto. Questo processo sarà avviato solo dopo la comprensione delle richieste del proponente, seguito da uno studio di fattibilità delle richieste e concluso con la definizione di un accordo contrattuale. Le fasi del processo di fornitura includono:
 \begin{itemize}
@@ -242,6 +255,9 @@ Il team di sviluppo ha concordato con il proponente di mantenere un contratto re
     \item Feedback riguardante la documentazione redatta;
     \item Stima dei costi;
 \end{itemize}
+
+\subsubsection{Collaudo e rilascio}
+La fase di collaudo permette al team di verificare che i requisiti stabiliti durante l'analisi siano rispettati e che non ci siano errori. Se il collaudatore rileva anomalie, queste devono essere risolte. Se invece il prodotto risulta privo di errori, il Responsabile di Progetto presenterà al cliente il consuntivo finale e consegnerà il codice sorgente e la documentazione relativa al progetto. Infine, una volta che il prodotto è stato rilasciato, non è prevista alcuna fase di manutenzione..
 
 \subsubsection*{Strumenti}
 Di seguito vengono indicati gli strumenti utilizzati dal team per la realizzazione del processo di fornitura:\begin{itemize}
@@ -361,12 +377,18 @@ dove:\\
 Una volta associato a un caso d'uso\textsubscript{G}, l'identificativo è immutabile.
 \subsubsection*{UML}
 I diagrammi UML\textsubscript{G} vengono realizzati utilizzando la versione 2.0 del linguaggio.
+
 \subsubsection{Progettazione}
 \subsubsection*{Progettazione}
 \subsubsection*{Scopo}
 L'obiettivo dell'attività di progettazione è integrare le parti ottenute durante l'\textit{analisi dei requisiti}, specificando le funzionalità dei sottosistemi e convergendo verso una soluzione unificata.
 \subsubsection*{Aspettative}
-L'obiettivo dell'attività di progettazione è realizzare l'architettura del sistema. Inizialmente, questa architettura è creata attraverso un Proof of Concept\textsubscript{G}, sviluppato come una demo prototipale del sistema durante la fase di Requirements \& Technology Baseline\textsubscript{G}. Successivamente, questa architettura viene approfondita e descritta nel documento tecnico allegato alla Product Baseline\textsubscript{G}.
+L'obiettivo dell'attività di progettazione è realizzare l'architettura del sistema. Inizialmente, questa architettura è creata attraverso un Proof of Concept\textsubscript{G}, sviluppato come una demo prototipale del sistema durante la fase di Requirements \& Technology Baseline\textsubscript{G}. Successivamente, questa architettura viene approfondita e descritta nel documento tecnico allegato alla Product Baseline\textsubscript{G}. L'attività di progettazione può essere sufdivisa in tre livelli:
+\begin{itemize}
+    \item Design dell’interfaccia: Questa fase si concentra su un livello elevato di astrazione rispetto al funzionamento interno del sistema. Durante la progettazione dell'interfaccia, l'attenzione è rivolta alle tecnologie che verranno impiegate nella fase di sviluppo del software. Questo livello specifico porta alla creazione di un Proof of Concept;
+    \item Progettazione architettonica: In questa fase viene determinata la struttura generale del sistema, con una definizione ad alto livello che ignora i dettagli interni dei principali componenti del prodotto;
+    \item Progettazione dettagliata: Questa fase specifica gli elementi interni di tutti i principali componenti e le specifiche architetturali del prodotto. Include anche la definizione dei diagrammi delle classi e dei test di unità per ciascun componente. Questa fase della progettazione rappresenta la Product Baseline.
+\end{itemize}
 \subsubsection*{Requirements \& Technology Baseline\textsubscript{G}}
 Questa fase stabilisce i requisiti che il fornitore si impegna a soddisfare, in accordo con il proponente, e motiva le tecnologie, i framework\textsubscript{G} e le librerie selezionate per la realizzazione del prodotto. Dimostra l'adeguatezza e la fattibilità coerente con gli obiettivi. I documenti utili a tali fini sono:
 \begin{itemize}
@@ -383,7 +405,15 @@ Questa fase presenta le linee guida architetturali del prodotto. Oltre all'aggio
     \item \textit{Verbali di periodo}.
 \end{itemize}
 Analogamente alla fase precedente, anche i documenti di questa fase devono essere conservati e aggiornati fino alla consegna e accettazione del prodotto finale.
+
 \subsubsection{Codifica}
+\subsection{Descrizione, scopo e aspettative}
+Dopo la fase di progettazione del prodotto, i membri del team con il ruolo di programmatori passeranno alla fase di codifica, implementando le specifiche dei requisiti e i documenti di progettazione. L'obiettivo di questa fase è concretizzare il progetto, realizzando il software desiderato attraverso la programmazione. Le aspettative per la fase di codifica sono:
+\begin{itemize}
+    \item completare lo sviluppo del prodotto finale garantendone la qualità e rispettando le richieste del proponente;
+    \item assicurare che il codice prodotto sia facilmente leggibile.
+\end{itemize}
+
 \subsubsection*{Strumenti per la codifica}
 \begin{itemize}
     \item \custombold{Node.js\textsubscript{G}}: è un runtime system\textsubscript{G} open source\textsubscript{G} multipiattaforma orientato agli eventi per l'esecuzione di codice JavaScript\textsubscript{G};\\
@@ -664,15 +694,50 @@ Successivamente agli elementi citati nella sezione 5.3.5 sarà presente un indic
 
 \subsubsection{Elementi grafici}
 \subsubsection{Tabelle}
-Ogni tabella significativa contenuta nei documenti sarà accompagnata da una legenda, e l'insieme di queste legende sarà un indice presente alla fine di ogni documento,
+Le tabelle, all’interno dei documenti devono essere centrate orizzontalmente rispetto alla pagina.
+Ogni tabella all’interno dei documenti è contrassegnata da una didascalia descrittiva di ciò che
+l’immagine rappresenta. La didascalia è posta al di sotto della tabella, è centrata orizzontalmente
+rispetto alla pagina e ha il seguente sintassi:
+\begin{center}
+\textbf{Immagine [n]: Descrizione}
+\end{center}
+Dove:
+\begin{itemize}
+    \item [n] rappresenta il numero assoluto della tabella all’interno del documento;
+    \item Descrizione, contiene una breve descrizione del contenuto della tabella.
+\end{itemize}
 \subsubsection{Immagini}
 Le immagini presenti sono state create usando due diversi strumenti grafici:
 \begin{itemize}
     \item Canva: utilizzato per la creazione del logo del team. 
     \item Draw.io: per le immagini rappresentative degli Use Case.
 \end{itemize}
-Ogni immagine, al di fuori del logo, sarà accompagnata da una descrizione, e l'insieme di queste descrizioni sarà presente in un indice alla fine di ogni documento. 
-
+Le immagini, all’interno dei documenti devono essere centrate orizzontalmente rispetto alla pagina.
+Ogni immagine all’interno dei documenti è contrassegnata da una didascalia descrittiva di ciò che
+l’immagine rappresenta. La didascalia è posta al di sotto dell’immagine, è centrata orizzontalmente
+rispetto alla pagina e ha il seguente sintassi:
+\begin{center}
+\textbf{Immagine [n]: Descrizione}
+\end{center}
+Dove:
+\begin{itemize}
+    \item [n] rappresenta il numero assoluto dell’immagine all’interno del documento;
+    \item Descrizione, contiene una breve descrizione del contenuto dell’immagine.
+\end{itemize}
+Eventuali aggiunte di diagrammi uml all’interno dei documenti verranno inseriti nei documenti come
+immagini.
+\subsubsection{Grafici}
+I grafici, all’interno dei documenti devono essere centrati orizzontalmente rispetto alla pagina.
+Ogni grafico all’interno dei documenti è contrassegnato da una didascalia descrittiva di ciò che rappresenta. La didascalia è posta al di sotto del grafico, è centrato orizzontalmente
+rispetto alla pagina e ha il seguente sintassi:
+\begin{center}
+\textbf{Immagine [n]: Descrizione}
+\end{center}
+Dove:
+\begin{itemize}
+    \item [n] rappresenta il numero assoluto del grafico all’interno del documento;
+    \item Descrizione, contiene una breve descrizione del contenuto del grafico.
+\end{itemize}
 \subsection*{Glossario}
 \subsection*{Scopo del documento}
 Il Glossario è un documento dove sono presenti tutte le definizioni delle parole che il gruppo ha ritenuto necessitassero di una definizione per facilitare la comprensione dei documenti. 
