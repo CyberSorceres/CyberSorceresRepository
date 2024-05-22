@@ -1,5 +1,5 @@
 \documentclass{article}
-\providecommand{\versionnumber}{1.2.0}
+\providecommand{\versionnumber}{1.2.1}
 \usepackage[utf8]{inputenc}
 \usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
 \usepackage{titling}
@@ -94,6 +94,8 @@
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LightBlue}
+    1.2.1 & 22/05/2024 & Samuele Vignotto & Giulia Dentone & Concluso consuntivo periodo Sviluppo Requisiti Obbligatori e Opzionali\\
     \rowcolor{LighterBlue}
     1.2.0 & 06/05/2024 & Samuele Vignotto & Giulia Dentone & Concluso consuntivo periodo Sviluppo Proof of Concept\textsubscript{G} e aggiunte retrospettive\\
     \rowcolor{LightBlue}
@@ -118,7 +120,6 @@
      0.4.0 & 12/01/2024 & Samuele Vignotto & Giovanni Moretti & Compilazione del consuntivo.\\
     \rowcolor{LightBlue}
      0.3.3 & 07/01/2024 & Nicola Lazzarin & Sabrina Caniato & Inserimento delle caption delle immagini.\\
-
      \end{tabular}
 \end{center}
 
@@ -163,7 +164,6 @@ I termini impiegati in questo testo potrebbero suscitare incertezze circa il lor
     \item \textbf{Regolamento del progetto didattico:}
 \end{itemize}
 \href{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf}{PD2.pdf}
-
 \begin{itemize}
     \item \textbf{Capitolato d'appalto C7 - ChatGPT\textsubscript{G} vs BedRock\textsubscript{G} developer Analysis}
 \end{itemize}
@@ -1000,7 +1000,6 @@ Il bilancio evidenzia un risultato positivo rispetto al preventivo per questo pe
 In sintesi, le retrospettive del periodo di analisi indicano la necessità di mantenere una comunicazione efficace con gli stakeholder, valutare attentamente le competenze dei membri del team quando si assegnano i ruoli, monitorare da vicino i costi e le risorse e rimanere flessibili nel adattarsi a eventuali cambiamenti nelle attività future.
 
 
-
 \subsection{Periodo di Progettazione Technology Baseline\textsubscript{G}}
 \subsubsection{Variazione della pianificazione}
 \begin{center}
@@ -1128,8 +1127,149 @@ Il bilancio risulta positivo, il gruppo sta recuperando grazie alla maggiore esp
 \end{itemize}
 In conclusione, le retrospettive del periodo di sviluppo Proof of Concept\textsubscript{G} evidenziano l'importanza dell'esperienza pregressa nel migliorare le prestazioni del team, la gestione efficiente delle risorse e il recupero positivo nel bilancio.
 
-\subsection{Periodo di Sviluppo Requisiti Obbligatori - a finire}
-\subsection{Periodo di Sviluppo Requisiti Opzionali - a finire}
+\subsection{Periodo di Sviluppo Requisiti Obbligatori}
+\subsubsection{Prospetto orario}
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\rowcolor{Blue}
+\custombold{Nominativo} & \custombold{Re} & \custombold{Am} & \custombold{An} & \custombold{Pt} & \custombold{Pr} & \custombold{Ve} & \custombold{Ore Totali}\\
+\hline
+\rowcolor{LighterBlue}
+Sabrina Caniato & 0 & 7(-3) & 0 & 2 & 6 & 2 & 17(-3)\\
+\rowcolor{LightBlue}
+Giulia Dentone & 0 & 0 & 0 & 4 & 6 & 2 & 12\\
+\rowcolor{LighterBlue}
+Nicola Lazzarin & 7(-1) & 0 & 0 & 4 & 0 & 2 & 13(-1)\\
+\rowcolor{LightBlue}
+Giovanni Moretti & 0 & 0 & 2(+2) & 3 & 6(+1) & 2 & 13(+3)\\
+\rowcolor{LighterBlue}
+Andrea Rezzi & 0 & 0 & 0 & 3 & 7 & 2 & 12\\
+\rowcolor{LightBlue}
+Samuele Vignotto & 0 & 0 & 0 & 4 & 6(+1) & 2 & 12(+1)\\
+\rowcolor{LighterBlue}
+\custombold{Ore totali} & 7(-1) & 7(-3) & 2(+2) & 20 & 31(+2) & 12 & 79\\
+\end{tabular}
+        \captionof{table}{Variazione pianificazione del periodo Sviluppo Requisiti Obligatori}
+\label{tab:PSRO}
+\end{center}
+
+\subsubsection{Prospetto economico}
+\begin{center}
+    \begin{tabular}{c|c|c}
+    \rowcolor{Blue}
+    \custombold{Ruolo} & \custombold{Ore} & \custombold{Costo \euro}\\
+    \rowcolor{LighterBlue}
+    Responsabile & 7(-1) & 210(-30)\\
+    \rowcolor{LightBlue}
+    Amministratore & 7(-3) & 140(-60)\\
+    \rowcolor{LighterBlue}
+    Analista & 2(+2) & 50(+50)\\
+    \rowcolor{LightBlue}
+    Progettista & 20 & 500\\
+    \rowcolor{LighterBlue}
+    Programmatore & 31(+2) & 465(+30)\\
+    \rowcolor{LightBlue}
+    Verificatore & 12 & 180\\
+    \rowcolor{LighterBlue}
+    \custombold{Totale} & \custombold{79} & \custombold{1545(-10)}\\
+    \end{tabular}
+    \captionof{table}{Variazione costi del periodo Sviluppo Requisiti Obligatori}
+\label{tab:costiPSRO}
+\end{center}
+
+\subsubsection{Ragione degli scostamenti}
+\begin{itemize}
+\item \custombold{Responsabile}: leggera riduzione delle ore necessarie grazie a una gestione più efficiente delle attività.
+\item \custombold{Amministratore}: diminuzione delle ore dovuta alla semplificazione di alcune procedure amministrative.
+\item \custombold{Analista}: aumento delle ore necessarie per analisi dettagliate aggiuntive richieste dal progetto.
+\item \custombold{Programmatore}: aumento delle ore a causa di un carico di lavoro maggiore del previsto, compensato dall’efficienza migliorata.
+\end{itemize}
+
+\subsubsection{Considerazioni rispetto al preventivo}
+Il bilancio risulta sostanzialmente in linea con le previsioni, con lievi variazioni che riflettono un adattamento alle necessità operative emerse durante il periodo di sviluppo dei requisiti obbligatori.
+
+\subsubsection{Retrospettive}
+\begin{itemize}
+\item \custombold{Ottimizzazione delle risorse}: La riduzione delle ore pianificate per i ruoli di Responsabile e Amministratore indica un miglioramento nella gestione delle risorse e nell'efficienza dei processi amministrativi.
+\item \custombold{Adeguamento operativo}: L'aumento delle ore per il ruolo di Analista evidenzia l'importanza di una fase di analisi più approfondita, necessaria per affrontare complessità non previste inizialmente.
+\item \custombold{Efficienza nel programmatore}: Nonostante l'aumento delle ore, il programmatore è riuscito a gestire un carico di lavoro più elevato grazie a una maggiore efficienza operativa.
+\item \custombold{Bilancio quasi invariato}: Il leggero decremento dei costi totali, seppur minimo, dimostra che il gruppo è riuscito a mantenere il bilancio pressoché inalterato, gestendo con efficacia le risorse.
+\end{itemize}
+
+In conclusione, le retrospettive del periodo di sviluppo dei Requisiti Obbligatori mostrano come una gestione efficiente e l'adattamento alle esigenze del progetto abbiano permesso di mantenere un bilancio quasi invariato, migliorando le performance del team e ottimizzando l'uso delle risorse.
+
+
+\subsection{Periodo di Sviluppo Requisiti Opzionali}
+\subsubsection{Prospetto orario}
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\rowcolor{Blue}
+\custombold{Nominativo} & \custombold{Re} & \custombold{Am} & \custombold{An} & \custombold{Pt} & \custombold{Pr} & \custombold{Ve} & \custombold{Ore Totali}\\
+\hline
+\rowcolor{LighterBlue}
+Sabrina Caniato & 0 & 3(-1) & 0 & 0 & 4 & 2 & 9(-1)\\
+\rowcolor{LightBlue}
+Giulia Dentone & 0 & 0 & 2(+1) & 0 & 5 & 2 & 9(+1)\\
+\rowcolor{LighterBlue}
+Nicola Lazzarin & 5 & 0 & 0 & 0 & 5 & 2 & 12\\
+\rowcolor{LightBlue}
+Giovanni Moretti & 0 & 0 & 0 & 4 & 5 & 2 & 11\\
+\rowcolor{LighterBlue}
+Andrea Rezzi & 0 & 2(-1) & 0 & 3 & 4(+1) & 2 & 11\\
+\rowcolor{LightBlue}
+Samuele Vignotto & 0 & 0 & 0 & 4 & 4(+1) & 2 & 10(+1)\\
+\rowcolor{LighterBlue}
+\custombold{Ore totali} & 5 & 5(-2) & 2(+1) & 11 & 27(+2) & 12 & 62(+1)\\
+\end{tabular}
+   \captionof{table}{Variazione pianificazione del periodo Sviluppo Requisiti Opzionali}
+\label{tab:PSROp}
+\end{center}
+
+\subsubsection{Prospetto economico}
+\begin{center}
+    \begin{tabular}{c|c|c}
+    \rowcolor{Blue}
+    \custombold{Ruolo} & \custombold{Ore} & \custombold{Costo \euro}\\
+    \rowcolor{LighterBlue}
+    Responsabile & 5 & 150\\
+    \rowcolor{LightBlue}
+    Amministratore & 5(-2) & 100(-40)\\
+    \rowcolor{LighterBlue}
+    Analista & 2(+1) & 50(+25)\\
+    \rowcolor{LightBlue}
+    Progettista & 11 & 275\\
+    \rowcolor{LighterBlue}
+    Programmatore & 27(+2) & 405(+30)\\
+    \rowcolor{LightBlue}
+    Verificatore & 12 & 180\\
+    \rowcolor{LighterBlue}
+    \custombold{Totale} & \custombold{62(+1)} & \custombold{1160(+15)}\\
+    \end{tabular}
+       \captionof{table}{Variazione costi del periodo Sviluppo Requisiti Opzionali}
+\label{tab:costiPSROp}
+\end{center}
+
+\subsubsection{Ragione degli scostamenti}
+\begin{itemize}
+    \item \custombold{Amministratore}: riduzione delle ore necessarie dovuta a una migliore ottimizzazione delle attività amministrative.
+    \item \custombold{Analista}: aumento delle ore necessarie per approfondimenti analitici imprevisti richiesti per i requisiti opzionali.
+    \item \custombold{Programmatore}: aumento delle ore necessarie a causa di complessità aggiuntive riscontrate durante lo sviluppo dei requisiti opzionali.
+\end{itemize}
+
+\subsubsection{Considerazioni rispetto al preventivo}
+Il bilancio è leggermente superiore alle previsioni iniziali, con un incremento modesto delle ore e dei costi. Questo riflette l'adattamento del gruppo alle complessità emergenti durante lo sviluppo dei requisiti opzionali, mantenendo comunque un controllo efficace delle risorse.
+
+\subsubsection{Retrospettive}
+\begin{itemize}
+    \item \custombold{Ottimizzazione amministrativa}: La riduzione delle ore per il ruolo di Amministratore dimostra un miglioramento nell’efficienza delle attività amministrative, consentendo di risparmiare tempo e risorse.
+    \item \custombold{Approfondimenti analitici}: L'aumento delle ore per il ruolo di Analista evidenzia la necessità di un'analisi più dettagliata per i requisiti opzionali, garantendo una maggiore qualità e precisione nel lavoro svolto.
+    \item \custombold{Complessità di sviluppo}: L'aumento delle ore per i programmatori riflette le complessità tecniche aggiuntive incontrate, ma anche la capacità del team di adattarsi e affrontare queste sfide in modo efficiente.
+    \item \custombold{Bilancio leggermente aumentato}: Nonostante un leggero aumento dei costi totali, il bilancio rimane sotto controllo, dimostrando una gestione efficace delle risorse e una buona capacità di adattamento alle variazioni.
+\end{itemize}
+
+In conclusione, le retrospettive del periodo di sviluppo dei Requisiti Opzionali mostrano come il team sia riuscito a ottimizzare le risorse amministrative, affrontare approfondimenti analitici necessari e gestire le complessità tecniche emergenti, mantenendo un bilancio complessivamente stabile e sotto controllo.
+
+
 \subsection{Periodo di Validazione e Collaudo - a finire}
 
 \newpage
