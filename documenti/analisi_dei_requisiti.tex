@@ -7,7 +7,7 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{enumitem}
-\providecommand{\versionnumber}{1.3.1}
+\providecommand{\versionnumber}{2.0.0}
 \usepackage{array}
 \usepackage[italian]{babel}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
@@ -71,7 +71,7 @@
         \rowcolor{Blue} 
         \textbf{Informazioni sul documento} & &\\ [1 ex]
         \rowcolor{LighterBlue}
-        Destinatari: & Prf. Tullio Vardanega & Prf. Riccardo Cardin\\ [1 ex]
+        Destinatari: & Prof Tullio Vardanega & Prof Riccardo Cardin\\ [1 ex]
         \rowcolor{LightBlue}
         G al pedice: & Consultare il Glossario & \\ [1 ex]
     \end{tabular}
@@ -105,7 +105,12 @@ Nicola Lazzarin \\
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
-    1.3.1 & 27/04/2024 & Samuele Vignotto & Giulia Dentone & Correzione correlazione casi d'uso tabella requisiti funzionali.\\
+    \rowcolor{LightBlue}
+    2.0.0 & 20/05/2024 & Giulia Dentone & Sabrina Caniato & Correzione e revisione finale del documento.\\
+    \rowcolor{LighterBlue}
+    1.4.0 & 19/05/2024 & Giulia Dentone & Giovanni Moretti & Aggiunte del riepilogo dei requisiti.\\
+    \rowcolor{LightBlue}
+    1.3.1 & 27/04/2024 & Samuele Vignotto & Giulia Dentone & Correzione correlazione casi d'uso e tabella requisiti funzionali.\\
     \rowcolor{LighterBlue}
     1.3.0 & 25/04/2024 & Samuele Vignotto & Giulia Dentone & Correzione UC fino a UC21.\\
     \rowcolor{LightBlue}
@@ -130,15 +135,15 @@ Nicola Lazzarin \\
     0.7.0 & 04/12/2023 & Giulia Dentone & Nicola Lazzarin & Aggiunta dei requisiti di qualità.\\
     \rowcolor{LightBlue}
     0.6.0 & 03/12/2023 & Samuele Vignotto & Sabrina Caniato & Aggiunta dei requisiti funzionali.\\
-    \rowcolor{LighterBlue}
-    0.5.2 & 03/12/2023 & Samuele Vignotto & Sabrina Caniato & Aggiunta fonti requisiti.\\
-    \rowcolor{LightBlue}
-    0.5.1 & 02/12/2023 & Nicola Lazzarin & Giulia Dentone & Aggiunta caption alle immagini.\\ 
     
     \end{tabular}
 
 
 \begin{tabular}{P{4em} P{6em} P{7em} P{7em} P{11em}} 
+    \rowcolor{LighterBlue}
+    0.5.2 & 03/12/2023 & Samuele Vignotto & Sabrina Caniato & Aggiunta fonti requisiti.\\
+    \rowcolor{LightBlue}
+    0.5.1 & 02/12/2023 & Nicola Lazzarin & Giulia Dentone & Aggiunta caption alle immagini.\\ 
     \rowcolor{LighterBlue}
     0.5.0 & 01/12/2023 & Caniato Sabrina & Vignotto Samuele & Sistemato l'analisi dei casi d'uso\textsubscript{G} dopo il colloquio col Prof. R. Cardin. Aggiunta delle specifiche dei sottocasi d'uso.\\
     \rowcolor{LightBlue}
@@ -190,9 +195,11 @@ Alcuni termini presenti nel documento potrebbero essere ambigui, pertanto verran
 
 \subsubsection{Riferimenti informativi}
 \begin{itemize}
-    \item Lezione del corso di Ingegneria del software "Analisi e descrizione delle funzionalità: Use Case e relativi diagrammi (UML)" \url{https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf}
+    \item Lezione del corso di Ingegneria del software "Analisi e descrizione delle funzionalità: Use Case e relativi diagrammi (UML)" \\ \\ \url{https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf}
     \item Lezione del corso di Ingegneria del software "Analisi dei requisiti (T5)" \\ \\
     \url{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf}
+    \item Lezione del corso di Ingegneria del software "Progettazione e programmazione: Diagrammi delle classi" \\ \\
+\url{https://www.math.unipd.it/~rcardin/swea/2023/Diagrammi%20delle%20Classi.pdf}
     
     
 
@@ -217,7 +224,7 @@ Per facilitare la comprensione del diagramma dei casi d'uso\textsubscript{G}  ab
 
 \newpage
 \custombold{UML Casi d'uso}
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \includegraphics[height = 0.70\textheight]{documenti/imgUML/UML.png}
     \caption{UML dei casi d'uso\textsubscript{G}}
@@ -1615,4 +1622,26 @@ ROV14 & Decisione interna\\
 \captionof{table}{Tabella delle fonti}
 \label{tab:fonti}
 \end{center}
+
+\subsection{Riepilogo dei requisiti}
+\begin{center}
+\begin{tabular}{c|c|c|c}
+\hline
+\rowcolor{Blue}
+\custombold{Tipologia}&\custombold{Obbligatorio}&\custombold{Desiderabile}&\custombold{Totale}\\
+\hline
+\rowcolor{LightBlue}
+Funzionale& 17& 5& 22 \\
+\rowcolor{LighterBlue}
+Qualità&7 &0 &7\\
+\rowcolor{LightBlue}
+Vincolo&12 &1&13\\
+\rowcolor{LighterBlue}
+Totale& & & 42 \\
+\end{tabular}
+\captionof{table}{Riepilogo dei requisiti}
+\label{tab:riepilogo requisiti}
+\end{center}
+
+
 \end{document}
