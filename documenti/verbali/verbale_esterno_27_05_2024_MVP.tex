@@ -1,0 +1,113 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[includeheadfoot, margin=1em,headheight=2em]{geometry}
+\usepackage{titling}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\droptitle}{-6em}
+\providecommand{\versionnumber}{1.0.0}
+
+%font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%custom bold 
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\newcommand{\custombold}{\contour{black}}
+
+%table colors
+\usepackage{color, colortbl}
+\definecolor{Blue}{rgb}{0.51,0.68,0.79}
+\definecolor{LightBlue}{rgb}{0.82,0.87,0.90}
+\definecolor{LighterBlue}{rgb}{0.93,0.95,0.96}
+
+%Header
+\usepackage{fancyhdr, xcolor}
+\pagestyle{fancy}
+%\fancyhead[L]{\includegraphics[width=4em]{CS_tr.png}}
+%\fancyhead[C]{Verbale riunione di progetto - gg/mm/aaaa}
+%\fancyhead[R]{\includegraphics[width=4em]{CS_tr.png}}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Blue}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.2em}
+\fancyhead[L]{CyberSorcerers - Attestazione MVP}
+\fancyhead[C]{}
+\fancyhead[R]{12/12/2023}
+
+\title{\Huge{\textbf{Verbale della riunione esterna - attestazione MVP}}\vspace{-1em}}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-3em}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm, height=6cm]{documenti/logo rotondo.png}
+  \label{fig:immagine}
+\end{figure}
+
+\begin{center}
+\Large{27 Maggio 2021 - 11:00\\
+Sede Zero12 s.r.l. - Google Meet\\
+Verbale redatto da: \\}
+\end{center}
+\vspace{2em}
+\large{
+\begin{center}
+    \begin{tabular}{P{24em}}
+        \rowcolor{Blue}
+        \textbf{Partecipanti alla riunione}\\
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Giovanni Moretti}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Sabrina Caniato}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Michele Massaro - Zero12}: presente\\
+        \rowcolor{LighterBlue}
+        \custombold{Francesco Battistella - Zero12}: presente\\
+        \rowcolor{LightBlue}
+        \custombold{Samuele De Simone - Zero12}: presente\\
+    \end{tabular}
+\end{center}}
+
+
+\vspace{50pt}
+Responsabile interno: \line(1,0){175}\par
+\vspace{35pt}
+Responsabile esterno: \line(1,0){175}
+
+\newpage
+
+\textbf{Oggetto:} Attestazione di Minimum Viable Product.
+A seguito dell’incontro avvenuto in data 27/05/2024, alla presenza di Michele Massaro, Francesco Battistella, Samuele De Simone, in qualità di rappresentanti di Zero12 s.r.l.:
+\begin{itemize}
+    \item Considerata la definizione di Minimum Viable Product, da ora denominato MVP, quale \textit{”prodotto software non finale né definitivo, con lo scopo di approssimare il prodotto atteso e dotato di funzionalità sufficienti per: valutare la bontà della visione iniziale di prodotto; consentire agevole uso esplorativo; prendere decisioni ben fondate per il completamento definitivo del prodotto.}” come da regolamento del progetto;
+    \item Considerata l’esposizione e dimostrazione del prodotto software realizzato e delle funzionalità in esso implementate.
+\end{itemize}
+
+Con il presente documento si attesta che il prodotto software realizzato dal team Cybersorcerers, nella realizzazione del progetto denominato
+\newline
+\begin{center}
+    ChatGPT vs BedRock developer Analysis
+\end{center}
+e proposto dall’azienda Zero12, riceve ufficialmente lo stato di MVP.
+In particolare:
+\begin{itemize}
+    \item Si attesta la bontà del prodotto presentato, come approssimazione dell’effettivo prodotto atteso;
+    \item Si attesta l’implementazione di tutte le funzionalità con cui soddisfare i requisiti minimi, definiti come requisiti obbligatori, suffcienti ad attribuire lo stato di MVP al prodotto.
+\end{itemize}
+
+\end{document}
