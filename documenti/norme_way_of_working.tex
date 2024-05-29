@@ -8,6 +8,7 @@
 \providecommand{\versionnumber}{2.0.0}
 \usepackage{hyperref}
 \usepackage{array}
+\usepackage[italian]{babel}
 \usepackage{hyperref}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \renewcommand{\arraystretch}{1.5} % Default value: 1
@@ -54,37 +55,51 @@
   \label{fig:immagine}
 \end{figure}
 
-\vspace{6em}
-\large{
-\begin{center}
-    \begin{tabular}{P{24em}}
-        \rowcolor{Blue}
-        \textbf{Membri del team:}\\
-        \rowcolor{LighterBlue}
-        \custombold{Sabrina Caniato}\\
-        \rowcolor{LightBlue}
-        \custombold{Giulia Dentone}\\
-        \rowcolor{LighterBlue}
-        \custombold{Nicola Lazzarin}\\
-        \rowcolor{LightBlue}
-        \custombold{Giovanni Moretti}\\
-        \rowcolor{LighterBlue}
-        \custombold{Andrea Rezzi}\\
-        \rowcolor{LightBlue}
-        \custombold{Samuele Vignotto}\\
 
-    \end{tabular}
-\end{center}}
 \begin{center}
-    \begin{tabular}{l c c}
+    \begin{tabular}{|l c c|}
+    \hline
         \rowcolor{Blue} 
         \textbf{Informazioni sul documento} & &\\ [1 ex]
+        \hline
         \rowcolor{LighterBlue}
         Destinatari: & Prof Tullio Vardanega & Prof Riccardo Cardin\\ [1 ex]
+        \hline
         \rowcolor{LightBlue}
         G al pedice: & Consultare il Glossario & \\ [1 ex]
+        \hline
     \end{tabular}
 \end{center}
+
+
+\vspace{6em}
+\begin{center}
+    \begin{tabular}{|P{24em}|}
+    \hline
+        \rowcolor{Blue}
+        \textbf{Membri del team:}\\
+        \hline
+        \rowcolor{LighterBlue}
+        \custombold{Sabrina Caniato}\\
+        \hline
+        \rowcolor{LightBlue}
+        \custombold{Giulia Dentone}\\
+        \hline
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}\\
+        \hline
+        \rowcolor{LightBlue}
+        \custombold{Giovanni Moretti}\\
+        \hline
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}\\
+        \hline
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}\\
+        \hline
+    \end{tabular}
+\end{center}
+
 
 \newpage
 \custombold{Registro dei Cambiamenti - Changelog\textsubscript{G}}
@@ -93,8 +108,10 @@
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LighterBlue}
+    2.0.0 & 28/05/2024 & Giulia Dentone & Sabrina Caniato & Verifica e correzione finale del documento. \\
     \rowcolor{LightBlue}
-    2.0.0 & 19/05/2024 & Giulia Dentone & Sabrina Caniato & Verifica e correzione finale del documento. \\
+    1.1.1 & 26/05/2024 & Sabrina Caniato & Giulia Dentone & Update della sezione di Gestione Organizzativa-Sprint. \\
     \rowcolor{LighterBlue}
     1.1.0 & 06/05/2024 & Giulia Dentone & Samuele Vignotto & Update della sezione di Gestione Organizzativa. \\
     \rowcolor{LightBlue}
@@ -257,14 +274,15 @@ Il team di sviluppo ha concordato con il proponente di mantenere un contratto re
 \end{itemize}
 
 \subsubsection{Collaudo e rilascio}
-La fase di collaudo permette al team di verificare che i requisiti stabiliti durante l'analisi siano rispettati e che non ci siano errori. Se il collaudatore rileva anomalie, queste devono essere risolte. Se invece il prodotto risulta privo di errori, il Responsabile di Progetto presenterà al cliente il consuntivo finale e consegnerà il codice sorgente e la documentazione relativa al progetto. Infine, una volta che il prodotto è stato rilasciato, non è prevista alcuna fase di manutenzione..
+La fase di collaudo permette al team di verificare che i requisiti stabiliti durante l'analisi siano rispettati e che non ci siano errori. Se il collaudatore rileva anomalie, queste devono essere risolte. Se invece il prodotto risulta privo di errori, il Responsabile di Progetto presenterà al cliente il consuntivo finale e consegnerà il codice sorgente e la documentazione relativa al progetto. Infine, una volta che il prodotto è stato rilasciato, non è prevista alcuna fase di manutenzione.
 
 \subsubsection*{Strumenti}
 Di seguito vengono indicati gli strumenti utilizzati dal team per la realizzazione del processo di fornitura:\begin{itemize}
     \item \textit{Microsoft Excel}: utilizzato per creare grafici, eseguire calcoli e per realizzare tabelle;
-    \item \textit{Project di Github}: utilizzato per gestire le \textbf{task}.
+    \item \textit{Project di Github}: utilizzato per gestire le task\textsubscript{G}.
     \item \textit{draw.io}: utilizzato per la realizzazione dei diagrammi UML\textsubscript{G}.
-    \item \textit{GanttProject}: utilizzato per la realizzazione dei diagrammi di Gantt.
+    \item \textit{GanttProject}: utilizzato per la realizzazione dei diagrammi di Gantt\textsubscript{G}.
+    \item \textit{LucidChart}: utilizzato per disegnare diagrammi descrittivi del funzionamento e delle architetture del progetto.
 \end{itemize}
 
 \subsection{Sviluppo}
@@ -313,35 +331,46 @@ Ogni requisito è classificato attraverso l'utilizzo di un codice identificativo
 dove:\\
 \custombold{Rilevanza:} indica la rilevanza associata ad un requisito e può assumere una tra tre possibili lettere con il seguente significato:\\
 \begin{center}
-\begin{tabular}{c|c}
+\begin{tabular}{|c|c|}
+\hline
 \rowcolor{Blue}
      \custombold{Lettera}&\custombold{Descrizione}\\
+     \hline
      \rowcolor{LighterBlue}
      \custombold{O}&Requisito obbligatorio\\
+     \hline
      \rowcolor{LightBlue}
      \custombold{D}&Requisito desiderabile ma non obbligatorio\\
+     \hline
      \rowcolor{LighterBlue}
      \custombold{P}&Requisito opzionale\\
+     \hline
 \end{tabular}
 \captionof{table}{Tabella della classificazione della rilevanza dei requisiti}
 \end{center}
 \custombold{Tipologia:} indica una tipologia di requisito e può assumere una delle seguenti lettere con il seguente significato:
 \begin{center}
-    \begin{tabular}{c|c}
+    \begin{tabular}{|c|c|}
+    \hline
         \rowcolor{Blue}
          \custombold{Lettera}&\custombold{Descrizione}\\
+         \hline
          \rowcolor{LighterBlue}
          \custombold{V}&Vincolo\\
+         \hline
          \rowcolor{LightBlue}
          \custombold{P}&Prestazionale\\
+         \hline
          \rowcolor{LighterBlue}
          \custombold{Q}&Qualitativo\\
+         \hline
          \rowcolor{LightBlue}
          \custombold{F}&Funzionale\\
+         \hline
     \end{tabular}
 \captionof{table}{Tabella della classificazione della tipologia dei requisiti}
 \end{center}
-\custombold{Codice:}L'identificativo è unico e espresso in forma gerarchica padre/figlio. Una volta associato a un requisito, l'identificativo è immutabile. Ogni requisito deve essere accompagnato da una serie di informazioni aggiuntive.
+\custombold{Codice: }L'identificativo è unico e espresso in forma gerarchica padre/figlio. Una volta associato a un requisito, l'identificativo è immutabile. Ogni requisito deve essere accompagnato da una serie di informazioni aggiuntive.
 \begin{itemize}
     \item \custombold{Descrizione:} Descrizione sintetica ed esplicativa del requisito;
     \item \custombold{Classificazione:} Per migliorare la leggibilità della tabella, viene enfatizzata nuovamente l'importanza del requisito, anche se già presente nell'identificativo del codice.
@@ -402,12 +431,13 @@ Ad eccezione dei \textit{verbali}, i documenti sopracitati devono essere conserv
 Questa fase presenta le linee guida architetturali del prodotto. Oltre all'aggiornamento dei documenti menzionati in precedenza, in questa fase saranno necessari:
 \begin{itemize}
     \item \textit{Manuale utente};
+    \item \textit{Specifica Tecnica};
     \item \textit{Verbali di periodo}.
 \end{itemize}
 Analogamente alla fase precedente, anche i documenti di questa fase devono essere conservati e aggiornati fino alla consegna e accettazione del prodotto finale.
 
-\subsubsection{Codifica}
-\subsection{Descrizione, scopo e aspettative}
+\subsection{Codifica}
+\subsubsection{Descrizione, scopo e aspettative}
 Dopo la fase di progettazione del prodotto, i membri del team con il ruolo di programmatori passeranno alla fase di codifica, implementando le specifiche dei requisiti e i documenti di progettazione. L'obiettivo di questa fase è concretizzare il progetto, realizzando il software desiderato attraverso la programmazione. Le aspettative per la fase di codifica sono:
 \begin{itemize}
     \item completare lo sviluppo del prodotto finale garantendone la qualità e rispettando le richieste del proponente;
@@ -416,6 +446,10 @@ Dopo la fase di progettazione del prodotto, i membri del team con il ruolo di pr
 
 \subsubsection*{Strumenti per la codifica}
 \begin{itemize}
+    \item \custombold{TypeScript}\textsubscript{G}: è un linguaggio di programmazione che estende JavaScript aggiungendo il supporto per tipi statici. Questo permette di rilevare errori e migliorare la qualità del codice durante lo sviluppo. TypeScript è compatibile con tutti i browser e i framework JavaScript, facilitando la scrittura di codice più robusto e manutenibile.
+        \begin{center}
+        \href{https://www.typescriptlang.org/}{https://www.typescriptlang.org/}
+    \end{center}
     \item \custombold{Node.js\textsubscript{G}}: è un runtime system\textsubscript{G} open source\textsubscript{G} multipiattaforma orientato agli eventi per l'esecuzione di codice JavaScript\textsubscript{G};\\
     \begin{center}
         \href{https://nodejs.org/it/}{nodejs.org/it/}
@@ -494,21 +528,21 @@ L'utilizzo delle infrastrutture interne,è cruciale per mantenere un ambiente di
 \end{itemize}
 
 \subsection{Gestione organizzativa}
-La gestione organizzativa del progetto coinvolge la pianificazione, la distribuzione delle responsabilità e la gestione degli incontri. Il team adotta un approccio collaborativo, dove ciascun membro ha un ruolo definito e contribuisce al raggiungimento degli obiettivi. Gli incontri periodici sono fondamentali per monitorare l'avanzamento, risolvere eventuali problemi e pianificare le prossime attività. Il team, con l'obiettivo di ottimizzare i tempi e massimizzare l'efficienza delle proprie operazioni, ha scelto di adottare una metodologia Agile\textsubscript{G}, implementando le pratiche di miglioramento continuo attraverso il framework Scrum\textsubscript{G}. Questo approccio consente di organizzare il lavoro in intervalli temporali definiti, noti come sprint, della durata di circa due settimane. Nello specifico, il processo si articola in diverse fasi:
+La gestione organizzativa del progetto coinvolge la pianificazione, la distribuzione delle responsabilità e la gestione degli incontri. Il team adotta un approccio collaborativo, dove ciascun membro ha un ruolo definito e contribuisce al raggiungimento degli obiettivi. Gli incontri periodici sono fondamentali per monitorare l'avanzamento, risolvere eventuali problemi e pianificare le prossime attività. Il team, con l'obiettivo di ottimizzare i tempi e massimizzare l'efficienza delle proprie operazioni, ha scelto di adottare una metodologia Agile\textsubscript{G}, implementando le pratiche di miglioramento continuo attraverso il framework Scrum\textsubscript{G}. Questo approccio consente di organizzare il lavoro in intervalli temporali definiti, noti come sprint, della durata di una settimana. Nello specifico, il processo si articola in diverse fasi:
 \begin{itemize}
     \item Pianificazione dello Sprint: Il team si riunisce il primo giorno dello sprint per pianificare le attività da svolgere durante il periodo corrente. Attraverso sessioni di brainstorming, vengono identificate le attività da completare (backlog), stabilendo preventivamente gli impegni e le risorse necessarie.
     \item Revisione dello Sprint: Al termine dello sprint, si tiene una riunione di revisione alla quale partecipano tutti i membri del team. L'obiettivo è definire gli obiettivi raggiunti e produrre almeno un incremento, ovvero un prodotto software utilizzabile. Durante questa fase, vengono analizzate in modo approfondito le risorse impiegate rispetto agli obiettivi, distinguendo tra quelli raggiunti e non raggiunti. Ciò consente di identificare aree di miglioramento e di stabilire nuovi obiettivi per gli sprint successivi.
     \item Retrospective dello Sprint: Concluso lo sprint, il team si riunisce per una valutazione generale del suo andamento. Si analizza ciò che è stato realizzato con successo e ciò che può essere migliorato. Questa fase è cruciale per definire le strategie di ripianificazione delle attività, decidendo come procedere con quelle attuali o future.
 \end{itemize}
-La durata media di uno sprint nel contesto del framework Agile può variare significativamente in base alle preferenze del team e alle esigenze specifiche del progetto. Tuttavia, di solito uno sprint ha una durata compresa tra una e quattro settimane. Il nostro team ha dunque deciso di mantenere degli sprint di due settimane, in modo tale da ovviare ai rischi dati dall'inesperienza dei membri nello sviluppo di un progetto, in modo tale da evitare il più possibile momenti di stallo e favorire il confronto tra i membri.
+La durata media di uno sprint nel contesto del framework Agile può variare significativamente in base alle preferenze del team e alle esigenze specifiche del progetto. Tuttavia, di solito uno sprint ha una durata compresa tra una e quattro settimane. Il nostro team ha deciso di adottare sprint settimanali, in modo tale da evitare il più possibile momenti di stallo e favorire il confronto tra i membri.
 
 \subsubsection{Ruoli}
 \subsubsection{Metodo organizzativo}
 Il team, con l'obiettivo di ottimizzare i tempi e massimizzare l'efficienza delle proprie operazioni, ha scelto di adottare una metodologia Agile\textsubscript{G}, implementando le pratiche di miglioramento continuo attraverso il framework Scrum\textsubscript{G}. Questo approccio consente di organizzare il lavoro in brevi intervalli temporali, noti come sprint, della durata di circa due settimane. Nello specifico, il processo si articola in diverse fasi:
 \begin{itemize}
-    \item Pianificazione dello Sprint: Il team si riunisce il primo giorno dello sprint per pianificare le attività da svolgere durante il periodo corrente. Attraverso sessioni di brainstorming, vengono identificate le attività da completare (backlog), stabilendo preventivamente gli impegni e le risorse necessarie.
-    \item Revisione dello Sprint: Al termine dello sprint, si tiene una riunione di revisione alla quale partecipano tutti i membri del team. L'obiettivo è definire gli obiettivi raggiunti e produrre almeno un incremento, ovvero un prodotto software utilizzabile. Durante questa fase, vengono analizzate in modo approfondito le risorse impiegate rispetto agli obiettivi, distinguendo tra quelli raggiunti e non raggiunti. Ciò consente di identificare aree di miglioramento e di stabilire nuovi obiettivi per gli sprint successivi.
-    \item Retrospective dello Sprint: Concluso lo sprint, il team si riunisce per una valutazione generale del suo andamento. Si analizza ciò che è stato realizzato con successo e ciò che può essere migliorato. Questa fase è cruciale per definire le strategie di ripianificazione delle attività, decidendo come procedere con quelle attuali o future.
+    \item \textit{Pianificazione dello Sprint:} Il team si riunisce il primo giorno dello sprint per pianificare le attività da svolgere durante il periodo corrente. Attraverso sessioni di brainstorming, vengono identificate le attività da completare (backlog), stabilendo preventivamente gli impegni e le risorse necessarie.
+    \item \textit{Revisione dello Sprint:} Al termine dello sprint, si tiene una riunione di revisione alla quale partecipano tutti i membri del team. L'obiettivo è definire gli obiettivi raggiunti e produrre almeno un incremento, ovvero un prodotto software utilizzabile. Durante questa fase, vengono analizzate in modo approfondito le risorse impiegate rispetto agli obiettivi, distinguendo tra quelli raggiunti e non raggiunti. Ciò consente di identificare aree di miglioramento e di stabilire nuovi obiettivi per gli sprint successivi.
+    \item \textit{Retrospective dello Sprint:} Concluso lo sprint, il team si riunisce per una valutazione generale del suo andamento. Si analizza ciò che è stato realizzato con successo e ciò che può essere migliorato. Questa fase è cruciale per definire le strategie di ripianificazione delle attività, decidendo come procedere con quelle attuali o future.
 \end{itemize}
 
 \subsubsection{Gestione degli incontri}
