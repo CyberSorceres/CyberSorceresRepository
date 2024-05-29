@@ -7,7 +7,7 @@
 \usepackage{hyperref}
 \geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
 \usepackage{graphicx}
-\providecommand{\versionnumber}{1.1.0}
+\providecommand{\versionnumber}{2.0.0}
 \usepackage{enumitem}
 \usepackage{array}
 \usepackage[italian]{babel}
@@ -436,6 +436,15 @@ Nella seguente sezione esporremo le varie metodologie di test, i loro obiettivi 
     \caption{Figura 0: Modello a V}
 \end{figure}
 
+Ciascuna tipologia di test sarà descritta da apposite tabelle, comprensive
+di identificativo, descrizione e stato, per le quali possiamo riportare le seguenti sigle:
+\begin{itemize}
+    \item{ S per Superato;}
+    
+    \item { NI per Non Implementato.}    
+\end{itemize}
+
+
 
 \subsection{Test di Unità}
 Il \textit{test di unità} sono una tipologia di testing\textsubscript{G} del software in cui singole unità o componenti del software vengono testate in isolamento. Le unità possono essere singole funzioni, procedure, metodi o classi. L'obiettivo del test di unità è verificare che ciascuna unità funzioni correttamente secondo le specifiche e che produca i risultati attesi. Abbiamo deciso che questo tipo di testing sarà in larga parte automatizzato, per ottimizzare i costi e le tempistiche dedicate a questo processo.
@@ -443,52 +452,52 @@ Il \textit{test di unità} sono una tipologia di testing\textsubscript{G} del so
 \begin{center}
     \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
         \rowcolor{Blue}
-    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
+    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} & \custombold{Stato}\\
     \hline
     \rowcolor{LighterBlue}
-    TU1 & Si verifica che il componente AddProjectButton venga renderizzato correttamente  &  & \\
+    TU1 & Si verifica che il componente AddProjectButton venga renderizzato correttamente    &S \\
     \hline
     \rowcolor{LightBlue}
-    TU2 &  Si verifica che il componente AddProjectButton apra una casella di inserimento testuale correttamente &  & \\
+    TU2 &  Si verifica che il componente AddProjectButton apra una casella di inserimento testuale correttamente   &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU3 & Si verifica che il  pulsante di chiusura del componente AddProjectButton funzioni correttamente &  & \\
+    TU3 & Si verifica che il  pulsante di chiusura del componente AddProjectButton funzioni correttamente   &S \\
     \hline
     \rowcolor{LightBlue}
-    TU4 &  Si verifica che il pulsante di invio del componente AddProjectButton funzioni correttamente &  & \\
+    TU4 &  Si verifica che il pulsante di invio del componente AddProjectButton funzioni correttamente  & S\\
     \hline
     \rowcolor{LighterBlue}
-    TU5 & Si verifica che il componente BackButton venga renderizzato correttamente &  & \\
+    TU5 & Si verifica che il componente BackButton venga renderizzato correttamente  &S \\
     \hline\rowcolor{LightBlue}
-    TU6 &  Si verifica che il componente BackButton funzioni correttamente &  & \\
+    TU6 &  Si verifica che il componente BackButton funzioni correttamente  &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU7 & Si verifica che il componente BuisnessRequest venga renderizzato correttamente & ROF2,ROF3 & \\
+    TU7 & Si verifica che il componente BuisnessRequest venga renderizzato correttamente  &S \\
     \hline\rowcolor{LightBlue}
-    TU8 &  Si verifica che il componente BuisnessRequest funzioni correttamente &ROF2,ROF3  & \\
+    TU8 &  Si verifica che il componente BuisnessRequest funzioni correttamente  & S\\
     \hline
     \rowcolor{LighterBlue}
-    TU9 & Si verifica che il componente DeleteEpic venga renderizzato correttamente &  & \\
+    TU9 & Si verifica che il componente DeleteEpic venga renderizzato correttamente  &S \\
     \hline\rowcolor{LightBlue}
-    TU10 &  Si verifica che il componente DeleteEpic funzioni correttamente &  & \\
+    TU10 &  Si verifica che il componente DeleteEpic funzioni correttamente   & S\\
     \hline
     \rowcolor{LighterBlue}
-    TU11 & Si verifica che il componente DeleteUser venga renderizzato correttamente &  & \\
+    TU11 & Si verifica che il componente DeleteUser venga renderizzato correttamente   &S \\
     \hline\rowcolor{LightBlue}
-     TU12 &  Si verifica che il componente DeleteUser funzioni correttamente &  & \\
+     TU12 &  Si verifica che il componente DeleteUser funzioni correttamente   &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU13 & Si verifica che il componente DropdownButton venga renderizzato correttamente &  & \\
+    TU13 & Si verifica che il componente DropdownButton venga renderizzato correttamente   & S\\
     \hline\rowcolor{LightBlue}
-     TU14 &  Si verifica che il componente DropdownButton funzioni correttamente & ROF14  & \\
+     TU14 &  Si verifica che il componente DropdownButton funzioni correttamente &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU15 & Si verifica che il componente DropdownMenuContainer venga renderizzato correttamente &ROF14   & \\
+    TU15 & Si verifica che il componente DropdownMenuContainer venga renderizzato correttamente    & S\\
     \hline\rowcolor{LightBlue}
-     TU16 &  Si verifica che il componente DropdownMenuContainer funzioni correttamente &ROF14   & \\
+     TU16 &  Si verifica che il componente DropdownMenuContainer funzioni correttamente    &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU17 & Si verifica che il componente DropdownMenuContainer si chiuda correttamente & ROF14  & \\
+    TU17 & Si verifica che il componente DropdownMenuContainer si chiuda correttamente   &S \\
     
     \hline
     \end{tabular}
@@ -497,46 +506,46 @@ Il \textit{test di unità} sono una tipologia di testing\textsubscript{G} del so
     \begin{center}
     \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
     \rowcolor{LightBlue}
-    TU18 &  Si verifica che gli item del componente DropdownMenuContainer funzionino correttamente& ROF14  & \\
+    TU18 &  Si verifica che gli item del componente DropdownMenuContainer funzionino correttamente  & S\\
     \hline\rowcolor{LighterBlue}
-     TU19 &  Si verifica che il componente DropdownMenu venga renderizzato correttamente & ROF14  & \\
+     TU19 &  Si verifica che il componente DropdownMenu venga renderizzato correttamente   & S\\
     \hline
     \rowcolor{LightBlue}
-    TU20 & Si verifica che il componente DropdownMenu venga funzioni correttamente & ROF14  & \\
+    TU20 & Si verifica che il componente DropdownMenu venga funzioni correttamente &S \\
     \hline\rowcolor{LighterBlue}
-    TU21 &  Si verifica che il componente DropdownMenu si chiuda correttamente & ROF14  & \\
+    TU21 &  Si verifica che il componente DropdownMenu si chiuda correttamente   &S \\
     \hline\rowcolor{LightBlue}
-     TU22 & Si verifica che gli item del componente DropdownMenu funzionino correttamente & ROF14  & \\
+     TU22 & Si verifica che gli item del componente DropdownMenu funzionino correttamente  & S\\
     \hline
     \rowcolor{LighterBlue}
-    TU23 & Si verifica che il componente EpicStory venga renderizzato correttamente &ROF4, ROF17 & \\
+    TU23 & Si verifica che il componente EpicStory venga renderizzato correttamente & S\\
     
      \hline\rowcolor{LightBlue}
-     TU24 & Si verifica che nel componente EpicStory venga renderizzato il titolo della tabella correttamente  &  & \\
+     TU24 & Si verifica che nel componente EpicStory venga renderizzato il titolo della tabella correttamente    &S \\
     \hline
     
     \rowcolor{LighterBlue}
-    TU25 & Si verifica che nel componente EpicStory venga renderizzata la descrizione della tabella correttamente &  & \\
+    TU25 & Si verifica che nel componente EpicStory venga renderizzata la descrizione della tabella correttamente   &S \\
     \hline\rowcolor{LightBlue}
-     TU26 & Si verifica che nel componente EpicStory venga renderizzato il bottone per aggiungere un'epic story correttamente &  & \\
+     TU26 & Si verifica che nel componente EpicStory venga renderizzato il bottone per aggiungere un'epic story correttamente   &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU27 &  Si verifica che il componente InviteUserButton funzioni correttamente &  & \\
+    TU27 &  Si verifica che il componente InviteUserButton funzioni correttamente & S  \\
     \hline\rowcolor{LightBlue}
-     TU28 & Si verifica che il componente Login venga renderizzato correttamente  &  & \\
+     TU28 & Si verifica che il componente Login venga renderizzato correttamente    &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU29&Si verifica che il componente Login funzioni correttamente &  & \\
+    TU29&Si verifica che il componente Login funzioni correttamente   &S \\
     \hline\rowcolor{LightBlue}
-     TU30 & Si verifica che il componente NavigationBar venga renderizzato correttamente   &  & \\
+     TU30 & Si verifica che il componente NavigationBar venga renderizzato correttamente     &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU31&Si verifica che il componente NavigationBar funzioni correttamente &   & \\
+    TU31&Si verifica che il componente NavigationBar funzioni correttamente   &S \\
     \hline\rowcolor{LightBlue}
-     TU32 &  Si verifica che il componente NotificationPage venga renderizzato correttamente  & RDF6, RDF9, RDF15  & \\
+     TU32 &  Si verifica che il componente NotificationPage venga renderizzato correttamente    &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU33& Si verifica che il componente NotificationPage renderizzi il corretto numero di righe& RDF6, RDF9, RDF15   & \\
+    TU33& Si verifica che il componente NotificationPage renderizzi il corretto numero di righe   & S\\
     
     \hline
      \end{tabular}
@@ -544,66 +553,88 @@ Il \textit{test di unità} sono una tipologia di testing\textsubscript{G} del so
     \begin{center}
     \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
     \rowcolor{LightBlue}
-     TU34 & Si verifica che il componente Password venga renderizzato correttamente   & ROF1 & \\
+     TU34 & Si verifica che il componente Password venga renderizzato correttamente    & \\
     \hline
     \rowcolor{LighterBlue}
-    TU35& Si verifica che il toggle della visibilità nel componente Password funzioni correttamente& ROF1 & \\
+    TU35& Si verifica che il toggle della visibilità nel componente Password funzioni correttamente & S\\
     \hline\rowcolor{LightBlue}
-     TU36 & Si verifica che il componente Password funzioni correttamente   & ROF1 & \\
+     TU36 & Si verifica che il componente Password funzioni correttamente    &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU36&Si verifica che il componente PopupFeedback venga renderizzato correttamente & ROF5,ROF12 & \\
+    TU36&Si verifica che il componente PopupFeedback venga renderizzato correttamente & S\\
     \hline\rowcolor{LightBlue}
-     TU37 & Si verifica che il componente PopupFeedback funzioni correttamente  &  ROF12 & \\
+     TU37 & Si verifica che il componente PopupFeedback funzioni correttamente  & S  \\
     \hline
     \rowcolor{LighterBlue}
-    TU38&Si verifica che il componente Registrazione venga renderizzato correttamente & ROF1 & \\
+    TU38&Si verifica che il componente Registrazione venga renderizzato correttamente  & S\\
     \hline\rowcolor{LightBlue}
-     TU39 & Si verifica che il pulsante submit nel componente Registrazione funzioni correttamente   & ROF1 & \\
+     TU39 & Si verifica che il pulsante submit nel componente Registrazione funzioni correttamente    &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU40&  Si verifica che il campo di testo email nel componente Registrazione funzioni correttamente& ROF1& \\
+    TU40&  Si verifica che il campo di testo email nel componente Registrazione funzioni correttamente& S\\
     \hline\rowcolor{LightBlue}
-     TU41 & Si verifica che il campo di testo password nel componente Registrazione funzioni correttamente  & ROF1 & \\
+     TU41 & Si verifica che il campo di testo password nel componente Registrazione funzioni correttamente  &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU42& Si verifica che il componente RejectProject funzioni correttamente&  & \\
+    TU42& Si verifica che il componente RejectProject funzioni correttamente &S \\
     \hline\rowcolor{LightBlue}
-     TU43 & Si verifica che il componente RequireAuth venga renderizzato correttamente  &ROF1  & \\
+     TU43 & Si verifica che il componente RequireAuth venga renderizzato correttamente    & S\\
     \hline
     \rowcolor{LighterBlue}
-    TU44& Si verifica che il componente RequireAuth funzioni correttamente & ROF1 & \\
+    TU44& Si verifica che il componente RequireAuth funzioni correttamente  & S\\
     \hline\rowcolor{LightBlue}
-     TU45 & Si verifica che il componente Step1 venga renderizzato correttamente  & ROF1 & \\
+     TU45 & Si verifica che il componente Step1 venga renderizzato correttamente  &S  \\
     \hline
     \rowcolor{LighterBlue}
-    TU46& Si verifica che il bottone submit del componente Step1 funzioni correttamente & ROF1 & \\
+    TU46& Si verifica che il bottone submit del componente Step1 funzioni correttamente  & S\\
     \hline\rowcolor{LightBlue}
-     TU47 & Si verifica che il campo di testo email del componente Step1 funzioni correttamente   &ROF1  & \\
+     TU47 & Si verifica che il campo di testo email del componente Step1 funzioni correttamente     & S\\
     \hline
     \rowcolor{LighterBlue}
-    TU48& Si verifica che il componente Step2 venga renderizzato correttamente &ROF1  & \\
+    TU48& Si verifica che il componente Step2 venga renderizzato correttamente   & S\\
     \hline\rowcolor{LightBlue}
-     TU49 & Si verifica che il bottone submit del componente Step2 funzioni correttamente   & ROF1 & \\
+     TU49 & Si verifica che il bottone submit del componente Step2 funzioni correttamente   &S \\
     \hline
     \rowcolor{LighterBlue}
-    TU50&  Si verifica che il campo di testo del componente Step2 funzioni correttamente&ROF1  & \\
+    TU50&  Si verifica che il campo di testo del componente Step2 funzioni correttamente & S\\
      \end{tabular}
         \end{center}
     \begin{center}
     \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
      \hline\rowcolor{LightBlue}
-     TU51 & Si verifica che il componente Table venga renderizzato correttamente  &  ROF4 ,ROF8 & \\
+     TU51 & Si verifica che il componente Table venga renderizzato correttamente  &S   \\
     \hline
     \rowcolor{LighterBlue}
-    TU52& Si verifica che il componente Table renderizzi una riga per ogni elemento  & ROF4,ROF8  & \\
+    TU52& Si verifica che il componente Table renderizzi una riga per ogni elemento   &S \\
      \hline\rowcolor{LightBlue}
-     TU53 &   Si verifica che il componente Table renderizzi un bottone correttamente &  & \\
+     TU53 &   Si verifica che il componente Table renderizzi un bottone correttamente  &S \\
      \hline
     \rowcolor{LighterBlue}
-    TU54& Si verifica che il bottone del componente Table funzioni correttamente  &  & \\
-    \hline
+    TU54& Si verifica che il bottone del componente Table funzioni correttamente    & \\
+    \hline\rowcolor{LightBlue}
+     TU55 &   Si verifica che addEpicStory aggiunga le epic story  correttamente   &S \\
+     \hline
+    \rowcolor{LighterBlue}
+    TU56& Si verifica che getProgetti ritorni tutti i progetti correttamente   & S\\
+     \hline\rowcolor{LightBlue}
+     TU57 &   Si verifica che le notifiche funzionino correttamente  &S \\
+     \hline
+    \rowcolor{LighterBlue}
+    TU58&  Si verifica che getEpicStory ritorni la epic story corretta     &S \\
+    \hline\rowcolor{LightBlue}
+     TU59 &   Si verifica che getUserStory ritorni la user story corretta    & S\\
+     \hline
+    \rowcolor{LighterBlue}
+    TU60&  Si verifica che getProgetto ritorni il progetto corretto   & S\\
+    \hline\rowcolor{LightBlue}
+     TU61 &   Si verifica che getProgetto ritorni l'errore giusto quando non si è effettuato il login   & S\\
+     \hline
+    \rowcolor{LighterBlue}
+    TU62&  Si verifica che invite ritorni l'errore giusto quando non si è effettuato il login come Project Manager  & S\\
+     \hline\rowcolor{LightBlue}
+     TU63 &    Si verifica che invite ritorni l'errore giusto se il corpo dell'invito non è corretto  &S \\
     \end{tabular}
+    \captionof{table}{Tabella dei test di unità}
 \end{center}
 
 
@@ -613,13 +644,13 @@ I \textit{test di integrazione} sono una fase del processo di testing\textsubscr
 \begin{center}
     \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
         \rowcolor{Blue}
-    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
+    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione}  & \custombold{Stato}\\
     \hline
     \rowcolor{LighterBlue}
-    TU1 &Verifica che ritorna il progetto con l'ID corretto\textsubscript{G} tramite email e password & ROF1 & NI\\
+    TU1 &Verifica che ritorna il progetto con l'ID corretto\textsubscript{G} tramite email e password  & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS2 & Verificare che sia possibile scrivere le richieste di business & ROF2 & NI\\
+    TS2 & Verificare che sia possibile scrivere le richieste di business  & NI\\
     \hline
     \end{tabular}
 \end{center}
@@ -629,71 +660,71 @@ I \textit{test di sistema} sono una fase del processo che si concentra sull'anal
 \begin{center}
     \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
     \rowcolor{Blue}
-    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
+    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} &  \custombold{Stato}\\
     \hline
     \rowcolor{LighterBlue}
-    TS1 & Verificare che sia possibile accedere alla web-app\textsubscript{G} tramite email e password & ROF1 & NI\\
+    TS1 & Verificare che sia possibile accedere alla web-app\textsubscript{G} tramite email e password  & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS2 & Verificare che sia possibile scrivere le richieste di business & ROF2 & NI\\
+    TS2 & Verificare che sia possibile scrivere le richieste di business  & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS3 & Verificare che sia possibile inviare le richieste di business all'IA\textsubscript{G} & ROF3 & NI\\
+    TS3 & Verificare che sia possibile inviare le richieste di business all'IA\textsubscript{G}  & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS4 & Verificare che sia possibile visualizzare l'andamento del progetto dalla web-app\textsubscript{G} & ROF4 & NI\\
+    TS4 & Verificare che sia possibile visualizzare l'andamento del progetto dalla web-app\textsubscript{G} & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS5 & Verificare che sia possibile per l'attore\textsubscript{G} Cliente inviare un feedback riguardo l'implementazione di una user story\textsubscript{G} generata & ROF5 & NI\\
+    TS5 & Verificare che sia possibile per l'attore\textsubscript{G} Cliente inviare un feedback riguardo l'implementazione di una user story\textsubscript{G} generata & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS6 & Verificare che si riceva una notifica una volta che una user story\textsubscript{G} è contrassegnata come completata & RDF6 & NI\\
+    TS6 & Verificare che si riceva una notifica una volta che una user story\textsubscript{G} è contrassegnata come completata  & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS7 & Verificare che sia possibile il tag\textsubscript{G} del codice utilizzando il plug-in\textsubscript{G} & ROF7 & NI\\
+    TS7 & Verificare che sia possibile il tag\textsubscript{G} del codice utilizzando il plug-in\textsubscript{G} & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS8 & Verificare che sia possibile per l'attore\textsubscript{G} Sviluppatore il poter vedere la lista di user/epic stories\textsubscript{G} che gli sono state assegnate & ROF8 & NI\\
+    TS8 & Verificare che sia possibile per l'attore\textsubscript{G} Sviluppatore il poter vedere la lista di user/epic stories\textsubscript{G} che gli sono state assegnate  & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS9 & Verificare che quando viene assegnata una epic/user story\textsubscript{G} l'attore Sviluppatore venga notificato tramite la web-app\textsubscript{G} & RDF9 & NI\\
+    TS9 & Verificare che quando viene assegnata una epic/user story\textsubscript{G} l'attore Sviluppatore venga notificato tramite la web-app\textsubscript{G}  & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS10 & Verificare che sia possibile inviare il codice all'IA\textsubscript{G} per la verifica & ROF10 & NI\\
+    TS10 & Verificare che sia possibile inviare il codice all'IA\textsubscript{G} per la verifica  & NI\\
     \hline
     \end{tabular}
 \end{center}
 \begin{center}
     \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
     \rowcolor{Blue}
-    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
+    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} & \custombold{Stato}\\
     \hline
     \rowcolor{LighterBlue}
-    TS11 & Verificare che sia possibile visualizzare le epic/user stories\textsubscript{G} generate & ROF11 & NI\\
+    TS11 & Verificare che sia possibile visualizzare le epic/user stories\textsubscript{G} generate  & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS12 & Verificare che sia possibile per l'attore Project Manager\textsubscript{G} l'invio di feedback riguardante le epic/user stories generate dall'IA\textsubscript{G} & ROF12 & NI\\
+    TS12 & Verificare che sia possibile per l'attore Project Manager\textsubscript{G} l'invio di feedback riguardante le epic/user stories generate dall'IA\textsubscript{G} & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS13 & Verificare che sia possibile per l'attore Project Manager richiedere la divisione delle user stories valutate come troppo grandi & ROF13 & NI\\
+    TS13 & Verificare che sia possibile per l'attore Project Manager richiedere la divisione delle user stories valutate come troppo grandi  & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS14 & Verificare che sia possibile per l'attore Project Manager assegnare le epic/user stories a gli attori Sviluppatore & ROF14 & NI\\
+    TS14 & Verificare che sia possibile per l'attore Project Manager assegnare le epic/user stories a gli attori Sviluppatore  & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS15 & Verificare che venga inviata una notifica all'attore Project Manager quando vengono generate le epic/user stories & RDF15 & NI\\
+    TS15 & Verificare che venga inviata una notifica all'attore Project Manager quando vengono generate le epic/user stories  & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS16 & Verificare che sia possibile per l'attore Project Manager richiedere la modifica di epic/user stories all'IA & ROF16 & NI\\
+    TS16 & Verificare che sia possibile per l'attore Project Manager richiedere la modifica di epic/user stories all'IA  & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS17 & Verificare che sia possibile per l'attore Sviluppatore visualizzare l'andamento delle epic/user stories assegnate & ROF17 & NI\\
+    TS17 & Verificare che sia possibile per l'attore Sviluppatore visualizzare l'andamento delle epic/user stories assegnate & NI\\
     \hline
     \rowcolor{LightBlue}
-    TS18 & Verificare che il plug-in\textsubscript{G} supporti i linguaggi Typescript\textsubscript{G} e Javascript\textsubscript{G} & ROF20 & NI\\
+    TS18 & Verificare che il plug-in\textsubscript{G} supporti i linguaggi Typescript\textsubscript{G} e Javascript\textsubscript{G}  & NI\\
     \hline
     \rowcolor{LighterBlue}
-    TS19 & Verificare che il plug-in supporti i linguaggi Kotlin\textsubscript{G} e Swift\textsubscript{G} & RDF21 & NI\\
+    TS19 & Verificare che il plug-in supporti i linguaggi Kotlin\textsubscript{G} e Swift\textsubscript{G}  & NI\\
     \hline
     \end{tabular}
     \captionof{table}{Tabella dei test di sistema}
@@ -705,38 +736,44 @@ I \textit{test di accettazione} sono una fase finale in cui il sistema viene val
 \begin{center}
     \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
     \rowcolor{Blue}
-    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
+    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione}  & \custombold{Stato}\\
     \hline
     \rowcolor{LighterBlue}
-    TA1 & Si verifica che l’applicazione sia in grado di gestire il recupero password, inviando opportunamente una mail di
-reimpostazione all’utente qualora abbia perso le proprie credenziali&  & S\\
+    TA1 & Si verifica che la web-app\textsubscript{G} sia in grado di gestire il recupero password, inviando opportunamente una mail di
+reimpostazione all’utente qualora abbia perso le proprie credenziali  & S\\
     \hline
     \rowcolor{LightBlue}
-    TA2 & SI verifica che il PM possa aggiungere nuovi clienti correttamente &  & S\\
+    TA2 & SI verifica che il Project Manager\textsubscript{G} possa aggiungere nuovi clienti correttamente   & S\\
     \hline
     \rowcolor{LighterBlue}
-    TA3 & Si verifica che l’applicazione sia in grado di gestire correttamente gli eventi di autenticazione dei propri tipi di utenti, inclusi login e logout & ROF13 & S\\
+    TA3 & Si verifica che la web-app\textsubscript{G} sia in grado di gestire correttamente gli eventi di autenticazione dei propri tipi di utenti, inclusi login e logout  & S\\
     \hline
     \rowcolor{LightBlue}
-    TA4 & Verificare che sia possibile per l'attore Project Manager assegnare le epic/user stories a gli attori Sviluppatore & ROF14 & S\\
+    TA4 & Si verifica che l'applicazione permetta di visualizzare l'andamento dei progetti in base allo sviluppo di epic/user stories    & S\\
     \hline
     \rowcolor{LighterBlue}
-    TA5 & Verificare che venga inviata una notifica all'attore Project Manager quando vengono generate le epic/user stories & RDF15 & S\\
+    TA5 & Si verifica che il Project Manger sia in grado di invitare nuovi clienti fornendo password provvisorie   & S\\
     \hline
     \rowcolor{LightBlue}
-    TS16 & Verificare che sia possibile per l'attore Project Manager richiedere la modifica di epic/user stories all'IA & ROF16 &S\\
+    TA16 & Si verifica che il Project Manager possa creare nuovi progetti    &S\\
     \hline
     \rowcolor{LighterBlue}
-    TA7 & Verificare che sia possibile per l'attore Sviluppatore visualizzare l'andamento delle epic/user stories assegnate & ROF17 & S\\
+    TA7 & Si verifica che il cliente possa inviare richieste di buisness   & S\\
     \hline
     \rowcolor{LightBlue}
-    TA8 & Verificare che il plug-in\textsubscript{G} supporti i linguaggi Typescript\textsubscript{G} e Javascript\textsubscript{G} & ROF20 & SI\\
+    TA8 & Si verifica che il cliente possa richiedere modifiche  alle user stories sviluppate & S\\
     \hline
     \rowcolor{LighterBlue}
-    TA9 & Verificare che il plug-in supporti i linguaggi Kotlin\textsubscript{G} e Swift\textsubscript{G} & RDF21 & S\\
+    TA9 & Si verifica che il Project Manager possa rifiutare una proposta di progetto   & S\\
+    \hline
+    \rowcolor{LightBlue}
+    TA10 & Si verifica che il  Project Manager possa eliminare epic stories  & S\\
+    \hline
+    \rowcolor{LighterBlue}
+    TA11 & Si verifica che il sistema di notifiche sia funzionante   & S\\
     \hline
     \end{tabular}
-    \captionof{table}{Tabella dei test di sistema}
+    \captionof{table}{Tabella dei test di accettazione}
 \label{tab:testSistema}
 \end{center}
 \subsection{Test di Regressione}
