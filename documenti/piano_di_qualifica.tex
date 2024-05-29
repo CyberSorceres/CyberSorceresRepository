@@ -7,9 +7,10 @@
 \usepackage{hyperref}
 \geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
 \usepackage{graphicx}
-\providecommand{\versionnumber}{1.1.1}
+\providecommand{\versionnumber}{1.1.0}
 \usepackage{enumitem}
 \usepackage{array}
+\usepackage[italian]{babel}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \renewcommand{\arraystretch}{1.5} % Default value: 1
 \setlength{\droptitle}{-6em}
@@ -57,37 +58,50 @@
   \label{fig:immagine}
 \end{figure}
 
-\vspace{6em}
-\large{
+
 \begin{center}
-    \begin{tabular}{P{24em}}
-        \rowcolor{Blue}
-        \textbf{Membri del team:}\\
+    \begin{tabular}{|l c c|}
+    \hline
+        \rowcolor{Blue} 
+        \textbf{Informazioni sul documento} & &\\ [1 ex]
+        \hline
         \rowcolor{LighterBlue}
-        \custombold{Sabrina Caniato}\\
+        Destinatari: & Prof Tullio Vardanega & Prof Riccardo Cardin\\ [1 ex]
+        \hline
         \rowcolor{LightBlue}
-        \custombold{Giulia Dentone}\\
-        \rowcolor{LighterBlue}
-        \custombold{Nicola Lazzarin}\\
-        \rowcolor{LightBlue}
-        \custombold{Giovanni Moretti}\\
-        \rowcolor{LighterBlue}
-        \custombold{Andrea Rezzi}\\
-        \rowcolor{LightBlue}
-        \custombold{Samuele Vignotto}\\
+        G al pedice: & Consultare il Glossario & \\ [1 ex]
+        \hline
     \end{tabular}
 \end{center}
 
+\vspace{6em}
 \begin{center}
-    \begin{tabular}{l c c}
-        \rowcolor{Blue} 
-        \textbf{Informazioni sul documento} & &\\ [1 ex]
+    \begin{tabular}{|P{24em}|}
+    \hline
+        \rowcolor{Blue}
+        \textbf{Membri del team:}\\
+        \hline
         \rowcolor{LighterBlue}
-        Destinatari: & Prof Tullio Vardanega & Prof Riccardo Cardin\\ [1 ex]
+        \custombold{Sabrina Caniato}\\
+        \hline
         \rowcolor{LightBlue}
-        G al pedice: & Consultare il Glossario & \\ [1 ex]
+        \custombold{Giulia Dentone}\\
+        \hline
+        \rowcolor{LighterBlue}
+        \custombold{Nicola Lazzarin}\\
+        \hline
+        \rowcolor{LightBlue}
+        \custombold{Giovanni Moretti}\\
+        \hline
+        \rowcolor{LighterBlue}
+        \custombold{Andrea Rezzi}\\
+        \hline
+        \rowcolor{LightBlue}
+        \custombold{Samuele Vignotto}\\
+        \hline
     \end{tabular}
 \end{center}
+
     
 \newpage
 
@@ -97,6 +111,14 @@
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
+    \rowcolor{LightBlue}
+    2.0.0 & 27/05/2024 & Samuele Vignotto & Giovanni Moretti & Controllo finale del documento.\\
+    \rowcolor{LighterBlue}
+    1.4.0 & 23/05/2024 & Nicola Lazzarin & Andrea Rezzi & Aggiunta test di accettazione.\\
+    \rowcolor{LightBlue}
+    1.3.0 & 22/05/2024 & Nicola Lazzarin & Andrea Rezzi & Aggiunti i test di integrazione\\
+    \rowcolor{LighterBlue}
+    1.2.0 & 20/05/2024 & Nicola Lazzarin & Andrea Rezzi & Aggiunti i test di unità.\\
     \rowcolor{LightBlue}
     1.1.1 & 06/05/2024 & Giulia Dentone & Samuele Vignotto & Corretta ed estesa la sezione di Valutazione per il miglioramento. \\ 
     \rowcolor{LighterBlue}
@@ -116,9 +138,14 @@
     \rowcolor{LightBlue}
     0.3.0 & 21/12/2023 & Andrea Rezzi & Sabrina Caniato & Aggiunta delle valutazioni per il miglioramento. \\
     \rowcolor{LighterBlue}
-    0.2.1 & 18/12/2023 & Giulia Dentone & Samuele Vignotto & Update della qualità di prodotto. \\    
+    0.2.1 & 18/12/2023 & Giulia Dentone & Samuele Vignotto & Update della qualità di prodotto. \\
     \rowcolor{LightBlue}
     0.2.0 & 18/12/2023 & Samuele Vignotto & Giovanni Moretti & Descrizione della qualità di prodotto.\\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{P{4em} P{6em} P{8em} P{8em} P{10em}} 
     \rowcolor{LighterBlue}
     0.1.0 & 17/12/2023 & Sabrina Caniato & Andrea Rezzi & Descrizione della qualità di processo. \\
     \rowcolor{LightBlue}
@@ -127,6 +154,8 @@
 \end{center}
 \newpage
 \tableofcontents
+\listoffigures
+\listoftables
 
 \newpage
 \section{Introduzione e scopo}
@@ -188,7 +217,8 @@ La qualità è determinata univocamente dai processi che compongono un prodotto,
 \\
 \begin{table}[h]
 \centering
-\begin{tabular}{P{10em} P{23em} P{10em}}
+\begin{tabular}{|P{10em} |P{23em}| P{10em}|}
+\hline
 \rowcolor{Blue}
  \custombold{Obiettivo} & \custombold{Descrizione} & \custombold{Metriche} \\
  \hline
@@ -197,6 +227,7 @@ La qualità è determinata univocamente dai processi che compongono un prodotto,
  \hline
  \rowcolor{LighterBlue}
   \custombold{Fornitura} & Procedura che implica la selezione di metodologie e risorse adeguate per soddisfare le esigenze del cliente. & \custombold{MC01}, \custombold{MC02}, \custombold{MC03}, \custombold{MC04}, \custombold{MC05}, \custombold{MC06}, \custombold{MC07}\\
+  \hline
 \rowcolor{LightBlue}
 \custombold{Sviluppo} & Procedura volta a creare un prodotto software che risponda alle necessità del cliente. & \custombold{MC08} \\
 \hline
@@ -205,6 +236,7 @@ La qualità è determinata univocamente dai processi che compongono un prodotto,
 \hline
 \rowcolor{LightBlue}
  \custombold{Verifica} & Procedura mirata a verificare che ogni servizio realizzato soddisfi i requisiti specificati. & \custombold{MC09} \\
+ \hline
 \rowcolor{LighterBlue}
  \custombold{Gestione della} \custombold{qualità} & Procedura volta a garantire la conformità del prodotto e dei servizi offerti agli standard predefiniti. & \custombold{MC10} \\
 \hline
@@ -213,6 +245,7 @@ La qualità è determinata univocamente dai processi che compongono un prodotto,
 \hline
 \rowcolor{LighterBlue}
  \custombold{Gestione} \custombold{organizzativa} & Procedura dedicata a delineare le modalità di coordinamento del team. & \custombold{MC11} \\
+ \hline
 \end{tabular}
 \caption{Tabella dei processi}
 \label{tab:processi}
@@ -220,69 +253,82 @@ La qualità è determinata univocamente dai processi che compongono un prodotto,
 
 \newpage
 \subsection{Processi primari}
-\begin{tabular}{P{5em} P{18em} P{8em} P{8em}}
+\begin{tabular}{|P{5em}| P{18em}| P{8em}| P{8em}|}
+\hline
 \rowcolor{Blue}
  \custombold{Codice} & \custombold{Nome metrica} & \custombold{Valore} \custombold{accettabile} & \custombold{Valore ottimale}\\
  \hline
 \rowcolor{LightBlue}
-\multicolumn{4}{c}{\custombold{Fornitura}}\\
+\multicolumn{4}{|c|}{\custombold{Fornitura}}\\
 \hline
 \rowcolor{LighterBlue}
 \custombold{MC01} & Earned Value (EV) & $>0$ & $\leq EAC$ \\
+\hline
 \rowcolor{LightBlue}
 \custombold{MC02} & Actual Cost (AC) & $\geq0$ & $\leq EAC$ \\
+\hline
 \rowcolor{LighterBlue}
 \custombold{MC03} & Planned Value (PV) & $\geq0$ & $\leq BAC$ \\
+\hline
 \rowcolor{LightBlue}
 \custombold{MC04} & Cost Variance (CV) & $\geq-10\%$ & $\geq0\%$ \\
+\hline
 \rowcolor{LighterBlue}
 \custombold{MC05} & Schedule Variance (SV) & $\geq-10\%$ & $\geq0\%$ \\
+\hline
 \rowcolor{LightBlue}
 \custombold{MC06} & Estimated At Completion (EAC) & $\geq BAC-3\%$; $\leq BAC+3\%$ & $=BAC$ \\
+\hline
 \rowcolor{LighterBlue}
 \custombold{MC07} & Estimate To Complete (ETC) & $\geq0$ & $\leq EAC$ \\
+\hline
 \rowcolor{LightBlue}
 \hline
-\multicolumn{4}{c}{\custombold{Sviluppo}}\\
+\multicolumn{4}{|c|}{\custombold{Sviluppo}}\\
 \hline
 \rowcolor{LighterBlue}
 \custombold{MC08} & Requirements Stability Index (RSI) & $\geq80\%$ & $100\%$\\
+\hline
 
 \end{tabular}
 \captionof{table}{Tabella dei processi primari}
 \label{tab:processiprimari}
 
 \subsection{Processi di supporto}
-\begin{tabular}{P{5em} P{18em} P{8em} P{8em}}
+\begin{tabular}{|P{5em}| P{18em}| P{8em}| P{8em}|}
+\hline
 \rowcolor{Blue}
  \custombold{Codice} & \custombold{Nome metrica} & \custombold{Valore} \custombold{accettabile} & \custombold{Valore ottimale}\\
  \hline
 \rowcolor{LightBlue}
-\multicolumn{4}{c}{\custombold{Verifica}}\\
+\multicolumn{4}{|c|}{\custombold{Verifica}}\\
 \hline
 \rowcolor{LighterBlue}
 \custombold{MC09} & Passed Tests & $\geq80\%$ & $100\%$ \\
 \hline
 \rowcolor{LightBlue}
-\multicolumn{4}{c}{\custombold{Gestione della qualità}}\\
+\multicolumn{4}{|c|}{\custombold{Gestione della qualità}}\\
 \hline
 \rowcolor{LighterBlue}
 \custombold{MC10} & Metrics Satisfied & $\geq85\%$ & $100\%$ \\
+\hline
 \end{tabular}
 
 \captionof{table}{Tabella dei processi di supporto}
 \label{tab:processisup}
 
 \subsection{Processi organizzativi}
-\begin{tabular}{P{5em} P{18em} P{8em} P{8em}}
+\begin{tabular}{|P{5em} |P{18em}| P{8em} |P{8em}|}
+\hline
 \rowcolor{Blue}
  \custombold{Codice} & \custombold{Nome metrica} & \custombold{Valore} \custombold{accettabile} & \custombold{Valore ottimale}\\
  \hline
 \rowcolor{LightBlue}
-\multicolumn{4}{c}{\custombold{Gestione organizzativa}}\\
+\multicolumn{4}{|c|}{\custombold{Gestione organizzativa}}\\
 \hline
 \rowcolor{LighterBlue}
 \custombold{MC11} & Risks Found & $\leq5$ & $0$ \\
+\hline
 \end{tabular}
 \captionof{table}{Tabella dei processi organizzativi}
 \label{tab:processiorg}
@@ -299,64 +345,82 @@ Per assicurare l'elevata qualità del prodotto, è stata adottata come base di r
 \end{itemize}
 
 \begin{center}
-\begin{tabular}{P{8em} P{20em} P{8em}} 
+\begin{tabular}{|P{8em}| P{20em}| P{8em}|}
+\hline
   \rowcolor{Blue}
     \custombold{Obiettivo} & \custombold{Descrizione} & \custombold{Metriche}\\
     \hline
     \rowcolor{LightBlue}
-    &\custombold{Documentazione}&\\
+    \multicolumn{3}{|c|}{Documentazione}\\
     \hline
     \rowcolor{LighterBlue}
     \textbf{Leggibilità documenti} & La documentazione deve essere comprensibile agli utenti. & \textbf{MD01}\\
+    \hline
     \rowcolor{LightBlue}
     \textbf{Correttezza linguistica} & Non devono essere presenti errori grammaticali nella documentazione. & \textbf{MD02}\\
     \hline
     \rowcolor{LighterBlue}
-    &\custombold{Software}&\\
+    \multicolumn{3}{|c|}{Software}\\
     \hline
     \rowcolor{LightBlue}
     \textbf{Funzionalità} & La capacità del prodotto di fornire tutte le funzioni identificate nell'\textit{Analisi dei requisiti}, perseguendo precisione e idoneità. & \textbf{MS01}, \textbf{MS02}, \textbf{MS03}\\
+    \hline
     \rowcolor{LighterBlue}
     \textbf{Usabilità} & La capacità di essere comprensibile al fine di rendere gradevole l'esperienza dell'utente. Le funzionalità devono essere in linea con le aspettative e compatibili con le stesse. & \textbf{MS04}\\
+    \hline
     \rowcolor{LightBlue}
     \textbf{Portabilità} & La capacità di operare in vari contesti di esecuzione. Gli obiettivi da raggiungere includono adattabilità e sostituibilità. & \textbf{MS05}, \textbf{MS06}\\
+    \hline
     \rowcolor{LighterBlue}
     \textbf{Test\textsubscript{G}} & L'intero codice prodotto sarà soggetto a verifica per assicurare l'implementazione corretta dei requisiti identificati. & \textbf{MS07}, \textbf{MS08}, \textbf{MS09}, \textbf{MS10}\\
+    \hline
 \end{tabular}
 \captionof{table}{Tabella degli obiettivi della qualità di prodotto}
 \label{tab:qualitaProd}
 \end{center}
 
 \begin{center}
-\begin{tabular}{P{5em} P{13em} P{10em} P{10em}} 
+\begin{tabular}{|P{5em} |P{13em} |P{10em}| P{10em}|}
+\hline
   \rowcolor{Blue}
     \custombold{Codice} & \custombold{Denominazione metrica} & \custombold{Valore accettabile} & \custombold{Valore ottimale}\\
     \hline
     \rowcolor{LighterBlue}
     \custombold{MD01} & Indice di Gulpease & $\geq 60$ & $\geq 80$\\
+    \hline
     \rowcolor{LightBlue}
     \custombold{MD02} & Errori ortografici & 0 & 0 \\
     \hline
     \rowcolor{LighterBlue}
     \custombold{MS01} & Copertura requisiti obbligatori & 100\% & 100\% \\
+    \hline
     \rowcolor{LightBlue}
     \custombold{MS02} & Copertura requisiti desiderabili & $\geq 50$\% & $\geq 100$\% \\
+    \hline
     \rowcolor{LighterBlue}
     \custombold{MS03} & Copertura requisiti opzionali & $\geq 50$\% & $\geq 100$\% \\
+    \hline
     \rowcolor{LightBlue}
     \custombold{MS04} & Facilità utilizzo & 5 click & 4 click \\
+    \hline
     \rowcolor{LighterBlue}
     \custombold{MS05} & Versioni browser supportate & $\geq 80$\% & $\geq 100$\% \\
+    \hline
     \rowcolor{LightBlue}
     \custombold{MS06} & Versioni VSCode\textsubscript{G} supportate & $\geq 80$\% & $\geq 100$\% \\
+    \hline
     \rowcolor{LighterBlue}
     \custombold{MS07} & Solidity Statement Coverage & $\geq 80$\% & $\geq 100$\% \\
+    \hline
     \rowcolor{LightBlue}
     \custombold{MS08} & Solidity Branche Coverage & $\geq 80$\% & $\geq 100$\% \\
+    \hline
     \rowcolor{LighterBlue}
     \custombold{MS09} & Solidity Function Coverage & $\geq 80$\% & $\geq 100$\% \\
+    \hline
     \rowcolor{LightBlue}
     \custombold{MS10} & Solidity Line Coverage & $\geq 80$\% & $\geq 100$\% \\
+    \hline
 \end{tabular}
 \captionof{table}{Metriche per la qualità di prodotto}
 \label{tab:metricheQualProd}
@@ -368,7 +432,7 @@ Per assicurare l'elevata qualità del prodotto, è stata adottata come base di r
 Nella seguente sezione esporremo le varie metodologie di test, i loro obiettivi e i criteri di successo ottenuti. Per facilitare la fase di validazione e accertamento continuo della correttezza del prodotto il gruppo ha deciso di svolgere una verifica in parallelo allo sviluppo, conformandosi al "modello a V"\textsubscript{G}.  
 \begin{figure}[H]
     \centering
-    \includegraphics[width=15cm, height=10cm]{./documenti/modello_a_v.png}
+    \includegraphics[width=15cm, height=10cm]{./documenti/grafici/modello_a_v.png}
     \caption{Figura 0: Modello a V}
 \end{figure}
 
@@ -376,9 +440,189 @@ Nella seguente sezione esporremo le varie metodologie di test, i loro obiettivi 
 \subsection{Test di Unità}
 Il \textit{test di unità} sono una tipologia di testing\textsubscript{G} del software in cui singole unità o componenti del software vengono testate in isolamento. Le unità possono essere singole funzioni, procedure, metodi o classi. L'obiettivo del test di unità è verificare che ciascuna unità funzioni correttamente secondo le specifiche e che produca i risultati attesi. Abbiamo deciso che questo tipo di testing sarà in larga parte automatizzato, per ottimizzare i costi e le tempistiche dedicate a questo processo.
 
+\begin{center}
+    \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
+        \rowcolor{Blue}
+    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
+    \hline
+    \rowcolor{LighterBlue}
+    TU1 & Si verifica che il componente AddProjectButton venga renderizzato correttamente  &  & \\
+    \hline
+    \rowcolor{LightBlue}
+    TU2 &  Si verifica che il componente AddProjectButton apra una casella di inserimento testuale correttamente &  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU3 & Si verifica che il  pulsante di chiusura del componente AddProjectButton funzioni correttamente &  & \\
+    \hline
+    \rowcolor{LightBlue}
+    TU4 &  Si verifica che il pulsante di invio del componente AddProjectButton funzioni correttamente &  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU5 & Si verifica che il componente BackButton venga renderizzato correttamente &  & \\
+    \hline\rowcolor{LightBlue}
+    TU6 &  Si verifica che il componente BackButton funzioni correttamente &  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU7 & Si verifica che il componente BuisnessRequest venga renderizzato correttamente & ROF2,ROF3 & \\
+    \hline\rowcolor{LightBlue}
+    TU8 &  Si verifica che il componente BuisnessRequest funzioni correttamente &ROF2,ROF3  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU9 & Si verifica che il componente DeleteEpic venga renderizzato correttamente &  & \\
+    \hline\rowcolor{LightBlue}
+    TU10 &  Si verifica che il componente DeleteEpic funzioni correttamente &  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU11 & Si verifica che il componente DeleteUser venga renderizzato correttamente &  & \\
+    \hline\rowcolor{LightBlue}
+     TU12 &  Si verifica che il componente DeleteUser funzioni correttamente &  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU13 & Si verifica che il componente DropdownButton venga renderizzato correttamente &  & \\
+    \hline\rowcolor{LightBlue}
+     TU14 &  Si verifica che il componente DropdownButton funzioni correttamente & ROF14  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU15 & Si verifica che il componente DropdownMenuContainer venga renderizzato correttamente &ROF14   & \\
+    \hline\rowcolor{LightBlue}
+     TU16 &  Si verifica che il componente DropdownMenuContainer funzioni correttamente &ROF14   & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU17 & Si verifica che il componente DropdownMenuContainer si chiuda correttamente & ROF14  & \\
+    
+    \hline
+    \end{tabular}
+        \end{center}
+        
+    \begin{center}
+    \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
+    \rowcolor{LightBlue}
+    TU18 &  Si verifica che gli item del componente DropdownMenuContainer funzionino correttamente& ROF14  & \\
+    \hline\rowcolor{LighterBlue}
+     TU19 &  Si verifica che il componente DropdownMenu venga renderizzato correttamente & ROF14  & \\
+    \hline
+    \rowcolor{LightBlue}
+    TU20 & Si verifica che il componente DropdownMenu venga funzioni correttamente & ROF14  & \\
+    \hline\rowcolor{LighterBlue}
+    TU21 &  Si verifica che il componente DropdownMenu si chiuda correttamente & ROF14  & \\
+    \hline\rowcolor{LightBlue}
+     TU22 & Si verifica che gli item del componente DropdownMenu funzionino correttamente & ROF14  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU23 & Si verifica che il componente EpicStory venga renderizzato correttamente &ROF4, ROF17 & \\
+    
+     \hline\rowcolor{LightBlue}
+     TU24 & Si verifica che nel componente EpicStory venga renderizzato il titolo della tabella correttamente  &  & \\
+    \hline
+    
+    \rowcolor{LighterBlue}
+    TU25 & Si verifica che nel componente EpicStory venga renderizzata la descrizione della tabella correttamente &  & \\
+    \hline\rowcolor{LightBlue}
+     TU26 & Si verifica che nel componente EpicStory venga renderizzato il bottone per aggiungere un'epic story correttamente &  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU27 &  Si verifica che il componente InviteUserButton funzioni correttamente &  & \\
+    \hline\rowcolor{LightBlue}
+     TU28 & Si verifica che il componente Login venga renderizzato correttamente  &  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU29&Si verifica che il componente Login funzioni correttamente &  & \\
+    \hline\rowcolor{LightBlue}
+     TU30 & Si verifica che il componente NavigationBar venga renderizzato correttamente   &  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU31&Si verifica che il componente NavigationBar funzioni correttamente &   & \\
+    \hline\rowcolor{LightBlue}
+     TU32 &  Si verifica che il componente NotificationPage venga renderizzato correttamente  & RDF6, RDF9, RDF15  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU33& Si verifica che il componente NotificationPage renderizzi il corretto numero di righe& RDF6, RDF9, RDF15   & \\
+    
+    \hline
+     \end{tabular}
+        \end{center}
+    \begin{center}
+    \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
+    \rowcolor{LightBlue}
+     TU34 & Si verifica che il componente Password venga renderizzato correttamente   & ROF1 & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU35& Si verifica che il toggle della visibilità nel componente Password funzioni correttamente& ROF1 & \\
+    \hline\rowcolor{LightBlue}
+     TU36 & Si verifica che il componente Password funzioni correttamente   & ROF1 & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU36&Si verifica che il componente PopupFeedback venga renderizzato correttamente & ROF5,ROF12 & \\
+    \hline\rowcolor{LightBlue}
+     TU37 & Si verifica che il componente PopupFeedback funzioni correttamente  &  ROF12 & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU38&Si verifica che il componente Registrazione venga renderizzato correttamente & ROF1 & \\
+    \hline\rowcolor{LightBlue}
+     TU39 & Si verifica che il pulsante submit nel componente Registrazione funzioni correttamente   & ROF1 & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU40&  Si verifica che il campo di testo email nel componente Registrazione funzioni correttamente& ROF1& \\
+    \hline\rowcolor{LightBlue}
+     TU41 & Si verifica che il campo di testo password nel componente Registrazione funzioni correttamente  & ROF1 & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU42& Si verifica che il componente RejectProject funzioni correttamente&  & \\
+    \hline\rowcolor{LightBlue}
+     TU43 & Si verifica che il componente RequireAuth venga renderizzato correttamente  &ROF1  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU44& Si verifica che il componente RequireAuth funzioni correttamente & ROF1 & \\
+    \hline\rowcolor{LightBlue}
+     TU45 & Si verifica che il componente Step1 venga renderizzato correttamente  & ROF1 & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU46& Si verifica che il bottone submit del componente Step1 funzioni correttamente & ROF1 & \\
+    \hline\rowcolor{LightBlue}
+     TU47 & Si verifica che il campo di testo email del componente Step1 funzioni correttamente   &ROF1  & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU48& Si verifica che il componente Step2 venga renderizzato correttamente &ROF1  & \\
+    \hline\rowcolor{LightBlue}
+     TU49 & Si verifica che il bottone submit del componente Step2 funzioni correttamente   & ROF1 & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU50&  Si verifica che il campo di testo del componente Step2 funzioni correttamente&ROF1  & \\
+     \end{tabular}
+        \end{center}
+    \begin{center}
+    \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
+     \hline\rowcolor{LightBlue}
+     TU51 & Si verifica che il componente Table venga renderizzato correttamente  &  ROF4 ,ROF8 & \\
+    \hline
+    \rowcolor{LighterBlue}
+    TU52& Si verifica che il componente Table renderizzi una riga per ogni elemento  & ROF4,ROF8  & \\
+     \hline\rowcolor{LightBlue}
+     TU53 &   Si verifica che il componente Table renderizzi un bottone correttamente &  & \\
+     \hline
+    \rowcolor{LighterBlue}
+    TU54& Si verifica che il bottone del componente Table funzioni correttamente  &  & \\
+    \hline
+    \end{tabular}
+\end{center}
+
+
 \subsection{Test di Integrazione}
 I \textit{test di integrazione} sono una fase del processo di testing\textsubscript{G} in cui le diverse unità o del software vengono combinate e testate insieme come gruppo. L'obiettivo principale è verificare che le singole unità, testate precedentemente in modo isolato tramite i test di unità, funzionino correttamente quando integrate e collegate tra loro. Durante i test di integrazione, vengono identificati e risolti eventuali problemi di interfacciamento tra le diverse unità e vengono verificate le interazioni tra di esse. L'obiettivo finale è garantire che l'intero sistema funzioni come previsto e che tutte le interazioni tra le sue parti siano corrette.
 
+\begin{center}
+    \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
+        \rowcolor{Blue}
+    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
+    \hline
+    \rowcolor{LighterBlue}
+    TU1 &Verifica che ritorna il progetto con l'ID corretto\textsubscript{G} tramite email e password & ROF1 & NI\\
+    \hline
+    \rowcolor{LightBlue}
+    TS2 & Verificare che sia possibile scrivere le richieste di business & ROF2 & NI\\
+    \hline
+    \end{tabular}
+\end{center}
 \subsection{Test di Sistema}
 I \textit{test di sistema} sono una fase del processo che si concentra sull'analisi e la verifica del sistema nel suo complesso rispetto ai requisiti specificati. L'obiettivo principale è garantire che il sistema soddisfi tutte le funzionalità e i requisiti richiesti dal cliente o specificati nel documento di specifica dei requisiti. Durante i test di sistema, vengono eseguiti scenari di test realistici per simulare l'utilizzo del software in un ambiente di produzione. I risultati dei test di sistema sono utilizzati per valutare se il sistema è pronto per il rilascio o se sono necessari ulteriori miglioramenti e correzioni.
 
@@ -458,7 +702,43 @@ I \textit{test di sistema} sono una fase del processo che si concentra sull'anal
 
 \subsection{Test di Accettazione}
 I \textit{test di accettazione} sono una fase finale in cui il sistema viene valutato dal cliente per determinare se soddisfa i requisiti concordati e se è pronto per il rilascio. Questi test sono orientati a verificare che il sistema sia conforme alle aspettative e alle necessità degli utenti e che sia in grado di svolgere le funzioni previste in modo efficace ed efficiente. L'obiettivo principale è confermare che il software sia pronto per essere messo in produzione e che risponda alle aspettative del cliente. I risultati dei test di accettazione sono fondamentali per prendere decisioni riguardanti il rilascio del prodotto e possono influenzare eventuali modifiche o miglioramenti futuri.
-
+\begin{center}
+    \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
+    \rowcolor{Blue}
+    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione} & \custombold{ID Requisiti} & \custombold{Stato}\\
+    \hline
+    \rowcolor{LighterBlue}
+    TA1 & Si verifica che l’applicazione sia in grado di gestire il recupero password, inviando opportunamente una mail di
+reimpostazione all’utente qualora abbia perso le proprie credenziali&  & S\\
+    \hline
+    \rowcolor{LightBlue}
+    TA2 & SI verifica che il PM possa aggiungere nuovi clienti correttamente &  & S\\
+    \hline
+    \rowcolor{LighterBlue}
+    TA3 & Si verifica che l’applicazione sia in grado di gestire correttamente gli eventi di autenticazione dei propri tipi di utenti, inclusi login e logout & ROF13 & S\\
+    \hline
+    \rowcolor{LightBlue}
+    TA4 & Verificare che sia possibile per l'attore Project Manager assegnare le epic/user stories a gli attori Sviluppatore & ROF14 & S\\
+    \hline
+    \rowcolor{LighterBlue}
+    TA5 & Verificare che venga inviata una notifica all'attore Project Manager quando vengono generate le epic/user stories & RDF15 & S\\
+    \hline
+    \rowcolor{LightBlue}
+    TS16 & Verificare che sia possibile per l'attore Project Manager richiedere la modifica di epic/user stories all'IA & ROF16 &S\\
+    \hline
+    \rowcolor{LighterBlue}
+    TA7 & Verificare che sia possibile per l'attore Sviluppatore visualizzare l'andamento delle epic/user stories assegnate & ROF17 & S\\
+    \hline
+    \rowcolor{LightBlue}
+    TA8 & Verificare che il plug-in\textsubscript{G} supporti i linguaggi Typescript\textsubscript{G} e Javascript\textsubscript{G} & ROF20 & SI\\
+    \hline
+    \rowcolor{LighterBlue}
+    TA9 & Verificare che il plug-in supporti i linguaggi Kotlin\textsubscript{G} e Swift\textsubscript{G} & RDF21 & S\\
+    \hline
+    \end{tabular}
+    \captionof{table}{Tabella dei test di sistema}
+\label{tab:testSistema}
+\end{center}
 \subsection{Test di Regressione}
 I \textit{test di regressione} mirano a verificare che le modifiche apportate al codice sorgente o al sistema non abbiano introdotto nuovi difetti o rotto funzionalità esistenti. Questi test vengono eseguiti dopo ogni modifica al software, come aggiornamenti, correzioni di bug o nuove implementazioni. L'obiettivo è assicurarsi che le modifiche non abbiano impatti indesiderati sul comportamento del sistema, specialmente su funzionalità precedentemente testate e funzionanti correttamente. L'obiettivo del gruppo è raggiungere la massima automazione possibile dei test di regressione, al fine di ridurre i tempi di esecuzione e garantire una copertura completa dei test.
 
@@ -542,14 +822,18 @@ In questo paragrafo, esamineremo le sfide incontrate fino alla consegna del prog
 
 \subsection{Valutazione sull'organizzazione}
 \begin{center}
-\begin{tabular}{P{10em} P{13em} P{4em} P{13em}} 
+\begin{tabular}{|P{10em} |P{13em}| P{4em}| P{13em}|}
+\hline
     \rowcolor{Blue}
     \custombold{Criticità} & \custombold{Descrizione} & \custombold{Gravità} &
     \custombold{Soluzione}\\
+    \hline
     \rowcolor{LighterBlue}
      Iniziale carenza di comunicazione con il cliente & Durante le prime fasi di sviluppo abbiamo avuto difficoltà ad ottenere le credenziali per utilizzare gli strumenti da loro richiesti. & Bassa & Abbiamo scelto di focalizzare il lavoro, durante l'attesa, nella redazione dei documenti e aprire un canale di comunicazione più veloce delle mail. Si è scelto Slack per la comunicazione esterna, più rapido e molto utilizzato dall''azienda. è fondamentale sviluppare da parte del team una rapida capacità di reazione.\\ 
+     \hline
     \rowcolor{LightBlue}
      Disparità di impegno tra i membri& Alcuni membri, avendo più impegni accademici o lavorativi, sono stati meno presenti agli incontri o per la realizzazione del progetto. & Media & Ci siamo imegnati nell'autostimare concretamente il tempo che si ha disponibile, comunicando in modo trasparente i nostri impegni settimanali (creando un calendario condiviso su Google Drive) agli altri memebri, e assegnare i compiti quanto più in maniera equa e realistica. \\ 
+     \hline
 \end{tabular}
 \captionof{table}{Criticità sull'organizzazione}
 \label{tab:org}
@@ -557,16 +841,21 @@ In questo paragrafo, esamineremo le sfide incontrate fino alla consegna del prog
 
 \subsection{Valutazione sugli strumenti utilizzati}
 \begin{center}
-\begin{tabular}{P{10em} P{13em} P{4em} P{13em}} 
+\begin{tabular}{|P{10em}| P{13em}| P{4em}| P{13em}|}
+\hline
     \rowcolor{Blue}
     \custombold{Criticità} & \custombold{Descrizione} & \custombold{Gravità} &
     \custombold{Soluzione}\\
+    \hline
     \rowcolor{LighterBlue}
      Complessità nell'integrazione del plug-in\textsubscript{G} & Non avendo mai sviluppato un plug-in è stata difficoltosa la fase di integrazione. & Bassa & Abbiamo scelto di focalizzarci sull'autoapprendimento di tale tecnologia e aggiungere uno Sviluppatore a discapito di altri ruoli più marginali in quella fase. \\ 
+     \hline
     \rowcolor{LightBlue}
      Repository\textsubscript{G} & Difficoltà nel mantenimento dell'ordine, della linea temporale e della versioni\textsubscript{G} dei documenti. & Media & Abbiamo focalizzato una delle fasi di verifica del Verificatore proprio sul controllo della Repository e di fare delle sedute di formazione interna per chi avesse difficoltà nell'uso delle funzionalità più utilizzate dello strumento. \\ 
+     \hline
      \rowcolor{LighterBlue}
-     Amazon AWS\textsubscript{G}  & Le librerie di Amazon AWS oltre ad essere moltissime, hanno tutte un prezzo diverso. & Alta & Abbiamo fissato un incontro di formazione da parte del proponente per scegliere in maniera mirata le librerie, in modo tale da essere conformi alle esigenze di costo e non perderci nella fase di analisi, studio dello strumento e scelta delle librerie. Ciò ha ottimizzato a livello di tempistica potenzialmente molto critica per un team inesperto. 
+     Amazon AWS\textsubscript{G}  & Le librerie di Amazon AWS oltre ad essere moltissime, hanno tutte un prezzo diverso. & Alta & Abbiamo fissato un incontro di formazione da parte del proponente per scegliere in maniera mirata le librerie, in modo tale da essere conformi alle esigenze di costo e non perderci nella fase di analisi, studio dello strumento e scelta delle librerie. Ciò ha ottimizzato a livello di tempistica potenzialmente molto critica per un team inesperto. \\
+     \hline
 \end{tabular}
 \captionof{table}{Criticità negli strumenti utilizzati}
 \label{tab:strum}
@@ -574,25 +863,31 @@ In questo paragrafo, esamineremo le sfide incontrate fino alla consegna del prog
 
 \subsection{Valutazione sui ruoli}
 \begin{center}
-\begin{tabular}{P{10em} P{13em} P{4em} P{13em}} 
+\begin{tabular}{|P{10em}| P{13em}| P{4em}| P{13em}|}
+\hline
     \rowcolor{Blue}
     \custombold{Criticità} & \custombold{Descrizione} & \custombold{Gravità} &
     \custombold{Soluzione}\\
+    \hline
     \rowcolor{LighterBlue}
     Verifica superficiale da parte del verificatore.& Alcuni errori sono sfuggiti durante la fase di verifica a causa di una valutazione superficiale. & Media  & Abbiamo implementato checklist di verifica più dettagliate e stringenti.\\ 
+    \hline
     \rowcolor{LightBlue}
      Sviluppatori non allineati agli standard di codifica. & Non sempre il codice è stato conforme agli standard richiesti.&  Media &  Abbiamo svolto sessioni di formazione sui codici di stile e revisione del codice condiviso. Abbiamo condiviso tra membri del team materiale presente sul web fruibile e adatto allo studio individuale. \\ 
+     \hline
      \rowcolor{LighterBlue}
      Inesperienza dell'analista. & Gli analisti, non avendo mai lavorato a un progetto di tale portata, hanno fatto fatica inizialmente ad individuare tutti i requisiti necessari dalle prime sedute. & Media & Abbiamo svolto sessioni  di brainstorming interne e con i proponenti, oltre che col Prof Cardin. \\
+     \hline
     \rowcolor{LightBlue}
-    Pianificazione poco realistica da parte del Responsabile. & Data l'inesperienza nell'ambito, la pianificazione e le aspettative sul carico di lavoro non sono state conformi alla realtà.& Bassa & Abbiamo definito sprint più frequenti della media, di due settimane, per mantenere sempre alta la produttività e favorire l'interazione tra i membri del team.
-     
+    Pianificazione poco realistica da parte del Responsabile. & Data l'inesperienza nell'ambito, la pianificazione e le aspettative sul carico di lavoro non sono state conformi alla realtà.& Bassa & Abbiamo definito sprint più frequenti della media, di due settimane, per mantenere sempre alta la produttività e favorire l'interazione tra i membri del team.\\
+    \hline     
 \end{tabular}
 \captionof{table}{Criticità dei ruoli}
 \label{tab:ruoli}
 
 \end{center}
 
-
 Questo approccio consente una valutazione delle sfide affrontate e delle relative soluzioni, fornendo una base più solida per il miglioramento continuo durante lo sviluppo del progetto.
+
+
 \end{document}
