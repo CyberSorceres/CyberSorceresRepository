@@ -1,3 +1,4 @@
+
 :root {
     --color-black: #000000;
     --color-very-dark: #132847;
@@ -6,7 +7,9 @@
     --color-medium: #457b9d;
     --color-medium-light: #a1c7e0;
     --color-light: #cfdee7;
+    --color-white: #ffffff; 
 }
+
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -15,6 +18,7 @@ body {
     background-color: var(--color-very-dark);
 }
 
+
 header {
     background-color: var(--color-black);
     color: var(--color-light);
@@ -22,7 +26,8 @@ header {
     text-align: center;
 }
 
-div.sect{
+
+div.sect {
     text-align: center;
     width: 90%;
     margin: 2em auto;
@@ -32,29 +37,37 @@ div.sect{
     background-color: var(--color-very-dark);
 }
 
+
 footer {
     background-color: var(--color-dark);
     color: var(--color-dark);
 }
+
 
 a {
     color: var(--color-medium-light);
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: var(--color-medium);
-
 }
 
-h2{
+
+h2 {
     text-align: center;
     color: var(--color-light);
 }
 
-h4,h3{
+
+h3, h4 {
     text-align: center;
     padding: 0;
     margin: 0.3em 0;
     color: var(--color-light);
+}
+
+
+.white-text {
+    color: var(--color-white);
 }
