@@ -1286,6 +1286,10 @@ Ogni entità che richiede una rappresentazione nel database è associata a un DA
 
 \subsubsection{Dependency Injection}
 Ogni lambda accetta in input le interfacce di cui necessita, le quali vengono istanziate da una funzione dedicata incaricata di fornire alla lambda i parametri corretti. Durante i test di unità, le classi mock vengono passate come parametri alle lambda.
+\subsubsection{FaaS}
+Ogni lambda è un piccolo servizio indipendete, il codice comune viene astratto utilizzando classi. Questo facilita il deploy e permette di caricare una specifica funzione per aggiornare velocemente il backend.
+\subsubsection{Middleware}
+Un middleware si occupa di aggiungere gli header corretti per il funzionamento dei CORS senza dover ripetere il codice nelle varie lambda.
 \subsection{Schema del Database}
 \begin{figure}[H]
       \centering
