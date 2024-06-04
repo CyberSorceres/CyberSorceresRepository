@@ -111,8 +111,10 @@
   \rowcolor{Blue}
     \custombold{Versione} & \custombold{Data} & \custombold{Autore} &
     \custombold{ Verificatore} & \custombold{Dettaglio}\\
-    \rowcolor{LightBlue}
+    \rowcolor{LighterBlue}
     2.0.0 & 27/05/2024 & Samuele Vignotto & Giovanni Moretti & Controllo finale del documento.\\
+    \rowcolor{LightBlue}
+    1.4.1 & 24/05/2024 & Samuele Vignotto & Giulia Dentone & Aggiornamento grafici.\\
     \rowcolor{LighterBlue}
     1.4.0 & 23/05/2024 & Nicola Lazzarin & Andrea Rezzi & Aggiunta test di accettazione.\\
     \rowcolor{LightBlue}
@@ -646,12 +648,32 @@ I \textit{test di integrazione} sono una fase del processo di testing\textsubscr
         \rowcolor{Blue}
     \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione}  & \custombold{Stato}\\
     \hline
+    \rowcolor{LightBlue}
+    TI1 & Verifica che i dati dei progetti vengano recuperati correttamente dal database& S\\
+    \hline
     \rowcolor{LighterBlue}
-    TU1 &Verifica che ritorna il progetto con l'ID corretto\textsubscript{G} tramite email e password  & NI\\
+    TI2 &Verifica che i dati delle epic stories vengano recuperati correttamente dal database & S\\
     \hline
     \rowcolor{LightBlue}
-    TS2 & Verificare che sia possibile scrivere le richieste di business  & NI\\
+    TI3 & Verifica che i dati delle user stories vengano recuperati corretttamente dal database& S\\
+   \hline
+    \rowcolor{LighterBlue}
+    TI4 &Verifica che il project manager possa aggiungere progetti correttamente & S\\
     \hline
+    \rowcolor{LightBlue}
+    TI5 & Verifica che l'itelligenza artificiale selezionata generi correttamente le epic user sotries a partire dalle richieste di buisness& S\\
+    \hline
+    \rowcolor{LighterBlue}
+    TI6 &Verifica che l'itelligenza artificiale selezionata generi correttamente i test a partire dal codice fornito& S\\
+    \hline
+    \rowcolor{LightBlue}
+    TI7&  Verifica che iclineti possano inviare correttamente le richieste di buisness & S\\
+    \hline
+    \rowcolor{LighterBlue}
+    TI8&Verifica che si possano  eliminare le epic stories e tutte le loro user stories correttamente& S\\
+    \hline
+    \rowcolor{LightBlue}
+    TI9&  Verifica che i clienti possano inviare correttamente le richieste di buisness & S\\
     \end{tabular}
 \end{center}
 \subsection{Test di Sistema}
@@ -779,59 +801,100 @@ reimpostazione all’utente qualora abbia perso le proprie credenziali  & S\\
 \subsection{Test di Regressione}
 I \textit{test di regressione} mirano a verificare che le modifiche apportate al codice sorgente o al sistema non abbiano introdotto nuovi difetti o rotto funzionalità esistenti. Questi test vengono eseguiti dopo ogni modifica al software, come aggiornamenti, correzioni di bug o nuove implementazioni. L'obiettivo è assicurarsi che le modifiche non abbiano impatti indesiderati sul comportamento del sistema, specialmente su funzionalità precedentemente testate e funzionanti correttamente. L'obiettivo del gruppo è raggiungere la massima automazione possibile dei test di regressione, al fine di ridurre i tempi di esecuzione e garantire una copertura completa dei test.
 
-
+\begin{center}
+    \begin{tabular}{P{5em} P{21em} P{6em} P{6em}}
+        \rowcolor{Blue}
+    \custombold{ID Test\textsubscript{G}} & \custombold{Descrizione}  & \custombold{Stato}\\
+    \hline
+    \rowcolor{LighterBlue}
+    TR1 &Verifica che l'applicazione sia compatibile con Chrome a partire dalla versione 123.0 & S\\
+    \hline
+    \rowcolor{LightBlue}
+    TR2 & Verifica che l'applicazione sia compatibile con Firefox a partire dalla versione 124.0& S\\
+   \hline
+    \rowcolor{LighterBlue}
+    TR3 &Verifica che l'applicazione sia compatibile con Safari a partire dalla versione 17.0 & S\\
+    \hline
+    \rowcolor{LightBlue}
+    TR4 & Verifica che i dati dei progetti vengano recuperati correttamente dal database& S\\
+    \hline
+    \rowcolor{LighterBlue}
+    TR5 &Verifica che i dati delle epic stories vengano recuperati correttamente dal database & S\\
+    \hline
+    \rowcolor{LightBlue}
+    TR6 & Verifica che i dati delle user stories vengano recuperati corretttamente dal database& S\\
+   \hline
+    \rowcolor{LighterBlue}
+    TR7 &Verifica che il project manager possa aggiungere progetti correttamente & S\\
+    \hline
+    \rowcolor{LightBlue}
+    TR8 & Verifica che l'itelligenza artificiale selezionata generi correttamente le epic user sotries a partire dalle richieste di buisness& S\\
+    \hline
+    \rowcolor{LighterBlue}
+    TR9 &Verifica che l'itelligenza artificiale selezionata generi correttamente i test a partire dal codice fornito& S\\
+    \hline
+    \rowcolor{LightBlue}
+    TR10&  Verifica che iclineti possano inviare correttamente le richieste di buisness & S\\
+    \hline
+    \rowcolor{LighterBlue}
+    TR11&Verifica che si possano  eliminare le epic stories e tutte le loro user stories correttamente& S\\
+    \hline
+    \rowcolor{LightBlue}
+    TR12&  Verifica che i clienti possano inviare correttamente le richieste di buisness & S\\
+    \end{tabular}
+\end{center}
 \section{Resoconto attività di verifica}
 \subsection{Verifica documenti}
 \subsubsection{Indice di Gulpease}
 
     \begin{figure}[H]
     \centering
-    \includegraphics{documenti/grafici/indice_di_Gulpease.png}
+    \includegraphics{documenti/grafici/IndiceDiGulpeasePB.png}
      \caption{Figura 1: indice di Gulpease per periodo}
     \end{figure}
 
-    L'andamento discendente dell'Indice di Gulpease nei documenti analizzati suggerisce una tendenza verso una maggiore complessità e articolazione del linguaggio nel corso del tempo. Questo declino potrebbe riflettere cambiamenti nella struttura dei testi o nell'approccio alla scrittura, sottolineando l'importanza di un'attenta valutazione delle competenze linguistiche e comunicative nel contesto attuale.
+    L'indice di Gulpease valuta la leggibilità dei documenti prodotti durante il progetto. Un punto di forza è il miglioramento della leggibilità nel tempo, come indicato dall'aumento dell'indice. Tuttavia, la diminuzione dell'indice durante la fase di Codifica PoC evidenzia una potenziale complessità aggiuntiva nei documenti tecnici, che potrebbe richiedere ulteriori sforzi per semplificare e migliorare la comprensione.
 
 
 
 \subsubsection{Errori ortografici}
    \begin{figure}[H]
     \centering
-    \includegraphics{documenti/grafici/errori_ortografici.png}
+    \includegraphics{documenti/grafici/ErroriOrtograficiPB.png}
      \caption{Figura 2: errori ortografici per periodo}
     \end{figure}
-     Il progressivo e costante ridursi del numero di errori ortografici nei documenti analizzati dimostra un notevole miglioramento della qualità della scrittura nel tempo. Questo risultato evidenzia l'efficacia di misure correttive e di una maggiore attenzione alla precisione nell'uso della lingua.
+     Il grafico evidenzia il numero di errori ortografici rilevati nei documenti del progetto attraverso le diverse fasi. Il calo costante degli errori rappresenta un miglioramento significativo nella qualità della documentazione, un chiaro punto di forza. Tuttavia, l'alto numero iniziale di errori ortografici durante l'Analisi e la Progettazione TB solleva preoccupazioni riguardo la qualità iniziale della revisione e la necessità di maggiore attenzione nei primi stadi del progetto.
 \subsection{Verifica processi}
 \subsubsection{Stima al completamento}
 \begin{figure}[H]
     \centering
-    \includegraphics{documenti/grafici/costo_effettvo_e_stima_al_completamento.png}
+    \includegraphics{documenti/grafici/CostoEffettivoEStimaAlCompletamentoPB.png}
     \caption{Figura 3: Revisione del valore stimato per la realizzazione del progetto}
     \end{figure}
-    L'analisi del costo effettivo e della stima al completamento del progetto indica un utilizzo attuale di circa 8000€, con un saldo residuo di circa 4000€ per raggiungere il completamento totale. Questo risultato evidenzia una gestione finanziaria attenta e prudente, mantenendo il progetto all'interno dei limiti del budget previsto. Tuttavia, è importante rimanere vigili e continuare a monitorare da vicino le spese rimanenti per garantire che il progetto sia completato in modo efficiente e senza sorprese finanziarie.
+    Questo grafico mostra il budget totale stanziato, il budget stimato per completare le attività rimanenti e i soldi spesi fino al momento del calcolo per ogni fase del progetto. Un punto di forza evidente è il controllo accurato delle spese rispetto al budget totale. Tuttavia, si nota un problema durante la fase di Codifica PoC dove il budget stimato per completare le attività rimanenti è significativamente inferiore al budget stanziato, suggerendo possibili sottostime o risparmi imprevisti.
 \subsubsection{Valore guadagnato \& valore previsto}
 \begin{figure}[H]
     \centering
-    \includegraphics{documenti/grafici/valore_guadagnato_e_previsto.png}
+    \includegraphics{documenti/grafici/ValoreGuadagnatoEPrevistoPB.png}
     \caption{Figura 4: Valore delle attività realizzate e costo pianificato per realizzare le rimanenti}
     \end{figure}
-    L'analisi del valore guadagnato e del valore previsto evidenzia una stretta correlazione tra le previsioni progettuali e i risultati effettivamente ottenuti, come indicato dalla quasi costante equivalenza tra i due valori nel corso del tempo. Sebbene si sia verificato un breve periodo in cui il valore guadagnato è risultato inferiore alle aspettative, è importante notare che il progetto è stato in grado di recuperare e allinearsi nuovamente con le previsioni nel periodo successivo.
+    Questo grafico confronta il valore guadagnato (Serie1) con il valore previsto (Serie2) per ciascuna fase del progetto. La corrispondenza quasi perfetta tra i due valori è un punto di forza, dimostrando una pianificazione accurata e una realizzazione conforme. Tuttavia, eventuali discrepanze minime possono indicare aree dove l'efficienza potrebbe essere ulteriormente migliorata.
 \subsubsection{Costo e stima al completamento}
     
     \begin{figure}[H]
     \centering
-    \includegraphics{documenti/grafici/costo_e_stima.png}
+    \includegraphics{documenti/grafici/CostoEStimaAlCompletamentoPB.png}
     \caption{Figura 5: Costo effettivamente sostenuto e valore stimato per la realizzazione delle rimanenti attività}
 \end{figure}
-L'analisi del costo e della stima al completamento al periodo attuale rivela un leggero scostamento tra il budget utilizzato e quello previsto per il progetto. Mentre il budget utilizzato risulta essere leggermente più alto delle previsioni in questo punto temporale, è essenziale considerare attentamente le ragioni dietro questo scostamento e prendere le misure necessarie per mitigare eventuali ulteriori variazioni.
+Questo grafico rappresenta il budget totale (Budget at completion), il budget stanziato (EAC) e i valori superiori e inferiori di riferimento per ogni fase del progetto. La stabilità dei valori totali e la vicinanza delle stime ai valori effettivi sono punti di forza, indicando una buona gestione del budget. Tuttavia, il leggero aumento nel periodo di Progettazione TB indica una possibile sottovalutazione iniziale dei costi in quella fase.
 
 \subsubsection{Variazione programmazione \& variazione costi}
 \begin{figure}[H]
     \centering
-    \includegraphics{documenti/grafici/variazione_programmazione_e_costi.png}
+    \includegraphics{documenti/grafici/VariazioneProgrammazioneECostiPB.png}
     \caption{Figura 6: Variazione programmazione e variazione costo per periodo}
     \end{figure}
-    L'analisi della variazione tra la programmazione e i costi indica che la Cost Variance è leggermente superiore alla Schedule Variance. Questo suggerisce che, sebbene il progetto sia rimasto in linea con il programma stabilito, i costi effettivi sono stati maggiori rispetto alle previsioni. Questa discrepanza sottolinea l'importanza di una gestione finanziaria più rigorosa e di un controllo più stretto sui costi nel futuro.
+    Il grafico mostra la variazione della programmazione (Schedule Variance) e dei costi (Cost Variance) per ogni fase del progetto. I punti di forza includono la capacità di mantenere le variazioni di costi relativamente contenute. Tuttavia, le significative variazioni negative nella programmazione durante la fase di Progettazione TB e Codifica PoC suggeriscono problemi di scheduling che potrebbero derivare da una pianificazione iniziale troppo ottimistica o da imprevisti non considerati adeguatamente.
 \subsubsection{Stabilità indice dei requisiti}
 \begin{figure}[H]
     \centering
